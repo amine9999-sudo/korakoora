@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
 <body>
 
 <header class="topbar">
+
   <div class="container nav">
 
     <a class="brand" href="#">
@@ -28,15 +30,19 @@
       <a href="#news">الأخبار</a>
     </nav>
 
-    <button class="search" aria-label="بحث">⌕</button>
+    <button class="search" aria-label="بحث">
+      ⌕
+    </button>
 
   </div>
+
 </header>
 
 
 <main>
 
   <!-- HERO -->
+
   <section class="hero">
 
     <div class="container hero-inner">
@@ -90,6 +96,7 @@
 
 
     <!-- MATCHES -->
+
     <section id="matches" class="section">
 
       <div class="section-head">
@@ -106,16 +113,26 @@
 
         </div>
 
+
         <div class="days">
-          <button>أمس</button>
-          <button class="selected">اليوم</button>
-          <button>غدًا</button>
+
+          <button id="yesterdayBtn">
+            أمس
+          </button>
+
+          <button id="todayBtn" class="selected">
+            اليوم
+          </button>
+
+          <button id="tomorrowBtn">
+            غدًا
+          </button>
+
         </div>
 
       </div>
 
 
-      <!-- هنا ستظهر المباريات تلقائيا -->
       <div id="liveMatches">
 
         <div class="empty">
@@ -133,6 +150,7 @@
 
 
     <!-- LEAGUES -->
+
     <section id="leagues" class="section">
 
       <div class="section-head">
@@ -190,6 +208,7 @@
 
 
     <!-- NEWS -->
+
     <section id="news" class="section">
 
       <div class="section-head">
@@ -326,6 +345,15 @@
 
 const list = document.querySelector("#liveMatches");
 
+const yesterdayBtn =
+  document.querySelector("#yesterdayBtn");
+
+const todayBtn =
+  document.querySelector("#todayBtn");
+
+const tomorrowBtn =
+  document.querySelector("#tomorrowBtn");
+
 
 function time(utc) {
 
@@ -345,6 +373,110 @@ function time(utc) {
 }
 
 
+function showMatches(matches) {
+
+  if (!matches.length) {
+
+    list.innerHTML =
+      '<div class="empty">لا توجد مباريات متاحة حاليًا.</div>';
+
+    return;
+
+  }
+
+
+  list.innerHTML = matches
+    .slice(0, 30)
+    .map(match => {
+
+      let matchTime;
+
+      if (match.status === "FINISHED") {
+
+        matchTime =
+          `${match.homeScore ?? "-"} - ${match.awayScore ?? "-"}`;
+
+      } else {
+
+        matchTime =
+          time(match.utcDate);
+
+      }
+
+
+      let statusText;
+
+      if (match.status === "LIVE") {
+
+        statusText = "🔴 مباشر";
+
+      } else if (match.status === "FINISHED") {
+
+        statusText = "انتهت";
+
+      } else {
+
+        statusText = "لم تبدأ";
+
+      }
+
+
+      return `
+
+        <article class="match">
+
+          <div class="team">
+
+            <b>
+              ${match.home || "فريق"}
+            </b>
+
+            <span>
+              ⚽
+            </span>
+
+          </div>
+
+
+          <div class="time">
+
+            <strong>
+              ${matchTime}
+            </strong>
+
+            <small>
+              ${statusText}
+            </small>
+
+            <small>
+              ${match.competition || "مباراة"}
+            </small>
+
+          </div>
+
+
+          <div class="team">
+
+            <span>
+              ⚽
+            </span>
+
+            <b>
+              ${match.away || "فريق"}
+            </b>
+
+          </div>
+
+        </article>
+
+      `;
+
+    })
+    .join("");
+
+}
+
+
 async function loadMatches() {
 
   try {
@@ -354,116 +486,24 @@ async function loadMatches() {
     );
 
     if (!response.ok) {
-      throw new Error("Failed to load matches");
-    }
 
-    const data = await response.json();
-
-    const matches = data.matches || [];
-
-
-    if (!matches.length) {
-
-      list.innerHTML =
-        '<div class="empty">لا توجد مباريات متاحة حاليًا.</div>';
-
-      return;
+      throw new Error(
+        "Failed to load matches"
+      );
 
     }
 
+    const data =
+      await response.json();
 
-    list.innerHTML = matches
-      .slice(0, 30)
-      .map(match => {
+    const matches =
+      data.matches || [];
 
-        let matchTime;
+    showMatches(matches);
 
+  }
 
-        if (match.status === "FINISHED") {
-
-          matchTime =
-            `${match.homeScore ?? "-"} - ${match.awayScore ?? "-"}`;
-
-        } else {
-
-          matchTime =
-            time(match.utcDate);
-
-        }
-
-
-        let statusText;
-
-        if (match.status === "LIVE") {
-
-          statusText = "🔴 مباشر";
-
-        } else if (match.status === "FINISHED") {
-
-          statusText = "انتهت";
-
-        } else {
-
-          statusText = "لم تبدأ";
-
-        }
-
-
-        return `
-
-          <article class="match">
-
-            <div class="team">
-
-              <b>
-                ${match.home || "فريق"}
-              </b>
-
-              <span>
-                ⚽
-              </span>
-
-            </div>
-
-
-            <div class="time">
-
-              <strong>
-                ${matchTime}
-              </strong>
-
-              <small>
-                ${statusText}
-              </small>
-
-              <small>
-                ${match.competition || "مباراة"}
-              </small>
-
-            </div>
-
-
-            <div class="team">
-
-              <span>
-                ⚽
-              </span>
-
-              <b>
-                ${match.away || "فريق"}
-              </b>
-
-            </div>
-
-          </article>
-
-        `;
-
-      })
-      .join("");
-
-
-  } catch (error) {
+  catch (error) {
 
     console.error(error);
 
@@ -475,9 +515,58 @@ async function loadMatches() {
 }
 
 
+function selectDay(button) {
+
+  document
+    .querySelectorAll(".days button")
+    .forEach(btn => {
+
+      btn.classList.remove("selected");
+
+    });
+
+  button.classList.add("selected");
+
+}
+
+
+yesterdayBtn.addEventListener(
+  "click",
+  () => {
+
+    selectDay(yesterdayBtn);
+
+  }
+);
+
+
+todayBtn.addEventListener(
+  "click",
+  () => {
+
+    selectDay(todayBtn);
+
+    loadMatches();
+
+  }
+);
+
+
+tomorrowBtn.addEventListener(
+  "click",
+  () => {
+
+    selectDay(tomorrowBtn);
+
+  }
+);
+
+
 loadMatches();
 
 </script>
 
+
 </body>
+
 </html>
