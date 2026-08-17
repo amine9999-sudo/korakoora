@@ -1,41 +1,9 @@
 {
-  "updatedAt": "2026-08-17T15:45:02.117236+00:00",
+  "updatedAt": "2026-08-17T17:00:23.373428+00:00",
   "dateFrom": "2026-08-17",
   "dateTo": "2026-08-19",
   "count": 5,
   "matches": [
-    {
-      "id": 561772,
-      "status": "TIMED",
-      "utcDate": "2026-08-17T19:00:00Z",
-      "competition": {
-        "id": 2016,
-        "name": "Championship",
-        "code": "ELC"
-      },
-      "home": {
-        "id": 715,
-        "name": "Cardiff City FC",
-        "shortName": "Cardiff",
-        "crest": "https://crests.football-data.org/715.png"
-      },
-      "away": {
-        "id": 404,
-        "name": "Wrexham AFC",
-        "shortName": "Wrexham",
-        "crest": "https://crests.football-data.org/404.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
     {
       "id": 564635,
       "status": "TIMED",
@@ -56,6 +24,38 @@
         "name": "Elche CF",
         "shortName": "Elche",
         "crest": "https://crests.football-data.org/285.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 561772,
+      "status": "TIMED",
+      "utcDate": "2026-08-17T19:00:00Z",
+      "competition": {
+        "id": 2016,
+        "name": "Championship",
+        "code": "ELC"
+      },
+      "home": {
+        "id": 715,
+        "name": "Cardiff City FC",
+        "shortName": "Cardiff",
+        "crest": "https://crests.football-data.org/715.png"
+      },
+      "away": {
+        "id": 404,
+        "name": "Wrexham AFC",
+        "shortName": "Wrexham",
+        "crest": "https://crests.football-data.org/404.png"
       },
       "score": {
         "halfTime": {
