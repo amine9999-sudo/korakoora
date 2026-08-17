@@ -1,4 +1,168 @@
 {
-  "updatedAt": "2026-08-17T13:24:10.306112+00:00",
-  "matches": []
+  "updatedAt": "2026-08-17T14:03:33.850581+00:00",
+  "dateFrom": "2026-08-17",
+  "dateTo": "2026-08-19",
+  "count": 5,
+  "matches": [
+    {
+      "id": 561772,
+      "status": "TIMED",
+      "utcDate": "2026-08-17T19:00:00Z",
+      "competition": {
+        "id": 2016,
+        "name": "Championship",
+        "code": "ELC"
+      },
+      "home": {
+        "id": 715,
+        "name": "Cardiff City FC",
+        "shortName": "Cardiff",
+        "crest": "https://crests.football-data.org/715.png"
+      },
+      "away": {
+        "id": 404,
+        "name": "Wrexham AFC",
+        "shortName": "Wrexham",
+        "crest": "https://crests.football-data.org/404.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 564635,
+      "status": "TIMED",
+      "utcDate": "2026-08-17T19:00:00Z",
+      "competition": {
+        "id": 2014,
+        "name": "Primera Division",
+        "code": "PD"
+      },
+      "home": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña",
+        "shortName": "Deportivo",
+        "crest": "https://crests.football-data.org/560.png"
+      },
+      "away": {
+        "id": 285,
+        "name": "Elche CF",
+        "shortName": "Elche",
+        "crest": "https://crests.football-data.org/285.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 567267,
+      "status": "TIMED",
+      "utcDate": "2026-08-17T19:15:00Z",
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL"
+      },
+      "home": {
+        "id": 6618,
+        "name": "Casa Pia AC",
+        "shortName": "Casa Pia",
+        "crest": "https://crests.football-data.org/6618.png"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica",
+        "shortName": "SL Benfica",
+        "crest": "https://crests.football-data.org/1903.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 554965,
+      "status": "TIMED",
+      "utcDate": "2026-08-17T23:00:00Z",
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA"
+      },
+      "home": {
+        "id": 6684,
+        "name": "SC Internacional",
+        "shortName": "Internacional",
+        "crest": "https://crests.football-data.org/6684.png"
+      },
+      "away": {
+        "id": 4287,
+        "name": "Clube do Remo",
+        "shortName": "Clube do Remo",
+        "crest": "https://crests.football-data.org/4287.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 564463,
+      "status": "SCHEDULED",
+      "utcDate": "2026-08-18T22:00:00Z",
+      "competition": {
+        "id": 2152,
+        "name": "Copa Libertadores",
+        "code": "CLI"
+      },
+      "home": {
+        "id": 2052,
+        "name": "CS Independiente Rivadavia",
+        "shortName": "Rivadavia",
+        "crest": "https://crests.football-data.org/2052.png"
+      },
+      "away": {
+        "id": 1765,
+        "name": "Fluminense FC",
+        "shortName": "Fluminense",
+        "crest": "https://crests.football-data.org/1765.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    }
+  ]
 }
