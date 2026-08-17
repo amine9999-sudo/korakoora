@@ -13,75 +13,121 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Fetch today's matches
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+
         run: |
           python - <<'PY'
           import json
           import os
           import urllib.request
-          from datetime import datetime, timezone
+          import urllib.parse
+          from datetime import datetime, timedelta
+          from zoneinfo import ZoneInfo
 
-          req = urllib.request.Request(
-              "https://api.football-data.org/v4/matches",
+          # توقيت المغرب
+          tz = ZoneInfo("Africa/Casablanca")
+          now = datetime.now(tz)
+
+          today = now.strftime("%Y-%m-%d")
+
+          # جلب مباريات اليوم
+          params = urllib.parse.urlencode({
+              "dateFrom": today,
+              "dateTo": today
+          })
+
+          url = "https://api.football-data.org/v4/matches?" + params
+
+          request = urllib.request.Request(
+              url,
               headers={
-                  "X-Auth-Token": os.environ["FOOTBALL_DATA_TOKEN"]
+                  "X-Auth-Token": os.environ["FOOTBALL_DATA_TOKEN"],
+                  "User-Agent": "KoraKoora"
               }
           )
 
-          with urllib.request.urlopen(req, timeout=30) as r:
-              data = json.load(r)
+          try:
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  data = json.load(response)
 
-          output = {
-              "updatedAt": datetime.now(timezone.utc).isoformat(),
-              "matches": []
-          }
+          except Exception as error:
+              print("API ERROR:", error)
+              raise
 
-          for m in data.get("matches", []):
+          matches = []
 
-              score = m.get("score") or {}
-              full = score.get("fullTime") or {}
+          for match in data.get("matches", []):
 
-              home_team = m.get("homeTeam") or {}
-              away_team = m.get("awayTeam") or {}
+              home_team = match.get("homeTeam") or {}
+              away_team = match.get("awayTeam") or {}
 
-              output["matches"].append({
-                  "id": m.get("id"),
-                  "status": m.get("status"),
-                  "utcDate": m.get("utcDate"),
+              status = match.get("status")
+
+              # تحويل حالات المباراة إلى الحالات التي يفهمها الموقع
+              if status in ["IN_PLAY", "PAUSED"]:
+                  site_status = "LIVE"
+
+              elif status == "FINISHED":
+                  site_status = "FINISHED"
+
+              else:
+                  site_status = "TIMED"
+
+              score = match.get("score") or {}
+
+              full_time = score.get("fullTime") or {}
+
+              matches.append({
+                  "id": match.get("id"),
+
+                  "status": site_status,
+
+                  "utcDate": match.get("utcDate"),
 
                   "competition": (
-                      m.get("competition") or {}
-                  ).get("name"),
+                      (match.get("competition") or {}).get("name")
+                  ),
 
                   "home": home_team.get("name"),
+
                   "away": away_team.get("name"),
 
                   "homeLogo": home_team.get("crest"),
+
                   "awayLogo": away_team.get("crest"),
 
-                  "homeScore": full.get("home"),
-                  "awayScore": full.get("away")
+                  "homeScore": full_time.get("home"),
+
+                  "awayScore": full_time.get("away")
               })
+
+          output = {
+              "updatedAt": datetime.now().astimezone().isoformat(),
+              "matches": matches
+          }
+
+          os.makedirs("data", exist_ok=True)
 
           with open(
               "data/matches.json",
               "w",
               encoding="utf-8"
-          ) as f:
+          ) as file:
+
               json.dump(
                   output,
-                  f,
+                  file,
                   ensure_ascii=False,
                   indent=2
               )
 
-          print(
-              f"Updated {len(output['matches'])} matches"
-          )
+          print("Matches found:", len(matches))
+
           PY
 
       - name: Publish updated data
