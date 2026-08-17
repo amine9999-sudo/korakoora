@@ -34,9 +34,9 @@ jobs:
 
           now = datetime.now(timezone.utc)
 
-          # اليوم + 14 يومًا قادمة
+          # اليوم + 9 أيام قادمة
           date_from = now.strftime("%Y-%m-%d")
-          date_to = (now + timedelta(days=14)).strftime("%Y-%m-%d")
+          date_to = (now + timedelta(days=9)).strftime("%Y-%m-%d")
 
           url = (
               "https://api.football-data.org/v4/matches"
@@ -108,7 +108,6 @@ jobs:
                   }
               })
 
-          # ترتيب المباريات حسب الوقت
           matches.sort(key=lambda x: x.get("utcDate") or "")
 
           output = {
