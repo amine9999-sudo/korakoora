@@ -1,0 +1,64 @@
+name: Update football matches
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch today's matches
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+        run: |
+          python - <<'PY'
+          import json, os, urllib.request
+          from datetime import datetime, timezone
+
+          req = urllib.request.Request(
+              "https://api.football-data.org/v4/matches",
+              headers={"X-Auth-Token": os.environ["FOOTBALL_DATA_TOKEN"]}
+          )
+
+          with urllib.request.urlopen(req, timeout=30) as r:
+              data = json.load(r)
+
+          output = {
+              "updatedAt": datetime.now(timezone.utc).isoformat(),
+              "matches": []
+          }
+
+          for m in data.get("matches", []):
+              score = m.get("score") or {}
+              full = score.get("fullTime") or {}
+
+              output["matches"].append({
+                  "id": m.get("id"),
+                  "status": m.get("status"),
+                  "utcDate": m.get("utcDate"),
+                  "competition": (m.get("competition") or {}).get("name"),
+                  "home": (m.get("homeTeam") or {}).get("name"),
+                  "away": (m.get("awayTeam") or {}).get("name"),
+                  "homeScore": full.get("home"),
+                  "awayScore": full.get("away")
+              })
+
+          with open("data/matches.json", "w", encoding="utf-8") as f:
+              json.dump(output, f, ensure_ascii=False, indent=2)
+          PY
+
+      - name: Publish updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/matches.json
+          git diff --cached --quiet || git commit -m "Update football matches"
+          git push
