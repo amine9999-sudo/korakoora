@@ -1,80 +1,54 @@
-// 1. الترتيب والترجمة المطلوبة للدوريات المسموحة فقط
-const LEAGUE_MAP = new Map([
-  ["champions league", { name: "دوري أبطال أوروبا", order: 1 }],
-  ["la liga", { name: "الدوري الإسباني", order: 2 }],
-  ["laliga", { name: "الدوري الإسباني", order: 2 }],
-  ["premier league", { name: "الدوري الإنجليزي", order: 3 }],
-  ["serie a", { name: "الدوري الإيطالي", order: 4 }],
-  ["bundesliga", { name: "الدوري الألماني", order: 5 }],
-  ["ligue 1", { name: "الدوري الفرنسي", order: 6 }],
-  ["botola", { name: "الدوري المغربي", order: 7 }],
-  ["egyptian", { name: "الدوري المصري", order: 8 }],
-  ["brasileirao", { name: "الدوري البرازيلي", order: 9 }]
-]);
+// 1. مصفوفة الترتيب والترجمة المطلوبة
+const TARGET_LEAGUES = [
+  { keywords: ["champions league", "دوري أبطال أوروبا"], name: "دوري أبطال أوروبا" },
+  { keywords: ["la liga", "laliga", "الدوري الاسباني", "الدوري الإسباني"], name: "الدوري الإسباني" },
+  { keywords: ["premier league", "الدوري الانجليزي", "الدوري الإنجليزي"], name: "الدوري الإنجليزي" },
+  { keywords: ["serie a", "الدوري الايطالي", "الدوري الإيطالي"], name: "الدوري الإيطالي" },
+  { keywords: ["bundesliga", "الدوري الالماني", "الدوري الألماني"], name: "الدوري الألماني" },
+  { keywords: ["ligue 1", "الدوري الفرنسي"], name: "الدوري الفرنسي" },
+  { keywords: ["botola", "الدوري المغربي"], name: "الدوري المغربي" },
+  { keywords: ["egyptian", "الدوري المصري"], name: "الدوري المصري" },
+  { keywords: ["brasileirao", "الدوري البرازيلي"], name: "الدوري البرازيلي" }
+];
 
-// 2. دالة إخفاء الدوريات غير المطلوبة وترتيب المسموح منها
-function applyLeagueCustomization() {
-  // البحث عن كافة الكروت المقابلة للدوريات
-  const cards = document.querySelectorAll('div[class*="card"], div[class*="league"], div[class*="match"]');
+// 2. دالة التعديل القسري للعناصر
+function forceUpdateLeagues() {
+  // تجميع كل الحاويات المحتملة لكروت الدوريات
+  const allElements = document.querySelectorAll('div, section, article');
 
-  cards.forEach(card => {
-    // التأكد أن العنصر يمثل كارت دوري
-    const textContent = card.innerText || card.textContent;
-    if (!textContent) return;
+  allElements.forEach(el => {
+    // التأكد من أن العنصر يمثل حاوية دوري مباشرة (يحتوي على اسم دوري ومباريات)
+    const text = el.innerText ? el.innerText.toLowerCase() : '';
+    
+    // فحص ما إذا كان العنصر يحتوي على أي من كلمات الدوريات المسموحة
+    let matchedIndex = -1;
+    let matchedName = '';
 
-    const lowerText = textContent.toLowerCase();
-    let isMatched = false;
-
-    for (let [key, config] of LEAGUE_MAP.entries()) {
-      if (lowerText.includes(key)) {
-        // استهداف عنوان الدوري داخل الكارت لتغييره إلى العربية
-        const header = card.querySelector('h1, h2, h3, h4, span, div') || card;
-        if (header && !header.dataset.translated) {
-          header.innerText = config.name;
-          header.dataset.translated = "true";
-        }
-        
-        card.style.order = config.order;
-        card.style.display = ""; // إظهار الكارت
-        isMatched = true;
-        break;
+    TARGET_LEAGUES.forEach((league, index) => {
+      if (league.keywords.some(kw => text.includes(kw.toLowerCase()))) {
+        matchedIndex = index;
+        matchedName = league.name;
       }
-    }
+    });
 
-    // إخفاء الكارت إذا كان دوري درجة ثانية أو غير محدد في القائمة
-    if (!isMatched && card.children.length > 0) {
-      card.style.display = "none";
+    // إذا كان كارت دوري مسموح
+    if (matchedIndex !== -1 && el.children.length > 0) {
+      // البحث عن العنوان لتحديثه
+      const titleNode = el.querySelector('h1, h2, h3, h4, .title, [class*="title"]') || el.firstChild;
+      if (titleNode && titleNode.nodeType === 1) {
+        titleNode.textContent = matchedName;
+      }
+      
+      // تطبيق ترتيب CSS Flex Grid
+      el.style.order = matchedIndex + 1;
+      el.style.display = '';
+    } 
+    // إذا كان يحتوي على دوري درجة ثانية (مثل Championship)
+    else if (text.includes('championship') || text.includes('primeira liga')) {
+      el.style.display = 'none';
     }
   });
 }
 
-// 3. مراقبة التغييرات في الصفحة (لتطبيق التعديل فور جلب المباريات من الـ API)
-const observer = new MutationObserver(() => {
-  applyLeagueCustomization();
-});
-
-observer.observe(document.body, { childList: true, subtree: true });
-
-// 4. تفعيل أزرار الأيام (أمس / اليوم / غداً)
-document.addEventListener("click", (e) => {
-  const btnText = e.target.innerText ? e.target.innerText.trim() : "";
-
-  if (["أمس", "اليوم", "غداً", "غدا"].some(day => btnText.includes(day))) {
-    // تحديد التاريخ المطلوب
-    const targetDate = new Date();
-    if (btnText.includes("أمس")) targetDate.setDate(targetDate.getDate() - 1);
-    if (btnText.includes("غداً") || btnText.includes("غدا")) targetDate.setDate(targetDate.getDate() + 1);
-
-    const formattedDate = targetDate.toISOString().split("T")[0];
-    
-    // استدعاء دالة جلب البيانات إذا كانت معرفة في السكريبت الأصلي
-    if (typeof fetchMatches === "function") fetchMatches(formattedDate);
-    if (typeof getMatches === "function") getMatches(formattedDate);
-    if (typeof loadData === "function") loadData(formattedDate);
-
-    setTimeout(applyLeagueCustomization, 500);
-  }
-});
-
-// تشغيل الأوامر فور تحميل الصفحة
-document.addEventListener("DOMContentLoaded", applyLeagueCustomization);
+// 3. تشغيل الدالة بانتظام للتعامل مع جلب البيانات الديناميكي
+setInterval(forceUpdateLeagues, 1000);
