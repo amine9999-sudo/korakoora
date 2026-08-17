@@ -11,11 +11,11 @@ function time(utc) {
 }
 
 function teamLogo(team) {
-  if (team.logo) {
+  if (team && team.crest) {
     return `
       <img
         class="team-logo"
-        src="${team.logo}"
+        src="${team.crest}"
         alt="${team.name || "شعار الفريق"}"
         loading="lazy"
         onerror="this.style.display='none'"
@@ -26,10 +26,56 @@ function teamLogo(team) {
   return `<span class="team-logo-placeholder">⚽</span>`;
 }
 
+function teamName(team) {
+  if (!team) return "فريق";
+  return team.shortName || team.name || "فريق";
+}
+
+function getScore(match) {
+  const score = match.score || {};
+  const fullTime = score.fullTime || {};
+
+  const home = fullTime.home;
+  const away = fullTime.away;
+
+  if (home !== null && home !== undefined &&
+      away !== null && away !== undefined) {
+    return `${home} - ${away}`;
+  }
+
+  return null;
+}
+
+function getStatus(match) {
+  const status = match.status;
+
+  if (
+    status === "IN_PLAY" ||
+    status === "PAUSED"
+  ) {
+    return "🔴 مباشر";
+  }
+
+  if (status === "FINISHED") {
+    return "انتهت";
+  }
+
+  if (status === "POSTPONED") {
+    return "مؤجلة";
+  }
+
+  if (status === "CANCELLED") {
+    return "ملغاة";
+  }
+
+  return "لم تبدأ";
+}
+
 async function loadMatches() {
   try {
     const response = await fetch(
-      "data/matches.json?time=" + Date.now()
+      "data/matches.json?time=" + Date.now(),
+      { cache: "no-store" }
     );
 
     if (!response.ok) {
@@ -49,41 +95,28 @@ async function loadMatches() {
       .slice(0, 50)
       .map(match => {
 
-        const home = {
-          name: match.home,
-          logo: match.homeLogo
-        };
+        const home = match.home || {};
+        const away = match.away || {};
+        const competition = match.competition || {};
 
-        const away = {
-          name: match.away,
-          logo: match.awayLogo
-        };
+        const score = getScore(match);
 
         let matchTime;
 
-        if (match.status === "FINISHED") {
-          matchTime =
-            `${match.homeScore ?? "-"} - ${match.awayScore ?? "-"}`;
+        if (score) {
+          matchTime = score;
         } else {
           matchTime = time(match.utcDate);
         }
 
-        let statusText;
-
-        if (match.status === "LIVE") {
-          statusText = "🔴 مباشر";
-        } else if (match.status === "FINISHED") {
-          statusText = "انتهت";
-        } else {
-          statusText = "لم تبدأ";
-        }
+        const statusText = getStatus(match);
 
         return `
           <article class="match">
 
             <div class="team">
 
-              <b>${home.name || "فريق"}</b>
+              <b>${teamName(home)}</b>
 
               ${teamLogo(home)}
 
@@ -96,7 +129,7 @@ async function loadMatches() {
               <small>${statusText}</small>
 
               <small>
-                ${match.competition || "مباراة"}
+                ${competition.name || "مباراة"}
               </small>
 
             </div>
@@ -105,7 +138,7 @@ async function loadMatches() {
 
               ${teamLogo(away)}
 
-              <b>${away.name || "فريق"}</b>
+              <b>${teamName(away)}</b>
 
             </div>
 
@@ -116,7 +149,7 @@ async function loadMatches() {
 
   } catch (error) {
 
-    console.error(error);
+    console.error("KoraKoora error:", error);
 
     list.innerHTML =
       '<div class="empty">تعذر تحميل المباريات حاليًا.</div>';
@@ -124,3 +157,6 @@ async function loadMatches() {
 }
 
 loadMatches();
+
+// تحديث المباريات كل 5 دقائق
+setInterval(loadMatches, 5 * 60 * 1000);
