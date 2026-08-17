@@ -34,9 +34,9 @@ jobs:
 
           now = datetime.now(timezone.utc)
 
-          # Fetch today's matches and the next two days
+          # اليوم + 14 يومًا قادمة
           date_from = now.strftime("%Y-%m-%d")
-          date_to = (now + timedelta(days=2)).strftime("%Y-%m-%d")
+          date_to = (now + timedelta(days=14)).strftime("%Y-%m-%d")
 
           url = (
               "https://api.football-data.org/v4/matches"
@@ -54,6 +54,7 @@ jobs:
           try:
               with urllib.request.urlopen(request, timeout=30) as response:
                   data = json.load(response)
+
           except urllib.error.HTTPError as e:
               print("Football API error:", e.code)
               print(e.read().decode("utf-8", errors="ignore"))
@@ -107,6 +108,9 @@ jobs:
                   }
               })
 
+          # ترتيب المباريات حسب الوقت
+          matches.sort(key=lambda x: x.get("utcDate") or "")
+
           output = {
               "updatedAt": now.isoformat(),
               "dateFrom": date_from,
@@ -130,6 +134,8 @@ jobs:
               )
 
           print(f"Successfully fetched {len(matches)} matches.")
+          print(f"From: {date_from}")
+          print(f"To:   {date_to}")
           PY
 
       - name: Show generated data
