@@ -20,12 +20,16 @@ jobs:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
         run: |
           python - <<'PY'
-          import json, os, urllib.request
+          import json
+          import os
+          import urllib.request
           from datetime import datetime, timezone
 
           req = urllib.request.Request(
               "https://api.football-data.org/v4/matches",
-              headers={"X-Auth-Token": os.environ["FOOTBALL_DATA_TOKEN"]}
+              headers={
+                  "X-Auth-Token": os.environ["FOOTBALL_DATA_TOKEN"]
+              }
           )
 
           with urllib.request.urlopen(req, timeout=30) as r:
@@ -37,28 +41,58 @@ jobs:
           }
 
           for m in data.get("matches", []):
+
               score = m.get("score") or {}
               full = score.get("fullTime") or {}
+
+              home_team = m.get("homeTeam") or {}
+              away_team = m.get("awayTeam") or {}
+              competition = m.get("competition") or {}
 
               output["matches"].append({
                   "id": m.get("id"),
                   "status": m.get("status"),
                   "utcDate": m.get("utcDate"),
-                  "competition": (m.get("competition") or {}).get("name"),
-                  "home": (m.get("homeTeam") or {}).get("name"),
-                  "away": (m.get("awayTeam") or {}).get("name"),
+
+                  "competition": competition.get("name"),
+
+                  "home": home_team.get("name"),
+                  "away": away_team.get("name"),
+
+                  "homeLogo": home_team.get("crest"),
+                  "awayLogo": away_team.get("crest"),
+
                   "homeScore": full.get("home"),
                   "awayScore": full.get("away")
               })
 
-          with open("data/matches.json", "w", encoding="utf-8") as f:
-              json.dump(output, f, ensure_ascii=False, indent=2)
+          os.makedirs("data", exist_ok=True)
+
+          with open(
+              "data/matches.json",
+              "w",
+              encoding="utf-8"
+          ) as f:
+              json.dump(
+                  output,
+                  f,
+                  ensure_ascii=False,
+                  indent=2
+              )
+
+          print(
+              f"Updated {len(output['matches'])} matches"
+          )
           PY
 
       - name: Publish updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add data/matches.json
-          git diff --cached --quiet || git commit -m "Update football matches"
+
+          git diff --cached --quiet || \
+            git commit -m "Update football matches and team logos"
+
           git push
