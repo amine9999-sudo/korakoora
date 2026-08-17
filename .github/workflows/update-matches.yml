@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Fetch today's matches
+      - name: Fetch football matches
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
 
@@ -25,23 +25,9 @@ jobs:
           import json
           import os
           import urllib.request
-          import urllib.parse
-          from datetime import datetime, timedelta
-          from zoneinfo import ZoneInfo
+          from datetime import datetime, timezone
 
-          # توقيت المغرب
-          tz = ZoneInfo("Africa/Casablanca")
-          now = datetime.now(tz)
-
-          today = now.strftime("%Y-%m-%d")
-
-          # جلب مباريات اليوم
-          params = urllib.parse.urlencode({
-              "dateFrom": today,
-              "dateTo": today
-          })
-
-          url = "https://api.football-data.org/v4/matches?" + params
+          url = "https://api.football-data.org/v4/matches"
 
           request = urllib.request.Request(
               url,
@@ -51,13 +37,8 @@ jobs:
               }
           )
 
-          try:
-              with urllib.request.urlopen(request, timeout=30) as response:
-                  data = json.load(response)
-
-          except Exception as error:
-              print("API ERROR:", error)
-              raise
+          with urllib.request.urlopen(request, timeout=30) as response:
+              data = json.load(response)
 
           matches = []
 
@@ -66,9 +47,11 @@ jobs:
               home_team = match.get("homeTeam") or {}
               away_team = match.get("awayTeam") or {}
 
+              score = match.get("score") or {}
+              full_time = score.get("fullTime") or {}
+
               status = match.get("status")
 
-              # تحويل حالات المباراة إلى الحالات التي يفهمها الموقع
               if status in ["IN_PLAY", "PAUSED"]:
                   site_status = "LIVE"
 
@@ -77,10 +60,6 @@ jobs:
 
               else:
                   site_status = "TIMED"
-
-              score = match.get("score") or {}
-
-              full_time = score.get("fullTime") or {}
 
               matches.append({
                   "id": match.get("id"),
@@ -107,7 +86,7 @@ jobs:
               })
 
           output = {
-              "updatedAt": datetime.now().astimezone().isoformat(),
+              "updatedAt": datetime.now(timezone.utc).isoformat(),
               "matches": matches
           }
 
@@ -126,7 +105,7 @@ jobs:
                   indent=2
               )
 
-          print("Matches found:", len(matches))
+          print("Total matches:", len(matches))
 
           PY
 
@@ -137,7 +116,6 @@ jobs:
 
           git add data/matches.json
 
-          git diff --cached --quiet || \
-            git commit -m "Update football matches"
+          git diff --cached --quiet || git commit -m "Update football matches"
 
           git push
