@@ -47,14 +47,15 @@ jobs:
 
               home_team = m.get("homeTeam") or {}
               away_team = m.get("awayTeam") or {}
-              competition = m.get("competition") or {}
 
               output["matches"].append({
                   "id": m.get("id"),
                   "status": m.get("status"),
                   "utcDate": m.get("utcDate"),
 
-                  "competition": competition.get("name"),
+                  "competition": (
+                      m.get("competition") or {}
+                  ).get("name"),
 
                   "home": home_team.get("name"),
                   "away": away_team.get("name"),
@@ -65,8 +66,6 @@ jobs:
                   "homeScore": full.get("home"),
                   "awayScore": full.get("away")
               })
-
-          os.makedirs("data", exist_ok=True)
 
           with open(
               "data/matches.json",
@@ -93,6 +92,6 @@ jobs:
           git add data/matches.json
 
           git diff --cached --quiet || \
-            git commit -m "Update football matches and team logos"
+            git commit -m "Update football matches"
 
           git push
