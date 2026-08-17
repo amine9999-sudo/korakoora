@@ -1,1 +1,45 @@
-{"updatedAt":null,"matches":[]}
+{
+  "updatedAt": "2026-08-17T11:32:23.590875+00:00",
+  "matches": [
+    {
+      "id": 561772,
+      "status": "TIMED",
+      "utcDate": "2026-08-17T19:00:00Z",
+      "competition": "Championship",
+      "home": "Cardiff City FC",
+      "away": "Wrexham AFC",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 564635,
+      "status": "TIMED",
+      "utcDate": "2026-08-17T19:00:00Z",
+      "competition": "Primera Division",
+      "home": "RC Deportivo La Coruña",
+      "away": "Elche CF",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 567267,
+      "status": "TIMED",
+      "utcDate": "2026-08-17T19:15:00Z",
+      "competition": "Primeira Liga",
+      "home": "Casa Pia AC",
+      "away": "Sport Lisboa e Benfica",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 554965,
+      "status": "TIMED",
+      "utcDate": "2026-08-17T23:00:00Z",
+      "competition": "Campeonato Brasileiro Série A",
+      "home": "SC Internacional",
+      "away": "Clube do Remo",
+      "homeScore": null,
+      "awayScore": null
+    }
+  ]
+}
