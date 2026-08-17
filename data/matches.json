@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T21:54:28.601857+00:00",
+  "updatedAt": "2026-08-17T22:54:53.594917+00:00",
   "dateFrom": "2026-08-17",
   "dateTo": "2026-08-26",
   "count": 89,
@@ -709,6 +709,70 @@
       }
     },
     {
+      "id": 560545,
+      "status": "TIMED",
+      "utcDate": "2026-08-22T14:00:00Z",
+      "competition": {
+        "id": 2021,
+        "name": "Premier League",
+        "code": "PL"
+      },
+      "home": {
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "crest": "https://crests.football-data.org/351.png"
+      },
+      "away": {
+        "id": 341,
+        "name": "Leeds United FC",
+        "shortName": "Leeds United",
+        "crest": "https://crests.football-data.org/341.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 561780,
+      "status": "TIMED",
+      "utcDate": "2026-08-22T14:00:00Z",
+      "competition": {
+        "id": 2016,
+        "name": "Championship",
+        "code": "ELC"
+      },
+      "home": {
+        "id": 59,
+        "name": "Blackburn Rovers FC",
+        "shortName": "Blackburn",
+        "crest": "https://crests.football-data.org/59.png"
+      },
+      "away": {
+        "id": 343,
+        "name": "Middlesbrough FC",
+        "shortName": "Middlesbrough",
+        "crest": "https://crests.football-data.org/343.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
       "id": 561782,
       "status": "TIMED",
       "utcDate": "2026-08-22T14:00:00Z",
@@ -805,39 +869,7 @@
       }
     },
     {
-      "id": 560545,
-      "status": "TIMED",
-      "utcDate": "2026-08-22T14:00:00Z",
-      "competition": {
-        "id": 2021,
-        "name": "Premier League",
-        "code": "PL"
-      },
-      "home": {
-        "id": 351,
-        "name": "Nottingham Forest FC",
-        "shortName": "Nottingham",
-        "crest": "https://crests.football-data.org/351.png"
-      },
-      "away": {
-        "id": 341,
-        "name": "Leeds United FC",
-        "shortName": "Leeds United",
-        "crest": "https://crests.football-data.org/341.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "id": 561780,
+      "id": 561775,
       "status": "TIMED",
       "utcDate": "2026-08-22T14:00:00Z",
       "competition": {
@@ -846,16 +878,16 @@
         "code": "ELC"
       },
       "home": {
-        "id": 59,
-        "name": "Blackburn Rovers FC",
-        "shortName": "Blackburn",
-        "crest": "https://crests.football-data.org/59.png"
+        "id": 563,
+        "name": "West Ham United FC",
+        "shortName": "West Ham",
+        "crest": "https://crests.football-data.org/563.png"
       },
       "away": {
-        "id": 343,
-        "name": "Middlesbrough FC",
-        "shortName": "Middlesbrough",
-        "crest": "https://crests.football-data.org/343.png"
+        "id": 348,
+        "name": "Charlton Athletic FC",
+        "shortName": "Charlton",
+        "crest": "https://crests.football-data.org/348.png"
       },
       "score": {
         "halfTime": {
@@ -1016,38 +1048,6 @@
         "name": "Watford FC",
         "shortName": "Watford",
         "crest": "https://crests.football-data.org/346.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "id": 561775,
-      "status": "TIMED",
-      "utcDate": "2026-08-22T14:00:00Z",
-      "competition": {
-        "id": 2016,
-        "name": "Championship",
-        "code": "ELC"
-      },
-      "home": {
-        "id": 563,
-        "name": "West Ham United FC",
-        "shortName": "West Ham",
-        "crest": "https://crests.football-data.org/563.png"
-      },
-      "away": {
-        "id": 348,
-        "name": "Charlton Athletic FC",
-        "shortName": "Charlton",
-        "crest": "https://crests.football-data.org/348.png"
       },
       "score": {
         "halfTime": {
@@ -1381,6 +1381,38 @@
       }
     },
     {
+      "id": 559718,
+      "status": "SCHEDULED",
+      "utcDate": "2026-08-22T18:45:00Z",
+      "competition": {
+        "id": 2015,
+        "name": "Ligue 1",
+        "code": "FL1"
+      },
+      "home": {
+        "id": 511,
+        "name": "Toulouse FC",
+        "shortName": "Toulouse",
+        "crest": "https://crests.football-data.org/511.png"
+      },
+      "away": {
+        "id": 523,
+        "name": "Olympique Lyonnais",
+        "shortName": "Olympique Lyon",
+        "crest": "https://crests.football-data.org/523.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
       "id": 558636,
       "status": "TIMED",
       "utcDate": "2026-08-22T18:45:00Z",
@@ -1477,25 +1509,25 @@
       }
     },
     {
-      "id": 559718,
-      "status": "SCHEDULED",
+      "id": 558631,
+      "status": "TIMED",
       "utcDate": "2026-08-22T18:45:00Z",
       "competition": {
-        "id": 2015,
-        "name": "Ligue 1",
-        "code": "FL1"
+        "id": 2019,
+        "name": "Serie A",
+        "code": "SA"
       },
       "home": {
-        "id": 511,
-        "name": "Toulouse FC",
-        "shortName": "Toulouse",
-        "crest": "https://crests.football-data.org/511.png"
+        "id": 107,
+        "name": "Genoa CFC",
+        "shortName": "Genoa",
+        "crest": "https://crests.football-data.org/107.png"
       },
       "away": {
-        "id": 523,
-        "name": "Olympique Lyonnais",
-        "shortName": "Olympique Lyon",
-        "crest": "https://crests.football-data.org/523.png"
+        "id": 113,
+        "name": "SSC Napoli",
+        "shortName": "Napoli",
+        "crest": "https://crests.football-data.org/113.png"
       },
       "score": {
         "halfTime": {
@@ -1528,38 +1560,6 @@
         "name": "Stade Brestois 29",
         "shortName": "Brest",
         "crest": "https://crests.football-data.org/512.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "id": 558631,
-      "status": "TIMED",
-      "utcDate": "2026-08-22T18:45:00Z",
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA"
-      },
-      "home": {
-        "id": 107,
-        "name": "Genoa CFC",
-        "shortName": "Genoa",
-        "crest": "https://crests.football-data.org/107.png"
-      },
-      "away": {
-        "id": 113,
-        "name": "SSC Napoli",
-        "shortName": "Napoli",
-        "crest": "https://crests.football-data.org/113.png"
       },
       "score": {
         "halfTime": {
@@ -2277,6 +2277,38 @@
       }
     },
     {
+      "id": 559713,
+      "status": "SCHEDULED",
+      "utcDate": "2026-08-23T18:45:00Z",
+      "competition": {
+        "id": 2015,
+        "name": "Ligue 1",
+        "code": "FL1"
+      },
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "crest": "https://crests.football-data.org/524.png"
+      },
+      "away": {
+        "id": 529,
+        "name": "Stade Rennais FC 1901",
+        "shortName": "Stade Rennais",
+        "crest": "https://crests.football-data.org/529.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
       "id": 558633,
       "status": "TIMED",
       "utcDate": "2026-08-23T18:45:00Z",
@@ -2309,25 +2341,25 @@
       }
     },
     {
-      "id": 559713,
-      "status": "SCHEDULED",
-      "utcDate": "2026-08-23T18:45:00Z",
+      "id": 554971,
+      "status": "TIMED",
+      "utcDate": "2026-08-23T19:00:00Z",
       "competition": {
-        "id": 2015,
-        "name": "Ligue 1",
-        "code": "FL1"
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA"
       },
       "home": {
-        "id": 524,
-        "name": "Paris Saint-Germain FC",
-        "shortName": "PSG",
-        "crest": "https://crests.football-data.org/524.png"
+        "id": 4286,
+        "name": "RB Bragantino",
+        "shortName": "Bragantino",
+        "crest": "https://crests.football-data.org/4286.png"
       },
       "away": {
-        "id": 529,
-        "name": "Stade Rennais FC 1901",
-        "shortName": "Stade Rennais",
-        "crest": "https://crests.football-data.org/529.png"
+        "id": 1767,
+        "name": "Grêmio FBPA",
+        "shortName": "Grêmio",
+        "crest": "https://crests.football-data.org/1767.png"
       },
       "score": {
         "halfTime": {
@@ -2392,38 +2424,6 @@
         "name": "EC Bahia",
         "shortName": "Bahia",
         "crest": "https://crests.football-data.org/1777.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "id": 554971,
-      "status": "TIMED",
-      "utcDate": "2026-08-23T19:00:00Z",
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA"
-      },
-      "home": {
-        "id": 4286,
-        "name": "RB Bragantino",
-        "shortName": "Bragantino",
-        "crest": "https://crests.football-data.org/4286.png"
-      },
-      "away": {
-        "id": 1767,
-        "name": "Grêmio FBPA",
-        "shortName": "Grêmio",
-        "crest": "https://crests.football-data.org/1767.png"
       },
       "score": {
         "halfTime": {
