@@ -1,16 +1,6 @@
 {
-  "updatedAt": "2026-08-17T11:32:23.590875+00:00",
+  "updatedAt": "2026-08-17T12:02:40.388955+00:00",
   "matches": [
-    {
-      "id": 561772,
-      "status": "TIMED",
-      "utcDate": "2026-08-17T19:00:00Z",
-      "competition": "Championship",
-      "home": "Cardiff City FC",
-      "away": "Wrexham AFC",
-      "homeScore": null,
-      "awayScore": null
-    },
     {
       "id": 564635,
       "status": "TIMED",
@@ -18,6 +8,16 @@
       "competition": "Primera Division",
       "home": "RC Deportivo La Coruña",
       "away": "Elche CF",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "id": 561772,
+      "status": "TIMED",
+      "utcDate": "2026-08-17T19:00:00Z",
+      "competition": "Championship",
+      "home": "Cardiff City FC",
+      "away": "Wrexham AFC",
       "homeScore": null,
       "awayScore": null
     },
