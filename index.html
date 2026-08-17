@@ -3,111 +3,481 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="KoraKoora - مباريات اليوم، النتائج، الأخبار والترتيب.">
+
+  <meta name="description"
+        content="KoraKoora - مباريات اليوم والنتائج مباشرة بتوقيت المغرب.">
+
   <title>KoraKoora | مباريات اليوم</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <header class="topbar">
   <div class="container nav">
-    <a class="brand" href="#">Kora<span>Koora</span></a>
+
+    <a class="brand" href="#">
+      Kora<span>Koora</span>
+    </a>
+
     <nav>
       <a class="active" href="#">الرئيسية</a>
       <a href="#matches">مباريات اليوم</a>
       <a href="#leagues">البطولات</a>
       <a href="#news">الأخبار</a>
     </nav>
+
     <button class="search" aria-label="بحث">⌕</button>
+
   </div>
 </header>
 
+
 <main>
+
+  <!-- HERO -->
   <section class="hero">
+
     <div class="container hero-inner">
+
       <div>
-        <p class="eyebrow">⚽ كرة القدم بين يديك</p>
-        <h1>مباريات اليوم<br><span>بشكل سريع وواضح</span></h1>
-        <p class="lead">تابع المواعيد والنتائج وآخر أخبار كرة القدم في مكان واحد.</p>
+
+        <p class="eyebrow">
+          ⚽ كرة القدم بين يديك
+        </p>
+
+        <h1>
+          مباريات اليوم
+          <br>
+          <span>بشكل سريع وواضح</span>
+        </h1>
+
+        <p class="lead">
+          تابع المواعيد والنتائج وآخر أخبار كرة القدم
+          في مكان واحد.
+        </p>
+
       </div>
+
+
       <div class="hero-card">
-        <div class="live-dot">● مباشر</div>
-        <strong>تابع أهم المباريات</strong>
-        <span>النتائج والمواعيد بتوقيت المغرب</span>
+
+        <div class="live-dot">
+          ● مباشر
+        </div>
+
+        <strong>
+          تابع أهم المباريات
+        </strong>
+
+        <span>
+          النتائج والمواعيد بتوقيت المغرب
+        </span>
+
       </div>
+
     </div>
+
   </section>
 
+
   <div class="container">
-    <div class="ad-slot">مساحة إعلانية</div>
 
+    <div class="ad-slot">
+      مساحة إعلانية
+    </div>
+
+
+    <!-- MATCHES -->
     <section id="matches" class="section">
+
       <div class="section-head">
+
         <div>
-          <p class="eyebrow">اليوم</p>
-          <h2>مباريات اليوم</h2>
+
+          <p class="eyebrow">
+            اليوم
+          </p>
+
+          <h2>
+            مباريات اليوم
+          </h2>
+
         </div>
+
         <div class="days">
-          <button>أمس</button><button class="selected">اليوم</button><button>غدًا</button>
+          <button>أمس</button>
+          <button class="selected">اليوم</button>
+          <button>غدًا</button>
         </div>
+
       </div>
 
-      <div class="league">
-        <div class="league-title"><span>🏆 الدوري الإسباني</span><small>مباريات اليوم</small></div>
-        <article class="match">
-          <div class="team"><b>ريال مدريد</b><span>🇪🇸</span></div>
-          <div class="time"><strong>20:00</strong><small>لم تبدأ</small></div>
-          <div class="team"><span>🇪🇸</span><b>برشلونة</b></div>
-        </article>
-        <article class="match">
-          <div class="team"><b>أتلتيكو مدريد</b><span>🇪🇸</span></div>
-          <div class="time"><strong>22:30</strong><small>لم تبدأ</small></div>
-          <div class="team"><span>🇪🇸</span><b>إشبيلية</b></div>
-        </article>
+
+      <!-- هنا ستظهر المباريات تلقائيا -->
+      <div id="liveMatches">
+
+        <div class="empty">
+          جاري تحميل المباريات...
+        </div>
+
       </div>
 
-      <div class="league">
-        <div class="league-title"><span>🏆 الدوري الإنجليزي</span><small>مباريات اليوم</small></div>
-        <article class="match">
-          <div class="team"><b>ليفربول</b><span>🏴</span></div>
-          <div class="time"><strong>21:00</strong><small>لم تبدأ</small></div>
-          <div class="team"><span>🏴</span><b>أرسنال</b></div>
-        </article>
-      </div>
     </section>
 
-    <div class="ad-slot">مساحة إعلانية</div>
 
+    <div class="ad-slot">
+      مساحة إعلانية
+    </div>
+
+
+    <!-- LEAGUES -->
     <section id="leagues" class="section">
-      <div class="section-head"><div><p class="eyebrow">استكشف</p><h2>أهم البطولات</h2></div></div>
+
+      <div class="section-head">
+
+        <div>
+
+          <p class="eyebrow">
+            استكشف
+          </p>
+
+          <h2>
+            أهم البطولات
+          </h2>
+
+        </div>
+
+      </div>
+
+
       <div class="league-grid">
-        <div>🇪🇸<strong>الدوري الإسباني</strong></div>
-        <div>🏴<strong>الدوري الإنجليزي</strong></div>
-        <div>🇫🇷<strong>الدوري الفرنسي</strong></div>
-        <div>🇮🇹<strong>الدوري الإيطالي</strong></div>
-        <div>🇩🇪<strong>الدوري الألماني</strong></div>
-        <div>🏆<strong>دوري أبطال أوروبا</strong></div>
+
+        <div>
+          🇪🇸
+          <strong>الدوري الإسباني</strong>
+        </div>
+
+        <div>
+          🏴
+          <strong>الدوري الإنجليزي</strong>
+        </div>
+
+        <div>
+          🇫🇷
+          <strong>الدوري الفرنسي</strong>
+        </div>
+
+        <div>
+          🇮🇹
+          <strong>الدوري الإيطالي</strong>
+        </div>
+
+        <div>
+          🇩🇪
+          <strong>الدوري الألماني</strong>
+        </div>
+
+        <div>
+          🏆
+          <strong>دوري أبطال أوروبا</strong>
+        </div>
+
       </div>
+
     </section>
 
+
+    <!-- NEWS -->
     <section id="news" class="section">
-      <div class="section-head"><div><p class="eyebrow">آخر المستجدات</p><h2>أخبار وتحليلات</h2></div></div>
-      <div class="news-grid">
-        <article><div class="news-image">⚽</div><h3>أخبار كرة القدم اليوم</h3><p>مكان مخصص للمقالات والتحليلات الأصلية.</p></article>
-        <article><div class="news-image">🏆</div><h3>دليل مباريات الأسبوع</h3><p>تعرف على أبرز المواجهات القادمة.</p></article>
-        <article><div class="news-image">📊</div><h3>أرقام وإحصائيات</h3><p>إحصائيات الفرق والبطولات بشكل مبسط.</p></article>
+
+      <div class="section-head">
+
+        <div>
+
+          <p class="eyebrow">
+            آخر المستجدات
+          </p>
+
+          <h2>
+            أخبار وتحليلات
+          </h2>
+
+        </div>
+
       </div>
+
+
+      <div class="news-grid">
+
+        <article>
+
+          <div class="news-image">
+            ⚽
+          </div>
+
+          <h3>
+            أخبار كرة القدم اليوم
+          </h3>
+
+          <p>
+            مكان مخصص للمقالات والتحليلات الأصلية.
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <div class="news-image">
+            🏆
+          </div>
+
+          <h3>
+            دليل مباريات الأسبوع
+          </h3>
+
+          <p>
+            تعرف على أبرز المواجهات القادمة.
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <div class="news-image">
+            📊
+          </div>
+
+          <h3>
+            أرقام وإحصائيات
+          </h3>
+
+          <p>
+            إحصائيات الفرق والبطولات بشكل مبسط.
+          </p>
+
+        </article>
+
+      </div>
+
     </section>
 
-    <div class="ad-slot">مساحة إعلانية</div>
+
+    <div class="ad-slot">
+      مساحة إعلانية
+    </div>
+
   </div>
+
 </main>
 
+
 <footer>
+
   <div class="container footer">
-    <div><a class="brand" href="#">Kora<span>Koora</span></a><p>مباريات، نتائج وأخبار كرة القدم.</p></div>
-    <div class="footer-links"><a href="#">من نحن</a><a href="#">اتصل بنا</a><a href="#">سياسة الخصوصية</a><a href="#">شروط الاستخدام</a></div>
+
+    <div>
+
+      <a class="brand" href="#">
+        Kora<span>Koora</span>
+      </a>
+
+      <p>
+        مباريات، نتائج وأخبار كرة القدم.
+      </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <a href="#">
+        من نحن
+      </a>
+
+      <a href="#">
+        اتصل بنا
+      </a>
+
+      <a href="#">
+        سياسة الخصوصية
+      </a>
+
+      <a href="#">
+        شروط الاستخدام
+      </a>
+
+    </div>
+
   </div>
-  <div class="copyright">© 2026 KoraKoora — جميع الحقوق محفوظة</div>
+
+
+  <div class="copyright">
+    © 2026 KoraKoora — جميع الحقوق محفوظة
+  </div>
+
 </footer>
+
+
+<script>
+
+const list = document.querySelector("#liveMatches");
+
+
+function time(utc) {
+
+  if (!utc) {
+    return "--:--";
+  }
+
+  return new Intl.DateTimeFormat(
+    "ar-MA",
+    {
+      hour: "2-digit",
+      minute: "2-digit",
+      timeZone: "Africa/Casablanca"
+    }
+  ).format(new Date(utc));
+
+}
+
+
+async function loadMatches() {
+
+  try {
+
+    const response = await fetch(
+      "data/matches.json?time=" + Date.now()
+    );
+
+    if (!response.ok) {
+      throw new Error("Failed to load matches");
+    }
+
+    const data = await response.json();
+
+    const matches = data.matches || [];
+
+
+    if (!matches.length) {
+
+      list.innerHTML =
+        '<div class="empty">لا توجد مباريات متاحة حاليًا.</div>';
+
+      return;
+
+    }
+
+
+    list.innerHTML = matches
+      .slice(0, 30)
+      .map(match => {
+
+        let matchTime;
+
+
+        if (match.status === "FINISHED") {
+
+          matchTime =
+            `${match.homeScore ?? "-"} - ${match.awayScore ?? "-"}`;
+
+        } else {
+
+          matchTime =
+            time(match.utcDate);
+
+        }
+
+
+        let statusText;
+
+        if (match.status === "LIVE") {
+
+          statusText = "🔴 مباشر";
+
+        } else if (match.status === "FINISHED") {
+
+          statusText = "انتهت";
+
+        } else {
+
+          statusText = "لم تبدأ";
+
+        }
+
+
+        return `
+
+          <article class="match">
+
+            <div class="team">
+
+              <b>
+                ${match.home || "فريق"}
+              </b>
+
+              <span>
+                ⚽
+              </span>
+
+            </div>
+
+
+            <div class="time">
+
+              <strong>
+                ${matchTime}
+              </strong>
+
+              <small>
+                ${statusText}
+              </small>
+
+              <small>
+                ${match.competition || "مباراة"}
+              </small>
+
+            </div>
+
+
+            <div class="team">
+
+              <span>
+                ⚽
+              </span>
+
+              <b>
+                ${match.away || "فريق"}
+              </b>
+
+            </div>
+
+          </article>
+
+        `;
+
+      })
+      .join("");
+
+
+  } catch (error) {
+
+    console.error(error);
+
+    list.innerHTML =
+      '<div class="empty">تعذر تحميل المباريات حاليًا.</div>';
+
+  }
+
+}
+
+
+loadMatches();
+
+</script>
+
 </body>
 </html>
