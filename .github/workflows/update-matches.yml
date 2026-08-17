@@ -1,157 +1,349 @@
-name: Update football matches
+<!doctype html>
+<html lang="ar" dir="rtl">
 
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: "*/30 * * * *"
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-permissions:
-  contents: write
+  <meta name="description"
+        content="KoraKoora - مباريات اليوم والنتائج مباشرة بتوقيت المغرب.">
 
-jobs:
-  update:
-    runs-on: ubuntu-latest
+  <title>KoraKoora | مباريات اليوم</title>
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+  <link rel="stylesheet" href="style.css">
+</head>
 
-      - name: Fetch football matches
-        env:
-          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
-        run: |
-          python - <<'PY'
-          import json
-          import os
-          import urllib.request
-          import urllib.error
-          from datetime import datetime, timezone, timedelta
+<body>
 
-          token = os.environ.get("FOOTBALL_DATA_TOKEN")
+<header class="topbar">
 
-          if not token:
-              raise SystemExit("FOOTBALL_DATA_TOKEN is missing")
+  <div class="container nav">
 
-          now = datetime.now(timezone.utc)
+    <a class="brand" href="#">
+      Kora<span>Koora</span>
+    </a>
 
-          # اليوم + 9 أيام قادمة
-          date_from = now.strftime("%Y-%m-%d")
-          date_to = (now + timedelta(days=9)).strftime("%Y-%m-%d")
+    <nav>
+      <a class="active" href="#">الرئيسية</a>
+      <a href="#matches">مباريات اليوم</a>
+      <a href="#leagues">البطولات</a>
+      <a href="#news">الأخبار</a>
+    </nav>
 
-          url = (
-              "https://api.football-data.org/v4/matches"
-              f"?dateFrom={date_from}&dateTo={date_to}"
-          )
+    <button class="search" aria-label="بحث">
+      ⌕
+    </button>
 
-          request = urllib.request.Request(
-              url,
-              headers={
-                  "X-Auth-Token": token,
-                  "User-Agent": "KoraKoora"
-              }
-          )
+  </div>
 
-          try:
-              with urllib.request.urlopen(request, timeout=30) as response:
-                  data = json.load(response)
+</header>
 
-          except urllib.error.HTTPError as e:
-              print("Football API error:", e.code)
-              print(e.read().decode("utf-8", errors="ignore"))
-              raise
 
-          matches = []
+<main>
 
-          for match in data.get("matches", []):
-              score = match.get("score") or {}
-              full_time = score.get("fullTime") or {}
-              half_time = score.get("halfTime") or {}
+  <!-- HERO -->
 
-              competition = match.get("competition") or {}
-              home_team = match.get("homeTeam") or {}
-              away_team = match.get("awayTeam") or {}
+  <section class="hero">
 
-              matches.append({
-                  "id": match.get("id"),
-                  "status": match.get("status"),
-                  "utcDate": match.get("utcDate"),
+    <div class="container hero-inner">
 
-                  "competition": {
-                      "id": competition.get("id"),
-                      "name": competition.get("name"),
-                      "code": competition.get("code")
-                  },
+      <div>
 
-                  "home": {
-                      "id": home_team.get("id"),
-                      "name": home_team.get("name"),
-                      "shortName": home_team.get("shortName"),
-                      "crest": home_team.get("crest")
-                  },
+        <p class="eyebrow">
+          ⚽ كرة القدم بين يديك
+        </p>
 
-                  "away": {
-                      "id": away_team.get("id"),
-                      "name": away_team.get("name"),
-                      "shortName": away_team.get("shortName"),
-                      "crest": away_team.get("crest")
-                  },
+        <h1>
+          مباريات اليوم
+          <br>
+          <span>بشكل سريع وواضح</span>
+        </h1>
 
-                  "score": {
-                      "halfTime": {
-                          "home": half_time.get("home"),
-                          "away": half_time.get("away")
-                      },
-                      "fullTime": {
-                          "home": full_time.get("home"),
-                          "away": full_time.get("away")
-                      }
-                  }
-              })
+        <p class="lead">
+          تابع المواعيد والنتائج وآخر أخبار كرة القدم
+          في مكان واحد.
+        </p>
 
-          matches.sort(key=lambda x: x.get("utcDate") or "")
+      </div>
 
-          output = {
-              "updatedAt": now.isoformat(),
-              "dateFrom": date_from,
-              "dateTo": date_to,
-              "count": len(matches),
-              "matches": matches
-          }
 
-          os.makedirs("data", exist_ok=True)
+      <div class="hero-card">
 
-          with open(
-              "data/matches.json",
-              "w",
-              encoding="utf-8"
-          ) as file:
-              json.dump(
-                  output,
-                  file,
-                  ensure_ascii=False,
-                  indent=2
-              )
+        <div class="live-dot">
+          ● مباشر
+        </div>
 
-          print(f"Successfully fetched {len(matches)} matches.")
-          print(f"From: {date_from}")
-          print(f"To:   {date_to}")
-          PY
+        <strong>
+          تابع أهم المباريات
+        </strong>
 
-      - name: Show generated data
-        run: |
-          echo "===== matches.json ====="
-          cat data/matches.json
+        <span>
+          النتائج والمواعيد بتوقيت المغرب
+        </span>
 
-      - name: Publish updated data
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      </div>
 
-          git add data/matches.json
+    </div>
 
-          if git diff --cached --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "Update football matches"
-            git push
-          fi
+  </section>
+
+
+  <div class="container">
+
+    <div class="ad-slot">
+      مساحة إعلانية
+    </div>
+
+
+    <!-- MATCHES -->
+
+    <section id="matches" class="section">
+
+      <div class="section-head">
+
+        <div>
+
+          <p class="eyebrow">
+            اليوم
+          </p>
+
+          <h2>
+            مباريات اليوم
+          </h2>
+
+        </div>
+
+
+        <div class="days">
+
+          <button id="yesterdayBtn">
+            أمس
+          </button>
+
+          <button id="todayBtn" class="selected">
+            اليوم
+          </button>
+
+          <button id="tomorrowBtn">
+            غدًا
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <div id="liveMatches">
+
+        <div class="empty">
+          جاري تحميل المباريات...
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <div class="ad-slot">
+      مساحة إعلانية
+    </div>
+
+
+    <!-- LEAGUES -->
+
+    <section id="leagues" class="section">
+
+      <div class="section-head">
+
+        <div>
+
+          <p class="eyebrow">
+            استكشف
+          </p>
+
+          <h2>
+            أهم البطولات
+          </h2>
+
+        </div>
+
+      </div>
+
+
+      <div class="league-grid">
+
+        <div>
+          🇪🇸
+          <strong>الدوري الإسباني</strong>
+        </div>
+
+        <div>
+          🏴
+          <strong>الدوري الإنجليزي</strong>
+        </div>
+
+        <div>
+          🇫🇷
+          <strong>الدوري الفرنسي</strong>
+        </div>
+
+        <div>
+          🇮🇹
+          <strong>الدوري الإيطالي</strong>
+        </div>
+
+        <div>
+          🇩🇪
+          <strong>الدوري الألماني</strong>
+        </div>
+
+        <div>
+          🏆
+          <strong>دوري أبطال أوروبا</strong>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- NEWS -->
+
+    <section id="news" class="section">
+
+      <div class="section-head">
+
+        <div>
+
+          <p class="eyebrow">
+            آخر المستجدات
+          </p>
+
+          <h2>
+            أخبار وتحليلات
+          </h2>
+
+        </div>
+
+      </div>
+
+
+      <div class="news-grid">
+
+        <article>
+
+          <div class="news-image">
+            ⚽
+          </div>
+
+          <h3>
+            أخبار كرة القدم اليوم
+          </h3>
+
+          <p>
+            مكان مخصص للمقالات والتحليلات الأصلية.
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <div class="news-image">
+            🏆
+          </div>
+
+          <h3>
+            دليل مباريات الأسبوع
+          </h3>
+
+          <p>
+            تعرف على أبرز المواجهات القادمة.
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <div class="news-image">
+            📊
+          </div>
+
+          <h3>
+            أرقام وإحصائيات
+          </h3>
+
+          <p>
+            إحصائيات الفرق والبطولات بشكل مبسط.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <div class="ad-slot">
+      مساحة إعلانية
+    </div>
+
+  </div>
+
+</main>
+
+
+<footer>
+
+  <div class="container footer">
+
+    <div>
+
+      <a class="brand" href="#">
+        Kora<span>Koora</span>
+      </a>
+
+      <p>
+        مباريات، نتائج وأخبار كرة القدم.
+      </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <a href="#">
+        من نحن
+      </a>
+
+      <a href="#">
+        اتصل بنا
+      </a>
+
+      <a href="#">
+        سياسة الخصوصية
+      </a>
+
+      <a href="#">
+        شروط الاستخدام
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <div class="copyright">
+    © 2026 KoraKoora — جميع الحقوق محفوظة
+  </div>
+
+</footer>
+
+
+<!-- JavaScript -->
+
+<script src="app.js"></script>
+
+</body>
+</html>
