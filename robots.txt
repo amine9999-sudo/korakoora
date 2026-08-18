@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://amine9999-sudo.github.io/korakoora/sitemap.xml
