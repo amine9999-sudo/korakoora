@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T07:26:26.076649+00:00",
+  "updatedAt": "2026-08-18T09:06:43.491998+00:00",
   "dateFrom": "2026-08-18",
   "dateTo": "2026-08-27",
   "count": 86,
@@ -24,38 +24,6 @@
         "name": "Fluminense FC",
         "shortName": "Fluminense",
         "crest": "https://crests.football-data.org/1765.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "id": 564465,
-      "status": "SCHEDULED",
-      "utcDate": "2026-08-19T00:30:00Z",
-      "competition": {
-        "id": 2152,
-        "name": "Copa Libertadores",
-        "code": "CLI"
-      },
-      "home": {
-        "id": 6993,
-        "name": "CD Universidad Católica",
-        "shortName": "Univ Católica",
-        "crest": "https://crests.football-data.org/6993.png"
-      },
-      "away": {
-        "id": 2051,
-        "name": "Estudiantes de La Plata",
-        "shortName": "Estudiantes LP",
-        "crest": "https://crests.football-data.org/2051.png"
       },
       "score": {
         "halfTime": {
@@ -101,6 +69,38 @@
       }
     },
     {
+      "id": 564465,
+      "status": "SCHEDULED",
+      "utcDate": "2026-08-19T00:30:00Z",
+      "competition": {
+        "id": 2152,
+        "name": "Copa Libertadores",
+        "code": "CLI"
+      },
+      "home": {
+        "id": 6993,
+        "name": "CD Universidad Católica",
+        "shortName": "Univ Católica",
+        "crest": "https://crests.football-data.org/6993.png"
+      },
+      "away": {
+        "id": 2051,
+        "name": "Estudiantes de La Plata",
+        "shortName": "Estudiantes LP",
+        "crest": "https://crests.football-data.org/2051.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
       "id": 564628,
       "status": "TIMED",
       "utcDate": "2026-08-19T19:00:00Z",
@@ -133,38 +133,6 @@
       }
     },
     {
-      "id": 564467,
-      "status": "SCHEDULED",
-      "utcDate": "2026-08-19T22:00:00Z",
-      "competition": {
-        "id": 2152,
-        "name": "Copa Libertadores",
-        "code": "CLI"
-      },
-      "home": {
-        "id": 7912,
-        "name": "CD Coquimbo Unido",
-        "shortName": "Coquimbo Unido",
-        "crest": "https://crests.football-data.org/7912.png"
-      },
-      "away": {
-        "id": 7580,
-        "name": "CA Platense",
-        "shortName": "Platense",
-        "crest": "https://crests.football-data.org/7580.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
       "id": 564466,
       "status": "SCHEDULED",
       "utcDate": "2026-08-19T22:00:00Z",
@@ -184,6 +152,38 @@
         "name": "SE Palmeiras",
         "shortName": "Palmeiras",
         "crest": "https://crests.football-data.org/1769.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 564467,
+      "status": "SCHEDULED",
+      "utcDate": "2026-08-19T22:00:00Z",
+      "competition": {
+        "id": 2152,
+        "name": "Copa Libertadores",
+        "code": "CLI"
+      },
+      "home": {
+        "id": 7912,
+        "name": "CD Coquimbo Unido",
+        "shortName": "Coquimbo Unido",
+        "crest": "https://crests.football-data.org/7912.png"
+      },
+      "away": {
+        "id": 7580,
+        "name": "CA Platense",
+        "shortName": "Platense",
+        "crest": "https://crests.football-data.org/7580.png"
       },
       "score": {
         "halfTime": {
@@ -357,38 +357,6 @@
       }
     },
     {
-      "id": 560542,
-      "status": "TIMED",
-      "utcDate": "2026-08-21T19:00:00Z",
-      "competition": {
-        "id": 2021,
-        "name": "Premier League",
-        "code": "PL"
-      },
-      "home": {
-        "id": 57,
-        "name": "Arsenal FC",
-        "shortName": "Arsenal",
-        "crest": "https://crests.football-data.org/57.png"
-      },
-      "away": {
-        "id": 1076,
-        "name": "Coventry City FC",
-        "shortName": "Coventry City",
-        "crest": "https://crests.football-data.org/1076.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
       "id": 564647,
       "status": "TIMED",
       "utcDate": "2026-08-21T19:00:00Z",
@@ -408,6 +376,38 @@
         "name": "Real Sociedad de Fútbol",
         "shortName": "Real Sociedad",
         "crest": "https://crests.football-data.org/92.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 560542,
+      "status": "TIMED",
+      "utcDate": "2026-08-21T19:00:00Z",
+      "competition": {
+        "id": 2021,
+        "name": "Premier League",
+        "code": "PL"
+      },
+      "home": {
+        "id": 57,
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "crest": "https://crests.football-data.org/57.png"
+      },
+      "away": {
+        "id": 1076,
+        "name": "Coventry City FC",
+        "shortName": "Coventry City",
+        "crest": "https://crests.football-data.org/1076.png"
       },
       "score": {
         "halfTime": {
@@ -453,6 +453,38 @@
       }
     },
     {
+      "id": 561781,
+      "status": "TIMED",
+      "utcDate": "2026-08-22T11:30:00Z",
+      "competition": {
+        "id": 2016,
+        "name": "Championship",
+        "code": "ELC"
+      },
+      "home": {
+        "id": 1126,
+        "name": "Lincoln City FC",
+        "shortName": "Lincoln City",
+        "crest": "https://crests.football-data.org/1126.png"
+      },
+      "away": {
+        "id": 325,
+        "name": "Portsmouth FC",
+        "shortName": "Portsmouth",
+        "crest": "https://crests.football-data.org/325.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
       "id": 560543,
       "status": "TIMED",
       "utcDate": "2026-08-22T11:30:00Z",
@@ -472,38 +504,6 @@
         "name": "Manchester United FC",
         "shortName": "Man United",
         "crest": "https://crests.football-data.org/66.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "id": 561784,
-      "status": "TIMED",
-      "utcDate": "2026-08-22T11:30:00Z",
-      "competition": {
-        "id": 2016,
-        "name": "Championship",
-        "code": "ELC"
-      },
-      "home": {
-        "id": 384,
-        "name": "Millwall FC",
-        "shortName": "Millwall",
-        "crest": "https://crests.football-data.org/384.png"
-      },
-      "away": {
-        "id": 68,
-        "name": "Norwich City FC",
-        "shortName": "Norwich",
-        "crest": "https://crests.football-data.org/68.png"
       },
       "score": {
         "halfTime": {
@@ -549,7 +549,7 @@
       }
     },
     {
-      "id": 561781,
+      "id": 561784,
       "status": "TIMED",
       "utcDate": "2026-08-22T11:30:00Z",
       "competition": {
@@ -558,16 +558,16 @@
         "code": "ELC"
       },
       "home": {
-        "id": 1126,
-        "name": "Lincoln City FC",
-        "shortName": "Lincoln City",
-        "crest": "https://crests.football-data.org/1126.png"
+        "id": 384,
+        "name": "Millwall FC",
+        "shortName": "Millwall",
+        "crest": "https://crests.football-data.org/384.png"
       },
       "away": {
-        "id": 325,
-        "name": "Portsmouth FC",
-        "shortName": "Portsmouth",
-        "crest": "https://crests.football-data.org/325.png"
+        "id": 68,
+        "name": "Norwich City FC",
+        "shortName": "Norwich",
+        "crest": "https://crests.football-data.org/68.png"
       },
       "score": {
         "halfTime": {
@@ -581,39 +581,7 @@
       }
     },
     {
-      "id": 560545,
-      "status": "TIMED",
-      "utcDate": "2026-08-22T14:00:00Z",
-      "competition": {
-        "id": 2021,
-        "name": "Premier League",
-        "code": "PL"
-      },
-      "home": {
-        "id": 351,
-        "name": "Nottingham Forest FC",
-        "shortName": "Nottingham",
-        "crest": "https://crests.football-data.org/351.png"
-      },
-      "away": {
-        "id": 341,
-        "name": "Leeds United FC",
-        "shortName": "Leeds United",
-        "crest": "https://crests.football-data.org/341.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "id": 561780,
+      "id": 561775,
       "status": "TIMED",
       "utcDate": "2026-08-22T14:00:00Z",
       "competition": {
@@ -622,176 +590,16 @@
         "code": "ELC"
       },
       "home": {
-        "id": 59,
-        "name": "Blackburn Rovers FC",
-        "shortName": "Blackburn",
-        "crest": "https://crests.football-data.org/59.png"
+        "id": 563,
+        "name": "West Ham United FC",
+        "shortName": "West Ham",
+        "crest": "https://crests.football-data.org/563.png"
       },
       "away": {
-        "id": 343,
-        "name": "Middlesbrough FC",
-        "shortName": "Middlesbrough",
-        "crest": "https://crests.football-data.org/343.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "id": 561782,
-      "status": "TIMED",
-      "utcDate": "2026-08-22T14:00:00Z",
-      "competition": {
-        "id": 2016,
-        "name": "Championship",
-        "code": "ELC"
-      },
-      "home": {
-        "id": 340,
-        "name": "Southampton FC",
-        "shortName": "Southampton",
-        "crest": "https://crests.football-data.org/340.png"
-      },
-      "away": {
-        "id": 70,
-        "name": "Stoke City FC",
-        "shortName": "Stoke",
-        "crest": "https://crests.football-data.org/70.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "id": 561778,
-      "status": "TIMED",
-      "utcDate": "2026-08-22T14:00:00Z",
-      "competition": {
-        "id": 2016,
-        "name": "Championship",
-        "code": "ELC"
-      },
-      "home": {
-        "id": 1081,
-        "name": "Preston North End FC",
-        "shortName": "Preston NE",
-        "crest": "https://crests.football-data.org/1081.png"
-      },
-      "away": {
-        "id": 76,
-        "name": "Wolverhampton Wanderers FC",
-        "shortName": "Wolverhampton",
-        "crest": "https://crests.football-data.org/76.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "id": 561774,
-      "status": "TIMED",
-      "utcDate": "2026-08-22T14:00:00Z",
-      "competition": {
-        "id": 2016,
-        "name": "Championship",
-        "code": "ELC"
-      },
-      "home": {
-        "id": 72,
-        "name": "Swansea City AFC",
-        "shortName": "Swansea",
-        "crest": "https://crests.football-data.org/72.png"
-      },
-      "away": {
-        "id": 356,
-        "name": "Sheffield United FC",
-        "shortName": "Sheffield Utd",
-        "crest": "https://crests.football-data.org/356.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "id": 560544,
-      "status": "TIMED",
-      "utcDate": "2026-08-22T14:00:00Z",
-      "competition": {
-        "id": 2021,
-        "name": "Premier League",
-        "code": "PL"
-      },
-      "home": {
-        "id": 349,
-        "name": "Ipswich Town FC",
-        "shortName": "Ipswich Town",
-        "crest": "https://crests.football-data.org/349.png"
-      },
-      "away": {
-        "id": 71,
-        "name": "Sunderland AFC",
-        "shortName": "Sunderland",
-        "crest": "https://crests.football-data.org/71.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "id": 560546,
-      "status": "TIMED",
-      "utcDate": "2026-08-22T14:00:00Z",
-      "competition": {
-        "id": 2021,
-        "name": "Premier League",
-        "code": "PL"
-      },
-      "home": {
-        "id": 62,
-        "name": "Everton FC",
-        "shortName": "Everton",
-        "crest": "https://crests.football-data.org/62.png"
-      },
-      "away": {
-        "id": 354,
-        "name": "Crystal Palace FC",
-        "shortName": "Crystal Palace",
-        "crest": "https://crests.football-data.org/354.png"
+        "id": 348,
+        "name": "Charlton Athletic FC",
+        "shortName": "Charlton",
+        "crest": "https://crests.football-data.org/348.png"
       },
       "score": {
         "halfTime": {
@@ -869,6 +677,38 @@
       }
     },
     {
+      "id": 560545,
+      "status": "TIMED",
+      "utcDate": "2026-08-22T14:00:00Z",
+      "competition": {
+        "id": 2021,
+        "name": "Premier League",
+        "code": "PL"
+      },
+      "home": {
+        "id": 351,
+        "name": "Nottingham Forest FC",
+        "shortName": "Nottingham",
+        "crest": "https://crests.football-data.org/351.png"
+      },
+      "away": {
+        "id": 341,
+        "name": "Leeds United FC",
+        "shortName": "Leeds United",
+        "crest": "https://crests.football-data.org/341.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
       "id": 561779,
       "status": "TIMED",
       "utcDate": "2026-08-22T14:00:00Z",
@@ -901,7 +741,39 @@
       }
     },
     {
-      "id": 561775,
+      "id": 560546,
+      "status": "TIMED",
+      "utcDate": "2026-08-22T14:00:00Z",
+      "competition": {
+        "id": 2021,
+        "name": "Premier League",
+        "code": "PL"
+      },
+      "home": {
+        "id": 62,
+        "name": "Everton FC",
+        "shortName": "Everton",
+        "crest": "https://crests.football-data.org/62.png"
+      },
+      "away": {
+        "id": 354,
+        "name": "Crystal Palace FC",
+        "shortName": "Crystal Palace",
+        "crest": "https://crests.football-data.org/354.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 561780,
       "status": "TIMED",
       "utcDate": "2026-08-22T14:00:00Z",
       "competition": {
@@ -910,16 +782,144 @@
         "code": "ELC"
       },
       "home": {
-        "id": 563,
-        "name": "West Ham United FC",
-        "shortName": "West Ham",
-        "crest": "https://crests.football-data.org/563.png"
+        "id": 59,
+        "name": "Blackburn Rovers FC",
+        "shortName": "Blackburn",
+        "crest": "https://crests.football-data.org/59.png"
       },
       "away": {
-        "id": 348,
-        "name": "Charlton Athletic FC",
-        "shortName": "Charlton",
-        "crest": "https://crests.football-data.org/348.png"
+        "id": 343,
+        "name": "Middlesbrough FC",
+        "shortName": "Middlesbrough",
+        "crest": "https://crests.football-data.org/343.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 561782,
+      "status": "TIMED",
+      "utcDate": "2026-08-22T14:00:00Z",
+      "competition": {
+        "id": 2016,
+        "name": "Championship",
+        "code": "ELC"
+      },
+      "home": {
+        "id": 340,
+        "name": "Southampton FC",
+        "shortName": "Southampton",
+        "crest": "https://crests.football-data.org/340.png"
+      },
+      "away": {
+        "id": 70,
+        "name": "Stoke City FC",
+        "shortName": "Stoke",
+        "crest": "https://crests.football-data.org/70.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 560544,
+      "status": "TIMED",
+      "utcDate": "2026-08-22T14:00:00Z",
+      "competition": {
+        "id": 2021,
+        "name": "Premier League",
+        "code": "PL"
+      },
+      "home": {
+        "id": 349,
+        "name": "Ipswich Town FC",
+        "shortName": "Ipswich Town",
+        "crest": "https://crests.football-data.org/349.png"
+      },
+      "away": {
+        "id": 71,
+        "name": "Sunderland AFC",
+        "shortName": "Sunderland",
+        "crest": "https://crests.football-data.org/71.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 561778,
+      "status": "TIMED",
+      "utcDate": "2026-08-22T14:00:00Z",
+      "competition": {
+        "id": 2016,
+        "name": "Championship",
+        "code": "ELC"
+      },
+      "home": {
+        "id": 1081,
+        "name": "Preston North End FC",
+        "shortName": "Preston NE",
+        "crest": "https://crests.football-data.org/1081.png"
+      },
+      "away": {
+        "id": 76,
+        "name": "Wolverhampton Wanderers FC",
+        "shortName": "Wolverhampton",
+        "crest": "https://crests.football-data.org/76.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 561774,
+      "status": "TIMED",
+      "utcDate": "2026-08-22T14:00:00Z",
+      "competition": {
+        "id": 2016,
+        "name": "Championship",
+        "code": "ELC"
+      },
+      "home": {
+        "id": 72,
+        "name": "Swansea City AFC",
+        "shortName": "Swansea",
+        "crest": "https://crests.football-data.org/72.png"
+      },
+      "away": {
+        "id": 356,
+        "name": "Sheffield United FC",
+        "shortName": "Sheffield Utd",
+        "crest": "https://crests.football-data.org/356.png"
       },
       "score": {
         "halfTime": {
@@ -1285,70 +1285,6 @@
       }
     },
     {
-      "id": 559711,
-      "status": "SCHEDULED",
-      "utcDate": "2026-08-22T18:45:00Z",
-      "competition": {
-        "id": 2015,
-        "name": "Ligue 1",
-        "code": "FL1"
-      },
-      "home": {
-        "id": 535,
-        "name": "Le Mans FC",
-        "shortName": "Le Mans",
-        "crest": "https://upload.wikimedia.org/wikipedia/en/5/57/Le_Mans_FC_logo.svg"
-      },
-      "away": {
-        "id": 512,
-        "name": "Stade Brestois 29",
-        "shortName": "Brest",
-        "crest": "https://crests.football-data.org/512.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "id": 558631,
-      "status": "TIMED",
-      "utcDate": "2026-08-22T18:45:00Z",
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA"
-      },
-      "home": {
-        "id": 107,
-        "name": "Genoa CFC",
-        "shortName": "Genoa",
-        "crest": "https://crests.football-data.org/107.png"
-      },
-      "away": {
-        "id": 113,
-        "name": "SSC Napoli",
-        "shortName": "Napoli",
-        "crest": "https://crests.football-data.org/113.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
       "id": 559718,
       "status": "SCHEDULED",
       "utcDate": "2026-08-22T18:45:00Z",
@@ -1432,6 +1368,70 @@
         "name": "FC Lorient",
         "shortName": "Lorient",
         "crest": "https://crests.football-data.org/525.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 559711,
+      "status": "SCHEDULED",
+      "utcDate": "2026-08-22T18:45:00Z",
+      "competition": {
+        "id": 2015,
+        "name": "Ligue 1",
+        "code": "FL1"
+      },
+      "home": {
+        "id": 535,
+        "name": "Le Mans FC",
+        "shortName": "Le Mans",
+        "crest": "https://upload.wikimedia.org/wikipedia/en/5/57/Le_Mans_FC_logo.svg"
+      },
+      "away": {
+        "id": 512,
+        "name": "Stade Brestois 29",
+        "shortName": "Brest",
+        "crest": "https://crests.football-data.org/512.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 558631,
+      "status": "TIMED",
+      "utcDate": "2026-08-22T18:45:00Z",
+      "competition": {
+        "id": 2019,
+        "name": "Serie A",
+        "code": "SA"
+      },
+      "home": {
+        "id": 107,
+        "name": "Genoa CFC",
+        "shortName": "Genoa",
+        "crest": "https://crests.football-data.org/107.png"
+      },
+      "away": {
+        "id": 113,
+        "name": "SSC Napoli",
+        "shortName": "Napoli",
+        "crest": "https://crests.football-data.org/113.png"
       },
       "score": {
         "halfTime": {
@@ -2245,38 +2245,6 @@
       }
     },
     {
-      "id": 554979,
-      "status": "TIMED",
-      "utcDate": "2026-08-23T19:00:00Z",
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA"
-      },
-      "home": {
-        "id": 1782,
-        "name": "EC Vitória",
-        "shortName": "Vitória",
-        "crest": "https://crests.football-data.org/1782.png"
-      },
-      "away": {
-        "id": 1777,
-        "name": "EC Bahia",
-        "shortName": "Bahia",
-        "crest": "https://crests.football-data.org/1777.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
       "id": 554977,
       "status": "TIMED",
       "utcDate": "2026-08-23T19:00:00Z",
@@ -2296,6 +2264,38 @@
         "name": "CR Vasco da Gama",
         "shortName": "Vasco da Gama",
         "crest": "https://crests.football-data.org/1780.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 554979,
+      "status": "TIMED",
+      "utcDate": "2026-08-23T19:00:00Z",
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA"
+      },
+      "home": {
+        "id": 1782,
+        "name": "EC Vitória",
+        "shortName": "Vitória",
+        "crest": "https://crests.football-data.org/1782.png"
+      },
+      "away": {
+        "id": 1777,
+        "name": "EC Bahia",
+        "shortName": "Bahia",
+        "crest": "https://crests.football-data.org/1777.png"
       },
       "score": {
         "halfTime": {
