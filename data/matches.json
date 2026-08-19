@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T17:02:02.824215+00:00",
+  "updatedAt": "2026-08-19T18:03:11.011516+00:00",
   "dateFrom": "2026-08-18",
   "dateTo": "2026-08-28",
   "competitions": [
@@ -89,43 +89,6 @@
       }
     },
     {
-      "id": 560544,
-      "status": "TIMED",
-      "utcDate": "2026-08-22T14:00:00Z",
-      "matchday": 1,
-      "stage": "REGULAR_SEASON",
-      "competition": {
-        "id": 2021,
-        "name": "Premier League",
-        "code": "PL",
-        "emblem": "https://crests.football-data.org/PL.png"
-      },
-      "home": {
-        "id": 349,
-        "name": "Ipswich Town FC",
-        "shortName": "Ipswich Town",
-        "tla": "IPS",
-        "crest": "https://crests.football-data.org/349.png"
-      },
-      "away": {
-        "id": 71,
-        "name": "Sunderland AFC",
-        "shortName": "Sunderland",
-        "tla": "SUN",
-        "crest": "https://crests.football-data.org/71.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
       "id": 560546,
       "status": "TIMED",
       "utcDate": "2026-08-22T14:00:00Z",
@@ -150,6 +113,43 @@
         "shortName": "Crystal Palace",
         "tla": "CRY",
         "crest": "https://crests.football-data.org/354.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 560544,
+      "status": "TIMED",
+      "utcDate": "2026-08-22T14:00:00Z",
+      "matchday": 1,
+      "stage": "REGULAR_SEASON",
+      "competition": {
+        "id": 2021,
+        "name": "Premier League",
+        "code": "PL",
+        "emblem": "https://crests.football-data.org/PL.png"
+      },
+      "home": {
+        "id": 349,
+        "name": "Ipswich Town FC",
+        "shortName": "Ipswich Town",
+        "tla": "IPS",
+        "crest": "https://crests.football-data.org/349.png"
+      },
+      "away": {
+        "id": 71,
+        "name": "Sunderland AFC",
+        "shortName": "Sunderland",
+        "tla": "SUN",
+        "crest": "https://crests.football-data.org/71.png"
       },
       "score": {
         "halfTime": {
