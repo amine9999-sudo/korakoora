@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T11:56:00.146289+00:00",
+  "updatedAt": "2026-08-19T14:07:23.391357+00:00",
   "dateFrom": "2026-08-18",
   "dateTo": "2026-08-28",
   "competitions": [
@@ -1088,43 +1088,6 @@
       }
     },
     {
-      "id": 558635,
-      "status": "TIMED",
-      "utcDate": "2026-08-23T16:30:00Z",
-      "matchday": 1,
-      "stage": "REGULAR_SEASON",
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "emblem": "https://crests.football-data.org/c111.png"
-      },
-      "home": {
-        "id": 470,
-        "name": "Frosinone Calcio",
-        "shortName": "Frosinone",
-        "tla": "FRO",
-        "crest": "https://crests.football-data.org/470.png"
-      },
-      "away": {
-        "id": 109,
-        "name": "Juventus FC",
-        "shortName": "Juventus",
-        "tla": "JUV",
-        "crest": "https://crests.football-data.org/109.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
       "id": 558637,
       "status": "TIMED",
       "utcDate": "2026-08-23T16:30:00Z",
@@ -1149,6 +1112,43 @@
         "shortName": "Lecce",
         "tla": "USL",
         "crest": "https://crests.football-data.org/5890.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 558635,
+      "status": "TIMED",
+      "utcDate": "2026-08-23T16:30:00Z",
+      "matchday": 1,
+      "stage": "REGULAR_SEASON",
+      "competition": {
+        "id": 2019,
+        "name": "Serie A",
+        "code": "SA",
+        "emblem": "https://crests.football-data.org/c111.png"
+      },
+      "home": {
+        "id": 470,
+        "name": "Frosinone Calcio",
+        "shortName": "Frosinone",
+        "tla": "FRO",
+        "crest": "https://crests.football-data.org/470.png"
+      },
+      "away": {
+        "id": 109,
+        "name": "Juventus FC",
+        "shortName": "Juventus",
+        "tla": "JUV",
+        "crest": "https://crests.football-data.org/109.png"
       },
       "score": {
         "halfTime": {
@@ -1421,6 +1421,43 @@
       }
     },
     {
+      "id": 559718,
+      "status": "TIMED",
+      "utcDate": "2026-08-22T18:45:00Z",
+      "matchday": 1,
+      "stage": "REGULAR_SEASON",
+      "competition": {
+        "id": 2015,
+        "name": "Ligue 1",
+        "code": "FL1",
+        "emblem": "https://crests.football-data.org/FL1.png"
+      },
+      "home": {
+        "id": 511,
+        "name": "Toulouse FC",
+        "shortName": "Toulouse",
+        "tla": "TOU",
+        "crest": "https://crests.football-data.org/511.png"
+      },
+      "away": {
+        "id": 523,
+        "name": "Olympique Lyonnais",
+        "shortName": "Olympique Lyon",
+        "tla": "LYO",
+        "crest": "https://crests.football-data.org/523.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
       "id": 559714,
       "status": "TIMED",
       "utcDate": "2026-08-22T18:45:00Z",
@@ -1482,43 +1519,6 @@
         "shortName": "Lorient",
         "tla": "FCL",
         "crest": "https://crests.football-data.org/525.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "id": 559718,
-      "status": "TIMED",
-      "utcDate": "2026-08-22T18:45:00Z",
-      "matchday": 1,
-      "stage": "REGULAR_SEASON",
-      "competition": {
-        "id": 2015,
-        "name": "Ligue 1",
-        "code": "FL1",
-        "emblem": "https://crests.football-data.org/FL1.png"
-      },
-      "home": {
-        "id": 511,
-        "name": "Toulouse FC",
-        "shortName": "Toulouse",
-        "tla": "TOU",
-        "crest": "https://crests.football-data.org/511.png"
-      },
-      "away": {
-        "id": 523,
-        "name": "Olympique Lyonnais",
-        "shortName": "Olympique Lyon",
-        "tla": "LYO",
-        "crest": "https://crests.football-data.org/523.png"
       },
       "score": {
         "halfTime": {
