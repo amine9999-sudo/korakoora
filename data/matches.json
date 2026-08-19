@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T05:05:56.183070+00:00",
+  "updatedAt": "2026-08-19T07:26:46.905983+00:00",
   "dateFrom": "2026-08-18",
   "dateTo": "2026-08-28",
   "competitions": [
@@ -126,43 +126,6 @@
       }
     },
     {
-      "id": 560546,
-      "status": "TIMED",
-      "utcDate": "2026-08-22T14:00:00Z",
-      "matchday": 1,
-      "stage": "REGULAR_SEASON",
-      "competition": {
-        "id": 2021,
-        "name": "Premier League",
-        "code": "PL",
-        "emblem": "https://crests.football-data.org/PL.png"
-      },
-      "home": {
-        "id": 62,
-        "name": "Everton FC",
-        "shortName": "Everton",
-        "tla": "EVE",
-        "crest": "https://crests.football-data.org/62.png"
-      },
-      "away": {
-        "id": 354,
-        "name": "Crystal Palace FC",
-        "shortName": "Crystal Palace",
-        "tla": "CRY",
-        "crest": "https://crests.football-data.org/354.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
       "id": 560544,
       "status": "TIMED",
       "utcDate": "2026-08-22T14:00:00Z",
@@ -187,6 +150,43 @@
         "shortName": "Sunderland",
         "tla": "SUN",
         "crest": "https://crests.football-data.org/71.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 560546,
+      "status": "TIMED",
+      "utcDate": "2026-08-22T14:00:00Z",
+      "matchday": 1,
+      "stage": "REGULAR_SEASON",
+      "competition": {
+        "id": 2021,
+        "name": "Premier League",
+        "code": "PL",
+        "emblem": "https://crests.football-data.org/PL.png"
+      },
+      "home": {
+        "id": 62,
+        "name": "Everton FC",
+        "shortName": "Everton",
+        "tla": "EVE",
+        "crest": "https://crests.football-data.org/62.png"
+      },
+      "away": {
+        "id": 354,
+        "name": "Crystal Palace FC",
+        "shortName": "Crystal Palace",
+        "tla": "CRY",
+        "crest": "https://crests.football-data.org/354.png"
       },
       "score": {
         "halfTime": {
@@ -940,43 +940,6 @@
       }
     },
     {
-      "id": 558632,
-      "status": "TIMED",
-      "utcDate": "2026-08-22T16:30:00Z",
-      "matchday": 1,
-      "stage": "REGULAR_SEASON",
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "emblem": "https://crests.football-data.org/c111.png"
-      },
-      "home": {
-        "id": 108,
-        "name": "FC Internazionale Milano",
-        "shortName": "Inter",
-        "tla": "INT",
-        "crest": "https://crests.football-data.org/108.png"
-      },
-      "away": {
-        "id": 5911,
-        "name": "AC Monza",
-        "shortName": "Monza",
-        "tla": "MON",
-        "crest": "https://crests.football-data.org/5911.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
       "id": 558629,
       "status": "TIMED",
       "utcDate": "2026-08-22T16:30:00Z",
@@ -1014,9 +977,9 @@
       }
     },
     {
-      "id": 558636,
+      "id": 558632,
       "status": "TIMED",
-      "utcDate": "2026-08-22T18:45:00Z",
+      "utcDate": "2026-08-22T16:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "competition": {
@@ -1026,18 +989,18 @@
         "emblem": "https://crests.football-data.org/c111.png"
       },
       "home": {
-        "id": 112,
-        "name": "Parma Calcio 1913",
-        "shortName": "Parma",
-        "tla": "PAR",
-        "crest": "https://crests.football-data.org/112.png"
+        "id": 108,
+        "name": "FC Internazionale Milano",
+        "shortName": "Inter",
+        "tla": "INT",
+        "crest": "https://crests.football-data.org/108.png"
       },
       "away": {
-        "id": 104,
-        "name": "Cagliari Calcio",
-        "shortName": "Cagliari",
-        "tla": "CAG",
-        "crest": "https://crests.football-data.org/104.png"
+        "id": 5911,
+        "name": "AC Monza",
+        "shortName": "Monza",
+        "tla": "MON",
+        "crest": "https://crests.football-data.org/5911.png"
       },
       "score": {
         "halfTime": {
@@ -1088,9 +1051,9 @@
       }
     },
     {
-      "id": 558635,
+      "id": 558636,
       "status": "TIMED",
-      "utcDate": "2026-08-23T16:30:00Z",
+      "utcDate": "2026-08-22T18:45:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "competition": {
@@ -1100,18 +1063,18 @@
         "emblem": "https://crests.football-data.org/c111.png"
       },
       "home": {
-        "id": 470,
-        "name": "Frosinone Calcio",
-        "shortName": "Frosinone",
-        "tla": "FRO",
-        "crest": "https://crests.football-data.org/470.png"
+        "id": 112,
+        "name": "Parma Calcio 1913",
+        "shortName": "Parma",
+        "tla": "PAR",
+        "crest": "https://crests.football-data.org/112.png"
       },
       "away": {
-        "id": 109,
-        "name": "Juventus FC",
-        "shortName": "Juventus",
-        "tla": "JUV",
-        "crest": "https://crests.football-data.org/109.png"
+        "id": 104,
+        "name": "Cagliari Calcio",
+        "shortName": "Cagliari",
+        "tla": "CAG",
+        "crest": "https://crests.football-data.org/104.png"
       },
       "score": {
         "halfTime": {
@@ -1162,9 +1125,9 @@
       }
     },
     {
-      "id": 558634,
+      "id": 558635,
       "status": "TIMED",
-      "utcDate": "2026-08-23T18:45:00Z",
+      "utcDate": "2026-08-23T16:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "competition": {
@@ -1174,18 +1137,18 @@
         "emblem": "https://crests.football-data.org/c111.png"
       },
       "home": {
-        "id": 586,
-        "name": "Torino FC",
-        "shortName": "Torino",
-        "tla": "TOR",
-        "crest": "https://crests.football-data.org/586.png"
+        "id": 470,
+        "name": "Frosinone Calcio",
+        "shortName": "Frosinone",
+        "tla": "FRO",
+        "crest": "https://crests.football-data.org/470.png"
       },
       "away": {
-        "id": 98,
-        "name": "AC Milan",
-        "shortName": "Milan",
-        "tla": "MIL",
-        "crest": "https://crests.football-data.org/98.png"
+        "id": 109,
+        "name": "Juventus FC",
+        "shortName": "Juventus",
+        "tla": "JUV",
+        "crest": "https://crests.football-data.org/109.png"
       },
       "score": {
         "halfTime": {
@@ -1223,6 +1186,43 @@
         "shortName": "Sassuolo",
         "tla": "SAS",
         "crest": "https://crests.football-data.org/471.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 558634,
+      "status": "TIMED",
+      "utcDate": "2026-08-23T18:45:00Z",
+      "matchday": 1,
+      "stage": "REGULAR_SEASON",
+      "competition": {
+        "id": 2019,
+        "name": "Serie A",
+        "code": "SA",
+        "emblem": "https://crests.football-data.org/c111.png"
+      },
+      "home": {
+        "id": 586,
+        "name": "Torino FC",
+        "shortName": "Torino",
+        "tla": "TOR",
+        "crest": "https://crests.football-data.org/586.png"
+      },
+      "away": {
+        "id": 98,
+        "name": "AC Milan",
+        "shortName": "Milan",
+        "tla": "MIL",
+        "crest": "https://crests.football-data.org/98.png"
       },
       "score": {
         "halfTime": {
@@ -1384,7 +1384,7 @@
       }
     },
     {
-      "id": 559716,
+      "id": 559711,
       "status": "TIMED",
       "utcDate": "2026-08-22T18:45:00Z",
       "matchday": 1,
@@ -1396,18 +1396,18 @@
         "emblem": "https://crests.football-data.org/FL1.png"
       },
       "home": {
-        "id": 522,
-        "name": "OGC Nice",
-        "shortName": "Nice",
-        "tla": "NIC",
-        "crest": "https://crests.football-data.org/522.png"
+        "id": 535,
+        "name": "Le Mans FC",
+        "shortName": "Le Mans",
+        "tla": "LMF",
+        "crest": "https://upload.wikimedia.org/wikipedia/en/5/57/Le_Mans_FC_logo.svg"
       },
       "away": {
-        "id": 525,
-        "name": "FC Lorient",
-        "shortName": "Lorient",
-        "tla": "FCL",
-        "crest": "https://crests.football-data.org/525.png"
+        "id": 512,
+        "name": "Stade Brestois 29",
+        "shortName": "Brest",
+        "tla": "BRE",
+        "crest": "https://crests.football-data.org/512.png"
       },
       "score": {
         "halfTime": {
@@ -1495,7 +1495,7 @@
       }
     },
     {
-      "id": 559711,
+      "id": 559716,
       "status": "TIMED",
       "utcDate": "2026-08-22T18:45:00Z",
       "matchday": 1,
@@ -1507,18 +1507,18 @@
         "emblem": "https://crests.football-data.org/FL1.png"
       },
       "home": {
-        "id": 535,
-        "name": "Le Mans FC",
-        "shortName": "Le Mans",
-        "tla": "LMF",
-        "crest": "https://upload.wikimedia.org/wikipedia/en/5/57/Le_Mans_FC_logo.svg"
+        "id": 522,
+        "name": "OGC Nice",
+        "shortName": "Nice",
+        "tla": "NIC",
+        "crest": "https://crests.football-data.org/522.png"
       },
       "away": {
-        "id": 512,
-        "name": "Stade Brestois 29",
-        "shortName": "Brest",
-        "tla": "BRE",
-        "crest": "https://crests.football-data.org/512.png"
+        "id": 525,
+        "name": "FC Lorient",
+        "shortName": "Lorient",
+        "tla": "FCL",
+        "crest": "https://crests.football-data.org/525.png"
       },
       "score": {
         "halfTime": {
