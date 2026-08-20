@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T14:03:26.625427+00:00",
+  "updatedAt": "2026-08-20T16:01:59.028381+00:00",
   "dateFrom": "2026-08-19",
   "dateTo": "2026-08-29",
   "competitions": [
@@ -89,43 +89,6 @@
       }
     },
     {
-      "id": 560544,
-      "status": "TIMED",
-      "utcDate": "2026-08-22T14:00:00Z",
-      "matchday": 1,
-      "stage": "REGULAR_SEASON",
-      "competition": {
-        "id": 2021,
-        "name": "Premier League",
-        "code": "PL",
-        "emblem": "https://crests.football-data.org/PL.png"
-      },
-      "home": {
-        "id": 349,
-        "name": "Ipswich Town FC",
-        "shortName": "Ipswich Town",
-        "tla": "IPS",
-        "crest": "https://crests.football-data.org/349.png"
-      },
-      "away": {
-        "id": 71,
-        "name": "Sunderland AFC",
-        "shortName": "Sunderland",
-        "tla": "SUN",
-        "crest": "https://crests.football-data.org/71.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
       "id": 560546,
       "status": "TIMED",
       "utcDate": "2026-08-22T14:00:00Z",
@@ -150,6 +113,43 @@
         "shortName": "Crystal Palace",
         "tla": "CRY",
         "crest": "https://crests.football-data.org/354.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 560544,
+      "status": "TIMED",
+      "utcDate": "2026-08-22T14:00:00Z",
+      "matchday": 1,
+      "stage": "REGULAR_SEASON",
+      "competition": {
+        "id": 2021,
+        "name": "Premier League",
+        "code": "PL",
+        "emblem": "https://crests.football-data.org/PL.png"
+      },
+      "home": {
+        "id": 349,
+        "name": "Ipswich Town FC",
+        "shortName": "Ipswich Town",
+        "tla": "IPS",
+        "crest": "https://crests.football-data.org/349.png"
+      },
+      "away": {
+        "id": 71,
+        "name": "Sunderland AFC",
+        "shortName": "Sunderland",
+        "tla": "SUN",
+        "crest": "https://crests.football-data.org/71.png"
       },
       "score": {
         "halfTime": {
@@ -1866,7 +1866,7 @@
     },
     {
       "id": 567283,
-      "status": "TIMED",
+      "status": "2026-08-22 14:30:00Z",
       "utcDate": "2026-08-22T14:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -1903,7 +1903,7 @@
     },
     {
       "id": 567279,
-      "status": "TIMED",
+      "status": "2026-08-22 17:00:00Z",
       "utcDate": "2026-08-22T17:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -1940,7 +1940,7 @@
     },
     {
       "id": 567275,
-      "status": "TIMED",
+      "status": "2026-08-22 19:30:00Z",
       "utcDate": "2026-08-22T19:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -1977,7 +1977,7 @@
     },
     {
       "id": 567278,
-      "status": "TIMED",
+      "status": "2026-08-23 14:30:00Z",
       "utcDate": "2026-08-23T14:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2014,7 +2014,7 @@
     },
     {
       "id": 567281,
-      "status": "TIMED",
+      "status": "2026-08-23 17:00:00Z",
       "utcDate": "2026-08-23T17:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2051,7 +2051,7 @@
     },
     {
       "id": 567280,
-      "status": "TIMED",
+      "status": "2026-08-23 19:30:00Z",
       "utcDate": "2026-08-23T19:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2088,7 +2088,7 @@
     },
     {
       "id": 567277,
-      "status": "TIMED",
+      "status": "2026-08-24 19:15:00Z",
       "utcDate": "2026-08-24T19:15:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2125,7 +2125,7 @@
     },
     {
       "id": 567291,
-      "status": "TIMED",
+      "status": "2026-08-28 19:15:00Z",
       "utcDate": "2026-08-28T19:15:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
