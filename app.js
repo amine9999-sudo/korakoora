@@ -4,7 +4,7 @@
    - أمس
    - اليوم
    - غدًا
-   - توقيت المغرب
+   - توقيت الزائر تلقائيًا
    - ترتيب البطولات
    - أسماء البطولات
    - أزرار التنقل بين الأيام
@@ -19,7 +19,19 @@ const list = document.querySelector("#liveMatches");
 
 const API_FILE = "data/matches.json";
 
-const TIME_ZONE = "Africa/Casablanca";
+
+/*
+   لا نحدد Time Zone هنا.
+
+   المتصفح سيستخدم المنطقة الزمنية الموجودة
+   في جهاز الزائر تلقائيًا.
+
+   مثال:
+   المغرب → Africa/Casablanca
+   فرنسا → Europe/Paris
+   أمريكا → America/New_York
+   اليابان → Asia/Tokyo
+*/
 
 
 /* =========================================================
@@ -31,8 +43,6 @@ let selectedDay = "today";
 
 /* =========================================================
    أسماء البطولات
-   ---------------------------------------------------------
-   هنا نستطيع لاحقًا تغيير أسماء البطولات كما تريد
    ========================================================= */
 
 const LEAGUE_NAMES = {
@@ -74,8 +84,6 @@ const LEAGUE_NAMES = {
 
 /* =========================================================
    ترتيب البطولات
-   ---------------------------------------------------------
-   الرقم الأصغر = يظهر أولًا
    ========================================================= */
 
 const LEAGUE_ORDER = [
@@ -115,22 +123,47 @@ const LEAGUE_ORDER = [
    أزرار الأيام
    ========================================================= */
 
-const yesterdayBtn = document.querySelector("#yesterdayBtn");
+const yesterdayBtn =
+  document.querySelector("#yesterdayBtn");
 
-const todayBtn = document.querySelector("#todayBtn");
+const todayBtn =
+  document.querySelector("#todayBtn");
 
-const tomorrowBtn = document.querySelector("#tomorrowBtn");
+const tomorrowBtn =
+  document.querySelector("#tomorrowBtn");
 
 
 /* =========================================================
-   تحويل الوقت إلى توقيت المغرب
+   المنطقة الزمنية للزائر
+   ========================================================= */
+
+function getUserTimeZone() {
+
+  try {
+
+    return Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC";
+
+  } catch (error) {
+
+    return "UTC";
+
+  }
+
+}
+
+
+/* =========================================================
+   تحويل الوقت إلى توقيت الزائر
    ========================================================= */
 
 function formatTime(utc) {
 
   if (!utc) {
+
     return "--:--";
+
   }
+
 
   try {
 
@@ -142,7 +175,7 @@ function formatTime(utc) {
 
       hour12: false,
 
-      timeZone: TIME_ZONE
+      timeZone: getUserTimeZone()
 
     }).format(new Date(utc));
 
@@ -156,48 +189,59 @@ function formatTime(utc) {
 
 
 /* =========================================================
-   الحصول على تاريخ المباراة بتوقيت المغرب
+   الحصول على تاريخ المباراة بتوقيت الزائر
    ---------------------------------------------------------
-   النتيجة مثل:
-   2026-08-18
+   النتيجة:
+   2026-08-20
    ========================================================= */
 
-function getMoroccoDateKey(utc) {
+function getLocalDateKey(utc) {
 
   if (!utc) {
+
     return null;
+
   }
+
 
   try {
 
-    const parts = new Intl.DateTimeFormat("en-CA", {
+    const parts =
+      new Intl.DateTimeFormat("en-CA", {
 
-      timeZone: TIME_ZONE,
+        timeZone: getUserTimeZone(),
 
-      year: "numeric",
+        year: "numeric",
 
-      month: "2-digit",
+        month: "2-digit",
 
-      day: "2-digit"
+        day: "2-digit"
 
-    }).formatToParts(new Date(utc));
+      }).formatToParts(new Date(utc));
 
 
-    const year = parts.find(
-      part => part.type === "year"
-    )?.value;
+    const year =
+      parts.find(
+        part => part.type === "year"
+      )?.value;
 
-    const month = parts.find(
-      part => part.type === "month"
-    )?.value;
 
-    const day = parts.find(
-      part => part.type === "day"
-    )?.value;
+    const month =
+      parts.find(
+        part => part.type === "month"
+      )?.value;
+
+
+    const day =
+      parts.find(
+        part => part.type === "day"
+      )?.value;
 
 
     if (!year || !month || !day) {
+
       return null;
+
     }
 
 
@@ -213,12 +257,14 @@ function getMoroccoDateKey(utc) {
 
 
 /* =========================================================
-   تاريخ اليوم في المغرب
+   الحصول على تاريخ اليوم حسب الزائر
    ========================================================= */
 
 function getTodayKey() {
 
-  return getMoroccoDateKey(new Date().toISOString());
+  return getLocalDateKey(
+    new Date().toISOString()
+  );
 
 }
 
@@ -229,22 +275,72 @@ function getTodayKey() {
 
 function addDays(dateKey, amount) {
 
-  const date = new Date(`${dateKey}T12:00:00`);
+  if (!dateKey) {
 
-  date.setDate(date.getDate() + amount);
+    return null;
 
-  const year = date.getFullYear();
-
-  const month = String(
-    date.getMonth() + 1
-  ).padStart(2, "0");
-
-  const day = String(
-    date.getDate()
-  ).padStart(2, "0");
+  }
 
 
-  return `${year}-${month}-${day}`;
+  const parts =
+    dateKey.split("-").map(Number);
+
+
+  if (parts.length !== 3) {
+
+    return null;
+
+  }
+
+
+  const year = parts[0];
+
+  const month = parts[1];
+
+  const day = parts[2];
+
+
+  const date =
+    new Date(
+      year,
+      month - 1,
+      day,
+      12,
+      0,
+      0,
+      0
+    );
+
+
+  if (Number.isNaN(date.getTime())) {
+
+    return null;
+
+  }
+
+
+  date.setDate(
+    date.getDate() + amount
+  );
+
+
+  const newYear =
+    date.getFullYear();
+
+
+  const newMonth =
+    String(
+      date.getMonth() + 1
+    ).padStart(2, "0");
+
+
+  const newDay =
+    String(
+      date.getDate()
+    ).padStart(2, "0");
+
+
+  return `${newYear}-${newMonth}-${newDay}`;
 
 }
 
@@ -255,19 +351,37 @@ function addDays(dateKey, amount) {
 
 function getSelectedDateKey() {
 
-  const today = getTodayKey();
+  const today =
+    getTodayKey();
 
 
-  if (selectedDay === "yesterday") {
+  if (!today) {
 
-    return addDays(today, -1);
+    return null;
 
   }
 
 
-  if (selectedDay === "tomorrow") {
+  if (
+    selectedDay === "yesterday"
+  ) {
 
-    return addDays(today, 1);
+    return addDays(
+      today,
+      -1
+    );
+
+  }
+
+
+  if (
+    selectedDay === "tomorrow"
+  ) {
+
+    return addDays(
+      today,
+      1
+    );
 
   }
 
@@ -281,7 +395,10 @@ function getSelectedDateKey() {
    تنظيف النصوص
    ========================================================= */
 
-function safeText(value, fallback = "") {
+function safeText(
+  value,
+  fallback = ""
+) {
 
   if (
     value === null ||
@@ -293,7 +410,9 @@ function safeText(value, fallback = "") {
   }
 
 
-  if (typeof value === "object") {
+  if (
+    typeof value === "object"
+  ) {
 
     return (
 
@@ -411,9 +530,10 @@ function teamLogo(team) {
 
 function getStatus(match) {
 
-  const status = String(
-    match.status || ""
-  ).toUpperCase();
+  const status =
+    String(
+      match.status || ""
+    ).toUpperCase();
 
 
   const liveStatuses = [
@@ -523,7 +643,9 @@ function getStatus(match) {
 
 function getScore(match) {
 
-  const score = match.score || {};
+  const score =
+    match.score || {};
+
 
   const fullTime =
     score.fullTime || {};
@@ -605,32 +727,36 @@ function normalizeMatch(match) {
     typeof match.competition === "object"
   ) {
 
-    originalCompetition = safeText(
+    originalCompetition =
+      safeText(
 
-      match.competition.name ||
+        match.competition.name ||
 
-      match.competition.code,
+        match.competition.code,
 
-      "بطولة"
+        "بطولة"
 
-    );
+      );
 
   } else {
 
-    originalCompetition = safeText(
+    originalCompetition =
+      safeText(
 
-      match.competition,
+        match.competition,
 
-      "بطولات أخرى"
+        "بطولات أخرى"
 
-    );
+      );
 
   }
 
 
   const competition =
 
-    LEAGUE_NAMES[originalCompetition] ||
+    LEAGUE_NAMES[
+      originalCompetition
+    ] ||
 
     originalCompetition;
 
@@ -697,6 +823,7 @@ function renderMatch(match) {
     `;
 
   }
+
 
   /*
      المباراة غير المنتهية:
@@ -810,19 +937,16 @@ function groupByCompetition(matches) {
 function sortLeagues(entries) {
 
   return entries.sort(
+
     ([nameA], [nameB]) => {
 
       const indexA =
         LEAGUE_ORDER.indexOf(nameA);
 
+
       const indexB =
         LEAGUE_ORDER.indexOf(nameB);
 
-
-      /*
-         البطولات الموجودة في القائمة
-         تأتي أولًا.
-      */
 
       if (
         indexA !== -1 &&
@@ -852,17 +976,13 @@ function sortLeagues(entries) {
       }
 
 
-      /*
-         أي بطولة غير موجودة
-         ترتب أبجديًا.
-      */
-
       return nameA.localeCompare(
         nameB,
         "ar"
       );
 
     }
+
   );
 
 }
@@ -878,6 +998,7 @@ function renderLeague(
 ) {
 
   matches.sort(
+
     (a, b) => {
 
       return (
@@ -893,6 +1014,7 @@ function renderLeague(
       );
 
     }
+
   );
 
 
@@ -919,12 +1041,15 @@ function renderLeague(
 
 
             <small>
+
               ${matches.length}
+
               ${
                 matches.length === 1
                   ? "مباراة"
                   : "مباريات"
               }
+
             </small>
 
           </div>
@@ -956,7 +1081,7 @@ function renderLeague(
 
 
 /* =========================================================
-   تحديث شكل أزرار الأيام
+   تحديث أزرار الأيام
    ========================================================= */
 
 function updateDayButtons() {
@@ -985,7 +1110,9 @@ function updateDayButtons() {
     ({ element, value }) => {
 
       if (!element) {
+
         return;
+
       }
 
 
@@ -1009,6 +1136,7 @@ function updateDayButtons() {
       );
 
     }
+
   );
 
 }
@@ -1020,9 +1148,26 @@ function updateDayButtons() {
 
 function changeDay(day) {
 
+  if (
+
+    day !== "yesterday" &&
+
+    day !== "today" &&
+
+    day !== "tomorrow"
+
+  ) {
+
+    return;
+
+  }
+
+
   selectedDay = day;
 
+
   updateDayButtons();
+
 
   loadMatches();
 
@@ -1038,8 +1183,14 @@ function setupDayButtons() {
   if (yesterdayBtn) {
 
     yesterdayBtn.addEventListener(
+
       "click",
-      () => changeDay("yesterday")
+
+      () =>
+        changeDay(
+          "yesterday"
+        )
+
     );
 
   }
@@ -1048,8 +1199,14 @@ function setupDayButtons() {
   if (todayBtn) {
 
     todayBtn.addEventListener(
+
       "click",
-      () => changeDay("today")
+
+      () =>
+        changeDay(
+          "today"
+        )
+
     );
 
   }
@@ -1058,8 +1215,14 @@ function setupDayButtons() {
   if (tomorrowBtn) {
 
     tomorrowBtn.addEventListener(
+
       "click",
-      () => changeDay("tomorrow")
+
+      () =>
+        changeDay(
+          "tomorrow"
+        )
+
     );
 
   }
@@ -1088,7 +1251,12 @@ function renderEmptyState() {
 
 
   const label =
-    labels[selectedDay];
+    labels[selectedDay] ||
+    "اليوم";
+
+
+  const timezone =
+    getUserTimeZone();
 
 
   list.innerHTML = `
@@ -1124,7 +1292,9 @@ function renderEmptyState() {
 async function loadMatches() {
 
   if (!list) {
+
     return;
+
   }
 
 
@@ -1173,7 +1343,9 @@ async function loadMatches() {
 
     let matches =
 
-      Array.isArray(data.matches)
+      Array.isArray(
+        data.matches
+      )
 
         ? data.matches
 
@@ -1185,12 +1357,14 @@ async function loadMatches() {
     */
 
     matches =
-      matches.map(normalizeMatch);
+      matches.map(
+        normalizeMatch
+      );
 
 
     /*
        التاريخ المطلوب
-       حسب الزر المختار
+       حسب توقيت الزائر
     */
 
     const targetDate =
@@ -1198,25 +1372,27 @@ async function loadMatches() {
 
 
     /*
-       أهم جزء في الإصلاح:
-       لا نعرض إلا مباريات
-       اليوم المحدد.
+       تصفية المباريات
+       حسب اليوم المحلي للزائر
     */
 
     matches =
-      matches.filter(match => {
+      matches.filter(
+        match => {
 
-        const matchDate =
-          getMoroccoDateKey(
-            match.utcDate
+          const matchDate =
+            getLocalDateKey(
+              match.utcDate
+            );
+
+
+          return (
+            matchDate ===
+            targetDate
           );
 
-
-        return (
-          matchDate === targetDate
-        );
-
-      });
+        }
+      );
 
 
     /*
@@ -1233,11 +1409,14 @@ async function loadMatches() {
 
 
     /*
-       تجميع حسب البطولات
+       تجميع المباريات
+       حسب البطولات
     */
 
     const groups =
-      groupByCompetition(matches);
+      groupByCompetition(
+        matches
+      );
 
 
     /*
@@ -1246,7 +1425,9 @@ async function loadMatches() {
 
     const sortedGroups =
       sortLeagues(
-        Object.entries(groups)
+        Object.entries(
+          groups
+        )
       );
 
 
@@ -1343,6 +1524,9 @@ loadMatches();
    ========================================================= */
 
 setInterval(
+
   loadMatches,
+
   5 * 60 * 1000
+
 );
