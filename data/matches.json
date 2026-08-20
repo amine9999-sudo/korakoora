@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-19T23:51:42.326979+00:00",
-  "dateFrom": "2026-08-18",
-  "dateTo": "2026-08-28",
+  "updatedAt": "2026-08-20T03:13:19.150959+00:00",
+  "dateFrom": "2026-08-19",
+  "dateTo": "2026-08-29",
   "competitions": [
     "CL",
     "PL",
@@ -12,7 +12,7 @@
     "PPL",
     "DED"
   ],
-  "count": 58,
+  "count": 66,
   "matches": [
     {
       "id": 560542,
@@ -126,43 +126,6 @@
       }
     },
     {
-      "id": 560544,
-      "status": "TIMED",
-      "utcDate": "2026-08-22T14:00:00Z",
-      "matchday": 1,
-      "stage": "REGULAR_SEASON",
-      "competition": {
-        "id": 2021,
-        "name": "Premier League",
-        "code": "PL",
-        "emblem": "https://crests.football-data.org/PL.png"
-      },
-      "home": {
-        "id": 349,
-        "name": "Ipswich Town FC",
-        "shortName": "Ipswich Town",
-        "tla": "IPS",
-        "crest": "https://crests.football-data.org/349.png"
-      },
-      "away": {
-        "id": 71,
-        "name": "Sunderland AFC",
-        "shortName": "Sunderland",
-        "tla": "SUN",
-        "crest": "https://crests.football-data.org/71.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
       "id": 560545,
       "status": "TIMED",
       "utcDate": "2026-08-22T14:00:00Z",
@@ -187,6 +150,43 @@
         "shortName": "Leeds United",
         "tla": "LEE",
         "crest": "https://crests.football-data.org/341.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 560544,
+      "status": "TIMED",
+      "utcDate": "2026-08-22T14:00:00Z",
+      "matchday": 1,
+      "stage": "REGULAR_SEASON",
+      "competition": {
+        "id": 2021,
+        "name": "Premier League",
+        "code": "PL",
+        "emblem": "https://crests.football-data.org/PL.png"
+      },
+      "home": {
+        "id": 349,
+        "name": "Ipswich Town FC",
+        "shortName": "Ipswich Town",
+        "tla": "IPS",
+        "crest": "https://crests.football-data.org/349.png"
+      },
+      "away": {
+        "id": 71,
+        "name": "Sunderland AFC",
+        "shortName": "Sunderland",
+        "tla": "SUN",
+        "crest": "https://crests.football-data.org/71.png"
       },
       "score": {
         "halfTime": {
@@ -372,6 +372,43 @@
         "shortName": "Chelsea",
         "tla": "CHE",
         "crest": "https://crests.football-data.org/61.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 560555,
+      "status": "TIMED",
+      "utcDate": "2026-08-28T19:00:00Z",
+      "matchday": 2,
+      "stage": "REGULAR_SEASON",
+      "competition": {
+        "id": 2021,
+        "name": "Premier League",
+        "code": "PL",
+        "emblem": "https://crests.football-data.org/PL.png"
+      },
+      "home": {
+        "id": 354,
+        "name": "Crystal Palace FC",
+        "shortName": "Crystal Palace",
+        "tla": "CRY",
+        "crest": "https://crests.football-data.org/354.png"
+      },
+      "away": {
+        "id": 65,
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "tla": "MCI",
+        "crest": "https://crests.football-data.org/65.png"
       },
       "score": {
         "halfTime": {
@@ -940,6 +977,80 @@
       }
     },
     {
+      "id": 564654,
+      "status": "TIMED",
+      "utcDate": "2026-08-28T17:00:00Z",
+      "matchday": 3,
+      "stage": "REGULAR_SEASON",
+      "competition": {
+        "id": 2014,
+        "name": "Primera Division",
+        "code": "PD",
+        "emblem": "https://crests.football-data.org/laliga.png"
+      },
+      "home": {
+        "id": 5335,
+        "name": "Real Racing Club de Santander",
+        "shortName": "Santander",
+        "tla": "SAN",
+        "crest": "https://crests.football-data.org/5335.png"
+      },
+      "away": {
+        "id": 285,
+        "name": "Elche CF",
+        "shortName": "Elche",
+        "tla": "ELC",
+        "crest": "https://crests.football-data.org/285.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 564648,
+      "status": "TIMED",
+      "utcDate": "2026-08-28T19:30:00Z",
+      "matchday": 3,
+      "stage": "REGULAR_SEASON",
+      "competition": {
+        "id": 2014,
+        "name": "Primera Division",
+        "code": "PD",
+        "emblem": "https://crests.football-data.org/laliga.png"
+      },
+      "home": {
+        "id": 263,
+        "name": "Deportivo Alavés",
+        "shortName": "Alavés",
+        "tla": "ALA",
+        "crest": "https://crests.football-data.org/263.png"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF",
+        "shortName": "Villarreal",
+        "tla": "VIL",
+        "crest": "https://crests.football-data.org/94.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
       "id": 558629,
       "status": "TIMED",
       "utcDate": "2026-08-22T16:30:00Z",
@@ -1310,6 +1421,80 @@
       }
     },
     {
+      "id": 558625,
+      "status": "TIMED",
+      "utcDate": "2026-08-28T18:45:00Z",
+      "matchday": 2,
+      "stage": "REGULAR_SEASON",
+      "competition": {
+        "id": 2019,
+        "name": "Serie A",
+        "code": "SA",
+        "emblem": "https://crests.football-data.org/c111.png"
+      },
+      "home": {
+        "id": 98,
+        "name": "AC Milan",
+        "shortName": "Milan",
+        "tla": "MIL",
+        "crest": "https://crests.football-data.org/98.png"
+      },
+      "away": {
+        "id": 454,
+        "name": "Venezia FC",
+        "shortName": "Venezia FC",
+        "tla": "VEN",
+        "crest": "https://crests.football-data.org/454.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 565776,
+      "status": "TIMED",
+      "utcDate": "2026-08-28T18:30:00Z",
+      "matchday": 1,
+      "stage": "REGULAR_SEASON",
+      "competition": {
+        "id": 2002,
+        "name": "Bundesliga",
+        "code": "BL1",
+        "emblem": "https://crests.football-data.org/BL1.png"
+      },
+      "home": {
+        "id": 5,
+        "name": "FC Bayern München",
+        "shortName": "Bayern",
+        "tla": "FCB",
+        "crest": "https://crests.football-data.org/5.png"
+      },
+      "away": {
+        "id": 10,
+        "name": "VfB Stuttgart",
+        "shortName": "Stuttgart",
+        "tla": "VFB",
+        "crest": "https://crests.football-data.org/10.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
       "id": 559715,
       "status": "TIMED",
       "utcDate": "2026-08-21T18:45:00Z",
@@ -1384,7 +1569,7 @@
       }
     },
     {
-      "id": 559711,
+      "id": 559716,
       "status": "TIMED",
       "utcDate": "2026-08-22T18:45:00Z",
       "matchday": 1,
@@ -1396,18 +1581,18 @@
         "emblem": "https://crests.football-data.org/FL1.png"
       },
       "home": {
-        "id": 535,
-        "name": "Le Mans FC",
-        "shortName": "Le Mans",
-        "tla": "LMF",
-        "crest": "https://upload.wikimedia.org/wikipedia/en/5/57/Le_Mans_FC_logo.svg"
+        "id": 522,
+        "name": "OGC Nice",
+        "shortName": "Nice",
+        "tla": "NIC",
+        "crest": "https://crests.football-data.org/522.png"
       },
       "away": {
-        "id": 512,
-        "name": "Stade Brestois 29",
-        "shortName": "Brest",
-        "tla": "BRE",
-        "crest": "https://crests.football-data.org/512.png"
+        "id": 525,
+        "name": "FC Lorient",
+        "shortName": "Lorient",
+        "tla": "FCL",
+        "crest": "https://crests.football-data.org/525.png"
       },
       "score": {
         "halfTime": {
@@ -1495,7 +1680,7 @@
       }
     },
     {
-      "id": 559716,
+      "id": 559711,
       "status": "TIMED",
       "utcDate": "2026-08-22T18:45:00Z",
       "matchday": 1,
@@ -1507,18 +1692,18 @@
         "emblem": "https://crests.football-data.org/FL1.png"
       },
       "home": {
-        "id": 522,
-        "name": "OGC Nice",
-        "shortName": "Nice",
-        "tla": "NIC",
-        "crest": "https://crests.football-data.org/522.png"
+        "id": 535,
+        "name": "Le Mans FC",
+        "shortName": "Le Mans",
+        "tla": "LMF",
+        "crest": "https://upload.wikimedia.org/wikipedia/en/5/57/Le_Mans_FC_logo.svg"
       },
       "away": {
-        "id": 525,
-        "name": "FC Lorient",
-        "shortName": "Lorient",
-        "tla": "FCL",
-        "crest": "https://crests.football-data.org/525.png"
+        "id": 512,
+        "name": "Stade Brestois 29",
+        "shortName": "Brest",
+        "tla": "BRE",
+        "crest": "https://crests.football-data.org/512.png"
       },
       "score": {
         "halfTime": {
@@ -1630,6 +1815,43 @@
         "shortName": "Stade Rennais",
         "tla": "REN",
         "crest": "https://crests.football-data.org/529.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 559702,
+      "status": "TIMED",
+      "utcDate": "2026-08-28T18:45:00Z",
+      "matchday": 2,
+      "stage": "REGULAR_SEASON",
+      "competition": {
+        "id": 2015,
+        "name": "Ligue 1",
+        "code": "FL1",
+        "emblem": "https://crests.football-data.org/FL1.png"
+      },
+      "home": {
+        "id": 521,
+        "name": "Lille OSC",
+        "shortName": "Lille",
+        "tla": "LIL",
+        "crest": "https://crests.football-data.org/521.png"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "tla": "PSG",
+        "crest": "https://crests.football-data.org/524.png"
       },
       "score": {
         "halfTime": {
@@ -1902,6 +2124,43 @@
       }
     },
     {
+      "id": 567291,
+      "status": "TIMED",
+      "utcDate": "2026-08-28T19:15:00Z",
+      "matchday": 4,
+      "stage": "REGULAR_SEASON",
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "home": {
+        "id": 496,
+        "name": "Rio Ave FC",
+        "shortName": "Rio Ave",
+        "tla": "RIO",
+        "crest": "https://crests.football-data.org/496.png"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting CP",
+        "tla": "SPO",
+        "crest": "https://crests.football-data.org/498.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
       "id": 558233,
       "status": "POSTPONED",
       "utcDate": "2026-08-22T00:00:00Z",
@@ -2148,6 +2407,43 @@
         "shortName": "Feyenoord",
         "tla": "FEY",
         "crest": "https://crests.football-data.org/675.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 558241,
+      "status": "TIMED",
+      "utcDate": "2026-08-28T18:00:00Z",
+      "matchday": 4,
+      "stage": "REGULAR_SEASON",
+      "competition": {
+        "id": 2003,
+        "name": "Eredivisie",
+        "code": "DED",
+        "emblem": "https://crests.football-data.org/ED.png"
+      },
+      "home": {
+        "id": 677,
+        "name": "FC Groningen",
+        "shortName": "Groningen",
+        "tla": "GRO",
+        "crest": "https://crests.football-data.org/677.png"
+      },
+      "away": {
+        "id": 1920,
+        "name": "Fortuna Sittard",
+        "shortName": "Sittard",
+        "tla": "SIT",
+        "crest": "https://crests.football-data.org/1920.png"
       },
       "score": {
         "halfTime": {
