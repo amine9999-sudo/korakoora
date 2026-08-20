@@ -23,7 +23,7 @@ jobs:
 
 
       # =====================================================
-      # 2. Fetch major competitions
+      # 2. Fetch football matches
       # =====================================================
 
       - name: Fetch football matches
@@ -57,31 +57,53 @@ jobs:
           API = "https://api.football-data.org/v4"
 
 
-          # البطولات المهمة التي نريدها في KoraKoora
+          # البطولات الرئيسية التي يعرضها KoraKoora
           COMPETITIONS = [
-              "CL",    # دوري أبطال أوروبا
-              "PL",    # الدوري الإنجليزي
-              "PD",    # الدوري الإسباني
-              "SA",    # الدوري الإيطالي
-              "BL1",   # الدوري الألماني
-              "FL1",   # الدوري الفرنسي
-              "PPL",   # الدوري البرتغالي
-              "DED"    # الدوري الهولندي
+              "CL",      # دوري أبطال أوروبا
+              "PL",      # الدوري الإنجليزي
+              "PD",      # الدوري الإسباني
+              "SA",      # الدوري الإيطالي
+              "BL1",     # الدوري الألماني
+              "FL1",     # الدوري الفرنسي
+              "PPL",     # الدوري البرتغالي
+              "DED"      # الدوري الهولندي
           ]
 
 
           # =================================================
           # Date range
           # =================================================
+          #
+          # مهم:
+          #
+          # app.js يحول UTC إلى توقيت الزائر.
+          #
+          # لذلك نحتاج إلى جلب نطاق أكبر من:
+          #
+          # أمس ← اليوم ← غدًا
+          #
+          # لضمان عدم فقدان أي مباراة عند اختلاف
+          # المناطق الزمنية بين الزوار.
+          #
+          # نستخدم:
+          #
+          # - يومين قبل UTC
+          # + عشرة أيام بعد UTC
+          #
+          # وهذا يعطي هامشًا آمنًا للمناطق الزمنية
+          # المختلفة حول العالم.
+          # =================================================
 
           now = datetime.now(timezone.utc)
 
+
           date_from = (
-              now - timedelta(days=1)
+              now - timedelta(days=2)
           ).strftime("%Y-%m-%d")
 
+
           date_to = (
-              now + timedelta(days=9)
+              now + timedelta(days=10)
           ).strftime("%Y-%m-%d")
 
 
@@ -97,7 +119,10 @@ jobs:
 
           def fetch_matches():
 
-              competitions = ",".join(COMPETITIONS)
+              competitions = ",".join(
+                  COMPETITIONS
+              )
+
 
               url = (
                   f"{API}/matches"
@@ -106,16 +131,29 @@ jobs:
                   f"&competitions={competitions}"
               )
 
-              print("API URL:")
+
+              print()
+              print("Football API request:")
               print(url)
+              print()
+
 
               request = urllib.request.Request(
+
                   url,
+
                   headers={
-                      "X-Auth-Token": TOKEN,
-                      "User-Agent": "KoraKoora/1.0"
+
+                      "X-Auth-Token":
+                          TOKEN,
+
+                      "User-Agent":
+                          "KoraKoora/1.0"
+
                   }
+
               )
+
 
               try:
 
@@ -124,7 +162,10 @@ jobs:
                       timeout=60
                   ) as response:
 
-                      return json.load(response)
+                      return json.load(
+                          response
+                      )
+
 
               except urllib.error.HTTPError as error:
 
@@ -133,6 +174,7 @@ jobs:
                       error.code
                   )
 
+
                   print(
                       error.read().decode(
                           "utf-8",
@@ -140,7 +182,9 @@ jobs:
                       )
                   )
 
+
                   raise
+
 
               except Exception as error:
 
@@ -148,6 +192,7 @@ jobs:
                       "Football API request failed:",
                       error
                   )
+
 
                   raise
 
@@ -161,32 +206,41 @@ jobs:
 
           matches = []
 
-          for match in data.get("matches", []):
+
+          for match in data.get(
+              "matches",
+              []
+          ):
 
               competition = (
                   match.get("competition")
                   or {}
               )
 
+
               home_team = (
                   match.get("homeTeam")
                   or {}
               )
+
 
               away_team = (
                   match.get("awayTeam")
                   or {}
               )
 
+
               score = (
                   match.get("score")
                   or {}
               )
 
+
               half_time = (
                   score.get("halfTime")
                   or {}
               )
+
 
               full_time = (
                   score.get("fullTime")
@@ -199,14 +253,18 @@ jobs:
                   "id":
                       match.get("id"),
 
+
                   "status":
                       match.get("status"),
+
 
                   "utcDate":
                       match.get("utcDate"),
 
+
                   "matchday":
                       match.get("matchday"),
+
 
                   "stage":
                       match.get("stage"),
@@ -297,6 +355,7 @@ jobs:
 
                       },
 
+
                       "fullTime": {
 
                           "home":
@@ -318,12 +377,19 @@ jobs:
 
           unique_matches = {}
 
+
           for match in matches:
 
-              match_id = match.get("id")
+              match_id = match.get(
+                  "id"
+              )
+
 
               if match_id is not None:
-                  unique_matches[match_id] = match
+
+                  unique_matches[
+                      match_id
+                  ] = match
 
 
           matches = list(
@@ -336,8 +402,12 @@ jobs:
           # =================================================
 
           matches.sort(
+
               key=lambda match:
-                  match.get("utcDate") or ""
+                  match.get(
+                      "utcDate"
+                  ) or ""
+
           )
 
 
@@ -348,28 +418,52 @@ jobs:
           priority = {
 
               "CL": 1,
+
               "PL": 2,
+
               "PD": 3,
+
               "SA": 4,
+
               "BL1": 5,
+
               "FL1": 6,
+
               "PPL": 7,
+
               "DED": 8
 
           }
 
 
           matches.sort(
+
               key=lambda match: (
+
                   priority.get(
+
                       (
-                          match.get("competition")
+
+                          match.get(
+                              "competition"
+                          )
+
                           or {}
-                      ).get("code"),
+
+                      ).get(
+                          "code"
+                      ),
+
                       99
+
                   ),
-                  match.get("utcDate") or ""
+
+                  match.get(
+                      "utcDate"
+                  ) or ""
+
               )
+
           )
 
 
@@ -382,17 +476,22 @@ jobs:
               "updatedAt":
                   now.isoformat(),
 
+
               "dateFrom":
                   date_from,
+
 
               "dateTo":
                   date_to,
 
+
               "competitions":
                   COMPETITIONS,
 
+
               "count":
                   len(matches),
+
 
               "matches":
                   matches
@@ -411,16 +510,25 @@ jobs:
 
 
           with open(
+
               "data/matches.json",
+
               "w",
+
               encoding="utf-8"
+
           ) as file:
 
               json.dump(
+
                   output,
+
                   file,
+
                   ensure_ascii=False,
+
                   indent=2
+
               )
 
 
@@ -430,9 +538,11 @@ jobs:
 
           print()
           print("=" * 60)
+
           print(
               f"KoraKoora: {len(matches)} matches fetched"
           )
+
           print("=" * 60)
 
 
@@ -446,19 +556,26 @@ jobs:
                   or {}
               )
 
+
               code = (
                   competition.get("code")
                   or "UNKNOWN"
               )
+
 
               name = (
                   competition.get("name")
                   or code
               )
 
+
               competition_counts[name] = (
-                  competition_counts.get(name, 0)
-                  + 1
+
+                  competition_counts.get(
+                      name,
+                      0
+                  ) + 1
+
               )
 
 
@@ -472,6 +589,7 @@ jobs:
 
 
           print("=" * 60)
+
 
           PY
 
@@ -487,13 +605,18 @@ jobs:
           echo "KoraKoora matches.json"
           echo "======================================"
 
+
           python - <<'PY'
 
           import json
 
+
           with open(
+
               "data/matches.json",
+
               encoding="utf-8"
+
           ) as file:
 
               data = json.load(file)
@@ -504,10 +627,12 @@ jobs:
               data.get("count", 0)
           )
 
+
           print(
               "Date from:",
               data.get("dateFrom")
           )
+
 
           print(
               "Date to:",
@@ -532,28 +657,37 @@ jobs:
                   or {}
               )
 
+
               name = (
                   competition.get("name")
                   or "Unknown"
               )
 
+
               competitions[name] = (
-                  competitions.get(name, 0)
-                  + 1
+
+                  competitions.get(
+                      name,
+                      0
+                  ) + 1
+
               )
 
 
-          for name, count in competitions.items():
+          for name, count in (
+              competitions.items()
+          ):
 
               print(
                   f"  {name}: {count}"
               )
 
+
           PY
 
 
       # =====================================================
-      # 4. Commit and publish
+      # 4. Publish updated data
       # =====================================================
 
       - name: Publish updated data
@@ -561,6 +695,7 @@ jobs:
 
           git config user.name \
             "github-actions[bot]"
+
 
           git config user.email \
             "41898282+github-actions[bot]@users.noreply.github.com"
@@ -577,6 +712,7 @@ jobs:
 
               git commit \
                 -m "Update KoraKoora football matches"
+
 
               git push
 
