@@ -1,13 +1,16 @@
 /* =========================================================
    KoraKoora
-   نظام عرض مباريات:
-   - أمس
-   - اليوم
-   - غدًا
+   نظام عرض مباريات احترافي:
+
+   - أمس / اليوم / غدًا
    - توقيت الزائر تلقائيًا
+   - تاريخ المباراة حسب توقيت الزائر
+   - اكتشاف دوري بلد الزائر تلقائيًا
+   - دوري بلد الزائر يظهر أولًا
+   - عدم تكرار دوري بلد الزائر
    - ترتيب البطولات
    - أسماء البطولات
-   - أزرار التنقل بين الأيام
+   - تحديث تلقائي
    ========================================================= */
 
 
@@ -19,25 +22,6 @@ const list = document.querySelector("#liveMatches");
 
 const API_FILE = "data/matches.json";
 
-
-/*
-   لا نحدد Time Zone هنا.
-
-   المتصفح سيستخدم المنطقة الزمنية الموجودة
-   في جهاز الزائر تلقائيًا.
-
-   مثال:
-   المغرب → Africa/Casablanca
-   فرنسا → Europe/Paris
-   أمريكا → America/New_York
-   اليابان → Asia/Tokyo
-*/
-
-
-/* =========================================================
-   اليوم الحالي المختار
-   ========================================================= */
-
 let selectedDay = "today";
 
 
@@ -47,15 +31,11 @@ let selectedDay = "today";
 
 const LEAGUE_NAMES = {
 
-  "Primera Division": "الدوري الإسباني",
-
-  "La Liga": "الدوري الإسباني",
-
   "Premier League": "الدوري الإنجليزي",
+  "English Premier League": "الدوري الإنجليزي",
 
-  "Championship": "التشامبيونشيب",
-
-  "Primeira Liga": "الدوري البرتغالي",
+  "Primera Division": "الدوري الإسباني",
+  "La Liga": "الدوري الإسباني",
 
   "Serie A": "الدوري الإيطالي",
 
@@ -63,30 +43,81 @@ const LEAGUE_NAMES = {
 
   "Ligue 1": "الدوري الفرنسي",
 
-  "Copa Libertadores": "كوبا ليبرتادوريس",
+  "Primeira Liga": "الدوري البرتغالي",
+
+  "Eredivisie": "الدوري الهولندي",
+
+  "Jupiler Pro League": "الدوري البلجيكي",
+
+  "Super Lig": "الدوري التركي",
+  "Süper Lig": "الدوري التركي",
 
   "UEFA Champions League": "دوري أبطال أوروبا",
-
   "Champions League": "دوري أبطال أوروبا",
 
+  "UEFA Europa League": "الدوري الأوروبي",
   "Europa League": "الدوري الأوروبي",
 
+  "UEFA Conference League": "دوري المؤتمر الأوروبي",
   "Conference League": "دوري المؤتمر الأوروبي",
 
+  "Copa Libertadores": "كوبا ليبرتادوريس",
+
+  "Copa Sudamericana": "كوبا سودأمريكانا",
+
+  "Brasileirão": "الدوري البرازيلي",
+  "Brazilian Serie A": "الدوري البرازيلي",
+
   "Primera Division Argentina": "الدوري الأرجنتيني",
+  "Argentine Primera Division": "الدوري الأرجنتيني",
 
   "Primera Division Chile": "الدوري التشيلي",
 
-  "Brasileirão": "الدوري البرازيلي"
+  "MLS": "الدوري الأمريكي",
+  "Major League Soccer": "الدوري الأمريكي",
+
+  "Liga MX": "الدوري المكسيكي",
+
+  "Egyptian Premier League": "الدوري المصري",
+  "Premier League Egypt": "الدوري المصري",
+
+  "Botola Pro": "الدوري المغربي",
+  "Botola": "الدوري المغربي",
+  "Morocco Botola Pro": "الدوري المغربي",
+
+  "Algerian Ligue 1": "الدوري الجزائري",
+
+  "Tunisian Ligue Professionnelle 1": "الدوري التونسي",
+
+  "South African Premier Division": "الدوري الجنوب أفريقي",
+
+  "Saudi Pro League": "الدوري السعودي",
+  "Saudi Professional League": "الدوري السعودي",
+
+  "J1 League": "الدوري الياباني",
+  "J.League": "الدوري الياباني",
+
+  "K League 1": "الدوري الكوري",
+
+  "UAE Pro League": "الدوري الإماراتي",
+
+  "Qatar Stars League": "الدوري القطري",
+
+  "A-League": "الدوري الأسترالي",
+  "A-League Men": "الدوري الأسترالي"
 
 };
 
 
 /* =========================================================
-   ترتيب البطولات
+   الترتيب الأساسي للبطولات
+   ---------------------------------------------------------
+   دوري بلد الزائر سيتم وضعه تلقائيًا قبل هذه القائمة.
    ========================================================= */
 
 const LEAGUE_ORDER = [
+
+  "دوري أبطال أوروبا",
 
   "الدوري الإنجليزي",
 
@@ -100,13 +131,17 @@ const LEAGUE_ORDER = [
 
   "الدوري البرتغالي",
 
-  "دوري أبطال أوروبا",
+  "الدوري المغربي",
 
-  "الدوري الأوروبي",
+  "الدوري المصري",
 
-  "دوري المؤتمر الأوروبي",
+  "الدوري السعودي",
 
-  "كوبا ليبرتادوريس",
+  "الدوري الهولندي",
+
+  "الدوري البلجيكي",
+
+  "الدوري التركي",
 
   "الدوري البرازيلي",
 
@@ -114,9 +149,111 @@ const LEAGUE_ORDER = [
 
   "الدوري التشيلي",
 
+  "الدوري الأمريكي",
+
+  "الدوري المكسيكي",
+
+  "الدوري الجزائري",
+
+  "الدوري التونسي",
+
+  "الدوري الجنوب أفريقي",
+
+  "الدوري الياباني",
+
+  "الدوري الكوري",
+
+  "الدوري الإماراتي",
+
+  "الدوري القطري",
+
+  "الدوري الأسترالي",
+
+  "الدوري الأوروبي",
+
+  "دوري المؤتمر الأوروبي",
+
+  "دوري أبطال أفريقيا",
+
+  "دوري أبطال آسيا",
+
+  "كوبا ليبرتادوريس",
+
+  "كوبا سودأمريكانا",
+
   "التشامبيونشيب"
 
 ];
+
+
+/* =========================================================
+   ربط المناطق الزمنية بالدوريات
+   =========================================================
+   
+   ملاحظة:
+   المنطقة الزمنية ليست طريقة مثالية لمعرفة الدولة
+   في كل الحالات، لأن بعض المناطق الزمنية مشتركة بين
+   عدة دول.
+
+   لذلك نستخدم أكثر المناطق الزمنية وضوحًا،
+   مع وجود نظام احتياطي.
+   ========================================================= */
+
+const TIMEZONE_LEAGUES = {
+
+  "Africa/Casablanca": "الدوري المغربي",
+
+  "Africa/Cairo": "الدوري المصري",
+
+  "Asia/Riyadh": "الدوري السعودي",
+
+  "Asia/Dubai": "الدوري الإماراتي",
+
+  "Asia/Qatar": "الدوري القطري",
+
+  "Asia/Tokyo": "الدوري الياباني",
+
+  "Asia/Seoul": "الدوري الكوري",
+
+  "Europe/London": "الدوري الإنجليزي",
+
+  "Europe/Madrid": "الدوري الإسباني",
+
+  "Europe/Rome": "الدوري الإيطالي",
+
+  "Europe/Berlin": "الدوري الألماني",
+
+  "Europe/Paris": "الدوري الفرنسي",
+
+  "Europe/Lisbon": "الدوري البرتغالي",
+
+  "Europe/Amsterdam": "الدوري الهولندي",
+
+  "Europe/Brussels": "الدوري البلجيكي",
+
+  "Europe/Istanbul": "الدوري التركي",
+
+  "America/Sao_Paulo": "الدوري البرازيلي",
+
+  "America/Argentina/Buenos_Aires": "الدوري الأرجنتيني",
+
+  "America/Santiago": "الدوري التشيلي",
+
+  "America/Mexico_City": "الدوري المكسيكي",
+
+  "America/Toronto": "الدوري الأمريكي",
+
+  "America/New_York": "الدوري الأمريكي",
+
+  "Africa/Algiers": "الدوري الجزائري",
+
+  "Africa/Tunis": "الدوري التونسي",
+
+  "Africa/Johannesburg": "الدوري الجنوب أفريقي",
+
+  "Australia/Sydney": "الدوري الأسترالي"
+
+};
 
 
 /* =========================================================
@@ -134,20 +271,69 @@ const tomorrowBtn =
 
 
 /* =========================================================
-   المنطقة الزمنية للزائر
+   الحصول على المنطقة الزمنية للزائر
    ========================================================= */
 
 function getUserTimeZone() {
 
   try {
 
-    return Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC";
+    return (
+      Intl.DateTimeFormat()
+        .resolvedOptions()
+        .timeZone
+      || "UTC"
+    );
 
   } catch (error) {
+
+    console.warn(
+      "Could not detect visitor timezone.",
+      error
+    );
 
     return "UTC";
 
   }
+
+}
+
+
+/* =========================================================
+   الحصول على دوري بلد الزائر
+   ========================================================= */
+
+function getVisitorLeague() {
+
+  const timezone =
+    getUserTimeZone();
+
+  return (
+    TIMEZONE_LEAGUES[timezone]
+    || null
+  );
+
+}
+
+
+/* =========================================================
+   معلومات الزائر
+   ========================================================= */
+
+function getVisitorInfo() {
+
+  const timezone =
+    getUserTimeZone();
+
+  const league =
+    getVisitorLeague();
+
+  return {
+
+    timezone,
+    league
+
+  };
 
 }
 
@@ -167,17 +353,23 @@ function formatTime(utc) {
 
   try {
 
-    return new Intl.DateTimeFormat("ar-MA", {
+    return new Intl.DateTimeFormat(
+      "ar-MA",
+      {
 
-      hour: "2-digit",
+        hour: "2-digit",
 
-      minute: "2-digit",
+        minute: "2-digit",
 
-      hour12: false,
+        hour12: false,
 
-      timeZone: getUserTimeZone()
+        timeZone:
+          getUserTimeZone()
 
-    }).format(new Date(utc));
+      }
+    ).format(
+      new Date(utc)
+    );
 
   } catch (error) {
 
@@ -190,9 +382,6 @@ function formatTime(utc) {
 
 /* =========================================================
    الحصول على تاريخ المباراة بتوقيت الزائر
-   ---------------------------------------------------------
-   النتيجة:
-   2026-08-20
    ========================================================= */
 
 function getLocalDateKey(utc) {
@@ -207,45 +396,60 @@ function getLocalDateKey(utc) {
   try {
 
     const parts =
-      new Intl.DateTimeFormat("en-CA", {
+      new Intl.DateTimeFormat(
+        "en-CA",
+        {
 
-        timeZone: getUserTimeZone(),
+          timeZone:
+            getUserTimeZone(),
 
-        year: "numeric",
+          year: "numeric",
 
-        month: "2-digit",
+          month: "2-digit",
 
-        day: "2-digit"
+          day: "2-digit"
 
-      }).formatToParts(new Date(utc));
+        }
+      ).formatToParts(
+        new Date(utc)
+      );
 
 
     const year =
       parts.find(
-        part => part.type === "year"
+        part =>
+          part.type === "year"
       )?.value;
 
 
     const month =
       parts.find(
-        part => part.type === "month"
+        part =>
+          part.type === "month"
       )?.value;
 
 
     const day =
       parts.find(
-        part => part.type === "day"
+        part =>
+          part.type === "day"
       )?.value;
 
 
-    if (!year || !month || !day) {
+    if (
+      !year ||
+      !month ||
+      !day
+    ) {
 
       return null;
 
     }
 
 
-    return `${year}-${month}-${day}`;
+    return (
+      `${year}-${month}-${day}`
+    );
 
   } catch (error) {
 
@@ -257,7 +461,7 @@ function getLocalDateKey(utc) {
 
 
 /* =========================================================
-   الحصول على تاريخ اليوم حسب الزائر
+   تاريخ اليوم حسب الزائر
    ========================================================= */
 
 function getTodayKey() {
@@ -273,7 +477,10 @@ function getTodayKey() {
    إضافة / طرح يوم
    ========================================================= */
 
-function addDays(dateKey, amount) {
+function addDays(
+  dateKey,
+  amount
+) {
 
   if (!dateKey) {
 
@@ -283,28 +490,25 @@ function addDays(dateKey, amount) {
 
 
   const parts =
-    dateKey.split("-").map(Number);
+    dateKey
+      .split("-")
+      .map(Number);
 
 
-  if (parts.length !== 3) {
+  if (
+    parts.length !== 3
+  ) {
 
     return null;
 
   }
 
 
-  const year = parts[0];
-
-  const month = parts[1];
-
-  const day = parts[2];
-
-
   const date =
     new Date(
-      year,
-      month - 1,
-      day,
+      parts[0],
+      parts[1] - 1,
+      parts[2],
       12,
       0,
       0,
@@ -312,7 +516,11 @@ function addDays(dateKey, amount) {
     );
 
 
-  if (Number.isNaN(date.getTime())) {
+  if (
+    Number.isNaN(
+      date.getTime()
+    )
+  ) {
 
     return null;
 
@@ -324,23 +532,19 @@ function addDays(dateKey, amount) {
   );
 
 
-  const newYear =
-    date.getFullYear();
+  return [
 
+    date.getFullYear(),
 
-  const newMonth =
     String(
       date.getMonth() + 1
-    ).padStart(2, "0");
+    ).padStart(2, "0"),
 
-
-  const newDay =
     String(
       date.getDate()
-    ).padStart(2, "0");
+    ).padStart(2, "0")
 
-
-  return `${newYear}-${newMonth}-${newDay}`;
+  ].join("-");
 
 }
 
@@ -363,7 +567,8 @@ function getSelectedDateKey() {
 
 
   if (
-    selectedDay === "yesterday"
+    selectedDay ===
+    "yesterday"
   ) {
 
     return addDays(
@@ -375,7 +580,8 @@ function getSelectedDateKey() {
 
 
   if (
-    selectedDay === "tomorrow"
+    selectedDay ===
+    "tomorrow"
   ) {
 
     return addDays(
@@ -502,7 +708,10 @@ function teamLogo(team) {
 
         loading="lazy"
 
-        onerror="this.onerror=null;this.style.display='none';"
+        onerror="
+          this.onerror=null;
+          this.style.display='none';
+        "
 
       >
 
@@ -558,7 +767,9 @@ function getStatus(match) {
 
 
   if (
-    liveStatuses.includes(status)
+    liveStatuses.includes(
+      status
+    )
   ) {
 
     return {
@@ -613,7 +824,8 @@ function getStatus(match) {
 
           ? "تأجلت"
 
-          : status === "CANCELLED"
+          : status ===
+            "CANCELLED"
 
             ? "ألغيت"
 
@@ -651,29 +863,23 @@ function getScore(match) {
     score.fullTime || {};
 
 
-  const home =
-
-    fullTime.home ??
-
-    match.homeScore ??
-
-    null;
-
-
-  const away =
-
-    fullTime.away ??
-
-    match.awayScore ??
-
-    null;
-
-
   return {
 
-    home,
+    home:
 
-    away
+      fullTime.home ??
+
+      match.homeScore ??
+
+      null,
+
+    away:
+
+      fullTime.away ??
+
+      match.awayScore ??
+
+      null
 
   };
 
@@ -686,45 +892,54 @@ function getScore(match) {
 
 function normalizeMatch(match) {
 
-  const home = getTeam(
+  const home =
+    getTeam(
 
-    typeof match.home === "object"
+      typeof match.home ===
+      "object"
 
-      ? match.home
+        ? match.home
 
-      : {
+        : {
 
-          name: match.home,
+            name:
+              match.home,
 
-          logo: match.homeLogo
+            logo:
+              match.homeLogo
 
-        }
+          }
 
-  );
+    );
 
 
-  const away = getTeam(
+  const away =
+    getTeam(
 
-    typeof match.away === "object"
+      typeof match.away ===
+      "object"
 
-      ? match.away
+        ? match.away
 
-      : {
+        : {
 
-          name: match.away,
+            name:
+              match.away,
 
-          logo: match.awayLogo
+            logo:
+              match.awayLogo
 
-        }
+          }
 
-  );
+    );
 
 
   let originalCompetition;
 
 
   if (
-    typeof match.competition === "object"
+    typeof match.competition ===
+    "object"
   ) {
 
     originalCompetition =
@@ -753,11 +968,9 @@ function normalizeMatch(match) {
 
 
   const competition =
-
     LEAGUE_NAMES[
       originalCompetition
     ] ||
-
     originalCompetition;
 
 
@@ -795,13 +1008,9 @@ function renderMatch(match) {
   let centerContent;
 
 
-  /*
-     المباراة المنتهية:
-     عرض النتيجة
-  */
-
   if (
-    status.className === "finished"
+    status.className ===
+    "finished"
   ) {
 
     centerContent = `
@@ -822,21 +1031,15 @@ function renderMatch(match) {
 
     `;
 
-  }
-
-
-  /*
-     المباراة غير المنتهية:
-     عرض وقت المباراة
-  */
-
-  else {
+  } else {
 
     centerContent = `
 
       <div class="match-time">
 
-        ${formatTime(match.utcDate)}
+        ${formatTime(
+          match.utcDate
+        )}
 
       </div>
 
@@ -849,10 +1052,11 @@ function renderMatch(match) {
 
     <article class="match-card">
 
-
       <div class="team-side home-team">
 
-        ${teamLogo(match.home)}
+        ${teamLogo(
+          match.home
+        )}
 
         <span>
           ${match.home.name}
@@ -865,8 +1069,9 @@ function renderMatch(match) {
 
         ${centerContent}
 
-
-        <div class="match-status ${status.className}">
+        <div
+          class="match-status ${status.className}"
+        >
 
           <span>
             ${status.icon}
@@ -881,14 +1086,15 @@ function renderMatch(match) {
 
       <div class="team-side away-team">
 
-        ${teamLogo(match.away)}
+        ${teamLogo(
+          match.away
+        )}
 
         <span>
           ${match.away.name}
         </span>
 
       </div>
-
 
     </article>
 
@@ -901,28 +1107,34 @@ function renderMatch(match) {
    تجميع المباريات حسب البطولة
    ========================================================= */
 
-function groupByCompetition(matches) {
+function groupByCompetition(
+  matches
+) {
 
   const groups = {};
 
 
-  matches.forEach(match => {
+  matches.forEach(
+    match => {
 
-    const name =
-      match.competition ||
-      "بطولات أخرى";
+      const name =
+        match.competition ||
+        "بطولات أخرى";
 
 
-    if (!groups[name]) {
+      if (!groups[name]) {
 
-      groups[name] = [];
+        groups[name] = [];
+
+      }
+
+
+      groups[name].push(
+        match
+      );
 
     }
-
-
-    groups[name].push(match);
-
-  });
+  );
 
 
   return groups;
@@ -931,21 +1143,59 @@ function groupByCompetition(matches) {
 
 
 /* =========================================================
-   ترتيب البطولات
+   ترتيب البطولات الذكي
    ========================================================= */
 
 function sortLeagues(entries) {
+
+  const visitorLeague =
+    getVisitorLeague();
+
 
   return entries.sort(
 
     ([nameA], [nameB]) => {
 
+      /*
+         1. دوري بلد الزائر
+         يأتي دائمًا في المركز الأول.
+      */
+
+      if (
+        visitorLeague &&
+        nameA === visitorLeague
+      ) {
+
+        return -1;
+
+      }
+
+
+      if (
+        visitorLeague &&
+        nameB === visitorLeague
+      ) {
+
+        return 1;
+
+      }
+
+
+      /*
+         2. باقي البطولات حسب
+         الترتيب العالمي المحدد.
+      */
+
       const indexA =
-        LEAGUE_ORDER.indexOf(nameA);
+        LEAGUE_ORDER.indexOf(
+          nameA
+        );
 
 
       const indexB =
-        LEAGUE_ORDER.indexOf(nameB);
+        LEAGUE_ORDER.indexOf(
+          nameB
+        );
 
 
       if (
@@ -953,7 +1203,9 @@ function sortLeagues(entries) {
         indexB !== -1
       ) {
 
-        return indexA - indexB;
+        return (
+          indexA - indexB
+        );
 
       }
 
@@ -975,6 +1227,11 @@ function sortLeagues(entries) {
 
       }
 
+
+      /*
+         3. البطولات الأخرى
+         ترتب أبجديًا.
+      */
 
       return nameA.localeCompare(
         nameB,
@@ -1018,18 +1275,34 @@ function renderLeague(
   );
 
 
+  const visitorLeague =
+    getVisitorLeague();
+
+
+  const isVisitorLeague =
+    visitorLeague &&
+    name === visitorLeague;
+
+
   return `
 
-    <section class="league-section">
-
+    <section
+      class="league-section"
+      data-league="${name}"
+    >
 
       <div class="league-header">
-
 
         <div class="league-title">
 
           <span class="league-icon">
-            🏆
+
+            ${
+              isVisitorLeague
+                ? "🌍"
+                : "🏆"
+            }
+
           </span>
 
 
@@ -1056,22 +1329,16 @@ function renderLeague(
 
         </div>
 
-
       </div>
 
 
       <div class="league-matches">
 
-        ${
-
-          matches
-            .map(renderMatch)
-            .join("")
-
-        }
+        ${matches
+          .map(renderMatch)
+          .join("")}
 
       </div>
-
 
     </section>
 
@@ -1089,18 +1356,30 @@ function updateDayButtons() {
   const buttons = [
 
     {
-      element: yesterdayBtn,
-      value: "yesterday"
+      element:
+        yesterdayBtn,
+
+      value:
+        "yesterday"
+
     },
 
     {
-      element: todayBtn,
-      value: "today"
+      element:
+        todayBtn,
+
+      value:
+        "today"
+
     },
 
     {
-      element: tomorrowBtn,
-      value: "tomorrow"
+      element:
+        tomorrowBtn,
+
+      value:
+        "tomorrow"
+
     }
 
   ];
@@ -1120,7 +1399,8 @@ function updateDayButtons() {
 
         "selected",
 
-        selectedDay === value
+        selectedDay ===
+        value
 
       );
 
@@ -1129,14 +1409,14 @@ function updateDayButtons() {
 
         "aria-pressed",
 
-        selectedDay === value
+        selectedDay ===
+        value
           ? "true"
           : "false"
 
       );
 
     }
-
   );
 
 }
@@ -1183,14 +1463,11 @@ function setupDayButtons() {
   if (yesterdayBtn) {
 
     yesterdayBtn.addEventListener(
-
       "click",
-
       () =>
         changeDay(
           "yesterday"
         )
-
     );
 
   }
@@ -1199,14 +1476,11 @@ function setupDayButtons() {
   if (todayBtn) {
 
     todayBtn.addEventListener(
-
       "click",
-
       () =>
         changeDay(
           "today"
         )
-
     );
 
   }
@@ -1215,14 +1489,11 @@ function setupDayButtons() {
   if (tomorrowBtn) {
 
     tomorrowBtn.addEventListener(
-
       "click",
-
       () =>
         changeDay(
           "tomorrow"
         )
-
     );
 
   }
@@ -1241,11 +1512,14 @@ function renderEmptyState() {
 
   const labels = {
 
-    yesterday: "أمس",
+    yesterday:
+      "أمس",
 
-    today: "اليوم",
+    today:
+      "اليوم",
 
-    tomorrow: "غدًا"
+    tomorrow:
+      "غدًا"
 
   };
 
@@ -1255,8 +1529,8 @@ function renderEmptyState() {
     "اليوم";
 
 
-  const timezone =
-    getUserTimeZone();
+  const visitorInfo =
+    getVisitorInfo();
 
 
   list.innerHTML = `
@@ -1274,9 +1548,11 @@ function renderEmptyState() {
 
 
       <p>
-        لا توجد مباريات لـ ${label}
+        لا توجد مباريات لـ
+        ${label}
         حاليًا.
       </p>
+
 
     </div>
 
@@ -1315,17 +1591,17 @@ async function loadMatches() {
 
   try {
 
-    const response = await fetch(
+    const response =
+      await fetch(
 
-      `${API_FILE}?v=${Date.now()}`,
+        `${API_FILE}?v=${Date.now()}`,
 
-      {
+        {
+          cache:
+            "no-store"
+        }
 
-        cache: "no-store"
-
-      }
-
-    );
+      );
 
 
     if (!response.ok) {
@@ -1363,8 +1639,7 @@ async function loadMatches() {
 
 
     /*
-       التاريخ المطلوب
-       حسب توقيت الزائر
+       تاريخ الزائر
     */
 
     const targetDate =
@@ -1373,7 +1648,7 @@ async function loadMatches() {
 
     /*
        تصفية المباريات
-       حسب اليوم المحلي للزائر
+       حسب التاريخ المحلي للزائر
     */
 
     matches =
@@ -1409,8 +1684,7 @@ async function loadMatches() {
 
 
     /*
-       تجميع المباريات
-       حسب البطولات
+       تجميع البطولات
     */
 
     const groups =
@@ -1438,7 +1712,6 @@ async function loadMatches() {
     list.innerHTML =
 
       sortedGroups
-
         .map(
           ([name, leagueMatches]) =>
             renderLeague(
@@ -1446,7 +1719,6 @@ async function loadMatches() {
               leagueMatches
             )
         )
-
         .join("");
 
 
@@ -1460,7 +1732,9 @@ async function loadMatches() {
 
     list.innerHTML = `
 
-      <div class="empty error-box">
+      <div
+        class="empty error-box"
+      >
 
         <div class="empty-icon">
           ⚠️
@@ -1524,9 +1798,6 @@ loadMatches();
    ========================================================= */
 
 setInterval(
-
   loadMatches,
-
   5 * 60 * 1000
-
 );
