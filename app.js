@@ -23,41 +23,7 @@ const list = document.querySelector("#liveMatches");
 
 const API_FILE = "data/matches.json";
 
-const RETURN_STATE_KEY = "koraKooraReturnState";
-const VIEW_STATE_KEY = "koraKooraViewState";
-
-let returnState = null;
-
-try {
-  returnState = JSON.parse(
-    sessionStorage.getItem(RETURN_STATE_KEY) || "null"
-  );
-} catch {
-  returnState = null;
-}
-
-let savedViewState = null;
-
-try {
-  savedViewState = JSON.parse(
-    sessionStorage.getItem(VIEW_STATE_KEY) || "null"
-  );
-} catch {
-  savedViewState = null;
-}
-
-let selectedDay =
-  returnState?.selectedDay ||
-  savedViewState?.selectedDay ||
-  "today";
-
-let selectedLeagueCode =
-  returnState?.selectedLeagueCode ||
-  savedViewState?.selectedLeagueCode ||
-  "all";
-
-let shouldRestoreReturnState =
-  Boolean(returnState);
+let selectedDay = "today";
 
 
 /* =========================================================
@@ -1167,12 +1133,7 @@ function normalizeMatch(match) {
 
     competition,
 
-    originalCompetition,
-
-    competitionCode:
-      typeof match.competition === "object"
-        ? (match.competition.code || "")
-        : ""
+    originalCompetition
 
   };
 
@@ -1183,23 +1144,6 @@ function normalizeMatch(match) {
    فتح تفاصيل المباراة
    ========================================================= */
 
-function saveViewState() {
-
-  try {
-    sessionStorage.setItem(
-      VIEW_STATE_KEY,
-      JSON.stringify({
-        selectedDay,
-        selectedLeagueCode
-      })
-    );
-  } catch {
-    // لا مشكلة إذا كان التخزين غير متاح
-  }
-
-}
-
-
 function openMatchDetails(matchId) {
 
   if (!matchId) {
@@ -1208,20 +1152,6 @@ function openMatchDetails(matchId) {
 
   }
 
-  try {
-    sessionStorage.setItem(
-      RETURN_STATE_KEY,
-      JSON.stringify({
-        selectedDay,
-        selectedLeagueCode,
-        scrollY: window.scrollY || 0
-      })
-    );
-  } catch {
-    // المتصفح قد يمنع sessionStorage
-  }
-
-  saveViewState();
 
   window.location.href =
     `match.html?id=${encodeURIComponent(
@@ -1585,16 +1515,6 @@ function renderLeague(
     name ===
     visitorLeague;
 
-  const competitionCode =
-    matches.find(
-      match => match.competitionCode
-    )?.competitionCode || "";
-
-  const leagueHref =
-    competitionCode
-      ? `league.html?code=${encodeURIComponent(competitionCode)}`
-      : "#";
-
 
   return `
 
@@ -1608,11 +1528,7 @@ function renderLeague(
 
       <div class="league-header">
 
-        <a
-          class="league-title league-title-link"
-          href="${leagueHref}"
-          ${competitionCode ? "" : "aria-disabled=\"true\""}
-        >
+        <div class="league-title">
 
           <span class="league-icon">
 
@@ -1642,13 +1558,11 @@ function renderLeague(
                   : "مباريات"
               }
 
-              ${competitionCode ? " · عرض الترتيب" : ""}
-
             </small>
 
           </div>
 
-        </a>
+        </div>
 
       </div>
 
@@ -1664,95 +1578,6 @@ function renderLeague(
     </section>
 
   `;
-
-}
-
-
-/* =========================================================
-   حالة فلتر البطولات
-   ========================================================= */
-
-function updateLeagueFilterButtons() {
-
-  document
-    .querySelectorAll(".filter-btn")
-    .forEach(button => {
-
-      const active =
-        button.dataset.league ===
-        selectedLeagueCode;
-
-      button.classList.toggle(
-        "active",
-        active
-      );
-
-      button.setAttribute(
-        "aria-pressed",
-        active ? "true" : "false"
-      );
-
-    });
-
-}
-
-
-function setupLeagueFilters() {
-
-  document
-    .querySelectorAll(".filter-btn")
-    .forEach(button => {
-
-      button.addEventListener(
-        "click",
-        () => {
-
-          selectedLeagueCode =
-            button.dataset.league || "all";
-
-          shouldRestoreReturnState = false;
-
-          try {
-            sessionStorage.removeItem(RETURN_STATE_KEY);
-          } catch {}
-
-          saveViewState();
-          updateLeagueFilterButtons();
-          loadMatches();
-
-        }
-      );
-
-    });
-
-  updateLeagueFilterButtons();
-
-}
-
-
-function restoreReturnPosition() {
-
-  if (!shouldRestoreReturnState || !returnState) {
-    return;
-  }
-
-  const scrollY =
-    Number(returnState.scrollY) || 0;
-
-  shouldRestoreReturnState = false;
-
-  try {
-    sessionStorage.removeItem(RETURN_STATE_KEY);
-  } catch {}
-
-  requestAnimationFrame(() => {
-    requestAnimationFrame(() => {
-      window.scrollTo({
-        top: scrollY,
-        behavior: "auto"
-      });
-    });
-  });
 
 }
 
@@ -1862,14 +1687,10 @@ function changeDay(day) {
   selectedDay =
     day;
 
-  shouldRestoreReturnState = false;
 
-  try {
-    sessionStorage.removeItem(RETURN_STATE_KEY);
-  } catch {}
-
-  saveViewState();
   updateDayButtons();
+
+
   loadMatches();
 
 }
@@ -2090,22 +1911,6 @@ async function loadMatches() {
 
 
     /*
-       فلترة البطولة
-    */
-
-    if (selectedLeagueCode !== "all") {
-
-      matches =
-        matches.filter(
-          match =>
-            match.competitionCode ===
-            selectedLeagueCode
-        );
-
-    }
-
-
-    /*
        لا توجد مباريات
     */
 
@@ -2157,10 +1962,6 @@ async function loadMatches() {
         )
 
         .join("");
-
-
-    updateLeagueFilterButtons();
-    restoreReturnPosition();
 
 
   } catch (error) {
@@ -2236,8 +2037,7 @@ async function loadMatches() {
    ========================================================= */
 
 setupDayButtons();
-setupLeagueFilters();
-saveViewState();
+
 loadMatches();
 
 
