@@ -344,74 +344,47 @@
     }
 
 
-    /* ======= العد التنازلي - تصميم احترافي عصري ======= */
+    /* ======= العد التنازلي - تصميم بسيط (أبيض على شفاف) ======= */
 
     .match-countdown {
-      font-size: 32px;
-      font-weight: 800;
+      font-size: 50px;
+      font-family: monospace;
+      color: #ffffff;
+      background: none;
+      border: none;
       margin: 15px auto 5px;
-      padding: 14px 35px;
-      border-radius: 60px;
+      padding: 10px 20px;
       display: inline-block;
-      background: linear-gradient(145deg, #1a1a2e, #16213e);
-      color: #f5c842;
-      border: 1px solid rgba(245, 200, 66, 0.25);
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.08);
-      font-family: 'Tajawal', 'Segoe UI', Tahoma, sans-serif;
-      letter-spacing: 1px;
-      backdrop-filter: blur(4px);
-      transition: all 0.4s ease;
+      letter-spacing: 2px;
+      text-shadow: 0 0 15px rgba(255,255,255,0.2);
+      direction: ltr; /* لعرض الأرقام من اليسار لليمين */
     }
 
-    /* 🔴 حالة المباراة مباشر (توهج أحمر نابض) */
+    /* تغيير اللون حسب الحالة (اختياري) */
     .match-countdown.live {
-      background: linear-gradient(145deg, #3a0000, #6b0000);
       color: #ff6b6b;
-      border-color: #ff6b6b;
-      box-shadow: 0 0 50px rgba(255, 0, 0, 0.5), inset 0 0 20px rgba(255, 0, 0, 0.2);
-      animation: pulse-glow 1.2s infinite alternate;
+      text-shadow: 0 0 30px rgba(255,0,0,0.6);
     }
 
-    /* ✅ حالة انتهت (أخضر أنيق) */
     .match-countdown.finished {
-      background: linear-gradient(145deg, #003d1a, #006633);
       color: #66ff99;
-      border-color: #66ff99;
-      box-shadow: 0 0 30px rgba(0, 255, 100, 0.2);
+      text-shadow: 0 0 30px rgba(0,255,100,0.4);
     }
 
-    /* ⏳ حالة مؤجلة أو ملغاة (ذهبي غامق) */
     .match-countdown.postponed,
     .match-countdown.cancelled {
-      background: linear-gradient(145deg, #3d2e00, #6b4f00);
       color: #ffd700;
-      border-color: #ffd700;
+      text-shadow: 0 0 30px rgba(255,215,0,0.4);
     }
 
-    /* ⏸️ حالة انتظار (رمادي) */
     .match-countdown.waiting {
-      background: linear-gradient(145deg, #2a2a2a, #3d3d3d);
       color: #aaaaaa;
-      border-color: #555;
-    }
-
-    /* تأثير النبض مع التوهج للمباريات المباشرة */
-    @keyframes pulse-glow {
-      0% {
-        box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
-        transform: scale(1);
-      }
-      100% {
-        box-shadow: 0 0 60px rgba(255, 0, 0, 0.7);
-        transform: scale(1.02);
-      }
     }
 
     /* التكيف مع الشاشات الصغيرة */
     @media (max-width: 700px) {
       .match-countdown {
-        font-size: 22px;
-        padding: 10px 20px;
+        font-size: 32px;
       }
     }
 
@@ -1264,46 +1237,41 @@ function getScore(match) {
 
 
 /* =====================================================
-   [NEW] حساب العداد
+   [NEW] حساب العداد بتنسيق HH : MM : SS
    ===================================================== */
 
 function getCountdownInfo(utcDate, status) {
-  if (!utcDate) return { text: "⏳ غير معروف", className: "waiting" };
+  if (!utcDate) return { text: "00 : 00 : 00", className: "waiting" };
 
   const statusUpper = String(status || "").toUpperCase();
   const finishedStatuses = ["FINISHED", "POSTPONED", "CANCELLED", "SUSPENDED"];
   const liveStatuses = ["LIVE", "IN_PLAY", "PAUSED", "1H", "2H", "HT", "ET", "P"];
 
   if (finishedStatuses.includes(statusUpper)) {
-    if (statusUpper === "FINISHED") return { text: "✅ انتهت المباراة", className: "finished" };
-    if (statusUpper === "POSTPONED") return { text: "⏳ تم تأجيلها", className: "postponed" };
+    if (statusUpper === "FINISHED") return { text: "✅ انتهت", className: "finished" };
+    if (statusUpper === "POSTPONED") return { text: "⏳ تأجلت", className: "postponed" };
     if (statusUpper === "CANCELLED") return { text: "🚫 ألغيت", className: "cancelled" };
     return { text: "⏸️ متوقفة", className: "waiting" };
   }
 
   if (liveStatuses.includes(statusUpper)) {
-    return { text: "🔴 المباراة مباشر الآن!", className: "live" };
+    return { text: "🔴 مباشر الآن", className: "live" };
   }
 
-  // مباراة مستقبلية
+  // مباراة مستقبلية - عد تنازلي بتنسيق HH : MM : SS
   const now = new Date().getTime();
   const matchTime = new Date(utcDate).getTime();
-  const diff = matchTime - now;
+  let diff = matchTime - now;
 
   if (diff < 0) {
-    return { text: "⏳ في انتظار التحديث...", className: "waiting" };
+    return { text: "00 : 00 : 00", className: "waiting" };
   }
 
-  const hours = Math.floor(diff / (1000 * 60 * 60));
-  const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+  const hours = String(Math.floor(diff / (1000 * 60 * 60))).padStart(2, '0');
+  const minutes = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+  const seconds = String(Math.floor((diff % (1000 * 60)) / 1000)).padStart(2, '0');
 
-  let text = "⏳ تبدأ بعد: ";
-  if (hours > 0) text += `${hours} ساعة `;
-  if (minutes > 0 || hours > 0) text += `${minutes} دقيقة `;
-  text += `${seconds} ثانية`;
-
-  return { text, className: "upcoming" };
+  return { text: `${hours} : ${minutes} : ${seconds}`, className: "upcoming" };
 }
 
 
@@ -1624,7 +1592,7 @@ function renderMatchDetails(
 
           ${center}
 
-          <!-- [NEW] عداد الوقت بالتصميم الجديد -->
+          <!-- [NEW] عداد الوقت بالتصميم البسيط (أبيض على شفاف) -->
           <div id="countdownDisplay" class="match-countdown ${countdownInfo.className}">
             ${countdownInfo.text}
           </div>
@@ -1911,7 +1879,7 @@ function renderMatchDetails(
   updateCountdown();
   const intervalId = setInterval(updateCountdown, 1000);
 
-  // تنظيف الـ interval عند مغادرة الصفحة (اختياري)
+  // تنظيف الـ interval عند مغادرة الصفحة
   window.addEventListener('beforeunload', function() {
     clearInterval(intervalId);
   });
