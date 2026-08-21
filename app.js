@@ -412,7 +412,7 @@ function setupDayButtons() {
 function setupFilterButtons() {
   const filterBtns = document.querySelectorAll(".filter-btn");
   if (!filterBtns.length) {
-    console.warn("⚠️ أزرار الفلتر غير موجودة في الـ HTML. تأكد من إضافتها.");
+    console.warn("⚠️ أزرار الفلتر غير موجودة في الـ HTML.");
     return;
   }
 
@@ -426,7 +426,6 @@ function setupFilterButtons() {
     });
   });
 
-  // تفعيل زر "الكل" افتراضياً
   const allBtn = document.querySelector('.filter-btn[data-league="all"]');
   if (allBtn) allBtn.classList.add("active");
 }
@@ -435,17 +434,18 @@ function applyFilter(filter) {
   const allCards = document.querySelectorAll(".match-card");
   const allSections = document.querySelectorAll(".league-section");
 
+  // حذف رسائل "لا توجد مباريات" السابقة
+  document.querySelectorAll(".empty:not(.empty-initial)").forEach(el => el.remove());
+
   if (filter === "all") {
     allSections.forEach(section => section.style.display = "");
     allCards.forEach(card => card.style.display = "");
     return;
   }
 
-  // إخفاء الكل أولاً
   allSections.forEach(section => section.style.display = "none");
   allCards.forEach(card => card.style.display = "none");
 
-  // إظهار البطاقات التي تطابق الفلتر
   let hasVisible = false;
   allCards.forEach(card => {
     const cardLeague = card.dataset.leagueCode || "";
@@ -457,19 +457,14 @@ function applyFilter(filter) {
     }
   });
 
-  // إذا لم توجد أي مباراة، نعرض رسالة
   if (!hasVisible) {
-    const emptyMessage = document.createElement("div");
-    emptyMessage.className = "empty";
-    emptyMessage.innerHTML = `<div class="empty-icon">⚽</div><h3>لا توجد مباريات</h3><p>لا توجد مباريات لهذه البطولة في هذا اليوم.</p>`;
-    // نضيفها بعد آخر قسم
-    const lastSection = allSections[allSections.length - 1];
-    if (lastSection) {
-      lastSection.after(emptyMessage);
+    const container = document.querySelector("#liveMatches");
+    if (container) {
+      const emptyMsg = document.createElement("div");
+      emptyMsg.className = "empty";
+      emptyMsg.innerHTML = `<div class="empty-icon">⚽</div><h3>لا توجد مباريات</h3><p>لا توجد مباريات لهذه البطولة في هذا اليوم.</p>`;
+      container.appendChild(emptyMsg);
     }
-  } else {
-    // حذف رسالة "لا توجد مباريات" إن وجدت
-    document.querySelectorAll(".empty:not(.empty-initial)").forEach(el => el.remove());
   }
 }
 
@@ -546,6 +541,6 @@ async function loadMatches() {
    ========================================================= */
 
 setupDayButtons();
-setupFilterButtons(); // مهم جداً!
+setupFilterButtons();
 loadMatches();
 setInterval(loadMatches, 5 * 60 * 1000);
