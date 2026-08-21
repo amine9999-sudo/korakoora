@@ -11,7 +11,10 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
-    /* ===== أنماط الصفحة ===== */
+    /* =====================================================
+       صفحة تفاصيل المباراة
+       ===================================================== */
+
     .match-page { padding: 40px 0 70px; }
     .back-button { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 25px; padding: 10px 16px; border-radius: 8px; background: #222; color: #fff; text-decoration: none; font-weight: bold; }
     .back-button:hover { opacity: .85; }
@@ -32,41 +35,110 @@
     .details-status.finished { background: #e8f7ed; color: #16803c; }
     .details-status.upcoming { background: #eef3ff; color: #315fc4; }
 
-    /* ===== العداد التنازلي (التصميم البسيط) ===== */
+    /* ===== العداد التنازلي - تصميم احترافي ===== */
     .match-countdown {
-      font-size: 50px;
-      font-family: monospace;
-      color: #1a1a1a;
-      background: #f5f5f5;
-      border-radius: 15px;
-      padding: 15px 30px;
-      margin: 15px auto 5px;
+      font-size: 28px;
+      font-weight: 700;
+      font-family: 'Courier New', monospace;
+      color: #1a1a2e;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1.5px solid rgba(0, 0, 0, 0.08);
+      border-radius: 50px;
+      padding: 10px 28px;
+      margin: 12px auto 8px;
       display: inline-block;
       letter-spacing: 3px;
-      border: 2px solid #ddd;
       direction: ltr;
-      box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+      transition: all 0.3s ease;
+      min-width: 160px;
     }
-    .match-countdown.live { color: #ff0000; border-color: #ff0000; background: #fff0f0; animation: pulse-red 1s infinite; }
-    .match-countdown.finished { color: #16803c; border-color: #16803c; background: #f0fff0; }
-    .match-countdown.postponed, .match-countdown.cancelled { color: #856404; border-color: #ffc107; background: #fff9e6; }
-    .match-countdown.waiting { color: #777; border-color: #ccc; background: #f9f9f9; }
 
-    @keyframes pulse-red {
-      0% { box-shadow: 0 0 0 0 rgba(255,0,0,0.2); }
-      50% { box-shadow: 0 0 20px 5px rgba(255,0,0,0.15); }
-      100% { box-shadow: 0 0 0 0 rgba(255,0,0,0.2); }
+    .match-countdown.live {
+      color: #ff1744;
+      border-color: rgba(255, 23, 68, 0.3);
+      background: rgba(255, 23, 68, 0.06);
+      box-shadow: 0 0 30px rgba(255, 23, 68, 0.08);
+      animation: live-pulse 1.4s ease-in-out infinite;
+    }
+
+    .match-countdown.finished {
+      color: #00c853;
+      border-color: rgba(0, 200, 83, 0.3);
+      background: rgba(0, 200, 83, 0.06);
+    }
+
+    .match-countdown.postponed,
+    .match-countdown.cancelled {
+      color: #ffab00;
+      border-color: rgba(255, 171, 0, 0.3);
+      background: rgba(255, 171, 0, 0.06);
+    }
+
+    .match-countdown.waiting {
+      color: #78909c;
+      border-color: rgba(120, 144, 156, 0.2);
+      background: rgba(120, 144, 156, 0.04);
+    }
+
+    @keyframes live-pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 23, 68, 0.15); }
+      50% { box-shadow: 0 0 30px 8px rgba(255, 23, 68, 0.06); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 23, 68, 0.15); }
+    }
+
+    .match-countdown::before {
+      content: "🕐 ";
+      font-size: 22px;
+      font-weight: 400;
+    }
+
+    .match-countdown.live::before {
+      content: "🔴 ";
+      animation: blink-dot 1s step-end infinite;
+    }
+
+    .match-countdown.finished::before {
+      content: "✅ ";
+    }
+
+    .match-countdown.postponed::before {
+      content: "⏳ ";
+    }
+
+    .match-countdown.cancelled::before {
+      content: "🚫 ";
+    }
+
+    @keyframes blink-dot {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
     }
 
     @media (max-width: 700px) {
-      .match-countdown { font-size: 32px; padding: 10px 20px; }
-      .match-details-card { padding: 20px 12px; }
-      .match-details-teams { gap: 8px; }
-      .details-team img { width: 65px; height: 65px; }
-      .details-team-name { font-size: 15px; }
-      .details-time { font-size: 21px; }
-      .details-score { font-size: 28px; }
-      .details-center { min-width: 90px; }
+      .match-countdown {
+        font-size: 22px;
+        padding: 8px 18px;
+        min-width: 130px;
+        letter-spacing: 2px;
+      }
+      .match-countdown::before {
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .match-countdown {
+        font-size: 18px;
+        padding: 6px 14px;
+        min-width: 110px;
+        letter-spacing: 1px;
+      }
+      .match-countdown::before {
+        font-size: 15px;
+      }
     }
 
     .details-section { margin-top: 35px; padding-top: 25px; border-top: 1px solid #eee; }
@@ -82,6 +154,16 @@
     .error-details { text-align: center; padding: 60px 20px; }
     .error-details h2 { margin-bottom: 10px; }
     .home-link { display: inline-block; margin-top: 20px; padding: 11px 20px; background: #19c37d; color: #fff; border-radius: 8px; text-decoration: none; font-weight: bold; }
+
+    @media (max-width: 700px) {
+      .match-details-card { padding: 20px 12px; }
+      .match-details-teams { gap: 8px; }
+      .details-team img { width: 65px; height: 65px; }
+      .details-team-name { font-size: 15px; }
+      .details-time { font-size: 21px; }
+      .details-score { font-size: 28px; }
+      .details-center { min-width: 90px; }
+    }
   </style>
 </head>
 
@@ -128,8 +210,6 @@
 </footer>
 
 <script>
-console.log("✅ 1. تم تحميل ملف match.html بنجاح");
-
 const API_FILE = "data/matches.json";
 
 function getUserTimeZone() {
@@ -152,9 +232,7 @@ function formatDate(utc) {
 
 function getMatchId() {
   const params = new URLSearchParams(window.location.search);
-  const id = params.get("id");
-  console.log("✅ 2. معرف المباراة المستخرج من الرابط:", id);
-  return id;
+  return params.get("id");
 }
 
 const LEAGUE_NAMES = {
@@ -201,23 +279,21 @@ function getScore(match) {
   return { home: fullTime.home ?? match.homeScore ?? null, away: fullTime.away ?? match.awayScore ?? null };
 }
 
-// ===== دالة العداد التنازلي (مع جلب utcDate) =====
 function getCountdownInfo(utcDate, status) {
-  console.log("⏳ 5. حساب العداد لـ:", utcDate, "الحالة:", status);
-  if (!utcDate) return { text: "⏳ غير معروف", className: "waiting" };
+  if (!utcDate) return { text: "00 : 00 : 00", className: "waiting" };
 
   const statusUpper = String(status || "").toUpperCase();
   const finished = ["FINISHED", "POSTPONED", "CANCELLED", "SUSPENDED"];
   const live = ["LIVE", "IN_PLAY", "PAUSED", "1H", "2H", "HT", "ET", "P"];
 
   if (finished.includes(statusUpper)) {
-    if (statusUpper === "FINISHED") return { text: "✅ انتهت", className: "finished" };
-    if (statusUpper === "POSTPONED") return { text: "⏳ تأجلت", className: "postponed" };
-    if (statusUpper === "CANCELLED") return { text: "🚫 ألغيت", className: "cancelled" };
-    return { text: "⏸️ متوقفة", className: "waiting" };
+    if (statusUpper === "FINISHED") return { text: "انتهت", className: "finished" };
+    if (statusUpper === "POSTPONED") return { text: "تأجلت", className: "postponed" };
+    if (statusUpper === "CANCELLED") return { text: "ألغيت", className: "cancelled" };
+    return { text: "متوقفة", className: "waiting" };
   }
   if (live.includes(statusUpper)) {
-    return { text: "🔴 مباشر الآن", className: "live" };
+    return { text: "مباشر الآن", className: "live" };
   }
 
   const now = new Date().getTime();
@@ -239,7 +315,6 @@ function renderTeam(team) {
 }
 
 async function loadMatch() {
-  console.log("✅ 3. بدء تحميل المباراة");
   const container = document.querySelector("#matchDetails");
   const matchId = getMatchId();
 
@@ -250,7 +325,6 @@ async function loadMatch() {
 
   try {
     const response = await fetch(`${API_FILE}?v=${Date.now()}`, { cache: "no-store" });
-    console.log("✅ 4. جلب البيانات من:", API_FILE, "الحالة:", response.status);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
     const data = await response.json();
@@ -258,21 +332,18 @@ async function loadMatch() {
     const match = matches.find(item => String(item.id) === String(matchId));
 
     if (!match) {
-      console.error("❌ لم نجد المباراة بالمعرف:", matchId);
       showError("لم يتم العثور على هذه المباراة في البيانات الحالية.");
       return;
     }
-    console.log("✅ 5. تم العثور على المباراة:", match.home?.name, "vs", match.away?.name);
     renderMatchDetails(match);
 
   } catch (error) {
-    console.error("❌ خطأ في التحميل:", error);
+    console.error("Match details error:", error);
     showError("حدث خطأ أثناء تحميل تفاصيل المباراة.");
   }
 }
 
 function renderMatchDetails(match) {
-  console.log("✅ 6. بدء عرض تفاصيل المباراة");
   const container = document.querySelector("#matchDetails");
   const home = getTeam(match.home);
   const away = getTeam(match.away);
@@ -285,9 +356,7 @@ function renderMatchDetails(match) {
     ? `<div class="details-score"><span>${score.home ?? "-"}</span><strong>-</strong><span>${score.away ?? "-"}</span></div>`
     : `<div class="details-time">${formatTime(match.utcDate)}</div>`;
 
-  // حساب العداد
   const countdownInfo = getCountdownInfo(match.utcDate, match.status);
-  console.log("✅ 7. العداد المحسوب:", countdownInfo.text);
 
   container.innerHTML = `
     <article class="match-details-card">
@@ -301,7 +370,6 @@ function renderMatchDetails(match) {
         ${renderTeam(home)}
         <div class="details-center">
           ${center}
-          <!-- العداد هنا -->
           <div id="countdownDisplay" class="match-countdown ${countdownInfo.className}">${countdownInfo.text}</div>
           <div class="details-status ${status.className}">${status.text}</div>
         </div>
@@ -329,7 +397,6 @@ function renderMatchDetails(match) {
 
   document.title = `${home.name} × ${away.name} | KoraKoora`;
 
-  // تشغيل العداد كل ثانية
   function updateCountdown() {
     const el = document.getElementById('countdownDisplay');
     if (!el) return;
@@ -341,7 +408,6 @@ function renderMatchDetails(match) {
   updateCountdown();
   const interval = setInterval(updateCountdown, 1000);
   window.addEventListener('beforeunload', () => clearInterval(interval));
-  console.log("✅ 8. تم تشغيل العداد بنجاح!");
 }
 
 function showError(message) {
@@ -356,7 +422,6 @@ function showError(message) {
   `;
 }
 
-// تشغيل التحميل
 loadMatch();
 </script>
 
