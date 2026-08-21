@@ -344,6 +344,49 @@
     }
 
 
+    /* ======= العد التنازلي ======= */
+    .match-countdown {
+
+      font-size: 28px;
+      font-weight: bold;
+      margin: 15px 0 5px;
+      padding: 8px 20px;
+      border-radius: 30px;
+      background: #f5f5f5;
+      display: inline-block;
+      color: #e90052;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .match-countdown.live {
+      background: #ffe5e5;
+      color: #cc0000;
+      animation: pulse 1.2s infinite;
+    }
+
+    .match-countdown.finished {
+      background: #e8f7ed;
+      color: #16803c;
+    }
+
+    .match-countdown.postponed,
+    .match-countdown.cancelled {
+      background: #fff3cd;
+      color: #856404;
+    }
+
+    .match-countdown.waiting {
+      background: #e2e3e5;
+      color: #383d41;
+    }
+
+    @keyframes pulse {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.8; transform: scale(0.98); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+
     .details-section {
 
       margin-top:
@@ -606,6 +649,11 @@
 
       }
 
+      .match-countdown {
+        font-size: 22px;
+        padding: 6px 14px;
+      }
+
     }
 
   </style>
@@ -761,7 +809,7 @@
 
 
 <!-- =====================================================
-     JAVASCRIPT
+     JAVASCRIPT (مع العد التنازلي)
      ===================================================== -->
 
 <script>
@@ -1053,7 +1101,7 @@ function getTeam(team) {
 
 
 /* =====================================================
-   الحالة
+   الحالة (للاستخدام الداخلي)
    ===================================================== */
 
 function getStatus(match) {
@@ -1188,6 +1236,50 @@ function getScore(match) {
 
   };
 
+}
+
+
+/* =====================================================
+   [NEW] حساب العداد
+   ===================================================== */
+
+function getCountdownInfo(utcDate, status) {
+  if (!utcDate) return { text: "⏳ غير معروف", className: "waiting" };
+
+  const statusUpper = String(status || "").toUpperCase();
+  const finishedStatuses = ["FINISHED", "POSTPONED", "CANCELLED", "SUSPENDED"];
+  const liveStatuses = ["LIVE", "IN_PLAY", "PAUSED", "1H", "2H", "HT", "ET", "P"];
+
+  if (finishedStatuses.includes(statusUpper)) {
+    if (statusUpper === "FINISHED") return { text: "✅ انتهت المباراة", className: "finished" };
+    if (statusUpper === "POSTPONED") return { text: "⏳ تم تأجيلها", className: "postponed" };
+    if (statusUpper === "CANCELLED") return { text: "🚫 ألغيت", className: "cancelled" };
+    return { text: "⏸️ متوقفة", className: "waiting" };
+  }
+
+  if (liveStatuses.includes(statusUpper)) {
+    return { text: "🔴 المباراة مباشر الآن!", className: "live" };
+  }
+
+  // مباراة مستقبلية
+  const now = new Date().getTime();
+  const matchTime = new Date(utcDate).getTime();
+  const diff = matchTime - now;
+
+  if (diff < 0) {
+    return { text: "⏳ في انتظار التحديث...", className: "waiting" };
+  }
+
+  const hours = Math.floor(diff / (1000 * 60 * 60));
+  const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+  let text = "⏳ تبدأ بعد: ";
+  if (hours > 0) text += `${hours} ساعة `;
+  if (minutes > 0 || hours > 0) text += `${minutes} دقيقة `;
+  text += `${seconds} ثانية`;
+
+  return { text, className: "upcoming" };
 }
 
 
@@ -1355,7 +1447,7 @@ async function loadMatch() {
 
 
 /* =====================================================
-   عرض التفاصيل
+   [المعدل] عرض التفاصيل مع العداد
    ===================================================== */
 
 function renderMatchDetails(
@@ -1444,6 +1536,9 @@ function renderMatchDetails(
     `;
 
 
+  // [NEW] إنشاء العداد
+  const countdownInfo = getCountdownInfo(match.utcDate, match.status);
+
   container.innerHTML = `
 
     <article
@@ -1504,6 +1599,11 @@ function renderMatchDetails(
         >
 
           ${center}
+
+          <!-- [NEW] عداد الوقت -->
+          <div id="countdownDisplay" class="match-countdown ${countdownInfo.className}">
+            ${countdownInfo.text}
+          </div>
 
 
           <div
@@ -1768,6 +1868,29 @@ function renderMatchDetails(
 
   document.title =
     `${home.name} × ${away.name} | KoraKoora`;
+
+
+  /* =====================================================
+     [NEW] تشغيل العد التنازلي
+     ===================================================== */
+
+  function updateCountdown() {
+    const countdownEl = document.getElementById('countdownDisplay');
+    if (!countdownEl) return;
+
+    const info = getCountdownInfo(match.utcDate, match.status);
+    countdownEl.textContent = info.text;
+    countdownEl.className = `match-countdown ${info.className}`;
+  }
+
+  // تحديث فوري ثم كل ثانية
+  updateCountdown();
+  const intervalId = setInterval(updateCountdown, 1000);
+
+  // تنظيف الـ interval عند مغادرة الصفحة (اختياري)
+  window.addEventListener('beforeunload', function() {
+    clearInterval(intervalId);
+  });
 
 }
 
