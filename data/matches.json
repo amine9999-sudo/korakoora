@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T17:57:14.874318+00:00",
+  "updatedAt": "2026-08-21T19:16:46.867572+00:00",
   "dateFrom": "2026-08-20",
   "dateTo": "2026-08-30",
   "competitions": [
@@ -16,10 +16,17 @@
   "matches": [
     {
       "id": 560542,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-21T19:00:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": {
+        "id": 11620,
+        "name": "Thomas Bramall",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -46,8 +53,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -57,6 +64,8 @@
       "utcDate": "2026-08-22T11:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -94,6 +103,8 @@
       "utcDate": "2026-08-22T14:00:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -131,6 +142,8 @@
       "utcDate": "2026-08-22T14:00:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -168,6 +181,8 @@
       "utcDate": "2026-08-22T14:00:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -205,6 +220,8 @@
       "utcDate": "2026-08-22T16:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -242,6 +259,8 @@
       "utcDate": "2026-08-23T13:00:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -279,6 +298,8 @@
       "utcDate": "2026-08-23T13:00:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -316,6 +337,8 @@
       "utcDate": "2026-08-23T15:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -353,6 +376,8 @@
       "utcDate": "2026-08-24T19:00:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -390,6 +415,8 @@
       "utcDate": "2026-08-28T19:00:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -427,6 +454,8 @@
       "utcDate": "2026-08-29T11:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -464,6 +493,8 @@
       "utcDate": "2026-08-29T14:00:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -501,6 +532,8 @@
       "utcDate": "2026-08-29T14:00:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -538,6 +571,8 @@
       "utcDate": "2026-08-29T16:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -575,6 +610,8 @@
       "utcDate": "2026-08-30T13:00:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -612,6 +649,8 @@
       "utcDate": "2026-08-30T13:00:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -649,6 +688,8 @@
       "utcDate": "2026-08-30T13:00:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -686,6 +727,8 @@
       "utcDate": "2026-08-30T15:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -723,6 +766,13 @@
       "utcDate": "2026-08-20T19:00:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": {
+        "id": 206223,
+        "name": "José Munuera Montero",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -756,10 +806,17 @@
     },
     {
       "id": 564647,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-21T19:00:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": {
+        "id": 57930,
+        "name": "Isidro Díaz de Mera",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -786,8 +843,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -797,6 +854,8 @@
       "utcDate": "2026-08-22T15:00:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -834,6 +893,8 @@
       "utcDate": "2026-08-22T17:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -871,6 +932,8 @@
       "utcDate": "2026-08-22T19:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -908,6 +971,8 @@
       "utcDate": "2026-08-23T15:00:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -945,6 +1010,8 @@
       "utcDate": "2026-08-23T17:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -982,6 +1049,8 @@
       "utcDate": "2026-08-23T19:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1019,6 +1088,8 @@
       "utcDate": "2026-08-24T17:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1056,6 +1127,8 @@
       "utcDate": "2026-08-24T19:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1093,6 +1166,8 @@
       "utcDate": "2026-08-25T19:00:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1130,6 +1205,8 @@
       "utcDate": "2026-08-26T19:00:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1167,6 +1244,8 @@
       "utcDate": "2026-08-27T18:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1204,6 +1283,8 @@
       "utcDate": "2026-08-27T19:00:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1241,6 +1322,8 @@
       "utcDate": "2026-08-28T17:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1278,6 +1361,8 @@
       "utcDate": "2026-08-28T19:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1315,6 +1400,8 @@
       "utcDate": "2026-08-29T15:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1352,6 +1439,8 @@
       "utcDate": "2026-08-29T17:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1389,6 +1478,8 @@
       "utcDate": "2026-08-29T19:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1426,6 +1517,8 @@
       "utcDate": "2026-08-30T15:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1463,6 +1556,8 @@
       "utcDate": "2026-08-30T17:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1500,6 +1595,8 @@
       "utcDate": "2026-08-30T19:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1537,6 +1634,8 @@
       "utcDate": "2026-08-22T16:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1574,6 +1673,8 @@
       "utcDate": "2026-08-22T16:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1611,6 +1712,8 @@
       "utcDate": "2026-08-22T18:45:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1648,6 +1751,8 @@
       "utcDate": "2026-08-22T18:45:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1685,6 +1790,8 @@
       "utcDate": "2026-08-23T16:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1722,6 +1829,8 @@
       "utcDate": "2026-08-23T16:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1759,6 +1868,8 @@
       "utcDate": "2026-08-23T18:45:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1796,6 +1907,8 @@
       "utcDate": "2026-08-23T18:45:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1833,6 +1946,8 @@
       "utcDate": "2026-08-24T16:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1870,6 +1985,8 @@
       "utcDate": "2026-08-24T18:45:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1907,6 +2024,8 @@
       "utcDate": "2026-08-28T18:45:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1944,6 +2063,8 @@
       "utcDate": "2026-08-29T16:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1981,6 +2102,8 @@
       "utcDate": "2026-08-29T16:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -2018,6 +2141,8 @@
       "utcDate": "2026-08-29T16:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -2055,6 +2180,8 @@
       "utcDate": "2026-08-29T18:45:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -2092,6 +2219,8 @@
       "utcDate": "2026-08-30T16:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -2129,6 +2258,8 @@
       "utcDate": "2026-08-30T18:45:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -2166,6 +2297,8 @@
       "utcDate": "2026-08-30T18:45:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -2203,6 +2336,8 @@
       "utcDate": "2026-08-28T18:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -2240,6 +2375,8 @@
       "utcDate": "2026-08-29T13:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -2277,6 +2414,8 @@
       "utcDate": "2026-08-29T13:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -2314,6 +2453,8 @@
       "utcDate": "2026-08-29T13:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -2351,6 +2492,8 @@
       "utcDate": "2026-08-29T13:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -2388,6 +2531,8 @@
       "utcDate": "2026-08-29T13:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -2425,6 +2570,8 @@
       "utcDate": "2026-08-29T16:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -2462,6 +2609,8 @@
       "utcDate": "2026-08-30T13:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -2499,6 +2648,8 @@
       "utcDate": "2026-08-30T15:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -2532,10 +2683,17 @@
     },
     {
       "id": 559715,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-21T18:45:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": {
+        "id": 43886,
+        "name": "Ruddy Buquet",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -2562,8 +2720,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -2573,6 +2731,8 @@
       "utcDate": "2026-08-22T15:15:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -2610,6 +2770,8 @@
       "utcDate": "2026-08-22T18:45:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -2647,6 +2809,8 @@
       "utcDate": "2026-08-22T18:45:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -2684,6 +2848,8 @@
       "utcDate": "2026-08-22T18:45:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -2721,6 +2887,8 @@
       "utcDate": "2026-08-22T18:45:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -2758,6 +2926,8 @@
       "utcDate": "2026-08-23T13:00:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -2795,6 +2965,8 @@
       "utcDate": "2026-08-23T15:15:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -2832,6 +3004,8 @@
       "utcDate": "2026-08-23T18:45:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -2869,6 +3043,8 @@
       "utcDate": "2026-08-28T18:45:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -2906,6 +3082,8 @@
       "utcDate": "2026-08-29T15:15:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -2943,6 +3121,8 @@
       "utcDate": "2026-08-29T18:45:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -2980,6 +3160,8 @@
       "utcDate": "2026-08-29T18:45:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -3017,6 +3199,8 @@
       "utcDate": "2026-08-29T18:45:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -3054,6 +3238,8 @@
       "utcDate": "2026-08-29T18:45:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -3091,6 +3277,8 @@
       "utcDate": "2026-08-30T13:00:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -3128,6 +3316,8 @@
       "utcDate": "2026-08-30T15:15:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -3165,6 +3355,8 @@
       "utcDate": "2026-08-30T18:45:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -3202,6 +3394,8 @@
       "utcDate": "2026-08-22T14:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -3239,6 +3433,8 @@
       "utcDate": "2026-08-22T17:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -3276,6 +3472,8 @@
       "utcDate": "2026-08-22T19:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -3313,6 +3511,8 @@
       "utcDate": "2026-08-23T14:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -3350,6 +3550,8 @@
       "utcDate": "2026-08-23T17:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -3387,6 +3589,8 @@
       "utcDate": "2026-08-23T19:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -3424,6 +3628,8 @@
       "utcDate": "2026-08-24T19:15:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -3461,6 +3667,8 @@
       "utcDate": "2026-08-28T19:15:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -3498,6 +3706,8 @@
       "utcDate": "2026-08-29T14:30:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -3535,6 +3745,8 @@
       "utcDate": "2026-08-29T14:30:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -3572,6 +3784,8 @@
       "utcDate": "2026-08-29T17:00:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -3609,6 +3823,8 @@
       "utcDate": "2026-08-30T14:30:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -3646,6 +3862,8 @@
       "utcDate": "2026-08-30T17:00:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -3683,6 +3901,8 @@
       "utcDate": "2026-08-30T19:30:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -3720,6 +3940,8 @@
       "utcDate": "2026-08-22T00:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -3757,6 +3979,8 @@
       "utcDate": "2026-08-22T14:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -3794,6 +4018,8 @@
       "utcDate": "2026-08-22T16:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -3831,6 +4057,8 @@
       "utcDate": "2026-08-22T19:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -3868,6 +4096,8 @@
       "utcDate": "2026-08-23T10:15:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -3905,6 +4135,8 @@
       "utcDate": "2026-08-23T12:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -3942,6 +4174,8 @@
       "utcDate": "2026-08-23T14:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -3979,6 +4213,8 @@
       "utcDate": "2026-08-28T18:00:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -4016,6 +4252,8 @@
       "utcDate": "2026-08-29T14:30:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -4053,6 +4291,8 @@
       "utcDate": "2026-08-29T16:45:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -4090,6 +4330,8 @@
       "utcDate": "2026-08-29T19:00:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -4127,6 +4369,8 @@
       "utcDate": "2026-08-30T10:15:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -4164,6 +4408,8 @@
       "utcDate": "2026-08-30T12:30:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -4201,6 +4447,8 @@
       "utcDate": "2026-08-30T12:30:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -4238,6 +4486,8 @@
       "utcDate": "2026-08-30T14:45:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -4275,6 +4525,8 @@
       "utcDate": "2026-08-30T18:00:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
