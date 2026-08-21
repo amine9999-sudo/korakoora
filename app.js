@@ -1,842 +1,551 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
+/* =========================================================
+   KoraKoora - نظام عرض مباريات احترافي (معدل بالفلتر)
+   ========================================================= */
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="KoraKoora منصة لمتابعة مباريات كرة القدم، المواعيد والنتائج بتوقيتك المحلي أينما كنت، مع معلومات عن أهم البطولات وأبرز المواجهات.">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#111111">
-  <title>KoraKoora | مباريات اليوم بتوقيتك المحلي</title>
-  <link rel="stylesheet" href="style.css">
+const list = document.querySelector("#liveMatches");
+const API_FILE = "data/matches.json";
+let selectedDay = "today";
+let currentFilter = "all";
 
-  <style>
-    /* ===== أزرار تصفية البطولات ===== */
-    .filters-container {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin: 20px 0 30px;
-      padding: 15px 20px;
-      background: #f5f5f5;
-      border-radius: 12px;
-      justify-content: center;
-      border: 1px solid #eee;
-    }
+/* =========================================================
+   أسماء البطولات وترتيبها ومناطق زمنية
+   ========================================================= */
 
-    .filter-btn {
-      padding: 8px 18px;
-      border: 2px solid #ddd;
-      border-radius: 25px;
-      background: white;
-      cursor: pointer;
-      font-weight: bold;
-      transition: all 0.3s ease;
-      color: #333;
-      font-size: 14px;
-      font-family: inherit;
-    }
+const LEAGUE_NAMES = {
+  "Premier League": "الدوري الإنجليزي",
+  "English Premier League": "الدوري الإنجليزي",
+  "Primera Division": "الدوري الإسباني",
+  "La Liga": "الدوري الإسباني",
+  "Serie A": "الدوري الإيطالي",
+  "Bundesliga": "الدوري الألماني",
+  "Ligue 1": "الدوري الفرنسي",
+  "Primeira Liga": "الدوري البرتغالي",
+  "Eredivisie": "الدوري الهولندي",
+  "Jupiler Pro League": "الدوري البلجيكي",
+  "Super Lig": "الدوري التركي",
+  "Süper Lig": "الدوري التركي",
+  "UEFA Champions League": "دوري أبطال أوروبا",
+  "Champions League": "دوري أبطال أوروبا",
+  "UEFA Europa League": "الدوري الأوروبي",
+  "Europa League": "الدوري الأوروبي",
+  "UEFA Conference League": "دوري المؤتمر الأوروبي",
+  "Conference League": "دوري المؤتمر الأوروبي",
+  "Copa Libertadores": "كوبا ليبرتادوريس",
+  "Copa Sudamericana": "كوبا سودأمريكانا",
+  "Brasileirão": "الدوري البرازيلي",
+  "Brazilian Serie A": "الدوري البرازيلي",
+  "Primera Division Argentina": "الدوري الأرجنتيني",
+  "Argentine Primera Division": "الدوري الأرجنتيني",
+  "Primera Division Chile": "الدوري التشيلي",
+  "MLS": "الدوري الأمريكي",
+  "Major League Soccer": "الدوري الأمريكي",
+  "Liga MX": "الدوري المكسيكي",
+  "Egyptian Premier League": "الدوري المصري",
+  "Premier League Egypt": "الدوري المصري",
+  "Botola Pro": "الدوري المغربي",
+  "Botola": "الدوري المغربي",
+  "Morocco Botola Pro": "الدوري المغربي",
+  "Algerian Ligue 1": "الدوري الجزائري",
+  "Tunisian Ligue Professionnelle 1": "الدوري التونسي",
+  "South African Premier Division": "الدوري الجنوب أفريقي",
+  "Saudi Pro League": "الدوري السعودي",
+  "Saudi Professional League": "الدوري السعودي",
+  "J1 League": "الدوري الياباني",
+  "J.League": "الدوري الياباني",
+  "K League 1": "الدوري الكوري",
+  "UAE Pro League": "الدوري الإماراتي",
+  "Qatar Stars League": "الدوري القطري",
+  "A-League": "الدوري الأسترالي",
+  "A-League Men": "الدوري الأسترالي"
+};
 
-    .filter-btn:hover {
-      background: #f0f0f0;
-      border-color: #aaa;
-      transform: scale(1.03);
-    }
+const LEAGUE_ORDER = [
+  "دوري أبطال أوروبا", "الدوري الإنجليزي", "الدوري الإسباني", "الدوري الإيطالي",
+  "الدوري الألماني", "الدوري الفرنسي", "الدوري البرتغالي", "الدوري المغربي",
+  "الدوري المصري", "الدوري السعودي", "الدوري الهولندي", "الدوري البلجيكي",
+  "الدوري التركي", "الدوري البرازيلي", "الدوري الأرجنتيني", "الدوري التشيلي",
+  "الدوري الأمريكي", "الدوري المكسيكي", "الدوري الجزائري", "الدوري التونسي",
+  "الدوري الجنوب أفريقي", "الدوري الياباني", "الدوري الكوري", "الدوري الإماراتي",
+  "الدوري القطري", "الدوري الأسترالي", "الدوري الأوروبي", "دوري المؤتمر الأوروبي",
+  "دوري أبطال أفريقيا", "دوري أبطال آسيا", "كوبا ليبرتادوريس", "كوبا سودأمريكانا",
+  "التشامبيونشيب"
+];
 
-    .filter-btn.active {
-      background: #19c37d;
-      color: white;
-      border-color: #19c37d;
-      box-shadow: 0 4px 12px rgba(25, 195, 125, 0.3);
-    }
+const TIMEZONE_LEAGUES = {
+  "Africa/Casablanca": "الدوري المغربي",
+  "Africa/Cairo": "الدوري المصري",
+  "Asia/Riyadh": "الدوري السعودي",
+  "Asia/Dubai": "الدوري الإماراتي",
+  "Asia/Qatar": "الدوري القطري",
+  "Asia/Tokyo": "الدوري الياباني",
+  "Asia/Seoul": "الدوري الكوري",
+  "Europe/London": "الدوري الإنجليزي",
+  "Europe/Madrid": "الدوري الإسباني",
+  "Europe/Rome": "الدوري الإيطالي",
+  "Europe/Berlin": "الدوري الألماني",
+  "Europe/Paris": "الدوري الفرنسي",
+  "Europe/Lisbon": "الدوري البرتغالي",
+  "Europe/Amsterdam": "الدوري الهولندي",
+  "Europe/Brussels": "الدوري البلجيكي",
+  "Europe/Istanbul": "الدوري التركي",
+  "America/Sao_Paulo": "الدوري البرازيلي",
+  "America/Argentina/Buenos_Aires": "الدوري الأرجنتيني",
+  "America/Santiago": "الدوري التشيلي",
+  "America/Mexico_City": "الدوري المكسيكي",
+  "America/Toronto": "الدوري الأمريكي",
+  "America/New_York": "الدوري الأمريكي",
+  "Africa/Algiers": "الدوري الجزائري",
+  "Africa/Tunis": "الدوري التونسي",
+  "Africa/Johannesburg": "الدوري الجنوب أفريقي",
+  "Australia/Sydney": "الدوري الأسترالي"
+};
 
-    .filter-btn.active:hover {
-      background: #16a96e;
-      border-color: #16a96e;
-    }
+/* =========================================================
+   دوال المساعدة
+   ========================================================= */
 
-    @media (max-width: 600px) {
-      .filters-container {
-        gap: 8px;
-        padding: 12px 10px;
-      }
-      .filter-btn {
-        padding: 6px 12px;
-        font-size: 12px;
-      }
-    }
-  </style>
+const yesterdayBtn = document.querySelector("#yesterdayBtn");
+const todayBtn = document.querySelector("#todayBtn");
+const tomorrowBtn = document.querySelector("#tomorrowBtn");
 
-</head>
+function getUserTimeZone() {
+  try {
+    return Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC";
+  } catch (error) {
+    return "UTC";
+  }
+}
 
+function getVisitorLeague() {
+  return TIMEZONE_LEAGUES[getUserTimeZone()] || null;
+}
 
-<body>
+function getLocalDateKey(utc) {
+  if (!utc) return null;
+  try {
+    const parts = new Intl.DateTimeFormat("en-CA", {
+      timeZone: getUserTimeZone(),
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit"
+    }).formatToParts(new Date(utc));
+    const year = parts.find(part => part.type === "year")?.value;
+    const month = parts.find(part => part.type === "month")?.value;
+    const day = parts.find(part => part.type === "day")?.value;
+    if (!year || !month || !day) return null;
+    return `${year}-${month}-${day}`;
+  } catch (error) {
+    return null;
+  }
+}
 
+function getTodayKey() {
+  return getLocalDateKey(new Date().toISOString());
+}
 
-<!-- =========================
-     HEADER
-========================= -->
+function addDays(dateKey, amount) {
+  if (!dateKey) return null;
+  const parts = dateKey.split("-").map(Number);
+  if (parts.length !== 3) return null;
+  const date = new Date(parts[0], parts[1] - 1, parts[2], 12, 0, 0, 0);
+  if (Number.isNaN(date.getTime())) return null;
+  date.setDate(date.getDate() + amount);
+  return [
+    date.getFullYear(),
+    String(date.getMonth() + 1).padStart(2, "0"),
+    String(date.getDate()).padStart(2, "0")
+  ].join("-");
+}
 
-<header class="topbar">
+function getSelectedDateKey() {
+  const today = getTodayKey();
+  if (!today) return null;
+  if (selectedDay === "yesterday") return addDays(today, -1);
+  if (selectedDay === "tomorrow") return addDays(today, 1);
+  return today;
+}
 
-  <div class="container nav">
+function safeText(value, fallback = "") {
+  if (value === null || value === undefined) return fallback;
+  if (typeof value === "object") return value.name || value.shortName || value.tla || fallback;
+  return String(value);
+}
 
-    <a class="brand" href="index.html">
-      Kora<span>Koora</span>
-    </a>
+function getTeam(team) {
+  if (!team) return { name: "فريق", logo: "" };
+  return {
+    id: team.id || null,
+    name: safeText(team.name || team.shortName || team.tla, "فريق"),
+    shortName: safeText(team.shortName || team.name || team.tla, "فريق"),
+    tla: safeText(team.tla, ""),
+    logo: team.crest || team.logo || team.image || ""
+  };
+}
 
+function teamLogo(team) {
+  if (team.logo) {
+    return `<img class="team-logo" src="${team.logo}" alt="شعار ${team.name}" loading="lazy" onerror="this.onerror=null;this.style.display='none';">`;
+  }
+  return `<div class="team-logo-placeholder">⚽</div>`;
+}
 
-    <nav aria-label="القائمة الرئيسية">
+function getStatus(match) {
+  const status = String(match.status || "").toUpperCase();
+  const liveStatuses = ["LIVE", "IN_PLAY", "PAUSED", "1H", "2H", "HT", "ET", "P"];
+  if (liveStatuses.includes(status)) {
+    return { className: "live", icon: "🔴", text: "مباشر" };
+  }
+  if (status === "FINISHED") {
+    return { className: "finished", icon: "✓", text: "انتهت" };
+  }
+  if (status === "POSTPONED" || status === "CANCELLED" || status === "SUSPENDED") {
+    return {
+      className: "cancelled",
+      icon: "⚠️",
+      text: status === "POSTPONED" ? "تأجلت" : status === "CANCELLED" ? "ألغيت" : "متوقفة"
+    };
+  }
+  return { className: "upcoming", icon: "🕐", text: "لم تبدأ" };
+}
 
-      <a class="active" href="index.html">
-        الرئيسية
-      </a>
+function getScore(match) {
+  const score = match.score || {};
+  const fullTime = score.fullTime || {};
+  return {
+    home: fullTime.home ?? match.homeScore ?? null,
+    away: fullTime.away ?? match.awayScore ?? null
+  };
+}
 
-      <a href="#matches">
-        مباريات اليوم
-      </a>
+function normalizeMatch(match) {
+  const home = getTeam(typeof match.home === "object" ? match.home : { name: match.home, logo: match.homeLogo });
+  const away = getTeam(typeof match.away === "object" ? match.away : { name: match.away, logo: match.awayLogo });
+  let originalCompetition;
+  if (typeof match.competition === "object") {
+    originalCompetition = safeText(match.competition.name || match.competition.code, "بطولة");
+  } else {
+    originalCompetition = safeText(match.competition, "بطولات أخرى");
+  }
+  const competition = LEAGUE_NAMES[originalCompetition] || originalCompetition;
+  return {
+    ...match,
+    home,
+    away,
+    competition,
+    originalCompetition,
+    leagueCode: match.competition?.code || null
+  };
+}
 
-      <a href="#leagues">
-        البطولات
-      </a>
+function formatTime(utc) {
+  if (!utc) return "--:--";
+  try {
+    return new Intl.DateTimeFormat("ar-MA", {
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+      timeZone: getUserTimeZone()
+    }).format(new Date(utc));
+  } catch (error) {
+    return "--:--";
+  }
+}
 
-      <a href="#news">
-        أخبار وتحليلات
-      </a>
+function openMatchDetails(matchId) {
+  if (!matchId) return;
+  window.location.href = `match.html?id=${encodeURIComponent(matchId)}`;
+}
 
-    </nav>
+function matchCardAccessibility(matchId) {
+  const safeId = String(matchId).replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+  return `
+    role="button"
+    tabindex="0"
+    data-match-id="${safeId}"
+    onclick="openMatchDetails('${safeId}')"
+    onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openMatchDetails('${safeId}'); }"
+    aria-label="عرض تفاصيل المباراة"
+  `;
+}
 
+/* =========================================================
+   عرض المباراة (بدون عداد تنازلي)
+   ========================================================= */
 
-    <button class="search" aria-label="بحث" type="button">
-      ⌕
-    </button>
+function renderMatch(match) {
+  const status = getStatus(match);
+  const score = getScore(match);
 
-  </div>
+  let centerContent;
+  if (status.className === "finished" || score.home !== null) {
+    centerContent = `
+      <div class="match-score">
+        <span>${score.home ?? "-"}</span>
+        <strong>-</strong>
+        <span>${score.away ?? "-"}</span>
+      </div>
+    `;
+  } else {
+    centerContent = `
+      <div class="match-time">
+        ${formatTime(match.utcDate)}
+      </div>
+    `;
+  }
 
-</header>
-
-
-
-<main>
-
-
-<!-- =========================
-     HERO
-========================= -->
-
-<section class="hero">
-
-  <div class="container hero-inner">
-
-
-    <div>
-
-      <p class="eyebrow">
-        ⚽ متابعة كرة القدم ببساطة
-      </p>
-
-
-      <h1>
-
-        مباريات اليوم
-
-        <br>
-
-        <span>بتوقيتك المحلي</span>
-
-      </h1>
-
-
-      <p class="lead">
-
-        تابع مواعيد مباريات كرة القدم ونتائجها
-        بتوقيتك المحلي أينما كنت،
-        مع عرض واضح ومناسب للهواتف.
-
-      </p>
-
-
-      <a href="#matches" style="display:inline-block;margin-top:20px;padding:12px 22px;border-radius:8px;text-decoration:none;background:#19c37d;color:#fff;font-weight:bold;">
-        مشاهدة مباريات اليوم
-      </a>
-
-    </div>
-
-
-
-    <div class="hero-card">
-
-      <div class="live-dot">
-        ● مباشر
+  return `
+    <article
+      class="match-card"
+      ${matchCardAccessibility(match.id)}
+      data-league-code="${match.leagueCode || ''}"
+      data-utc-date="${match.utcDate || ''}"
+      data-status="${match.status || 'TIMED'}"
+    >
+      <div class="team-side home-team">
+        ${teamLogo(match.home)}
+        <span>${match.home.name}</span>
       </div>
 
+      <div class="match-center">
+        ${centerContent}
 
-      <strong>
-        ماذا تجد في KoraKoora؟
-      </strong>
+        <div class="match-status ${status.className}">
+          <span>${status.icon}</span> ${status.text}
+        </div>
 
-
-      <span>
-        مواعيد المباريات والنتائج
-        ومعلومات تساعدك على متابعة
-        أهم مواجهات كرة القدم.
-      </span>
-
-    </div>
-
-
-  </div>
-
-</section>
-
-
-
-<div class="container">
-
-
-<!-- =========================
-     INTRODUCTION
-========================= -->
-
-<section class="section">
-
-  <div class="section-head">
-
-    <div>
-
-      <p class="eyebrow">
-        عن KoraKoora
-      </p>
-
-      <h2>
-        منصة بسيطة لعشاق كرة القدم
-      </h2>
-
-    </div>
-
-  </div>
-
-
-  <div style="max-width:850px;line-height:2;">
-
-    <p>
-
-      صُمم KoraKoora ليكون مكانًا بسيطًا
-      وسهل الاستخدام للزائر الذي يريد معرفة
-      مباريات كرة القدم دون الحاجة إلى البحث
-      في عدة صفحات.
-
-    </p>
-
-
-    <p>
-
-      نركز على تقديم المعلومات بطريقة واضحة،
-      مع الاهتمام بالمواعيد والنتائج والبطولات
-      التي تهم متابعي كرة القدم في مختلف أنحاء
-      العالم.
-
-    </p>
-
-
-    <p>
-
-      هدفنا هو تطوير الموقع تدريجيًا وإضافة
-      معلومات مفيدة تساعد الزائر على معرفة
-      ما يحدث في عالم كرة القدم بطريقة منظمة
-      وسهلة القراءة.
-
-    </p>
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================
-     AD PLACEHOLDER
-========================= -->
-
-<div class="ad-slot">
-  مساحة إعلانية
-</div>
-
-
-
-<!-- =========================
-     MATCHES
-========================= -->
-
-<section id="matches" class="section">
-
-  <div class="section-head">
-
-
-    <div>
-
-      <p class="eyebrow">
-        المواعيد والنتائج
-      </p>
-
-
-      <h2>
-        مباريات اليوم
-      </h2>
-
-
-      <p>
-
-        تعرف على المباريات المجدولة
-        وتابع النتائج عند توفرها،
-        مع عرض وقت كل مباراة بتوقيتك المحلي.
-
-      </p>
-
-    </div>
-
-
-
-    <div class="days">
-
-      <button id="yesterdayBtn">
-        أمس
-      </button>
-
-
-      <button id="todayBtn" class="selected">
-        اليوم
-      </button>
-
-
-      <button id="tomorrowBtn">
-        غدًا
-      </button>
-
-    </div>
-
-
-  </div>
-
-
-  <!-- ===== أزرار تصفية البطولات ===== -->
-  <div class="filters-container">
-    <button class="filter-btn active" data-league="all">🏆 الكل</button>
-    <button class="filter-btn" data-league="PL">🇬🇧 الإنجليزي</button>
-    <button class="filter-btn" data-league="PD">🇪🇸 الإسباني</button>
-    <button class="filter-btn" data-league="SA">🇮🇹 الإيطالي</button>
-    <button class="filter-btn" data-league="BL1">🇩🇪 الألماني</button>
-    <button class="filter-btn" data-league="FL1">🇫🇷 الفرنسي</button>
-    <button class="filter-btn" data-league="PPL">🇵🇹 البرتغالي</button>
-    <button class="filter-btn" data-league="DED">🇳🇱 الهولندي</button>
-  </div>
-
-
-  <div id="liveMatches">
-
-    <div class="empty">
-
-      جاري تحميل المباريات...
-
-    </div>
-
-  </div>
-
-
-</section>
-
-
-
-<!-- =========================
-     HOW IT WORKS
-========================= -->
-
-<section class="section">
-
-  <div class="section-head">
-
-    <div>
-
-      <p class="eyebrow">
-        طريقة الاستخدام
-      </p>
-
-      <h2>
-        كيف تستفيد من KoraKoora؟
-      </h2>
-
-    </div>
-
-  </div>
-
-
-
-  <div class="league-grid">
-
-
-    <div>
-
-      <strong>
-        01 — اختر اليوم
-      </strong>
-
-      <p>
-        استخدم خيارات أمس واليوم وغدًا
-        للوصول إلى المباريات المرتبطة
-        بالتاريخ الذي تبحث عنه.
-      </p>
-
-    </div>
-
-
-
-    <div>
-
-      <strong>
-        02 — تابع المباريات
-      </strong>
-
-      <p>
-        تظهر معلومات المباريات في قسم
-        مخصص حتى تستطيع الوصول إليها
-        بسرعة من الصفحة الرئيسية.
-      </p>
-
-    </div>
-
-
-
-    <div>
-
-      <strong>
-        03 — استكشف البطولات
-      </strong>
-
-      <p>
-        يمكنك التعرف على مجموعة من أشهر
-        البطولات الأوروبية والعالمية.
-      </p>
-
-    </div>
-
-
-
-    <div>
-
-      <strong>
-        04 — اقرأ المحتوى
-      </strong>
-
-      <p>
-        نعمل على تقديم محتوى ومعلومات
-        كروية تساعد الزائر على فهم
-        المباريات والبطولات بشكل أفضل.
-      </p>
-
-    </div>
-
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================
-     TIMEZONE INFORMATION
-========================= -->
-
-<section class="section">
-
-  <div class="section-head">
-
-    <div>
-
-      <p class="eyebrow">
-        توقيت المباريات
-      </p>
-
-      <h2>
-        المباريات بتوقيتك المحلي
-      </h2>
-
-    </div>
-
-  </div>
-
-
-  <div style="max-width:850px;line-height:2;">
-
-    <p>
-
-      يتم عرض موعد كل مباراة تلقائيًا
-      وفق التوقيت المحلي لجهاز الزائر،
-      حتى يظهر وقت المباراة بشكل مناسب
-      لمكان وجوده.
-
-    </p>
-
-
-    <p>
-
-      سواء كنت في المغرب أو أوروبا أو أمريكا
-      أو أي مكان آخر، سيظهر لك موعد المباراة
-      وفق توقيتك المحلي دون الحاجة إلى
-      تحويل الوقت يدويًا.
-
-    </p>
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================
-     LEAGUES
-========================= -->
-
-<section id="leagues" class="section">
-
-
-  <div class="section-head">
-
-    <div>
-
-      <p class="eyebrow">
-        البطولات
-      </p>
-
-
-      <h2>
-        أهم البطولات التي نتابعها
-      </h2>
-
-
-      <p>
-
-        مجموعة من البطولات التي يهتم بها
-        متابعو كرة القدم حول العالم.
-
-      </p>
-
-    </div>
-
-  </div>
-
-
-
-  <div class="league-grid">
-
-
-    <div>
-      🇪🇸
-      <strong>
-        الدوري الإسباني
-      </strong>
-    </div>
-
-
-    <div>
-      🏴
-      <strong>
-        الدوري الإنجليزي
-      </strong>
-    </div>
-
-
-    <div>
-      🇫🇷
-      <strong>
-        الدوري الفرنسي
-      </strong>
-    </div>
-
-
-    <div>
-      🇮🇹
-      <strong>
-        الدوري الإيطالي
-      </strong>
-    </div>
-
-
-    <div>
-      🇩🇪
-      <strong>
-        الدوري الألماني
-      </strong>
-    </div>
-
-
-    <div>
-      🏆
-      <strong>
-        دوري أبطال أوروبا
-      </strong>
-    </div>
-
-
-  </div>
-
-
-</section>
-
-
-
-<!-- =========================
-     ORIGINAL CONTENT
-========================= -->
-
-<section id="news" class="section">
-
-
-  <div class="section-head">
-
-    <div>
-
-      <p class="eyebrow">
-        محتوى KoraKoora
-      </p>
-
-
-      <h2>
-        معلومات وتحليلات كرة القدم
-      </h2>
-
-    </div>
-
-  </div>
-
-
-
-  <div class="news-grid">
-
-
-    <article>
-
-      <div class="news-image">
-        ⚽
+        <div class="match-details-hint">اضغط للتفاصيل</div>
       </div>
 
-
-      <h3>
-        كيف تتابع مباريات اليوم؟
-      </h3>
-
-
-      <p>
-
-        يبدأ أفضل تنظيم لمتابعة مباريات
-        كرة القدم بتحديد اليوم والبطولة
-        التي تهمك، ثم مراجعة موعد المباراة
-        قبل بدايتها.
-
-      </p>
-
+      <div class="team-side away-team">
+        ${teamLogo(match.away)}
+        <span>${match.away.name}</span>
+      </div>
     </article>
+  `;
+}
 
+/* =========================================================
+   تجميع وترتيب وعرض البطولات
+   ========================================================= */
 
+function groupByCompetition(matches) {
+  const groups = {};
+  matches.forEach(match => {
+    const name = match.competition || "بطولات أخرى";
+    if (!groups[name]) groups[name] = [];
+    groups[name].push(match);
+  });
+  return groups;
+}
 
-    <article>
+function sortLeagues(entries) {
+  const visitorLeague = getVisitorLeague();
+  return entries.sort(([nameA], [nameB]) => {
+    if (visitorLeague && nameA === visitorLeague) return -1;
+    if (visitorLeague && nameB === visitorLeague) return 1;
+    const indexA = LEAGUE_ORDER.indexOf(nameA);
+    const indexB = LEAGUE_ORDER.indexOf(nameB);
+    if (indexA !== -1 && indexB !== -1) return indexA - indexB;
+    if (indexA !== -1) return -1;
+    if (indexB !== -1) return 1;
+    return nameA.localeCompare(nameB, "ar");
+  });
+}
 
-      <div class="news-image">
-        🏆
+function renderLeague(name, matches) {
+  matches.sort((a, b) => new Date(a.utcDate || 0) - new Date(b.utcDate || 0));
+  const visitorLeague = getVisitorLeague();
+  const isVisitorLeague = visitorLeague && name === visitorLeague;
+  return `
+    <section class="league-section" data-league="${name}">
+      <div class="league-header">
+        <div class="league-title">
+          <span class="league-icon">${isVisitorLeague ? "🌍" : "🏆"}</span>
+          <div>
+            <h3>${name}</h3>
+            <small>${matches.length} ${matches.length === 1 ? "مباراة" : "مباريات"}</small>
+          </div>
+        </div>
       </div>
-
-
-      <h3>
-        لماذا تختلف مواعيد المباريات؟
-      </h3>
-
-
-      <p>
-
-        قد تختلف مواعيد المباريات بسبب
-        التوقيت المحلي أو التغييرات التي
-        تطرأ على جدول المسابقة، لذلك من
-        المفيد متابعة الجدول بشكل مستمر.
-
-      </p>
-
-    </article>
-
-
-
-    <article>
-
-      <div class="news-image">
-        📊
+      <div class="league-matches">
+        ${matches.map(renderMatch).join("")}
       </div>
+    </section>
+  `;
+}
 
+/* =========================================================
+   أزرار الأيام
+   ========================================================= */
 
-      <h3>
-        أهمية متابعة الإحصائيات
-      </h3>
+function updateDayButtons() {
+  const buttons = [
+    { element: yesterdayBtn, value: "yesterday" },
+    { element: todayBtn, value: "today" },
+    { element: tomorrowBtn, value: "tomorrow" }
+  ];
+  buttons.forEach(({ element, value }) => {
+    if (!element) return;
+    element.classList.toggle("selected", selectedDay === value);
+    element.setAttribute("aria-pressed", selectedDay === value ? "true" : "false");
+  });
+}
 
+function changeDay(day) {
+  if (day !== "yesterday" && day !== "today" && day !== "tomorrow") return;
+  selectedDay = day;
+  updateDayButtons();
+  loadMatches();
+}
 
-      <p>
+function setupDayButtons() {
+  if (yesterdayBtn) yesterdayBtn.addEventListener("click", () => changeDay("yesterday"));
+  if (todayBtn) todayBtn.addEventListener("click", () => changeDay("today"));
+  if (tomorrowBtn) tomorrowBtn.addEventListener("click", () => changeDay("tomorrow"));
+  updateDayButtons();
+}
 
-        تساعد الإحصائيات على تكوين صورة
-        أوضح عن أداء الفرق، خصوصًا عند
-        مقارنة النتائج والمواجهات السابقة.
+/* =========================================================
+   أزرار تصفية البطولات (NEW)
+   ========================================================= */
 
-      </p>
+function setupFilterButtons() {
+  const filterBtns = document.querySelectorAll(".filter-btn");
+  if (!filterBtns.length) {
+    console.warn("⚠️ أزرار الفلتر غير موجودة في الـ HTML. تأكد من إضافتها.");
+    return;
+  }
 
-    </article>
+  filterBtns.forEach(btn => {
+    btn.addEventListener("click", function () {
+      const filter = this.dataset.league || "all";
+      currentFilter = filter;
+      filterBtns.forEach(b => b.classList.remove("active"));
+      this.classList.add("active");
+      applyFilter(filter);
+    });
+  });
 
+  // تفعيل زر "الكل" افتراضياً
+  const allBtn = document.querySelector('.filter-btn[data-league="all"]');
+  if (allBtn) allBtn.classList.add("active");
+}
 
-  </div>
+function applyFilter(filter) {
+  const allCards = document.querySelectorAll(".match-card");
+  const allSections = document.querySelectorAll(".league-section");
 
+  if (filter === "all") {
+    allSections.forEach(section => section.style.display = "");
+    allCards.forEach(card => card.style.display = "");
+    return;
+  }
 
-</section>
+  // إخفاء الكل أولاً
+  allSections.forEach(section => section.style.display = "none");
+  allCards.forEach(card => card.style.display = "none");
 
+  // إظهار البطاقات التي تطابق الفلتر
+  let hasVisible = false;
+  allCards.forEach(card => {
+    const cardLeague = card.dataset.leagueCode || "";
+    if (cardLeague === filter) {
+      card.style.display = "";
+      hasVisible = true;
+      const parentSection = card.closest(".league-section");
+      if (parentSection) parentSection.style.display = "";
+    }
+  });
 
+  // إذا لم توجد أي مباراة، نعرض رسالة
+  if (!hasVisible) {
+    const emptyMessage = document.createElement("div");
+    emptyMessage.className = "empty";
+    emptyMessage.innerHTML = `<div class="empty-icon">⚽</div><h3>لا توجد مباريات</h3><p>لا توجد مباريات لهذه البطولة في هذا اليوم.</p>`;
+    // نضيفها بعد آخر قسم
+    const lastSection = allSections[allSections.length - 1];
+    if (lastSection) {
+      lastSection.after(emptyMessage);
+    }
+  } else {
+    // حذف رسالة "لا توجد مباريات" إن وجدت
+    document.querySelectorAll(".empty:not(.empty-initial)").forEach(el => el.remove());
+  }
+}
 
-<!-- =========================
-     USER EXPERIENCE
-========================= -->
+/* =========================================================
+   رسالة عدم وجود مباريات
+   ========================================================= */
 
-<section class="section">
-
-
-  <div class="section-head">
-
-    <div>
-
-      <p class="eyebrow">
-        تجربة الزائر
-      </p>
-
-
-      <h2>
-        مصمم ليكون واضحًا وسهل الاستخدام
-      </h2>
-
+function renderEmptyState() {
+  const labels = { yesterday: "أمس", today: "اليوم", tomorrow: "غدًا" };
+  const label = labels[selectedDay] || "اليوم";
+  list.innerHTML = `
+    <div class="empty empty-initial">
+      <div class="empty-icon">⚽</div>
+      <h3>لا توجد مباريات</h3>
+      <p>لا توجد مباريات لـ ${label} حاليًا.</p>
     </div>
+  `;
+}
 
-  </div>
+/* =========================================================
+   تحميل المباريات
+   ========================================================= */
 
+async function loadMatches() {
+  if (!list) return;
+  list.innerHTML = `<div class="loading-box"><div class="loader"></div><span>جاري تحميل المباريات...</span></div>`;
 
+  try {
+    const response = await fetch(`${API_FILE}?v=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
-  <div style="max-width:850px;line-height:2;">
+    const data = await response.json();
+    let matches = Array.isArray(data.matches) ? data.matches : [];
+    matches = matches.map(normalizeMatch);
 
-    <p>
+    const targetDate = getSelectedDateKey();
+    matches = matches.filter(match => {
+      const matchDate = getLocalDateKey(match.utcDate);
+      return matchDate === targetDate;
+    });
 
-      نحاول في KoraKoora إبقاء المعلومات
-      الأساسية قريبة من المستخدم، لذلك
-      توجد مباريات اليوم والبطولات والمحتوى
-      في أقسام واضحة داخل الصفحة.
+    if (!matches.length) {
+      renderEmptyState();
+      return;
+    }
 
-    </p>
+    const groups = groupByCompetition(matches);
+    const sortedGroups = sortLeagues(Object.entries(groups));
 
+    list.innerHTML = sortedGroups
+      .map(([name, leagueMatches]) => renderLeague(name, leagueMatches))
+      .join("");
 
-    <p>
+    // تطبيق الفلتر الحالي
+    applyFilter(currentFilter);
 
-      كما نوفر صفحات مستقلة للتعريف بالموقع
-      والتواصل معنا وسياسة الخصوصية وشروط
-      الاستخدام، حتى يستطيع الزائر معرفة
-      طبيعة الموقع وكيفية التواصل مع المسؤول
-      عنه.
+  } catch (error) {
+    console.error("KoraKoora error:", error);
+    list.innerHTML = `
+      <div class="empty error-box">
+        <div class="empty-icon">⚠️</div>
+        <h3>تعذر تحميل المباريات</h3>
+        <p>حدث خطأ أثناء تحميل البيانات.</p>
+        <button class="retry-btn" type="button" id="retryMatchesBtn">إعادة المحاولة</button>
+      </div>
+    `;
+    const retryBtn = document.querySelector("#retryMatchesBtn");
+    if (retryBtn) retryBtn.addEventListener("click", loadMatches);
+  }
+}
 
-    </p>
+/* =========================================================
+   التشغيل
+   ========================================================= */
 
-  </div>
-
-</section>
-
-
-
-<!-- =========================
-     FINAL AD PLACEHOLDER
-========================= -->
-
-<div class="ad-slot">
-  مساحة إعلانية
-</div>
-
-
-</div>
-
-</main>
-
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer>
-
-
-  <div class="container footer">
-
-
-    <div>
-
-      <a class="brand" href="index.html">
-        Kora<span>Koora</span>
-      </a>
-
-
-      <p>
-
-        مباريات ونتائج ومعلومات
-        كرة القدم بطريقة واضحة.
-
-      </p>
-
-    </div>
-
-
-
-    <div class="footer-links">
-
-
-      <a href="pages/about.html">
-        من نحن
-      </a>
-
-
-      <a href="pages/contact.html">
-        اتصل بنا
-      </a>
-
-
-      <a href="pages/privacy.html">
-        سياسة الخصوصية
-      </a>
-
-
-      <a href="pages/terms.html">
-        شروط الاستخدام
-      </a>
-
-
-    </div>
-
-
-  </div>
-
-
-
-  <div class="copyright">
-
-    © 2026 KoraKoora — جميع الحقوق محفوظة
-
-  </div>
-
-
-</footer>
-
-
-
-<!-- =========================
-     JAVASCRIPT
-========================= -->
-
-<script src="app.js"></script>
-
-
-</body>
-</html>
+setupDayButtons();
+setupFilterButtons(); // مهم جداً!
+loadMatches();
+setInterval(loadMatches, 5 * 60 * 1000);
