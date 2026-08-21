@@ -15,7 +15,7 @@ jobs:
     steps:
 
       # =====================================================
-      # 1. Download project
+      # 1. Checkout
       # =====================================================
 
       - name: Checkout repository
@@ -38,7 +38,6 @@ jobs:
           import os
           import urllib.request
           import urllib.error
-
           from datetime import datetime, timezone, timedelta
 
 
@@ -57,85 +56,76 @@ jobs:
           API = "https://api.football-data.org/v4"
 
 
-          # البطولات الرئيسية التي يعرضها KoraKoora
+          # =================================================
+          # البطولات الأساسية
+          #
+          # سنجلب كل بطولة بطلب مستقل.
+          # هذا يمنع سقوط Workflow بالكامل
+          # إذا كانت بطولة معينة غير متاحة.
+          # =================================================
+
           COMPETITIONS = [
-              "CL",      # دوري أبطال أوروبا
-              "PL",      # الدوري الإنجليزي
-              "PD",      # الدوري الإسباني
-              "SA",      # الدوري الإيطالي
-              "BL1",     # الدوري الألماني
-              "FL1",     # الدوري الفرنسي
-              "PPL",     # الدوري البرتغالي
-              "DED"      # الدوري الهولندي
+
+              ("CL", "دوري أبطال أوروبا"),
+
+              ("PL", "الدوري الإنجليزي"),
+
+              ("PD", "الدوري الإسباني"),
+
+              ("SA", "الدوري الإيطالي"),
+
+              ("BL1", "الدوري الألماني"),
+
+              ("FL1", "الدوري الفرنسي"),
+
+              ("PPL", "الدوري البرتغالي"),
+
+              ("DED", "الدوري الهولندي")
+
           ]
 
 
           # =================================================
-          # Date range
-          # =================================================
+          # التاريخ
           #
-          # مهم:
-          #
-          # app.js يحول UTC إلى توقيت الزائر.
-          #
-          # لذلك نحتاج إلى جلب نطاق أكبر من:
-          #
-          # أمس ← اليوم ← غدًا
-          #
-          # لضمان عدم فقدان أي مباراة عند اختلاف
-          # المناطق الزمنية بين الزوار.
-          #
-          # نستخدم:
-          #
-          # - يومين قبل UTC
-          # + عشرة أيام بعد UTC
-          #
-          # وهذا يعطي هامشًا آمنًا للمناطق الزمنية
-          # المختلفة حول العالم.
+          # أمس + اليوم + الأيام القادمة
           # =================================================
 
           now = datetime.now(timezone.utc)
 
-
           date_from = (
-              now - timedelta(days=2)
+              now - timedelta(days=1)
           ).strftime("%Y-%m-%d")
-
 
           date_to = (
-              now + timedelta(days=10)
+              now + timedelta(days=9)
           ).strftime("%Y-%m-%d")
 
 
+          print()
+          print("=" * 70)
+          print("KoraKoora Football Data Update")
+          print("=" * 70)
+
           print(
-              f"Fetching matches from {date_from} "
-              f"to {date_to}"
+              f"Date range: {date_from} -> {date_to}"
           )
 
+          print()
+
 
           # =================================================
-          # Request helper
+          # Fetch one competition
           # =================================================
 
-          def fetch_matches():
-
-              competitions = ",".join(
-                  COMPETITIONS
-              )
-
+          def fetch_competition(code, name):
 
               url = (
-                  f"{API}/matches"
+                  f"{API}/competitions/"
+                  f"{code}/matches"
                   f"?dateFrom={date_from}"
                   f"&dateTo={date_to}"
-                  f"&competitions={competitions}"
               )
-
-
-              print()
-              print("Football API request:")
-              print(url)
-              print()
 
 
               request = urllib.request.Request(
@@ -143,13 +133,8 @@ jobs:
                   url,
 
                   headers={
-
-                      "X-Auth-Token":
-                          TOKEN,
-
-                      "User-Agent":
-                          "KoraKoora/1.0"
-
+                      "X-Auth-Token": TOKEN,
+                      "User-Agent": "KoraKoora/1.0"
                   }
 
               )
@@ -162,55 +147,91 @@ jobs:
                       timeout=60
                   ) as response:
 
-                      return json.load(
-                          response
-                      )
+                      data = json.load(response)
+
+
+                  matches = data.get(
+                      "matches",
+                      []
+                  )
+
+
+                  print(
+                      f"OK  {code} - {name}: "
+                      f"{len(matches)} matches"
+                  )
+
+
+                  return matches
 
 
               except urllib.error.HTTPError as error:
 
-                  print(
-                      "Football API HTTP error:",
-                      error.code
+                  body = error.read().decode(
+                      "utf-8",
+                      errors="ignore"
                   )
 
 
                   print(
-                      error.read().decode(
-                          "utf-8",
-                          errors="ignore"
+                      f"SKIP {code} - {name}: "
+                      f"HTTP {error.code}"
+                  )
+
+
+                  if body:
+                      print(
+                          "API response:",
+                          body[:500]
                       )
-                  )
 
 
-                  raise
+                  # لا نسقط Workflow بسبب بطولة واحدة
+                  return []
 
 
               except Exception as error:
 
                   print(
-                      "Football API request failed:",
-                      error
+                      f"SKIP {code} - {name}: "
+                      f"{error}"
                   )
 
 
-                  raise
-
-
-          data = fetch_matches()
+                  return []
 
 
           # =================================================
-          # Process matches
+          # Download all competitions
           # =================================================
 
-          matches = []
+          all_matches = []
 
 
-          for match in data.get(
-              "matches",
-              []
-          ):
+          for code, name in COMPETITIONS:
+
+              matches = fetch_competition(
+                  code,
+                  name
+              )
+
+
+              all_matches.extend(
+                  matches
+              )
+
+
+          print()
+
+
+          # =================================================
+          # Normalize matches
+          # =================================================
+
+          normalized = []
+
+
+          for match in all_matches:
 
               competition = (
                   match.get("competition")
@@ -248,23 +269,19 @@ jobs:
               )
 
 
-              matches.append({
+              normalized.append({
 
                   "id":
                       match.get("id"),
 
-
                   "status":
                       match.get("status"),
-
 
                   "utcDate":
                       match.get("utcDate"),
 
-
                   "matchday":
                       match.get("matchday"),
-
 
                   "stage":
                       match.get("stage"),
@@ -355,7 +372,6 @@ jobs:
 
                       },
 
-
                       "fullTime": {
 
                           "home":
@@ -372,17 +388,15 @@ jobs:
 
 
           # =================================================
-          # Remove duplicates
+          # Remove duplicate matches
           # =================================================
 
           unique_matches = {}
 
 
-          for match in matches:
+          for match in normalized:
 
-              match_id = match.get(
-                  "id"
-              )
+              match_id = match.get("id")
 
 
               if match_id is not None:
@@ -398,15 +412,13 @@ jobs:
 
 
           # =================================================
-          # Sort by date
+          # Sort by UTC date
           # =================================================
 
           matches.sort(
 
               key=lambda match:
-                  match.get(
-                      "utcDate"
-                  ) or ""
+                  match.get("utcDate") or ""
 
           )
 
@@ -450,9 +462,7 @@ jobs:
 
                           or {}
 
-                      ).get(
-                          "code"
-                      ),
+                      ).get("code"),
 
                       99
 
@@ -468,7 +478,7 @@ jobs:
 
 
           # =================================================
-          # Final output
+          # Output
           # =================================================
 
           output = {
@@ -476,22 +486,23 @@ jobs:
               "updatedAt":
                   now.isoformat(),
 
-
               "dateFrom":
                   date_from,
-
 
               "dateTo":
                   date_to,
 
+              "competitions": [
 
-              "competitions":
-                  COMPETITIONS,
+                  code
 
+                  for code, name
+                  in COMPETITIONS
+
+              ],
 
               "count":
                   len(matches),
-
 
               "matches":
                   matches
@@ -500,7 +511,7 @@ jobs:
 
 
           # =================================================
-          # Save JSON
+          # Save file
           # =================================================
 
           os.makedirs(
@@ -510,13 +521,9 @@ jobs:
 
 
           with open(
-
               "data/matches.json",
-
               "w",
-
               encoding="utf-8"
-
           ) as file:
 
               json.dump(
@@ -533,17 +540,17 @@ jobs:
 
 
           # =================================================
-          # Debug information
+          # Final report
           # =================================================
 
           print()
-          print("=" * 60)
+          print("=" * 70)
 
           print(
-              f"KoraKoora: {len(matches)} matches fetched"
+              f"TOTAL MATCHES: {len(matches)}"
           )
 
-          print("=" * 60)
+          print("=" * 70)
 
 
           competition_counts = {}
@@ -574,57 +581,67 @@ jobs:
                   competition_counts.get(
                       name,
                       0
-                  ) + 1
+                  )
+
+                  + 1
 
               )
 
 
-          for name, count in (
+          for name, count in sorted(
               competition_counts.items()
           ):
 
               print(
-                  f"- {name}: {count} matches"
+                  f"- {name}: {count}"
               )
 
 
-          print("=" * 60)
-
+          print("=" * 70)
 
           PY
 
 
       # =====================================================
-      # 3. Verify generated file
+      # 3. Verify JSON
       # =====================================================
 
       - name: Verify matches.json
         run: |
 
-          echo "======================================"
-          echo "KoraKoora matches.json"
-          echo "======================================"
-
-
           python - <<'PY'
 
           import json
 
+          path = "data/matches.json"
+
 
           with open(
-
-              "data/matches.json",
-
+              path,
               encoding="utf-8"
-
           ) as file:
 
               data = json.load(file)
 
 
+          matches = data.get(
+              "matches",
+              []
+          )
+
+
+          print("=" * 60)
+
+          print(
+              "KoraKoora verification"
+          )
+
+          print("=" * 60)
+
+
           print(
               "Total matches:",
-              data.get("count", 0)
+              len(matches)
           )
 
 
@@ -640,54 +657,42 @@ jobs:
           )
 
 
+          if not isinstance(
+              matches,
+              list
+          ):
+
+              raise SystemExit(
+                  "ERROR: matches is not a list"
+              )
+
+
+          for match in matches:
+
+              if not match.get("id"):
+
+                  raise SystemExit(
+                      "ERROR: Match without ID"
+                  )
+
+
+              if not match.get("utcDate"):
+
+                  raise SystemExit(
+                      "ERROR: Match without utcDate"
+                  )
+
+
           print()
-          print("Competitions:")
-
-
-          competitions = {}
-
-
-          for match in data.get(
-              "matches",
-              []
-          ):
-
-              competition = (
-                  match.get("competition")
-                  or {}
-              )
-
-
-              name = (
-                  competition.get("name")
-                  or "Unknown"
-              )
-
-
-              competitions[name] = (
-
-                  competitions.get(
-                      name,
-                      0
-                  ) + 1
-
-              )
-
-
-          for name, count in (
-              competitions.items()
-          ):
-
-              print(
-                  f"  {name}: {count}"
-              )
-
+          print(
+              "JSON verification: OK"
+          )
 
           PY
 
 
       # =====================================================
-      # 4. Publish updated data
+      # 4. Publish
       # =====================================================
 
       - name: Publish updated data
@@ -695,7 +700,6 @@ jobs:
 
           git config user.name \
             "github-actions[bot]"
-
 
           git config user.email \
             "41898282+github-actions[bot]@users.noreply.github.com"
@@ -712,7 +716,6 @@ jobs:
 
               git commit \
                 -m "Update KoraKoora football matches"
-
 
               git push
 
