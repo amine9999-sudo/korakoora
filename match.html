@@ -112,7 +112,6 @@
       border: 1px solid rgba(255,255,255,0.04);
     }
 
-    /* ===== القنوات الناقلة ===== */
     .broadcast-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -146,16 +145,8 @@
       flex-shrink: 0;
     }
     .broadcast-info { flex: 1; }
-    .broadcast-info strong {
-      display: block;
-      color: #ffffff;
-      font-size: 15px;
-      margin-bottom: 3px;
-    }
-    .broadcast-info span {
-      color: #8992a3;
-      font-size: 12px;
-    }
+    .broadcast-info strong { display: block; color: #ffffff; font-size: 15px; margin-bottom: 3px; }
+    .broadcast-info span { color: #8992a3; font-size: 12px; }
     .broadcast-action {
       padding: 8px 14px;
       border-radius: 8px;
@@ -175,7 +166,6 @@
       font-size: 13px;
       line-height: 1.7;
     }
-    .broadcast-note i { margin-left: 6px; }
 
     .loading-details { text-align: center; padding: 70px 20px; }
     .loading-details .loader {
@@ -208,7 +198,6 @@
       display: flex; align-items: center; justify-content: center;
     }
 
-    /* ===== قائمة الجوال ===== */
     .nav-menu {
       display: flex;
       gap: 25px;
@@ -261,10 +250,12 @@
         font-size: 18px;
         cursor: pointer;
       }
-      .match-teams-scoreboard { flex-direction: column; padding: 30px 15px; }
-      .main-score { font-size: 3rem; order: -1; margin-bottom: 20px; }
-      .team-logo-fallback { width: 70px; height: 70px; font-size: 2rem; }
-      .details-team-name { font-size: 1.2rem; }
+      .match-details-teams { gap: 12px; }
+      .details-team img, .team-logo-fallback { width: 65px; height: 65px; font-size: 1.8rem; }
+      .details-team-name { font-size: 15px; }
+      .details-time { font-size: 22px; }
+      .details-score { font-size: 28px; }
+      .details-center { min-width: 90px; }
       .info-grid { grid-template-columns: 1fr; }
       .broadcast-grid { grid-template-columns: 1fr; }
     }
@@ -320,9 +311,7 @@
 
 <script>
 const API_FILE = "matches.json";
-const H2H_FILE = "head2head.json";
 
-/* ===== القنوات الناقلة حسب البطولة ===== */
 const BROADCASTERS = {
   "PL": [
     { name: "BeIN Sports 1", region: "الشرق الأوسط وشمال أفريقيا", icon: "📡", color: "#1a1a2e", link: "https://www.beinsports.com" },
@@ -393,7 +382,7 @@ function renderBroadcasters(leagueCode) {
         `).join('')}
       </div>
       <div class="broadcast-note">
-        <i>ℹ️</i> KoraKoora لا يقدم بثاً مباشراً للمباريات. نعرض لك فقط القنوات والمنصات الرسمية التي تمتلك حقوق النشر. يرجى الاشتراك في المنصة المناسبة لمنطقتك.
+        ℹ️ KoraKoora لا يقدم بثاً مباشراً للمباريات. نعرض لك فقط القنوات والمنصات الرسمية التي تمتلك حقوق النشر. يرجى الاشتراك في المنصة المناسبة لمنطقتك.
       </div>
     </section>
   `;
@@ -455,7 +444,8 @@ const LEAGUE_CODES = {
   "Ligue 1": "FL1",
   "Primeira Liga": "PPL",
   "Eredivisie": "DED",
-  "UEFA Champions League": "CL", "Champions League": "CL"
+  "UEFA Champions League": "CL", "Champions League": "CL",
+  "UEFA Europa League": "EL", "Europa League": "EL"
 };
 
 function getCompetitionName(match) {
@@ -531,7 +521,6 @@ async function loadMatch() {
     const match = matches.find(item => String(item.id) === String(matchId));
     if (!match) { showError("لم يتم العثور على هذه المباراة في البيانات الحالية."); return; }
     renderMatchDetails(match);
-    loadHeadToHead(matchId);
   } catch (error) {
     console.error("Match details error:", error);
     showError("حدث خطأ أثناء تحميل تفاصيل المباراة.");
@@ -546,7 +535,6 @@ function renderMatchDetails(match) {
   const status = getStatus(match);
   const competition = getCompetitionName(match);
   const leagueCode = getCompetitionCode(match);
-  const isFinished = status.className === "finished";
   const hasScore = score.home !== null && score.away !== null;
 
   const center = hasScore
@@ -585,70 +573,12 @@ function renderMatchDetails(match) {
         <div class="placeholder-box">معلومات الحكم ستظهر هنا عندما تكون متوفرة في مصدر البيانات.</div>
       </section>
       <section class="details-section">
-        <h2>آخر المواجهات بين الفريقين</h2>
-        <div id="h2hContent" class="placeholder-box">جاري تحميل المواجهات السابقة...</div>
-      </section>
-      <section class="details-section">
         <h2>التشكيلات والأحداث</h2>
         <div class="placeholder-box">التشكيلات، الأهداف، البطاقات، التبديلات والإحصائيات ستظهر هنا عندما تصبح متاحة من مصدر البيانات.</div>
       </section>
     </article>
   `;
   document.title = `${home.name} × ${away.name} | KoraKoora`;
-}
-
-async function loadHeadToHead(matchId) {
-  const container = document.querySelector("#h2hContent");
-  if (!container) return;
-  try {
-    const response = await fetch(`${H2H_FILE}?v=${Date.now()}`, { cache: "no-store" });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
-    const matches = Array.isArray(data.matches) ? data.matches : Array.isArray(data) ? data : [];
-    const currentResponse = await fetch(`${API_FILE}?v=${Date.now()}`, { cache: "no-store" });
-    if (!currentResponse.ok) throw new Error(`HTTP ${currentResponse.status}`);
-    const currentData = await currentResponse.json();
-    const allMatches = Array.isArray(currentData.matches) ? currentData.matches : [];
-    const currentMatch = allMatches.find(item => String(item.id) === String(matchId));
-    if (!currentMatch) { container.innerHTML = "لم يتم العثور على المباراة."; return; }
-    const homeId = currentMatch.homeTeam?.id ?? currentMatch.home?.id;
-    const awayId = currentMatch.awayTeam?.id ?? currentMatch.away?.id;
-    const homeName = currentMatch.homeTeam?.name || currentMatch.home?.name || "";
-    const awayName = currentMatch.awayTeam?.name || currentMatch.away?.name || "";
-    const normalize = value => String(value || "").trim().toLowerCase();
-    const sameTeam = (team, id, name) => {
-      if (team?.id != null && id != null) return String(team.id) === String(id);
-      return normalize(team?.name) === normalize(name);
-    };
-    const h2h = matches.filter(item => {
-      const itemHome = item.homeTeam || item.home;
-      const itemAway = item.awayTeam || item.away;
-      if (!itemHome || !itemAway) return false;
-      return (
-        (sameTeam(itemHome, homeId, homeName) && sameTeam(itemAway, awayId, awayName)) ||
-        (sameTeam(itemHome, awayId, awayName) && sameTeam(itemAway, homeId, homeName))
-      );
-    });
-    if (h2h.length === 0) { container.innerHTML = "لا توجد مواجهات سابقة متاحة بين الفريقين."; return; }
-    container.innerHTML = h2h.slice(0, 5).map(match => {
-      const home = getTeam(match.homeTeam || match.home);
-      const away = getTeam(match.awayTeam || match.away);
-      const score = getScore(match);
-      return `
-        <div style="padding:12px 0; border-bottom:1px solid rgba(255,255,255,0.06);">
-          <div style="display:flex; justify-content:space-between; align-items:center; gap:10px;">
-            <strong style="color:#f5f7fb;">${home.name}</strong>
-            <strong style="color:#ffffff;">${score.home ?? "-"} - ${score.away ?? "-"}</strong>
-            <strong style="color:#f5f7fb;">${away.name}</strong>
-          </div>
-          <div style="text-align:center; margin-top:6px; font-size:12px; color:#8992a3;">${formatDate(match.utcDate)}</div>
-        </div>
-      `;
-    }).join("");
-  } catch (error) {
-    console.error("H2H error:", error);
-    container.innerHTML = "تعذر تحميل المواجهات السابقة حاليًا.";
-  }
 }
 
 function showError(message) {
@@ -663,7 +593,6 @@ function showError(message) {
   `;
 }
 
-/* ===== قائمة الجوال ===== */
 document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
   const nav = document.querySelector('.nav-menu');
   nav.classList.toggle('open');
