@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T11:45:42.338003+00:00",
+  "updatedAt": "2026-08-22T13:44:02.660865+00:00",
   "dateFrom": "2026-08-21",
   "dateTo": "2026-08-31",
   "competitions": [
@@ -60,7 +60,7 @@
     },
     {
       "id": 560543,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-22T11:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -93,11 +93,11 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "fullTime": {
-          "home": 0,
+          "home": 2,
           "away": 0
         }
       }
@@ -109,7 +109,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 210717,
+        "name": "Farai Hallam",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -148,7 +153,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11446,
+        "name": "Robert Jones",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -187,7 +197,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11520,
+        "name": "Paul Tierney",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -855,7 +870,12 @@
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 207113,
+        "name": "César Soto Grado",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -2888,7 +2908,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57054,
+        "name": "Mathieu Vernice",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -4214,7 +4239,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43858,
+        "name": "Serdar Gözübüyük",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
