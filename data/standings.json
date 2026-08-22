@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T10:53:14.342391+00:00",
+  "updatedAt": "2026-08-22T11:45:42.338003+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -706,6 +706,42 @@
         {
           "position": 2,
           "team": {
+            "id": 322,
+            "name": "Hull City AFC",
+            "shortName": "Hull City",
+            "tla": "HUL",
+            "crest": "https://crests.football-data.org/322.png"
+          },
+          "playedGames": 1,
+          "won": 0,
+          "draw": 1,
+          "lost": 0,
+          "points": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": 66,
+            "name": "Manchester United FC",
+            "shortName": "Man United",
+            "tla": "MUN",
+            "crest": "https://crests.football-data.org/66.png"
+          },
+          "playedGames": 1,
+          "won": 0,
+          "draw": 1,
+          "lost": 0,
+          "points": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0
+        },
+        {
+          "position": 4,
+          "team": {
             "id": 1044,
             "name": "AFC Bournemouth",
             "shortName": "Bournemouth",
@@ -722,7 +758,7 @@
           "goalDifference": 0
         },
         {
-          "position": 2,
+          "position": 4,
           "team": {
             "id": 58,
             "name": "Aston Villa FC",
@@ -740,7 +776,7 @@
           "goalDifference": 0
         },
         {
-          "position": 2,
+          "position": 4,
           "team": {
             "id": 402,
             "name": "Brentford FC",
@@ -758,7 +794,7 @@
           "goalDifference": 0
         },
         {
-          "position": 2,
+          "position": 4,
           "team": {
             "id": 397,
             "name": "Brighton & Hove Albion FC",
@@ -776,7 +812,7 @@
           "goalDifference": 0
         },
         {
-          "position": 2,
+          "position": 4,
           "team": {
             "id": 61,
             "name": "Chelsea FC",
@@ -794,7 +830,7 @@
           "goalDifference": 0
         },
         {
-          "position": 2,
+          "position": 4,
           "team": {
             "id": 354,
             "name": "Crystal Palace FC",
@@ -812,7 +848,7 @@
           "goalDifference": 0
         },
         {
-          "position": 2,
+          "position": 4,
           "team": {
             "id": 62,
             "name": "Everton FC",
@@ -830,7 +866,7 @@
           "goalDifference": 0
         },
         {
-          "position": 2,
+          "position": 4,
           "team": {
             "id": 63,
             "name": "Fulham FC",
@@ -848,25 +884,7 @@
           "goalDifference": 0
         },
         {
-          "position": 2,
-          "team": {
-            "id": 322,
-            "name": "Hull City AFC",
-            "shortName": "Hull City",
-            "tla": "HUL",
-            "crest": "https://crests.football-data.org/322.png"
-          },
-          "playedGames": 0,
-          "won": 0,
-          "draw": 0,
-          "lost": 0,
-          "points": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0
-        },
-        {
-          "position": 2,
+          "position": 4,
           "team": {
             "id": 349,
             "name": "Ipswich Town FC",
@@ -884,7 +902,7 @@
           "goalDifference": 0
         },
         {
-          "position": 2,
+          "position": 4,
           "team": {
             "id": 341,
             "name": "Leeds United FC",
@@ -902,7 +920,7 @@
           "goalDifference": 0
         },
         {
-          "position": 2,
+          "position": 4,
           "team": {
             "id": 64,
             "name": "Liverpool FC",
@@ -920,7 +938,7 @@
           "goalDifference": 0
         },
         {
-          "position": 2,
+          "position": 4,
           "team": {
             "id": 65,
             "name": "Manchester City FC",
@@ -938,25 +956,7 @@
           "goalDifference": 0
         },
         {
-          "position": 2,
-          "team": {
-            "id": 66,
-            "name": "Manchester United FC",
-            "shortName": "Man United",
-            "tla": "MUN",
-            "crest": "https://crests.football-data.org/66.png"
-          },
-          "playedGames": 0,
-          "won": 0,
-          "draw": 0,
-          "lost": 0,
-          "points": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0
-        },
-        {
-          "position": 2,
+          "position": 4,
           "team": {
             "id": 67,
             "name": "Newcastle United FC",
@@ -974,7 +974,7 @@
           "goalDifference": 0
         },
         {
-          "position": 2,
+          "position": 4,
           "team": {
             "id": 351,
             "name": "Nottingham Forest FC",
@@ -992,7 +992,7 @@
           "goalDifference": 0
         },
         {
-          "position": 2,
+          "position": 4,
           "team": {
             "id": 71,
             "name": "Sunderland AFC",
@@ -1010,7 +1010,7 @@
           "goalDifference": 0
         },
         {
-          "position": 2,
+          "position": 4,
           "team": {
             "id": 73,
             "name": "Tottenham Hotspur FC",
