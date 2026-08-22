@@ -3,21 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
-  <meta name="description"
-        content="KoraKoora منصة لمتابعة مباريات كرة القدم، المواعيد والنتائج بتوقيتك المحلي أينما كنت، مع معلومات عن أهم البطولات وأبرز المواجهات.">
-
-  <meta name="robots"
-        content="index, follow">
-
-  <meta name="theme-color"
-        content="#111111">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KoraKoora منصة لمتابعة مباريات كرة القدم، المواعيد والنتائج بتوقيتك المحلي أينما كنت، مع معلومات عن أهم البطولات وأبرز المواجهات.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#111111">
   <title>KoraKoora | مباريات اليوم بتوقيتك المحلي</title>
-
   <link rel="stylesheet" href="style.css">
 
   <style>
@@ -76,286 +66,115 @@
         font-size: 12px;
       }
     }
+
+    /* ===== بطولات قابلة للنقر ===== */
+    .league-grid a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 30px 20px;
+      background: #11151e;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 16px;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+
+    .league-grid a:hover {
+      background: #181d27;
+      border-color: rgba(61,139,255,0.25);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    }
+
+    .league-grid a span {
+      font-size: 32px;
+      line-height: 1;
+    }
+
+    .league-grid a strong {
+      font-size: 15px;
+      color: #f5f7fb;
+    }
   </style>
-
 </head>
-
 
 <body>
 
-
-<!-- =========================
-     HEADER
-========================= -->
-
+<!-- ========================= HEADER ========================= -->
 <header class="topbar">
-
   <div class="container nav">
-
-    <a class="brand" href="index.html">
-      Kora<span>Koora</span>
-    </a>
-
-
+    <a class="brand" href="index.html">Kora<span>Koora</span></a>
     <nav aria-label="القائمة الرئيسية">
-
-      <a class="active" href="index.html">
-        الرئيسية
-      </a>
-
-      <a href="#matches">
-        مباريات اليوم
-      </a>
-
-      <a href="#leagues">
-        البطولات
-      </a>
-
-      <a href="#news">
-        أخبار وتحليلات
-      </a>
-
+      <a class="active" href="index.html">الرئيسية</a>
+      <a href="#matches">مباريات اليوم</a>
+      <a href="#leagues">البطولات</a>
+      <a href="#news">أخبار وتحليلات</a>
     </nav>
-
-
-    <button
-      class="search"
-      aria-label="بحث"
-      type="button">
-      ⌕
-    </button>
-
+    <button class="search" aria-label="بحث" type="button">⌕</button>
   </div>
-
 </header>
-
-
 
 <main>
 
-
-<!-- =========================
-     HERO
-========================= -->
-
+<!-- ========================= HERO ========================= -->
 <section class="hero">
-
   <div class="container hero-inner">
-
-
     <div>
-
-      <p class="eyebrow">
-        ⚽ متابعة كرة القدم ببساطة
-      </p>
-
-
-      <h1>
-
-        مباريات اليوم
-
-        <br>
-
-        <span>بتوقيتك المحلي</span>
-
-      </h1>
-
-
-      <p class="lead">
-
-        تابع مواعيد مباريات كرة القدم ونتائجها
-        بتوقيتك المحلي أينما كنت،
-        مع عرض واضح ومناسب للهواتف.
-
-      </p>
-
-
-      <a
-        href="#matches"
-        style="
-          display:inline-block;
-          margin-top:20px;
-          padding:12px 22px;
-          border-radius:8px;
-          text-decoration:none;
-          background:#2878ed;
-          color:#fff;
-          font-weight:bold;
-        ">
-
-        📅 مشاهدة مباريات اليوم
-
-      </a>
-
+      <p class="eyebrow">⚽ متابعة كرة القدم ببساطة</p>
+      <h1>مباريات اليوم<br><span>بتوقيتك المحلي</span></h1>
+      <p class="lead">تابع مواعيد مباريات كرة القدم ونتائجها بتوقيتك المحلي أينما كنت، مع عرض واضح ومناسب للهواتف.</p>
+      <a href="#matches" style="display:inline-block; margin-top:20px; padding:12px 22px; border-radius:8px; text-decoration:none; background:#2878ed; color:#fff; font-weight:bold;">📅 مشاهدة مباريات اليوم</a>
     </div>
-
-
-
     <div class="hero-card">
-
-      <div class="live-dot">
-        ● مباشر
-      </div>
-
-
-      <strong>
-        ماذا تجد في KoraKoora؟
-      </strong>
-
-
-      <span>
-        مواعيد المباريات والنتائج
-        ومعلومات تساعدك على متابعة
-        أهم مواجهات كرة القدم.
-      </span>
-
+      <div class="live-dot">● مباشر</div>
+      <strong>ماذا تجد في KoraKoora؟</strong>
+      <span>مواعيد المباريات والنتائج ومعلومات تساعدك على متابعة أهم مواجهات كرة القدم.</span>
     </div>
-
-
   </div>
-
 </section>
-
-
 
 <div class="container">
 
-
-<!-- =========================
-     INTRODUCTION
-========================= -->
-
+<!-- ========================= INTRODUCTION ========================= -->
 <section class="section">
-
   <div class="section-head">
-
     <div>
-
-      <p class="eyebrow">
-        عن KoraKoora
-      </p>
-
-      <h2>
-        منصة بسيطة لعشاق كرة القدم
-      </h2>
-
+      <p class="eyebrow">عن KoraKoora</p>
+      <h2>منصة بسيطة لعشاق كرة القدم</h2>
     </div>
-
   </div>
-
-
-  <div
-    style="
-      max-width:850px;
-      line-height:2;
-    ">
-
-    <p>
-
-      صُمم KoraKoora ليكون مكانًا بسيطًا
-      وسهل الاستخدام للزائر الذي يريد معرفة
-      مباريات كرة القدم دون الحاجة إلى البحث
-      في عدة صفحات.
-
-    </p>
-
-
-    <p>
-
-      نركز على تقديم المعلومات بطريقة واضحة،
-      مع الاهتمام بالمواعيد والنتائج والبطولات
-      التي تهم متابعي كرة القدم في مختلف أنحاء
-      العالم.
-
-    </p>
-
-
-    <p>
-
-      هدفنا هو تطوير الموقع تدريجيًا وإضافة
-      معلومات مفيدة تساعد الزائر على معرفة
-      ما يحدث في عالم كرة القدم بطريقة منظمة
-      وسهلة القراءة.
-
-    </p>
-
+  <div style="max-width:850px; line-height:2;">
+    <p>صُمم KoraKoora ليكون مكانًا بسيطًا وسهل الاستخدام للزائر الذي يريد معرفة مباريات كرة القدم دون الحاجة إلى البحث في عدة صفحات.</p>
+    <p>نركز على تقديم المعلومات بطريقة واضحة، مع الاهتمام بالمواعيد والنتائج والبطولات التي تهم متابعي كرة القدم في مختلف أنحاء العالم.</p>
+    <p>هدفنا هو تطوير الموقع تدريجيًا وإضافة معلومات مفيدة تساعد الزائر على معرفة ما يحدث في عالم كرة القدم بطريقة منظمة وسهلة القراءة.</p>
   </div>
-
 </section>
 
+<!-- ========================= AD PLACEHOLDER ========================= -->
+<div class="ad-slot">مساحة إعلانية</div>
 
-
-<!-- =========================
-     AD PLACEHOLDER
-========================= -->
-
-<div class="ad-slot">
-  مساحة إعلانية
-</div>
-
-
-
-<!-- =========================
-     MATCHES
-========================= -->
-
+<!-- ========================= MATCHES ========================= -->
 <section id="matches" class="section">
-
   <div class="section-head">
-
-
     <div>
-
-      <p class="eyebrow">
-        المواعيد والنتائج
-      </p>
-
-
-      <h2>
-        مباريات اليوم
-      </h2>
-
-
-      <p>
-
-        تعرف على المباريات المجدولة
-        وتابع النتائج عند توفرها،
-        مع عرض وقت كل مباراة بتوقيتك المحلي.
-
-      </p>
-
+      <p class="eyebrow">المواعيد والنتائج</p>
+      <h2>مباريات اليوم</h2>
+      <p>تعرف على المباريات المجدولة وتابع النتائج عند توفرها، مع عرض وقت كل مباراة بتوقيتك المحلي.</p>
     </div>
-
-
-
     <div class="days">
-
-      <button id="yesterdayBtn">
-        أمس
-      </button>
-
-
-      <button
-        id="todayBtn"
-        class="selected">
-
-        اليوم
-
-      </button>
-
-
-      <button id="tomorrowBtn">
-        غدًا
-      </button>
-
+      <button id="yesterdayBtn">أمس</button>
+      <button id="todayBtn" class="selected">اليوم</button>
+      <button id="tomorrowBtn">غدًا</button>
     </div>
-
-
   </div>
 
-
-
-  <!-- ===== NEW: أزرار تصفية البطولات ===== -->
+  <!-- ===== أزرار تصفية البطولات ===== -->
   <div class="filters-container">
     <button class="filter-btn active" data-league="all">🏆 الكل</button>
     <button class="filter-btn" data-league="PL">🇬🇧 الإنجليزي</button>
@@ -367,524 +186,157 @@
     <button class="filter-btn" data-league="DED">🇳🇱 الهولندي</button>
   </div>
 
-
   <div id="liveMatches">
-
-    <div class="empty">
-
-      جاري تحميل المباريات...
-
-    </div>
-
+    <div class="empty">جاري تحميل المباريات...</div>
   </div>
-
-
 </section>
 
-
-
-<!-- =========================
-     HOW IT WORKS
-========================= -->
-
+<!-- ========================= HOW IT WORKS ========================= -->
 <section class="section">
-
   <div class="section-head">
-
     <div>
-
-      <p class="eyebrow">
-        طريقة الاستخدام
-      </p>
-
-      <h2>
-        كيف تستفيد من KoraKoora؟
-      </h2>
-
+      <p class="eyebrow">طريقة الاستخدام</p>
+      <h2>كيف تستفيد من KoraKoora؟</h2>
     </div>
-
   </div>
-
-
-
   <div class="league-grid">
-
-
     <div>
-
-      <strong>
-        01 — اختر اليوم
-      </strong>
-
-      <p>
-        استخدم خيارات أمس واليوم وغدًا
-        للوصول إلى المباريات المرتبطة
-        بالتاريخ الذي تبحث عنه.
-      </p>
-
+      <strong>01 — اختر اليوم</strong>
+      <p>استخدم خيارات أمس واليوم وغدًا للوصول إلى المباريات المرتبطة بالتاريخ الذي تبحث عنه.</p>
     </div>
-
-
-
     <div>
-
-      <strong>
-        02 — تابع المباريات
-      </strong>
-
-      <p>
-        تظهر معلومات المباريات في قسم
-        مخصص حتى تستطيع الوصول إليها
-        بسرعة من الصفحة الرئيسية.
-      </p>
-
+      <strong>02 — تابع المباريات</strong>
+      <p>تظهر معلومات المباريات في قسم مخصص حتى تستطيع الوصول إليها بسرعة من الصفحة الرئيسية.</p>
     </div>
-
-
-
     <div>
-
-      <strong>
-        03 — استكشف البطولات
-      </strong>
-
-      <p>
-        يمكنك التعرف على مجموعة من أشهر
-        البطولات الأوروبية والعالمية.
-      </p>
-
+      <strong>03 — استكشف البطولات</strong>
+      <p>يمكنك التعرف على مجموعة من أشهر البطولات الأوروبية والعالمية.</p>
     </div>
-
-
-
     <div>
-
-      <strong>
-        04 — اقرأ المحتوى
-      </strong>
-
-      <p>
-        نعمل على تقديم محتوى ومعلومات
-        كروية تساعد الزائر على فهم
-        المباريات والبطولات بشكل أفضل.
-      </p>
-
+      <strong>04 — اقرأ المحتوى</strong>
+      <p>نعمل على تقديم محتوى ومعلومات كروية تساعد الزائر على فهم المباريات والبطولات بشكل أفضل.</p>
     </div>
-
-
   </div>
-
 </section>
 
-
-
-<!-- =========================
-     TIMEZONE INFORMATION
-========================= -->
-
+<!-- ========================= TIMEZONE INFORMATION ========================= -->
 <section class="section">
-
   <div class="section-head">
-
     <div>
-
-      <p class="eyebrow">
-        توقيت المباريات
-      </p>
-
-      <h2>
-        المباريات بتوقيتك المحلي
-      </h2>
-
+      <p class="eyebrow">توقيت المباريات</p>
+      <h2>المباريات بتوقيتك المحلي</h2>
     </div>
-
   </div>
-
-
-  <div
-    style="
-      max-width:850px;
-      line-height:2;
-    ">
-
-    <p>
-
-      يتم عرض موعد كل مباراة تلقائيًا
-      وفق التوقيت المحلي لجهاز الزائر،
-      حتى يظهر وقت المباراة بشكل مناسب
-      لمكان وجوده.
-
-    </p>
-
-
-    <p>
-
-      سواء كنت في المغرب أو أوروبا أو أمريكا
-      أو أي مكان آخر، سيظهر لك موعد المباراة
-      وفق توقيتك المحلي دون الحاجة إلى
-      تحويل الوقت يدويًا.
-
-    </p>
-
+  <div style="max-width:850px; line-height:2;">
+    <p>يتم عرض موعد كل مباراة تلقائيًا وفق التوقيت المحلي لجهاز الزائر، حتى يظهر وقت المباراة بشكل مناسب لمكان وجوده.</p>
+    <p>سواء كنت في المغرب أو أوروبا أو أمريكا أو أي مكان آخر، سيظهر لك موعد المباراة وفق توقيتك المحلي دون الحاجة إلى تحويل الوقت يدويًا.</p>
   </div>
-
 </section>
 
-
-
-<!-- =========================
-     LEAGUES
-========================= -->
-
+<!-- ========================= LEAGUES (قابلة للنقر) ========================= -->
 <section id="leagues" class="section">
-
-
   <div class="section-head">
-
     <div>
-
-      <p class="eyebrow">
-        البطولات
-      </p>
-
-
-      <h2>
-        أهم البطولات التي نتابعها
-      </h2>
-
-
-      <p>
-
-        مجموعة من البطولات التي يهتم بها
-        متابعو كرة القدم حول العالم.
-
-      </p>
-
+      <p class="eyebrow">البطولات</p>
+      <h2>أهم البطولات التي نتابعها</h2>
+      <p>اضغط على أي بطولة لرؤية ترتيبها ومبارياتها.</p>
     </div>
-
   </div>
-
-
 
   <div class="league-grid">
-
-
-    <div>
-      🇪🇸
-      <strong>
-        الدوري الإسباني
-      </strong>
-    </div>
-
-
-    <div>
-      🏴
-      <strong>
-        الدوري الإنجليزي
-      </strong>
-    </div>
-
-
-    <div>
-      🇫🇷
-      <strong>
-        الدوري الفرنسي
-      </strong>
-    </div>
-
-
-    <div>
-      🇮🇹
-      <strong>
-        الدوري الإيطالي
-      </strong>
-    </div>
-
-
-    <div>
-      🇩🇪
-      <strong>
-        الدوري الألماني
-      </strong>
-    </div>
-
-
-    <div>
-      🏆
-      <strong>
-        دوري أبطال أوروبا
-      </strong>
-    </div>
-
-
+    <a href="league.html?code=PD">
+      <span>🇪🇸</span>
+      <strong>الدوري الإسباني</strong>
+    </a>
+    <a href="league.html?code=PL">
+      <span>🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+      <strong>الدوري الإنجليزي</strong>
+    </a>
+    <a href="league.html?code=FL1">
+      <span>🇫🇷</span>
+      <strong>الدوري الفرنسي</strong>
+    </a>
+    <a href="league.html?code=SA">
+      <span>🇮🇹</span>
+      <strong>الدوري الإيطالي</strong>
+    </a>
+    <a href="league.html?code=BL1">
+      <span>🇩🇪</span>
+      <strong>الدوري الألماني</strong>
+    </a>
+    <a href="league.html?code=CL">
+      <span>🏆</span>
+      <strong>دوري أبطال أوروبا</strong>
+    </a>
   </div>
-
-
 </section>
 
-
-
-<!-- =========================
-     ORIGINAL CONTENT
-========================= -->
-
+<!-- ========================= ORIGINAL CONTENT ========================= -->
 <section id="news" class="section">
-
-
   <div class="section-head">
-
     <div>
-
-      <p class="eyebrow">
-        محتوى KoraKoora
-      </p>
-
-
-      <h2>
-        معلومات وتحليلات كرة القدم
-      </h2>
-
+      <p class="eyebrow">محتوى KoraKoora</p>
+      <h2>معلومات وتحليلات كرة القدم</h2>
     </div>
-
   </div>
-
-
-
   <div class="news-grid">
-
-
     <article>
-
-      <div class="news-image">
-        ⚽
-      </div>
-
-
-      <h3>
-        كيف تتابع مباريات اليوم؟
-      </h3>
-
-
-      <p>
-
-        يبدأ أفضل تنظيم لمتابعة مباريات
-        كرة القدم بتحديد اليوم والبطولة
-        التي تهمك، ثم مراجعة موعد المباراة
-        قبل بدايتها.
-
-      </p>
-
+      <div class="news-image">⚽</div>
+      <h3>كيف تتابع مباريات اليوم؟</h3>
+      <p>يبدأ أفضل تنظيم لمتابعة مباريات كرة القدم بتحديد اليوم والبطولة التي تهمك، ثم مراجعة موعد المباراة قبل بدايتها.</p>
     </article>
-
-
-
     <article>
-
-      <div class="news-image">
-        🏆
-      </div>
-
-
-      <h3>
-        لماذا تختلف مواعيد المباريات؟
-      </h3>
-
-
-      <p>
-
-        قد تختلف مواعيد المباريات بسبب
-        التوقيت المحلي أو التغييرات التي
-        تطرأ على جدول المسابقة، لذلك من
-        المفيد متابعة الجدول بشكل مستمر.
-
-      </p>
-
+      <div class="news-image">🏆</div>
+      <h3>لماذا تختلف مواعيد المباريات؟</h3>
+      <p>قد تختلف مواعيد المباريات بسبب التوقيت المحلي أو التغييرات التي تطرأ على جدول المسابقة، لذلك من المفيد متابعة الجدول بشكل مستمر.</p>
     </article>
-
-
-
     <article>
-
-      <div class="news-image">
-        📊
-      </div>
-
-
-      <h3>
-        أهمية متابعة الإحصائيات
-      </h3>
-
-
-      <p>
-
-        تساعد الإحصائيات على تكوين صورة
-        أوضح عن أداء الفرق، خصوصًا عند
-        مقارنة النتائج والمواجهات السابقة.
-
-      </p>
-
+      <div class="news-image">📊</div>
+      <h3>أهمية متابعة الإحصائيات</h3>
+      <p>تساعد الإحصائيات على تكوين صورة أوضح عن أداء الفرق، خصوصًا عند مقارنة النتائج والمواجهات السابقة.</p>
     </article>
-
-
   </div>
-
-
 </section>
 
-
-
-<!-- =========================
-     USER EXPERIENCE
-========================= -->
-
+<!-- ========================= USER EXPERIENCE ========================= -->
 <section class="section">
-
-
   <div class="section-head">
-
     <div>
-
-      <p class="eyebrow">
-        تجربة الزائر
-      </p>
-
-
-      <h2>
-        مصمم ليكون واضحًا وسهل الاستخدام
-      </h2>
-
+      <p class="eyebrow">تجربة الزائر</p>
+      <h2>مصمم ليكون واضحًا وسهل الاستخدام</h2>
     </div>
-
   </div>
-
-
-
-  <div
-    style="
-      max-width:850px;
-      line-height:2;
-    ">
-
-    <p>
-
-      نحاول في KoraKoora إبقاء المعلومات
-      الأساسية قريبة من المستخدم، لذلك
-      توجد مباريات اليوم والبطولات والمحتوى
-      في أقسام واضحة داخل الصفحة.
-
-    </p>
-
-
-    <p>
-
-      كما نوفر صفحات مستقلة للتعريف بالموقع
-      والتواصل معنا وسياسة الخصوصية وشروط
-      الاستخدام، حتى يستطيع الزائر معرفة
-      طبيعة الموقع وكيفية التواصل مع المسؤول
-      عنه.
-
-    </p>
-
+  <div style="max-width:850px; line-height:2;">
+    <p>نحاول في KoraKoora إبقاء المعلومات الأساسية قريبة من المستخدم، لذلك توجد مباريات اليوم والبطولات والمحتوى في أقسام واضحة داخل الصفحة.</p>
+    <p>كما نوفر صفحات مستقلة للتعريف بالموقع والتواصل معنا وسياسة الخصوصية وشروط الاستخدام، حتى يستطيع الزائر معرفة طبيعة الموقع وكيفية التواصل مع المسؤول عنه.</p>
   </div>
-
 </section>
 
-
-
-<!-- =========================
-     FINAL AD PLACEHOLDER
-========================= -->
-
-<div class="ad-slot">
-  مساحة إعلانية
-</div>
-
+<!-- ========================= FINAL AD PLACEHOLDER ========================= -->
+<div class="ad-slot">مساحة إعلانية</div>
 
 </div>
-
 </main>
 
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
+<!-- ========================= FOOTER ========================= -->
 <footer>
-
-
   <div class="container footer">
-
-
     <div>
-
-      <a
-        class="brand"
-        href="index.html">
-
-        Kora<span>Koora</span>
-
-      </a>
-
-
-      <p>
-
-        مباريات ونتائج ومعلومات
-        كرة القدم بطريقة واضحة.
-
-      </p>
-
+      <a class="brand" href="index.html">Kora<span>Koora</span></a>
+      <p>مباريات ونتائج ومعلومات كرة القدم بطريقة واضحة.</p>
     </div>
-
-
-
     <div class="footer-links">
-
-
-      <a href="pages/about.html">
-        من نحن
-      </a>
-
-
-      <a href="pages/contact.html">
-        اتصل بنا
-      </a>
-
-
-      <a href="pages/privacy.html">
-        سياسة الخصوصية
-      </a>
-
-
-      <a href="pages/terms.html">
-        شروط الاستخدام
-      </a>
-
-
+      <a href="pages/about.html">من نحن</a>
+      <a href="pages/contact.html">اتصل بنا</a>
+      <a href="pages/privacy.html">سياسة الخصوصية</a>
+      <a href="pages/terms.html">شروط الاستخدام</a>
     </div>
-
-
   </div>
-
-
-
-  <div class="copyright">
-
-    © 2026 KoraKoora — جميع الحقوق محفوظة
-
-  </div>
-
-
+  <div class="copyright">© 2026 KoraKoora — جميع الحقوق محفوظة</div>
 </footer>
 
-
-
-<!-- =========================
-     JAVASCRIPT
-========================= -->
-
+<!-- ========================= JAVASCRIPT ========================= -->
 <script src="app.js"></script>
-
 
 </body>
 </html>
