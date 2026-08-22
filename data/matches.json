@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T15:48:51.969332+00:00",
+  "updatedAt": "2026-08-22T16:55:51.051146+00:00",
   "dateFrom": "2026-08-21",
   "dateTo": "2026-08-31",
   "competitions": [
@@ -104,7 +104,7 @@
     },
     {
       "id": 560544,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-22T14:00:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -141,14 +141,14 @@
           "away": 1
         },
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 1
         }
       }
     },
     {
       "id": 560545,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-22T14:00:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -186,13 +186,13 @@
         },
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 1
         }
       }
     },
     {
       "id": 560546,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-22T14:00:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -236,7 +236,7 @@
     },
     {
       "id": 560547,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-22T16:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -273,8 +273,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       }
     },
@@ -903,12 +903,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
           "home": 0,
           "away": 1
+        },
+        "fullTime": {
+          "home": 1,
+          "away": 3
         }
       }
     },
@@ -1738,7 +1738,7 @@
     },
     {
       "id": 558629,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-22T16:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -1775,14 +1775,14 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 558632,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-22T16:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -1819,8 +1819,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       }
     },
@@ -1831,7 +1831,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11060,
+        "name": "Marco Di Bello",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1870,7 +1875,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 97885,
+        "name": "Daniele Perenzoni",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -2956,12 +2966,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
           "home": 1,
           "away": 0
+        },
+        "fullTime": {
+          "home": 4,
+          "away": 2
         }
       }
     },
@@ -2972,7 +2982,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57062,
+        "name": "Aurélien Petit",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -3011,7 +3026,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 64781,
+        "name": "Marc Bollengier",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -3050,7 +3070,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57087,
+        "name": "Romain Lissorgue",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -3089,7 +3114,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57084,
+        "name": "Guillaume Paradis",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -3591,7 +3621,7 @@
     },
     {
       "id": 567283,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-22T14:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3623,7 +3653,7 @@
           "away": 2
         },
         "fullTime": {
-          "home": 0,
+          "home": 2,
           "away": 2
         }
       }
@@ -4254,7 +4284,7 @@
     },
     {
       "id": 558232,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-22T14:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -4292,13 +4322,13 @@
         },
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 2
         }
       }
     },
     {
       "id": 558234,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-22T16:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -4335,8 +4365,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
