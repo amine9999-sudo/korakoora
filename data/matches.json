@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T14:52:00.748916+00:00",
+  "updatedAt": "2026-08-22T15:48:51.969332+00:00",
   "dateFrom": "2026-08-21",
   "dateTo": "2026-08-31",
   "competitions": [
@@ -137,8 +137,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
           "home": 1,
@@ -181,8 +181,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
           "home": 0,
@@ -225,11 +225,11 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 0
         }
       }
@@ -870,7 +870,7 @@
     },
     {
       "id": 564641,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-22T15:00:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -907,8 +907,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       }
     },
@@ -919,7 +919,12 @@
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 206211,
+        "name": "Jesús Gil Manzano",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -2918,7 +2923,7 @@
     },
     {
       "id": 559712,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-22T15:15:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -2955,8 +2960,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       }
     },
@@ -3614,12 +3619,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         },
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 2
         }
       }
     },
@@ -4282,8 +4287,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
           "home": 0,

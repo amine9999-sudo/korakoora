@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T14:52:00.748916+00:00",
+  "updatedAt": "2026-08-22T15:48:51.969332+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -706,6 +706,24 @@
         {
           "position": 2,
           "team": {
+            "id": 62,
+            "name": "Everton FC",
+            "shortName": "Everton",
+            "tla": "EVE",
+            "crest": "https://crests.football-data.org/62.png"
+          },
+          "playedGames": 1,
+          "won": 1,
+          "draw": 0,
+          "lost": 0,
+          "points": 3,
+          "goalsFor": 2,
+          "goalsAgainst": 0,
+          "goalDifference": 2
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 322,
             "name": "Hull City AFC",
             "shortName": "Hull City",
@@ -720,24 +738,6 @@
           "goalsFor": 2,
           "goalsAgainst": 0,
           "goalDifference": 2
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 62,
-            "name": "Everton FC",
-            "shortName": "Everton",
-            "tla": "EVE",
-            "crest": "https://crests.football-data.org/62.png"
-          },
-          "playedGames": 1,
-          "won": 1,
-          "draw": 0,
-          "lost": 0,
-          "points": 3,
-          "goalsFor": 1,
-          "goalsAgainst": 0,
-          "goalDifference": 1
         },
         {
           "position": 4,
@@ -1006,11 +1006,11 @@
           "lost": 1,
           "points": 0,
           "goalsFor": 0,
-          "goalsAgainst": 1,
-          "goalDifference": -1
+          "goalsAgainst": 2,
+          "goalDifference": -2
         },
         {
-          "position": 19,
+          "position": 18,
           "team": {
             "id": 66,
             "name": "Manchester United FC",
@@ -1067,6 +1067,24 @@
         {
           "position": 1,
           "team": {
+            "id": 559,
+            "name": "Sevilla FC",
+            "shortName": "Sevilla FC",
+            "tla": "SEV",
+            "crest": "https://crests.football-data.org/559.png"
+          },
+          "playedGames": 2,
+          "won": 2,
+          "draw": 0,
+          "lost": 0,
+          "points": 6,
+          "goalsFor": 3,
+          "goalsAgainst": 1,
+          "goalDifference": 2
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 263,
             "name": "Deportivo Alavés",
             "shortName": "Alavés",
@@ -1083,7 +1101,7 @@
           "goalDifference": 3
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "id": 80,
             "name": "RCD Espanyol de Barcelona",
@@ -1101,7 +1119,7 @@
           "goalDifference": 3
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "id": 78,
             "name": "Club Atlético de Madrid",
@@ -1117,24 +1135,6 @@
           "goalsFor": 2,
           "goalsAgainst": 0,
           "goalDifference": 2
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 559,
-            "name": "Sevilla FC",
-            "shortName": "Sevilla FC",
-            "tla": "SEV",
-            "crest": "https://crests.football-data.org/559.png"
-          },
-          "playedGames": 1,
-          "won": 1,
-          "draw": 0,
-          "lost": 0,
-          "points": 3,
-          "goalsFor": 2,
-          "goalsAgainst": 1,
-          "goalDifference": 1
         },
         {
           "position": 5,
@@ -1247,24 +1247,6 @@
         {
           "position": 11,
           "team": {
-            "id": 77,
-            "name": "Athletic Club",
-            "shortName": "Athletic",
-            "tla": "ATH",
-            "crest": "https://crests.football-data.org/77.png"
-          },
-          "playedGames": 0,
-          "won": 0,
-          "draw": 0,
-          "lost": 0,
-          "points": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0
-        },
-        {
-          "position": 11,
-          "team": {
             "id": 79,
             "name": "CA Osasuna",
             "shortName": "Osasuna",
@@ -1353,7 +1335,25 @@
           "goalDifference": 0
         },
         {
-          "position": 17,
+          "position": 16,
+          "team": {
+            "id": 77,
+            "name": "Athletic Club",
+            "shortName": "Athletic",
+            "tla": "ATH",
+            "crest": "https://crests.football-data.org/77.png"
+          },
+          "playedGames": 1,
+          "won": 0,
+          "draw": 0,
+          "lost": 1,
+          "points": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 1,
+          "goalDifference": -1
+        },
+        {
+          "position": 16,
           "team": {
             "id": 92,
             "name": "Real Sociedad de Fútbol",
