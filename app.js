@@ -12,6 +12,7 @@
    - أسماء البطولات بالعربية
    - تحديث تلقائي
    - الضغط على المباراة لفتح صفحة التفاصيل
+   - الضغط على البطولة لفتح صفحة الترتيب
    ========================================================= */
 
 
@@ -166,6 +167,90 @@ const LEAGUE_NAMES = {
 
   "A-League Men":
     "الدوري الأسترالي"
+
+};
+
+
+/* =========================================================
+   أكواد البطولات (لصفحة الترتيب)
+   ========================================================= */
+
+const LEAGUE_CODES = {
+
+  "Premier League": "PL",
+  "English Premier League": "PL",
+
+  "Primera Division": "PD",
+  "La Liga": "PD",
+
+  "Serie A": "SA",
+
+  "Bundesliga": "BL1",
+
+  "Ligue 1": "FL1",
+
+  "Primeira Liga": "PPL",
+
+  "Eredivisie": "DED",
+
+  "Jupiler Pro League": "JPL",
+
+  "Super Lig": "SL",
+  "Süper Lig": "SL",
+
+  "UEFA Champions League": "CL",
+  "Champions League": "CL",
+
+  "UEFA Europa League": "EL",
+  "Europa League": "EL",
+
+  "UEFA Conference League": "ECL",
+  "Conference League": "ECL",
+
+  "Copa Libertadores": "CLI",
+
+  "Copa Sudamericana": "CSA",
+
+  "Brasileirão": "BSA",
+  "Brazilian Serie A": "BSA",
+
+  "Primera Division Argentina": "APL",
+  "Argentine Primera Division": "APL",
+
+  "Primera Division Chile": "CPD",
+
+  "MLS": "MLS",
+  "Major League Soccer": "MLS",
+
+  "Liga MX": "LMX",
+
+  "Egyptian Premier League": "EPL",
+  "Premier League Egypt": "EPL",
+
+  "Botola Pro": "BP",
+  "Botola": "BP",
+  "Morocco Botola Pro": "BP",
+
+  "Algerian Ligue 1": "AL1",
+
+  "Tunisian Ligue Professionnelle 1": "TL1",
+
+  "South African Premier Division": "SAPD",
+
+  "Saudi Pro League": "SPL",
+  "Saudi Professional League": "SPL",
+
+  "J1 League": "J1",
+  "J.League": "J1",
+
+  "K League 1": "KL1",
+
+  "UAE Pro League": "UPL",
+
+  "Qatar Stars League": "QSL",
+
+  "A-League": "AL",
+  "A-League Men": "AL"
 
 };
 
@@ -1516,6 +1601,55 @@ function renderLeague(
     visitorLeague;
 
 
+  /* ===== كود البطولة لصفحة الترتيب ===== */
+  const firstMatch = matches[0];
+  const originalName = firstMatch?.originalCompetition || "";
+  const leagueCode = LEAGUE_CODES[originalName] || "";
+
+  const leagueHeaderContent = `
+    <div class="league-title">
+
+      <span class="league-icon">
+
+        ${
+          isVisitorLeague
+            ? "🌍"
+            : "🏆"
+        }
+
+      </span>
+
+
+      <div>
+
+        <h3>
+          ${name}
+        </h3>
+
+
+        <small>
+
+          ${matches.length}
+
+          ${
+            matches.length === 1
+              ? "مباراة"
+              : "مباريات"
+          }
+
+        </small>
+
+      </div>
+
+    </div>
+  `;
+
+  /* إذا عندنا كود البطولة، نخلي الهيدر قابل للنقر */
+  const leagueHeader = leagueCode
+    ? `<a href="league.html?code=${leagueCode}" class="league-header" style="text-decoration:none;color:inherit;display:block;">${leagueHeaderContent}</a>`
+    : `<div class="league-header">${leagueHeaderContent}</div>`;
+
+
   return `
 
     <section
@@ -1526,45 +1660,7 @@ function renderLeague(
 
     >
 
-      <div class="league-header">
-
-        <div class="league-title">
-
-          <span class="league-icon">
-
-            ${
-              isVisitorLeague
-                ? "🌍"
-                : "🏆"
-            }
-
-          </span>
-
-
-          <div>
-
-            <h3>
-              ${name}
-            </h3>
-
-
-            <small>
-
-              ${matches.length}
-
-              ${
-                matches.length === 1
-                  ? "مباراة"
-                  : "مباريات"
-              }
-
-            </small>
-
-          </div>
-
-        </div>
-
-      </div>
+      ${leagueHeader}
 
 
       <div class="league-matches">
