@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
     <header class="main-header">
         <div class="header-top">
             <div class="container">
@@ -54,7 +53,6 @@
         </nav>
     </header>
 
-    <!-- المحتوى الرئيسي -->
     <main>
         <div class="container">
             <div class="match-detail-container" id="match-detail">
@@ -66,7 +64,6 @@
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="main-footer">
         <div class="container">
             <div class="footer-content">
@@ -100,28 +97,25 @@
     </footer>
 
     <script>
-        // قراءة معرف المباراة من الرابط
         function getMatchIdFromUrl() {
             const urlParams = new URLSearchParams(window.location.search);
             return urlParams.get('id');
         }
 
-        // تنسيق التاريخ بالعربية
         function formatDate(dateString) {
             const date = new Date(dateString);
             return date.toLocaleDateString('ar-MA', { year: 'numeric', month: 'long', day: 'numeric' });
         }
 
-        // تنسيق الوقت
         function formatTime(dateString) {
             const date = new Date(dateString);
             return date.toLocaleTimeString('ar-MA', { hour: '2-digit', minute: '2-digit' });
         }
 
-        // ترجمة حالة المباراة
         function getStatusText(status) {
             const map = {
                 'SCHEDULED': 'مجدولة',
+                'TIMED': 'مؤكدة',
                 'LIVE': 'جارية الآن 🔴',
                 'IN_PLAY': 'جارية الآن 🔴',
                 'PAUSED': 'متوقفة',
@@ -133,58 +127,124 @@
             return map[status] || status;
         }
 
-        // عرض تفاصيل المباراة
+        function getStatusClass(status) {
+            if (['LIVE', 'IN_PLAY'].includes(status)) return 'live';
+            if (status === 'FINISHED') return 'finished';
+            return 'scheduled';
+        }
+
+        // استخراج اسم الفريق بأي طريقة ممكنة
+        function getTeamName(teamObj, fallback) {
+            if (!teamObj) return fallback;
+            return teamObj.name || teamObj.shortName || fallback;
+        }
+
+        // استخراج شعار الفريق
+        function getTeamCrest(teamObj) {
+            if (!teamObj) return null;
+            return teamObj.crest || teamObj.crestUrl || teamObj.logo || teamObj.emblem || null;
+        }
+
         function renderMatchDetail(match) {
             const container = document.getElementById('match-detail');
-            const homeScore = match.score?.fullTime?.home ?? '-';
-            const awayScore = match.score?.fullTime?.away ?? '-';
-            const htHome = match.score?.halfTime?.home ?? '-';
-            const htAway = match.score?.halfTime?.away ?? '-';
+            
+            const homeTeam = match.homeTeam || {};
+            const awayTeam = match.awayTeam || {};
+            
+            const homeName = getTeamName(homeTeam, 'الفريق المضيف');
+            const awayName = getTeamName(awayTeam, 'الفريق الضيف');
+            
+            const homeCrest = getTeamCrest(homeTeam);
+            const awayCrest = getTeamCrest(awayTeam);
+            
+            const score = match.score || {};
+            const fullTime = score.fullTime || {};
+            const halfTime = score.halfTime || {};
+            
+            // للمباريات المقبلة: نعرض VS بدل -:-
+            const hasScore = fullTime.home !== null && fullTime.home !== undefined && fullTime.away !== null && fullTime.away !== undefined;
+            const homeScore = hasScore ? fullTime.home : null;
+            const awayScore = hasScore ? fullTime.away : null;
+            
+            const hasHt = halfTime.home !== null && halfTime.home !== undefined && halfTime.away !== null && halfTime.away !== undefined;
+            const htHome = hasHt ? halfTime.home : null;
+            const htAway = hasHt ? halfTime.away : null;
             
             const isLive = match.status === 'LIVE' || match.status === 'IN_PLAY';
             const isFinished = match.status === 'FINISHED';
-            const statusClass = isLive ? 'live' : isFinished ? 'finished' : 'scheduled';
+            const statusClass = getStatusClass(match.status);
+
+            // أحداث المباراة
+            let eventsHtml = '';
+            const goals = match.goals || [];
+            if (goals.length > 0) {
+                eventsHtml = `
+                    <div class="match-events">
+                        <h3><i class="fas fa-futbol"></i> أحداث المباراة</h3>
+                        <div class="events-list">
+                            ${goals.map(g => {
+                                const isHome = g.team && (g.team.id === homeTeam.id || g.team.name === homeTeam.name);
+                                return `
+                                <div class="event-item ${isHome ? 'home' : 'away'}">
+                                    <span class="event-minute">${g.minute}'</span>
+                                    <i class="fas fa-futbol event-icon"></i>
+                                    <span class="event-player">${g.scorer?.name || 'لاعب'}</span>
+                                    ${g.assist ? `<span class="event-assist">(تمريرة: ${g.assist.name})</span>` : ''}
+                                </div>`;
+                            }).join('')}
+                        </div>
+                    </div>`;
+            }
 
             container.innerHTML = `
                 <div class="match-detail-card">
-                    <!-- رأس البطولة -->
                     <div class="match-competition-header">
-                        <img src="${match.competition?.emblem || 'https://via.placeholder.com/40'}" alt="${match.competition?.name || ''}" class="competition-emblem">
+                        <img src="${match.competition?.emblem || ''}" 
+                             alt="${match.competition?.name || ''}" 
+                             class="competition-emblem"
+                             onerror="this.style.display='none'">
                         <span class="competition-name">${match.competition?.name || 'بطولة غير معروفة'}</span>
                         ${match.matchday ? `<span class="match-day">الجولة ${match.matchday}</span>` : ''}
                     </div>
                     
-                    <!-- الحالة والتوقيت -->
                     <div class="match-status-bar">
                         <span class="match-status ${statusClass}">${getStatusText(match.status)}</span>
                         <span class="match-datetime">${formatDate(match.utcDate)} — ${formatTime(match.utcDate)}</span>
                     </div>
                     
-                    <!-- الفريقين والنتيجة الكبيرة -->
                     <div class="match-teams-scoreboard">
                         <div class="team home-team">
-                            <img src="${match.homeTeam?.crest || 'https://via.placeholder.com/80'}" alt="${match.homeTeam?.name || ''}" class="team-crest-large">
-                            <h2 class="team-name">${match.homeTeam?.name || 'فريق 1'}</h2>
-                            ${match.homeTeam?.shortName ? `<span class="team-short">${match.homeTeam.shortName}</span>` : ''}
+                            ${homeCrest 
+                                ? `<img src="${homeCrest}" alt="${homeName}" class="team-crest-large" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">`
+                                : `<div class="team-crest-fallback">${homeName.charAt(0)}</div>`
+                            }
+                            <h2 class="team-name">${homeName}</h2>
+                            ${homeTeam.shortName && homeTeam.shortName !== homeName ? `<span class="team-short">${homeTeam.shortName}</span>` : ''}
                         </div>
                         
                         <div class="match-score-display">
-                            <div class="main-score">
-                                <span class="score-home">${homeScore}</span>
-                                <span class="score-separator">:</span>
-                                <span class="score-away">${awayScore}</span>
-                            </div>
-                            ${isFinished ? `<div class="half-time-score">الشوط الأول: ${htHome} - ${htAway}</div>` : ''}
+                            ${hasScore 
+                                ? `<div class="main-score">
+                                     <span class="score-home">${homeScore}</span>
+                                     <span class="score-separator">:</span>
+                                     <span class="score-away">${awayScore}</span>
+                                   </div>
+                                   ${hasHt ? `<div class="half-time-score">الشوط الأول: ${htHome} - ${htAway}</div>` : ''}`
+                                : `<div class="vs-badge">VS</div>
+                                   <div class="vs-label">لم تبدأ بعد</div>`
+                            }
                         </div>
                         
                         <div class="team away-team">
-                            <img src="${match.awayTeam?.crest || 'https://via.placeholder.com/80'}" alt="${match.awayTeam?.name || ''}" class="team-crest-large">
-                            <h2 class="team-name">${match.awayTeam?.name || 'فريق 2'}</h2>
-                            ${match.awayTeam?.shortName ? `<span class="team-short">${match.awayTeam.shortName}</span>` : ''}
+                            ${awayCrest 
+                                ? `<img src="${awayCrest}" alt="${awayName}" class="team-crest-large" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">`
+                                : `<div class="team-crest-fallback">${awayName.charAt(0)}</div>`
+                            }
+                            <h2 class="team-name">${awayName}</h2>
+                            ${awayTeam.shortName && awayTeam.shortName !== awayName ? `<span class="team-short">${awayTeam.shortName}</span>` : ''}
                         </div>
                     </div>
                     
-                    <!-- معلومات إضافية -->
                     <div class="match-info-grid">
                         <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>${match.venue || 'الملعب غير محدد'}</span></div>
                         <div class="info-item"><i class="fas fa-calendar-alt"></i><span>${formatDate(match.utcDate)}</span></div>
@@ -192,23 +252,8 @@
                         <div class="info-item"><i class="fas fa-trophy"></i><span>${match.competition?.name || ''}</span></div>
                     </div>
                     
-                    <!-- أحداث المباراة (أهداف) -->
-                    ${match.goals && match.goals.length > 0 ? `
-                    <div class="match-events">
-                        <h3><i class="fas fa-futbol"></i> أحداث المباراة</h3>
-                        <div class="events-list">
-                            ${match.goals.map(g => `
-                                <div class="event-item ${g.team?.id === match.homeTeam?.id ? 'home' : 'away'}">
-                                    <span class="event-minute">${g.minute}'</span>
-                                    <i class="fas fa-futbol event-icon"></i>
-                                    <span class="event-player">${g.scorer?.name || 'لاعب'}</span>
-                                    ${g.assist ? `<span class="event-assist">(تمريرة: ${g.assist.name})</span>` : ''}
-                                </div>
-                            `).join('')}
-                        </div>
-                    </div>` : ''}
+                    ${eventsHtml}
                     
-                    <!-- أزرار التنقل -->
                     <div class="match-actions">
                         <a href="index.html" class="btn-back"><i class="fas fa-arrow-right"></i> العودة للمباريات</a>
                         ${match.competition?.code ? `<a href="league.html?code=${match.competition.code}" class="btn-league"><i class="fas fa-table"></i> جدول البطولة</a>` : ''}
@@ -217,7 +262,6 @@
             `;
         }
 
-        // عرض خطأ
         function showError(msg) {
             document.getElementById('match-detail').innerHTML = `
                 <div class="error-message">
@@ -229,7 +273,6 @@
             `;
         }
 
-        // تحميل البيانات
         async function loadMatchDetail() {
             const matchId = getMatchIdFromUrl();
             if (!matchId) {
@@ -242,7 +285,8 @@
                 if (!res.ok) throw new Error('فشل التحميل');
                 
                 const data = await res.json();
-                const match = (data.matches || []).find(m => m.id == matchId);
+                const matches = data.matches || [];
+                const match = matches.find(m => m.id == matchId || m.id === parseInt(matchId));
                 
                 if (!match) {
                     showError('لم يتم العثور على المباراة المطلوبة.');
@@ -250,7 +294,7 @@
                 }
                 
                 renderMatchDetail(match);
-                document.title = `${match.homeTeam?.name || ''} vs ${match.awayTeam?.name || ''} — KoraKoora`;
+                document.title = `${match.homeTeam?.name || 'فريق'} vs ${match.awayTeam?.name || 'فريق'} — KoraKoora`;
                 
             } catch (e) {
                 console.error(e);
@@ -300,17 +344,33 @@
             padding: 50px 30px; gap: 20px;
         }
         .team { flex: 1; text-align: center; display: flex; flex-direction: column; align-items: center; }
-        .team-crest-large { width: 110px; height: 110px; object-fit: contain; margin-bottom: 15px; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3)); }
+        .team-crest-large { 
+            width: 110px; height: 110px; object-fit: contain; margin-bottom: 15px; 
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3)); 
+        }
+        .team-crest-fallback {
+            width: 110px; height: 110px; border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white; font-size: 3rem; font-weight: 900;
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 15px;
+        }
         .team-name { font-size: 1.6rem; font-weight: 800; color: var(--text-primary); margin-bottom: 5px; }
         .team-short { color: var(--text-secondary); font-size: 0.9rem; }
 
-        .match-score-display { text-align: center; padding: 0 20px; }
+        .match-score-display { text-align: center; padding: 0 20px; min-width: 120px; }
         .main-score {
             display: flex; align-items: center; gap: 15px;
             font-size: 4.5rem; font-weight: 900; color: var(--text-primary);
         }
         .score-separator { color: var(--primary-color); }
         .half-time-score { margin-top: 10px; color: var(--text-secondary); font-size: 0.9rem; }
+        
+        .vs-badge {
+            font-size: 3rem; font-weight: 900; color: var(--primary-color);
+            letter-spacing: 2px;
+        }
+        .vs-label { color: var(--text-secondary); font-size: 0.9rem; margin-top: 5px; }
 
         .match-info-grid {
             display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;
@@ -358,9 +418,10 @@
         @media (max-width: 768px) {
             .match-teams-scoreboard { flex-direction: column; padding: 30px 15px; }
             .main-score { font-size: 3rem; order: -1; margin-bottom: 20px; }
-            .team-crest-large { width: 70px; height: 70px; }
+            .team-crest-large, .team-crest-fallback { width: 70px; height: 70px; font-size: 2rem; }
             .team-name { font-size: 1.2rem; }
             .match-info-grid { grid-template-columns: 1fr; }
+            .vs-badge { font-size: 2.5rem; }
         }
     </style>
 </body>
