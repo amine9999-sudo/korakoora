@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T17:49:49.788474+00:00",
+  "updatedAt": "2026-08-22T19:02:49.956730+00:00",
   "dateFrom": "2026-08-21",
   "dateTo": "2026-08-31",
   "competitions": [
@@ -236,7 +236,7 @@
     },
     {
       "id": 560547,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-22T16:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -947,8 +947,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
           "home": 0,
@@ -1743,7 +1743,7 @@
     },
     {
       "id": 558629,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-22T16:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -1781,13 +1781,13 @@
         },
         "fullTime": {
           "home": 1,
-          "away": 0
+          "away": 1
         }
       }
     },
     {
       "id": 558632,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-22T16:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -1824,14 +1824,14 @@
           "away": 1
         },
         "fullTime": {
-          "home": 2,
+          "home": 4,
           "away": 1
         }
       }
     },
     {
       "id": 558631,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-22T18:45:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -1868,14 +1868,14 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 558636,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-22T18:45:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -1912,8 +1912,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -2982,7 +2982,7 @@
     },
     {
       "id": 559711,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-22T18:45:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -3019,14 +3019,14 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 559714,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-22T18:45:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -3063,14 +3063,14 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 559716,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-22T18:45:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -3107,14 +3107,14 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 559718,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-22T18:45:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -3151,8 +3151,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -3665,7 +3665,7 @@
     },
     {
       "id": 567279,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-22T17:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3693,12 +3693,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
           "home": 0,
-          "away": 1
+          "away": 2
         }
       }
     },
@@ -4333,7 +4333,7 @@
     },
     {
       "id": 558234,
-      "status": "PAUSED",
+      "status": "FINISHED",
       "utcDate": "2026-08-22T16:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -4370,8 +4370,8 @@
           "away": 1
         },
         "fullTime": {
-          "home": 1,
-          "away": 1
+          "home": 3,
+          "away": 3
         }
       }
     },
