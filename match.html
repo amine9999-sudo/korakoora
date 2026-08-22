@@ -12,19 +12,20 @@
 
   <style>
     .match-page { padding: 40px 0 70px; }
-    .back-button { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 25px; padding: 10px 16px; border-radius: 8px; background: #222; color: #fff; text-decoration: none; font-weight: bold; }
-    .back-button:hover { opacity: .85; }
+    .back-button { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 25px; padding: 10px 16px; border-radius: 8px; background: #181d27; color: #fff; text-decoration: none; font-weight: bold; border: 1px solid rgba(255,255,255,0.08); }
+    .back-button:hover { background: #202735; }
 
+    /* ===== الكارد الأسود ===== */
     .match-details-card {
-      background: #fff;
-      color: #1a1a1a;
+      background: #11151e;
+      color: #f5f7fb;
       border-radius: 18px;
       padding: 30px;
-      box-shadow: 0 10px 35px rgba(0,0,0,.08);
-      border: 1px solid rgba(0,0,0,.06);
+      box-shadow: 0 10px 35px rgba(0,0,0,.3);
+      border: 1px solid rgba(255,255,255,0.06);
     }
-    .match-details-card h2 { color: #1a1a1a; }
-    .match-details-card strong { color: #1a1a1a; }
+    .match-details-card h2 { color: #ffffff; }
+    .match-details-card strong { color: #f5f7fb; }
 
     .match-details-top { text-align: center; margin-bottom: 30px; }
     .competition-name {
@@ -32,12 +33,13 @@
       margin-bottom: 12px;
       padding: 7px 14px;
       border-radius: 20px;
-      background: #f2f2f2;
-      color: #1a1a1a;
+      background: #181d27;
+      color: #f5f7fb;
       font-size: 14px;
       font-weight: bold;
+      border: 1px solid rgba(255,255,255,0.06);
     }
-    .match-date { color: #555; margin: 8px 0; }
+    .match-date { color: #8992a3; margin: 8px 0; }
 
     .match-details-teams {
       display: grid;
@@ -55,10 +57,10 @@
       text-align: center;
     }
     .details-team img { width: 90px; height: 90px; object-fit: contain; }
-    .details-team-name { font-size: 20px; font-weight: bold; color: #1a1a1a; }
+    .details-team-name { font-size: 20px; font-weight: bold; color: #ffffff; }
 
     .details-center { text-align: center; min-width: 150px; }
-    .details-time { font-size: 30px; font-weight: bold; margin-bottom: 10px; color: #1a1a1a; }
+    .details-time { font-size: 30px; font-weight: bold; margin-bottom: 10px; color: #ffffff; }
     .details-score {
       display: flex;
       justify-content: center;
@@ -66,26 +68,26 @@
       gap: 12px;
       font-size: 38px;
       font-weight: 900;
-      color: #1a1a1a;
+      color: #ffffff;
     }
-    .details-score strong { font-size: 25px; color: #1a1a1a; }
+    .details-score strong { font-size: 25px; color: #ffffff; }
 
     .details-status {
       display: inline-block;
       margin-top: 10px;
       padding: 6px 13px;
       border-radius: 20px;
-      background: #f1f1f1;
-      color: #1a1a1a;
+      background: #181d27;
+      color: #f5f7fb;
       font-size: 14px;
       font-weight: bold;
     }
-    .details-status.live { background: #ffe5e5; color: #d00000; }
-    .details-status.finished { background: #e8f7ed; color: #16803c; }
-    .details-status.upcoming { background: #eef3ff; color: #315fc4; }
+    .details-status.live { background: rgba(255,77,88,0.15); color: #ff6b75; }
+    .details-status.finished { background: rgba(66,203,133,0.12); color: #69d49a; }
+    .details-status.upcoming { background: rgba(61,139,255,0.12); color: #3d8bff; }
 
-    .details-section { margin-top: 35px; padding-top: 25px; border-top: 1px solid #eee; }
-    .details-section h2 { margin-bottom: 20px; font-size: 21px; color: #1a1a1a; }
+    .details-section { margin-top: 35px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.06); }
+    .details-section h2 { margin-bottom: 20px; font-size: 21px; color: #ffffff; }
 
     .info-grid {
       display: grid;
@@ -93,27 +95,29 @@
       gap: 15px;
     }
     .info-box {
-      background: #f8f8f8;
+      background: #181d27;
       border-radius: 12px;
       padding: 17px;
-      color: #1a1a1a;
+      color: #f5f7fb;
+      border: 1px solid rgba(255,255,255,0.04);
     }
-    .info-box span { display: block; color: #666; font-size: 13px; margin-bottom: 7px; }
-    .info-box strong { font-size: 16px; color: #1a1a1a; }
+    .info-box span { display: block; color: #8992a3; font-size: 13px; margin-bottom: 7px; }
+    .info-box strong { font-size: 16px; color: #ffffff; }
 
     .placeholder-box {
       padding: 20px;
-      background: #fafafa;
+      background: #181d27;
       border-radius: 12px;
-      color: #555;
+      color: #737d8e;
       line-height: 1.9;
+      border: 1px solid rgba(255,255,255,0.04);
     }
 
     .loading-details { text-align: center; padding: 70px 20px; }
     .loading-details .loader {
       width: 38px; height: 38px;
-      border: 4px solid #ddd;
-      border-top-color: #19c37d;
+      border: 4px solid rgba(255,255,255,0.08);
+      border-top-color: #3d8bff;
       border-radius: 50%;
       animation: spin .8s linear infinite;
       margin: 0 auto 15px;
@@ -121,12 +125,12 @@
     @keyframes spin { to { transform: rotate(360deg); } }
 
     .error-details { text-align: center; padding: 60px 20px; }
-    .error-details h2 { margin-bottom: 10px; color: #1a1a1a; }
+    .error-details h2 { margin-bottom: 10px; color: #ffffff; }
     .home-link {
       display: inline-block;
       margin-top: 20px;
       padding: 11px 20px;
-      background: #19c37d;
+      background: #2878ed;
       color: #fff;
       border-radius: 8px;
       text-decoration: none;
@@ -391,7 +395,7 @@ function renderMatchDetails(match) {
       <div class="match-details-top">
         <div class="competition-name">🏆 ${competition}</div>
         <div class="match-date">${formatDate(match.utcDate)}</div>
-        <div style="color:#555;font-size:13px;">بتوقيت ${getUserTimeZone()}</div>
+        <div style="color:#8992a3;font-size:13px;">بتوقيت ${getUserTimeZone()}</div>
       </div>
       <div class="match-details-teams">
         ${renderTeam(home)}
@@ -471,13 +475,13 @@ async function loadHeadToHead(matchId) {
       const away = getTeam(match.awayTeam || match.away);
       const score = getScore(match);
       return `
-        <div style="padding:12px 0; border-bottom:1px solid #eee;">
+        <div style="padding:12px 0; border-bottom:1px solid rgba(255,255,255,0.06);">
           <div style="display:flex; justify-content:space-between; align-items:center; gap:10px;">
-            <strong style="color:#1a1a1a;">${home.name}</strong>
-            <strong style="color:#1a1a1a;">${score.home ?? "-"} - ${score.away ?? "-"}</strong>
-            <strong style="color:#1a1a1a;">${away.name}</strong>
+            <strong style="color:#f5f7fb;">${home.name}</strong>
+            <strong style="color:#ffffff;">${score.home ?? "-"} - ${score.away ?? "-"}</strong>
+            <strong style="color:#f5f7fb;">${away.name}</strong>
           </div>
-          <div style="text-align:center; margin-top:6px; font-size:12px; color:#777;">${formatDate(match.utcDate)}</div>
+          <div style="text-align:center; margin-top:6px; font-size:12px; color:#8992a3;">${formatDate(match.utcDate)}</div>
         </div>
       `;
     }).join("");
