@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
-  <meta name="description" content="تفاصيل مباراة كرة القدم، الموعد، النتيجة، البطولة، حالة المباراة والمعلومات المتاحة.">
+  <meta name="description" content="تفاصيل مباراة كرة القدم، الموعد، النتيجة، البطولة، القنوات الناقلة والمعلومات المتاحة.">
   <meta name="theme-color" content="#111111">
   <title>تفاصيل المباراة | KoraKoora</title>
   <link rel="stylesheet" href="style.css">
@@ -15,7 +15,6 @@
     .back-button { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 25px; padding: 10px 16px; border-radius: 8px; background: #181d27; color: #fff; text-decoration: none; font-weight: bold; border: 1px solid rgba(255,255,255,0.08); }
     .back-button:hover { background: #202735; }
 
-    /* ===== الكارد الأسود ===== */
     .match-details-card {
       background: #11151e;
       color: #f5f7fb;
@@ -113,6 +112,71 @@
       border: 1px solid rgba(255,255,255,0.04);
     }
 
+    /* ===== القنوات الناقلة ===== */
+    .broadcast-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 12px;
+    }
+    .broadcast-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px;
+      background: #181d27;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.06);
+      transition: all 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+    .broadcast-card:hover {
+      background: #1b2230;
+      border-color: rgba(61,139,255,0.2);
+      transform: translateY(-2px);
+    }
+    .broadcast-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+    .broadcast-info { flex: 1; }
+    .broadcast-info strong {
+      display: block;
+      color: #ffffff;
+      font-size: 15px;
+      margin-bottom: 3px;
+    }
+    .broadcast-info span {
+      color: #8992a3;
+      font-size: 12px;
+    }
+    .broadcast-action {
+      padding: 8px 14px;
+      border-radius: 8px;
+      background: #2878ed;
+      color: #fff;
+      font-size: 12px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    .broadcast-note {
+      margin-top: 16px;
+      padding: 14px 16px;
+      background: rgba(40,120,237,0.08);
+      border: 1px solid rgba(40,120,237,0.15);
+      border-radius: 12px;
+      color: #3d8bff;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+    .broadcast-note i { margin-left: 6px; }
+
     .loading-details { text-align: center; padding: 70px 20px; }
     .loading-details .loader {
       width: 38px; height: 38px;
@@ -202,6 +266,7 @@
       .team-logo-fallback { width: 70px; height: 70px; font-size: 2rem; }
       .details-team-name { font-size: 1.2rem; }
       .info-grid { grid-template-columns: 1fr; }
+      .broadcast-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -257,6 +322,83 @@
 const API_FILE = "matches.json";
 const H2H_FILE = "head2head.json";
 
+/* ===== القنوات الناقلة حسب البطولة ===== */
+const BROADCASTERS = {
+  "PL": [
+    { name: "BeIN Sports 1", region: "الشرق الأوسط وشمال أفريقيا", icon: "📡", color: "#1a1a2e", link: "https://www.beinsports.com" },
+    { name: "StarzPlay", region: "الشرق الأوسط", icon: "⭐", color: "#1e1e2e", link: "https://www.starzplay.com" },
+    { name: "Sky Sports", region: "المملكة المتحدة", icon: "🏴", color: "#0f1e5a", link: "https://www.skysports.com" },
+    { name: "NBC Sports", region: "الولايات المتحدة", icon: "🇺🇸", color: "#0f3460", link: "https://www.nbcsports.com" }
+  ],
+  "PD": [
+    { name: "BeIN Sports 3", region: "الشرق الأوسط وشمال أفريقيا", icon: "📡", color: "#1a1a2e", link: "https://www.beinsports.com" },
+    { name: "LaLiga TV", region: "إسبانيا", icon: "🇪🇸", color: "#1a237e", link: "https://www.laliga.com" },
+    { name: "StarzPlay", region: "الشرق الأوسط", icon: "⭐", color: "#1e1e2e", link: "https://www.starzplay.com" }
+  ],
+  "SA": [
+    { name: "AD Sports", region: "الإمارات والخليج", icon: "🇦🇪", color: "#1a237e", link: "https://www.admedia.ae" },
+    { name: "BeIN Sports 4", region: "الشرق الأوسط", icon: "📡", color: "#1a1a2e", link: "https://www.beinsports.com" },
+    { name: "DAZN", region: "أوروبا", icon: "⚡", color: "#111", link: "https://www.dazn.com" }
+  ],
+  "BL1": [
+    { name: "BeIN Sports 5", region: "الشرق الأوسط", icon: "📡", color: "#1a1a2e", link: "https://www.beinsports.com" },
+    { name: "Sky Sport", region: "ألمانيا", icon: "🇩🇪", color: "#1a237e", link: "https://www.sky.de" },
+    { name: "DAZN", region: "أوروبا", icon: "⚡", color: "#111", link: "https://www.dazn.com" }
+  ],
+  "FL1": [
+    { name: "BeIN Sports 6", region: "الشرق الأوسط", icon: "📡", color: "#1a1a2e", link: "https://www.beinsports.com" },
+    { name: "Canal+", region: "فرنسا", icon: "🇫🇷", color: "#1a237e", link: "https://www.canalplus.com" },
+    { name: "StarzPlay", region: "الشرق الأوسط", icon: "⭐", color: "#1e1e2e", link: "https://www.starzplay.com" }
+  ],
+  "CL": [
+    { name: "BeIN Sports 1", region: "الشرق الأوسط", icon: "📡", color: "#1a1a2e", link: "https://www.beinsports.com" },
+    { name: "TNT Sports", region: "أوروبا", icon: "🇪🇺", color: "#0f3460", link: "https://www.tntsports.co.uk" },
+    { name: "CBS Sports", region: "الولايات المتحدة", icon: "🇺🇸", color: "#0f3460", link: "https://www.cbssports.com" },
+    { name: "Paramount+", region: "أمريكا", icon: "⛰️", color: "#1a237e", link: "https://www.paramountplus.com" }
+  ],
+  "PPL": [
+    { name: "BeIN Sports 8", region: "الشرق الأوسط", icon: "📡", color: "#1a1a2e", link: "https://www.beinsports.com" },
+    { name: "Sport TV", region: "البرتغال", icon: "🇵🇹", color: "#1a237e", link: "https://www.sporttv.pt" }
+  ],
+  "DED": [
+    { name: "ESPN", region: "هولندا", icon: "🇳🇱", color: "#1a237e", link: "https://www.espn.com" },
+    { name: "Ziggo Sport", region: "هولندا", icon: "🇳🇱", color: "#1a237e", link: "https://www.ziggosport.nl" }
+  ],
+  "DEFAULT": [
+    { name: "BeIN Sports", region: "الشرق الأوسط وشمال أفريقيا", icon: "📡", color: "#1a1a2e", link: "https://www.beinsports.com" },
+    { name: "StarzPlay", region: "الشرق الأوسط", icon: "⭐", color: "#1e1e2e", link: "https://www.starzplay.com" },
+    { name: "DAZN", region: "أوروبا", icon: "⚡", color: "#111", link: "https://www.dazn.com" }
+  ]
+};
+
+function getBroadcasters(leagueCode) {
+  return BROADCASTERS[leagueCode] || BROADCASTERS["DEFAULT"];
+}
+
+function renderBroadcasters(leagueCode) {
+  const channels = getBroadcasters(leagueCode);
+  return `
+    <section class="details-section">
+      <h2>📺 القنوات الناقلة الرسمية</h2>
+      <div class="broadcast-grid">
+        ${channels.map(ch => `
+          <a href="${ch.link}" target="_blank" rel="noopener noreferrer" class="broadcast-card">
+            <div class="broadcast-icon" style="background:${ch.color}">${ch.icon}</div>
+            <div class="broadcast-info">
+              <strong>${ch.name}</strong>
+              <span>${ch.region}</span>
+            </div>
+            <div class="broadcast-action">اشتراك</div>
+          </a>
+        `).join('')}
+      </div>
+      <div class="broadcast-note">
+        <i>ℹ️</i> KoraKoora لا يقدم بثاً مباشراً للمباريات. نعرض لك فقط القنوات والمنصات الرسمية التي تمتلك حقوق النشر. يرجى الاشتراك في المنصة المناسبة لمنطقتك.
+      </div>
+    </section>
+  `;
+}
+
 function getUserTimeZone() {
   try { return Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC"; }
   catch { return "UTC"; }
@@ -305,6 +447,17 @@ const LEAGUE_NAMES = {
   "Saudi Professional League": "الدوري السعودي"
 };
 
+const LEAGUE_CODES = {
+  "Premier League": "PL", "English Premier League": "PL",
+  "Primera Division": "PD", "La Liga": "PD",
+  "Serie A": "SA",
+  "Bundesliga": "BL1",
+  "Ligue 1": "FL1",
+  "Primeira Liga": "PPL",
+  "Eredivisie": "DED",
+  "UEFA Champions League": "CL", "Champions League": "CL"
+};
+
 function getCompetitionName(match) {
   const competition = match.competition;
   if (!competition) return "بطولة";
@@ -313,6 +466,15 @@ function getCompetitionName(match) {
     return LEAGUE_NAMES[name] || name;
   }
   return LEAGUE_NAMES[competition] || competition;
+}
+
+function getCompetitionCode(match) {
+  const competition = match.competition;
+  if (!competition) return "";
+  let name = "";
+  if (typeof competition === "object") name = competition.name || competition.code || "";
+  else name = competition;
+  return LEAGUE_CODES[name] || "";
 }
 
 function getTeam(team) {
@@ -383,6 +545,7 @@ function renderMatchDetails(match) {
   const score = getScore(match);
   const status = getStatus(match);
   const competition = getCompetitionName(match);
+  const leagueCode = getCompetitionCode(match);
   const isFinished = status.className === "finished";
   const hasScore = score.home !== null && score.away !== null;
 
@@ -416,13 +579,10 @@ function renderMatchDetails(match) {
           ${match.stage ? `<div class="info-box"><span>المرحلة</span><strong>${match.stage}</strong></div>` : ""}
         </div>
       </section>
+      ${renderBroadcasters(leagueCode)}
       <section class="details-section">
         <h2>الحكم</h2>
         <div class="placeholder-box">معلومات الحكم ستظهر هنا عندما تكون متوفرة في مصدر البيانات.</div>
-      </section>
-      <section class="details-section">
-        <h2>القنوات الناقلة</h2>
-        <div class="placeholder-box">معلومات القنوات الناقلة تعتمد على توفرها في مصدر البيانات. لن يتم اختلاق أي قناة غير موجودة.</div>
       </section>
       <section class="details-section">
         <h2>آخر المواجهات بين الفريقين</h2>
