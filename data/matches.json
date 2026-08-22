@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T13:44:02.660865+00:00",
+  "updatedAt": "2026-08-22T14:52:00.748916+00:00",
   "dateFrom": "2026-08-21",
   "dateTo": "2026-08-31",
   "competitions": [
@@ -104,7 +104,7 @@
     },
     {
       "id": 560544,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-22T14:00:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -141,14 +141,14 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       }
     },
     {
       "id": 560545,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-22T14:00:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -185,14 +185,14 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 560546,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-22T14:00:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -229,8 +229,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       }
     },
@@ -241,7 +241,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11605,
+        "name": "Michael Oliver",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -1733,7 +1738,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 135544,
+        "name": "Alberto Arena",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1772,7 +1782,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11119,
+        "name": "Livio Marinelli",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -3571,7 +3586,7 @@
     },
     {
       "id": 567283,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-22T14:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3603,8 +3618,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -4234,7 +4249,7 @@
     },
     {
       "id": 558232,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-22T14:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -4271,8 +4286,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -4283,7 +4298,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43861,
+        "name": "Dennis Higler",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
