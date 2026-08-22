@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T19:58:11.543912+00:00",
+  "updatedAt": "2026-08-22T20:55:01.450419+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -1101,7 +1101,7 @@
           "goalDifference": 3
         },
         {
-          "position": 3,
+          "position": 2,
           "team": {
             "id": 80,
             "name": "RCD Espanyol de Barcelona",
@@ -1111,12 +1111,12 @@
           },
           "playedGames": 2,
           "won": 1,
-          "draw": 0,
-          "lost": 1,
-          "points": 3,
-          "goalsFor": 3,
+          "draw": 1,
+          "lost": 0,
+          "points": 4,
+          "goalsFor": 4,
           "goalsAgainst": 1,
-          "goalDifference": 2
+          "goalDifference": 3
         },
         {
           "position": 4,
@@ -1155,25 +1155,7 @@
           "goalDifference": 1
         },
         {
-          "position": 5,
-          "team": {
-            "id": 86,
-            "name": "Real Madrid CF",
-            "shortName": "Real Madrid",
-            "tla": "RMA",
-            "crest": "https://crests.football-data.org/86.png"
-          },
-          "playedGames": 1,
-          "won": 1,
-          "draw": 0,
-          "lost": 0,
-          "points": 3,
-          "goalsFor": 1,
-          "goalsAgainst": 0,
-          "goalDifference": 1
-        },
-        {
-          "position": 7,
+          "position": 6,
           "team": {
             "id": 5335,
             "name": "Real Racing Club de Santander",
@@ -1191,7 +1173,7 @@
           "goalDifference": 0
         },
         {
-          "position": 7,
+          "position": 6,
           "team": {
             "id": 94,
             "name": "Villarreal CF",
@@ -1209,7 +1191,7 @@
           "goalDifference": 0
         },
         {
-          "position": 9,
+          "position": 8,
           "team": {
             "id": 560,
             "name": "RC Deportivo La Coruña",
@@ -1227,13 +1209,31 @@
           "goalDifference": 0
         },
         {
-          "position": 9,
+          "position": 8,
           "team": {
             "id": 285,
             "name": "Elche CF",
             "shortName": "Elche",
             "tla": "ELC",
             "crest": "https://crests.football-data.org/285.png"
+          },
+          "playedGames": 1,
+          "won": 0,
+          "draw": 1,
+          "lost": 0,
+          "points": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "goalDifference": 0
+        },
+        {
+          "position": 8,
+          "team": {
+            "id": 86,
+            "name": "Real Madrid CF",
+            "shortName": "Real Madrid",
+            "tla": "RMA",
+            "crest": "https://crests.football-data.org/86.png"
           },
           "playedGames": 1,
           "won": 0,
