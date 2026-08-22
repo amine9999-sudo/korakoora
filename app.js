@@ -6,14 +6,13 @@
    - أمس / اليوم / غدًا
    - توقيت الزائر تلقائيًا
    - تاريخ المباراة حسب توقيت الزائر
-   - اكتشاف دوري بلد الزائر
    - دوري بلد الزائر يظهر أولًا
-   - لا يتكرر دوري بلد الزائر
-   - ترتيب البطولات حسب القائمة المحددة
-   - أسماء البطولات بالعربية
-   - تحديث تلقائي
-   - الضغط على المباراة لفتح صفحة التفاصيل
+   - عدم تكرار دوري بلد الزائر
+   - ترتيب البطولات حسب القائمة الرسمية
+   - فلترة المباريات حسب البطولة
+   - الضغط على المباراة لفتح التفاصيل
    - الضغط على البطولة لفتح صفحة الترتيب
+   - تحديث تلقائي
    ========================================================= */
 
 
@@ -27,8 +26,9 @@ const list =
 const API_FILE =
   "data/matches.json";
 
-let selectedDay =
-  "today";
+let selectedDay = "today";
+
+let selectedLeagueFilter = "all";
 
 
 /* =========================================================
@@ -174,7 +174,6 @@ const LEAGUE_NAMES = {
 
 /* =========================================================
    أكواد البطولات
-   تستخدم لصفحة league.html
    ========================================================= */
 
 const LEAGUE_CODES = {
@@ -315,16 +314,18 @@ const LEAGUE_CODES = {
 
 
 /* =========================================================
-   الترتيب الرسمي للبطولات
+   الترتيب الرسمي النهائي للبطولات
    =========================================================
 
-   مهم:
-   دوري بلد الزائر يتم وضعه تلقائيًا في المركز الأول.
+   القاعدة:
+   دوري بلد الزائر يتم نقله تلقائيًا إلى المركز 1.
 
-   بعده مباشرة:
+   ثم:
    دوري أبطال أوروبا
 
-   ثم باقي البطولات حسب هذا الترتيب.
+   ثم باقي القائمة بنفس الترتيب.
+
+   دوري بلد الزائر لا يتكرر.
    ========================================================= */
 
 const LEAGUE_ORDER = [
@@ -392,6 +393,19 @@ const LEAGUE_ORDER = [
   "كوبا سودأمريكانا"
 
 ];
+
+
+/* =========================================================
+   ترتيب البطولات إلى أرقام
+   ========================================================= */
+
+const LEAGUE_RANKS =
+  new Map(
+    LEAGUE_ORDER.map(
+      (name, index) =>
+        [name, index]
+    )
+  );
 
 
 /* =========================================================
@@ -495,6 +509,18 @@ const todayBtn =
 const tomorrowBtn =
   document.querySelector(
     "#tomorrowBtn"
+  );
+
+
+/* =========================================================
+   أزرار فلترة البطولات
+   ========================================================= */
+
+const leagueFilterButtons =
+  Array.from(
+    document.querySelectorAll(
+      ".filter-btn[data-league]"
+    )
   );
 
 
@@ -655,7 +681,7 @@ function formatDate(utc) {
 
 
 /* =========================================================
-   الحصول على تاريخ المباراة محليًا
+   تاريخ المباراة حسب توقيت الزائر
    ========================================================= */
 
 function getLocalDateKey(utc) {
@@ -667,6 +693,21 @@ function getLocalDateKey(utc) {
   }
 
   try {
+
+    const date =
+      new Date(utc);
+
+
+    if (
+      Number.isNaN(
+        date.getTime()
+      )
+    ) {
+
+      return null;
+
+    }
+
 
     const parts =
       new Intl.DateTimeFormat(
@@ -687,7 +728,7 @@ function getLocalDateKey(utc) {
 
         }
       ).formatToParts(
-        new Date(utc)
+        date
       );
 
 
@@ -793,6 +834,17 @@ function addDays(
     );
 
 
+  if (
+    Number.isNaN(
+      date.getTime()
+    )
+  ) {
+
+    return null;
+
+  }
+
+
   date.setDate(
     date.getDate() + amount
   );
@@ -832,29 +884,33 @@ function getSelectedDateKey() {
   }
 
 
-  switch (
-    selectedDay
+  if (
+    selectedDay ===
+    "yesterday"
   ) {
 
-    case "yesterday":
-
-      return addDays(
-        today,
-        -1
-      );
-
-    case "tomorrow":
-
-      return addDays(
-        today,
-        1
-      );
-
-    default:
-
-      return today;
+    return addDays(
+      today,
+      -1
+    );
 
   }
+
+
+  if (
+    selectedDay ===
+    "tomorrow"
+  ) {
+
+    return addDays(
+      today,
+      1
+    );
+
+  }
+
+
+  return today;
 
 }
 
@@ -1060,6 +1116,41 @@ function teamLogo(team) {
 
 
 /* =========================================================
+   الحصول على كود البطولة من المباراة
+   ========================================================= */
+
+function getCompetitionCode(match) {
+
+  if (
+    match?.competition &&
+    typeof match.competition ===
+      "object" &&
+    match.competition.code
+  ) {
+
+    return String(
+      match.competition.code
+    ).toUpperCase();
+
+  }
+
+
+  const originalName =
+    match?.originalCompetition ||
+    "";
+
+
+  return (
+    LEAGUE_CODES[
+      originalName
+    ] ||
+    ""
+  );
+
+}
+
+
+/* =========================================================
    حالة المباراة
    ========================================================= */
 
@@ -1203,13 +1294,11 @@ function getStatus(match) {
 function getScore(match) {
 
   const score =
-    match.score ||
-    {};
+    match.score || {};
 
 
   const fullTime =
-    score.fullTime ||
-    {};
+    score.fullTime || {};
 
 
   return {
@@ -1237,7 +1326,6 @@ function normalizeMatch(match) {
 
   const home =
     getTeam(
-
       typeof match.home ===
       "object"
 
@@ -1252,13 +1340,11 @@ function normalizeMatch(match) {
               match.homeLogo
 
           }
-
     );
 
 
   const away =
     getTeam(
-
       typeof match.away ===
       "object"
 
@@ -1273,7 +1359,6 @@ function normalizeMatch(match) {
               match.awayLogo
 
           }
-
     );
 
 
@@ -1299,11 +1384,8 @@ function normalizeMatch(match) {
 
     originalCompetition =
       safeText(
-
         match.competition,
-
         "بطولات أخرى"
-
       );
 
   }
@@ -1326,32 +1408,15 @@ function normalizeMatch(match) {
 
     competition,
 
-    originalCompetition
+    originalCompetition,
+
+    competitionCode:
+      getCompetitionCode({
+        ...match,
+        originalCompetition
+      })
 
   };
-
-}
-
-
-/* =========================================================
-   الحصول على كود البطولة
-   ========================================================= */
-
-function getLeagueCode(
-  match
-) {
-
-  const originalName =
-    match.originalCompetition ||
-    "";
-
-
-  return (
-    LEAGUE_CODES[
-      originalName
-    ] ||
-    ""
-  );
 
 }
 
@@ -1365,8 +1430,10 @@ function openMatchDetails(
 ) {
 
   if (
-    matchId === null ||
-    matchId === undefined ||
+    matchId ===
+      null ||
+    matchId ===
+      undefined ||
     matchId === ""
   ) {
 
@@ -1375,14 +1442,10 @@ function openMatchDetails(
   }
 
 
-  const url =
+  window.location.href =
     `match.html?id=${encodeURIComponent(
       matchId
     )}`;
-
-
-  window.location.href =
-    url;
 
 }
 
@@ -1479,11 +1542,14 @@ function renderMatch(
 
     centerContent = `
 
-      <div class="match-score">
+      <div
+        class="match-score"
+      >
 
         <span>
           ${escapeHTML(
-            score.home ?? "-"
+            score.home ??
+            "-"
           )}
         </span>
 
@@ -1493,7 +1559,8 @@ function renderMatch(
 
         <span>
           ${escapeHTML(
-            score.away ?? "-"
+            score.away ??
+            "-"
           )}
         </span>
 
@@ -1505,7 +1572,9 @@ function renderMatch(
 
     centerContent = `
 
-      <div class="match-time">
+      <div
+        class="match-time"
+      >
 
         ${escapeHTML(
           formatTime(
@@ -1533,7 +1602,10 @@ function renderMatch(
     >
 
       <div
-        class="team-side home-team"
+        class="
+          team-side
+          home-team
+        "
       >
 
         ${teamLogo(
@@ -1586,7 +1658,10 @@ function renderMatch(
 
 
       <div
-        class="team-side away-team"
+        class="
+          team-side
+          away-team
+        "
       >
 
         ${teamLogo(
@@ -1655,21 +1730,44 @@ function groupByCompetition(
    ترتيب البطولات
    =========================================================
 
-   القاعدة:
+   النتيجة النهائية:
 
-   1. دوري بلد الزائر
-   2. دوري أبطال أوروبا
-   3. باقي القائمة الرسمية
+   المركز 1:
+   دوري بلد الزائر
 
-   مثال المغرب:
+   ثم القائمة الرسمية:
 
-   الدوري المغربي
    دوري أبطال أوروبا
-   الدوري الإنجليزي
-   الدوري الإسباني
-   ...
-
-   ولن يظهر الدوري المغربي مرة ثانية.
+   الإنجليزي
+   الإسباني
+   الإيطالي
+   الألماني
+   الفرنسي
+   البرتغالي
+   المغربي
+   المصري
+   السعودي
+   الهولندي
+   البلجيكي
+   التركي
+   البرازيلي
+   الأرجنتيني
+   الأمريكي
+   المكسيكي
+   الجزائري
+   التونسي
+   الجنوب أفريقي
+   الياباني
+   الكوري
+   الإماراتي
+   القطري
+   الأسترالي
+   الدوري الأوروبي
+   دوري المؤتمر
+   دوري أبطال أفريقيا
+   دوري أبطال آسيا
+   كوبا ليبرتادوريس
+   كوبا سودأمريكانا
    ========================================================= */
 
 function sortLeagues(
@@ -1680,41 +1778,23 @@ function sortLeagues(
     getVisitorLeague();
 
 
-  const orderMap =
-    new Map();
-
-
-  LEAGUE_ORDER.forEach(
-    (
-      league,
-      index
-    ) => {
-
-      orderMap.set(
-        league,
-        index
-      );
-
-    }
-  );
-
-
   return entries.sort(
-
     (
       [nameA],
       [nameB]
     ) => {
 
       /*
-         🌍 دوري بلد الزائر
-         دائمًا في المركز الأول
+         دوري بلد الزائر
+         دائمًا في المركز الأول.
       */
 
       if (
         visitorLeague &&
-        nameA === visitorLeague &&
-        nameB !== visitorLeague
+        nameA ===
+          visitorLeague &&
+        nameB !==
+          visitorLeague
       ) {
 
         return -1;
@@ -1724,8 +1804,10 @@ function sortLeagues(
 
       if (
         visitorLeague &&
-        nameB === visitorLeague &&
-        nameA !== visitorLeague
+        nameB ===
+          visitorLeague &&
+        nameA !==
+          visitorLeague
       ) {
 
         return 1;
@@ -1734,54 +1816,175 @@ function sortLeagues(
 
 
       /*
-         الترتيب الأساسي
+         الحصول على الترتيب الأساسي.
       */
 
-      const indexA =
-        orderMap.has(nameA)
+      const rankA =
+        LEAGUE_RANKS.has(
+          nameA
+        )
+          ? LEAGUE_RANKS.get(
+              nameA
+            )
+          : Number.MAX_SAFE_INTEGER;
 
-          ? orderMap.get(nameA)
 
-          : Infinity;
-
-
-      const indexB =
-        orderMap.has(nameB)
-
-          ? orderMap.get(nameB)
-
-          : Infinity;
+      const rankB =
+        LEAGUE_RANKS.has(
+          nameB
+        )
+          ? LEAGUE_RANKS.get(
+              nameB
+            )
+          : Number.MAX_SAFE_INTEGER;
 
 
       /*
-         إذا كانت البطولتان
-         معروفتين في القائمة
+         البطولات المعروفة
+         ترتب حسب القائمة.
       */
 
       if (
-        indexA !== indexB
+        rankA !==
+        rankB
       ) {
 
         return (
-          indexA -
-          indexB
+          rankA -
+          rankB
         );
 
       }
 
 
       /*
-         البطولات الأخرى
+         البطولات غير الموجودة
+         في القائمة الرسمية
+         تكون في النهاية.
       */
 
-      return nameA.localeCompare(
-        nameB,
-        "ar"
+      return (
+        nameA.localeCompare(
+          nameB,
+          "ar"
+        )
       );
 
     }
-
   );
+
+}
+
+
+/* =========================================================
+   فلترة البطولة
+   ========================================================= */
+
+function filterMatchesByLeague(
+  matches
+) {
+
+  if (
+    selectedLeagueFilter ===
+    "all"
+  ) {
+
+    return matches;
+
+  }
+
+
+  return matches.filter(
+    match => {
+
+      return (
+        String(
+          match.competitionCode ||
+          ""
+        ).toUpperCase() ===
+        String(
+          selectedLeagueFilter
+        ).toUpperCase()
+      );
+
+    }
+  );
+
+}
+
+
+/* =========================================================
+   تحديث أزرار الفلترة
+   ========================================================= */
+
+function updateLeagueFilterButtons() {
+
+  leagueFilterButtons.forEach(
+    button => {
+
+      const value =
+        button.dataset.league ||
+        "all";
+
+
+      button.classList.toggle(
+        "active",
+        value ===
+          selectedLeagueFilter
+      );
+
+    }
+  );
+
+}
+
+
+/* =========================================================
+   تغيير فلتر البطولة
+   ========================================================= */
+
+function changeLeagueFilter(
+  leagueCode
+) {
+
+  selectedLeagueFilter =
+    leagueCode ||
+    "all";
+
+
+  updateLeagueFilterButtons();
+
+  loadMatches();
+
+}
+
+
+/* =========================================================
+   ربط أزرار البطولات
+   ========================================================= */
+
+function setupLeagueFilters() {
+
+  leagueFilterButtons.forEach(
+    button => {
+
+      button.addEventListener(
+        "click",
+        () => {
+
+          changeLeagueFilter(
+            button.dataset.league ||
+            "all"
+          );
+
+        }
+      );
+
+    }
+  );
+
+
+  updateLeagueFilterButtons();
 
 }
 
@@ -1796,33 +1999,33 @@ function renderLeague(
 ) {
 
   /*
-     ترتيب مباريات البطولة
-     حسب وقت البداية
+     ترتيب المباريات داخل البطولة
+     حسب وقت المباراة.
   */
 
   matches.sort(
-
     (a, b) => {
 
-      const dateA =
+      const timeA =
         new Date(
-          a.utcDate || 0
+          a.utcDate ||
+          0
         ).getTime();
 
 
-      const dateB =
+      const timeB =
         new Date(
-          b.utcDate || 0
+          b.utcDate ||
+          0
         ).getTime();
 
 
       return (
-        dateA -
-        dateB
+        timeA -
+        timeB
       );
 
     }
-
   );
 
 
@@ -1831,46 +2034,46 @@ function renderLeague(
 
 
   const isVisitorLeague =
-    visitorLeague &&
-    name ===
-    visitorLeague;
+    Boolean(
+      visitorLeague &&
+      name ===
+        visitorLeague
+    );
 
-
-  /*
-     الحصول على كود البطولة
-  */
 
   const firstMatch =
     matches[0];
 
 
   const leagueCode =
-    getLeagueCode(
-      firstMatch
-    );
+    firstMatch
+      ?.competitionCode ||
+    "";
 
 
-  /*
-     عنوان البطولة
-  */
-
-  const leagueTitle =
+  const title =
     escapeHTML(
       name
     );
 
 
-  const matchCount =
+  const count =
     matches.length;
 
 
-  const matchLabel =
-    matchCount === 1
+  const label =
+    count === 1
       ? "مباراة"
       : "مباريات";
 
 
-  const leagueHeaderContent = `
+  const leagueIcon =
+    isVisitorLeague
+      ? "🌍"
+      : "🏆";
+
+
+  const headerContent = `
 
     <div
       class="league-title"
@@ -1881,11 +2084,7 @@ function renderLeague(
         aria-hidden="true"
       >
 
-        ${
-          isVisitorLeague
-            ? "🌍"
-            : "🏆"
-        }
+        ${leagueIcon}
 
       </span>
 
@@ -1894,16 +2093,15 @@ function renderLeague(
 
         <h3>
 
-          ${leagueTitle}
+          ${title}
 
         </h3>
 
 
         <small>
 
-          ${matchCount}
-
-          ${matchLabel}
+          ${count}
+          ${label}
 
         </small>
 
@@ -1914,12 +2112,7 @@ function renderLeague(
   `;
 
 
-  /*
-     إذا كانت البطولة لها كود
-     نفتح صفحة الترتيب
-  */
-
-  const leagueHeader =
+  const header =
     leagueCode
 
       ?
@@ -1934,11 +2127,11 @@ function renderLeague(
 
         class="league-header"
 
-        aria-label="عرض ترتيب ${leagueTitle}"
+        aria-label="عرض ترتيب ${title}"
 
       >
 
-        ${leagueHeaderContent}
+        ${headerContent}
 
       </a>
 
@@ -1952,7 +2145,7 @@ function renderLeague(
         class="league-header"
       >
 
-        ${leagueHeaderContent}
+        ${headerContent}
 
       </div>
 
@@ -1962,14 +2155,11 @@ function renderLeague(
   return `
 
     <section
-
       class="league-section"
-
-      data-league="${leagueTitle}"
-
+      data-league="${title}"
     >
 
-      ${leagueHeader}
+      ${header}
 
 
       <div
@@ -2102,7 +2292,6 @@ function changeDay(
 
   updateDayButtons();
 
-
   loadMatches();
 
 }
@@ -2189,6 +2378,13 @@ function renderEmptyState() {
     "اليوم";
 
 
+  const filterText =
+    selectedLeagueFilter !==
+      "all"
+      ? " حسب البطولة المختارة"
+      : "";
+
+
   list.innerHTML = `
 
     <div
@@ -2215,8 +2411,13 @@ function renderEmptyState() {
       <p>
 
         لا توجد مباريات لـ
-        ${label}
-        حاليًا.
+        ${escapeHTML(
+          label
+        )}
+        حاليًا
+        ${escapeHTML(
+          filterText
+        )}.
 
       </p>
 
@@ -2235,18 +2436,10 @@ async function loadMatches() {
 
   if (!list) {
 
-    console.warn(
-      "KoraKoora: #liveMatches not found."
-    );
-
     return;
 
   }
 
-
-  /*
-     شاشة التحميل
-  */
 
   list.innerHTML = `
 
@@ -2274,22 +2467,15 @@ async function loadMatches() {
 
     const response =
       await fetch(
-
         `${API_FILE}?v=${Date.now()}`,
-
         {
-
           cache:
             "no-store"
-
         }
-
       );
 
 
-    if (
-      !response.ok
-    ) {
+    if (!response.ok) {
 
       throw new Error(
         `HTTP ${response.status}`
@@ -2303,22 +2489,19 @@ async function loadMatches() {
 
 
     /*
-       التأكد من صحة البيانات
+       التأكد من البيانات
     */
 
     let matches =
-
       Array.isArray(
         data.matches
       )
-
         ? data.matches
-
         : [];
 
 
     /*
-       توحيد بيانات المباريات
+       توحيد البيانات
     */
 
     matches =
@@ -2333,7 +2516,7 @@ async function loadMatches() {
 
 
     /*
-       تاريخ الزائر المطلوب
+       التاريخ المطلوب
     */
 
     const targetDate =
@@ -2341,26 +2524,31 @@ async function loadMatches() {
 
 
     /*
-       تصفية المباريات
-       حسب تاريخ الزائر
+       فلترة حسب التاريخ
     */
 
     matches =
       matches.filter(
         match => {
 
-          const matchDate =
+          return (
             getLocalDateKey(
               match.utcDate
-            );
-
-
-          return (
-            matchDate ===
+            ) ===
             targetDate
           );
 
         }
+      );
+
+
+    /*
+       فلترة حسب البطولة
+    */
+
+    matches =
+      filterMatchesByLeague(
+        matches
       );
 
 
@@ -2380,8 +2568,7 @@ async function loadMatches() {
 
 
     /*
-       تجميع المباريات
-       حسب البطولة
+       تجميع البطولات
     */
 
     const groups =
@@ -2403,13 +2590,12 @@ async function loadMatches() {
 
 
     /*
-       عرض البطولات
+       عرض النتائج
     */
 
     list.innerHTML =
 
       sortedGroups
-
         .map(
           (
             [
@@ -2417,14 +2603,11 @@ async function loadMatches() {
               leagueMatches
             ]
           ) =>
-
             renderLeague(
               name,
               leagueMatches
             )
-
         )
-
         .join("");
 
 
@@ -2470,13 +2653,9 @@ async function loadMatches() {
 
 
         <button
-
           class="retry-btn"
-
           type="button"
-
           id="retryMatchesBtn"
-
         >
 
           إعادة المحاولة
@@ -2488,17 +2667,17 @@ async function loadMatches() {
     `;
 
 
-    const retryBtn =
+    const retryButton =
       document.querySelector(
         "#retryMatchesBtn"
       );
 
 
     if (
-      retryBtn
+      retryButton
     ) {
 
-      retryBtn.addEventListener(
+      retryButton.addEventListener(
         "click",
         loadMatches
       );
@@ -2516,6 +2695,8 @@ async function loadMatches() {
 
 setupDayButtons();
 
+setupLeagueFilters();
+
 loadMatches();
 
 
@@ -2525,13 +2706,10 @@ loadMatches();
    ========================================================= */
 
 setInterval(
-
   () => {
 
     loadMatches();
 
   },
-
   5 * 60 * 1000
-
 );
