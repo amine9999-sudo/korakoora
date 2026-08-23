@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T10:55:12.825559+00:00",
+  "updatedAt": "2026-08-23T11:47:06.111884+00:00",
   "dateFrom": "2026-08-22",
   "dateTo": "2026-09-01",
   "competitions": [
@@ -241,7 +241,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 257648,
+        "name": "Adrian Gillett",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -280,7 +285,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11309,
+        "name": "Peter Bankes",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -3031,7 +3041,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 1049,
+        "name": "Jeremy Stinat",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
