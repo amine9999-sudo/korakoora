@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T15:49:48.677552+00:00",
+  "updatedAt": "2026-08-23T16:57:38.062283+00:00",
   "dateFrom": "2026-08-22",
   "dateTo": "2026-09-01",
   "competitions": [
@@ -357,12 +357,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
           "home": 1,
           "away": 0
+        },
+        "fullTime": {
+          "home": 2,
+          "away": 1
         }
       }
     },
@@ -957,12 +957,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
           "home": 0,
           "away": 0
+        },
+        "fullTime": {
+          "home": 2,
+          "away": 2
         }
       }
     },
@@ -1846,7 +1846,7 @@
     },
     {
       "id": 558635,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-23T16:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -1883,14 +1883,14 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 558637,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-23T16:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -1927,8 +1927,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       }
     },
@@ -1939,7 +1939,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 159361,
+        "name": "Valerio Crezzini",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1978,7 +1983,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57764,
+        "name": "Luca Zufferli",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -3089,7 +3099,7 @@
         },
         "fullTime": {
           "home": 0,
-          "away": 2
+          "away": 3
         }
       }
     },
@@ -3128,11 +3138,11 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": 1,
+          "home": 0,
           "away": 1
         }
       }
@@ -3646,12 +3656,17 @@
     },
     {
       "id": 567278,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-23T14:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 39896,
+        "name": "Pedro Ramalho",
+        "type": "REFEREE",
+        "nationality": "Portugal"
+      },
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -4445,12 +4460,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 4
         },
         "fullTime": {
-          "home": 0,
-          "away": 2
+          "home": 1,
+          "away": 4
         }
       }
     },
