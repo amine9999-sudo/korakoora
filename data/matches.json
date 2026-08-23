@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T13:46:28.312097+00:00",
+  "updatedAt": "2026-08-23T14:55:20.655629+00:00",
   "dateFrom": "2026-08-22",
   "dateTo": "2026-09-01",
   "competitions": [
@@ -269,11 +269,11 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 1
         }
       }
@@ -313,8 +313,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 4,
+          "away": 0
         },
         "fullTime": {
           "home": 4,
@@ -1851,7 +1851,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57842,
+        "name": "Giovanni Ayroldi",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1890,7 +1895,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11018,
+        "name": "Antonio Rapuano",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -3074,12 +3084,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         },
         "fullTime": {
           "home": 0,
-          "away": 2
+          "away": 3
         }
       }
     },
@@ -3636,7 +3646,7 @@
     },
     {
       "id": 567278,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-23T14:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3668,8 +3678,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       }
     },
@@ -4358,7 +4368,7 @@
     },
     {
       "id": 558237,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-23T12:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -4395,14 +4405,14 @@
           "away": 1
         },
         "fullTime": {
-          "home": 3,
+          "home": 5,
           "away": 1
         }
       }
     },
     {
       "id": 558238,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-23T14:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -4439,8 +4449,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
