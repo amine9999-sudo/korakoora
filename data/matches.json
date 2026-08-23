@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-22T23:45:23.634689+00:00",
-  "dateFrom": "2026-08-21",
-  "dateTo": "2026-08-31",
+  "updatedAt": "2026-08-23T03:30:46.352316+00:00",
+  "dateFrom": "2026-08-22",
+  "dateTo": "2026-09-01",
   "competitions": [
     "CL",
     "PL",
@@ -12,52 +12,8 @@
     "PPL",
     "DED"
   ],
-  "count": 122,
+  "count": 119,
   "matches": [
-    {
-      "id": 560542,
-      "status": "FINISHED",
-      "utcDate": "2026-08-21T19:00:00Z",
-      "matchday": 1,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 11620,
-        "name": "Thomas Bramall",
-        "type": "REFEREE",
-        "nationality": "England"
-      },
-      "competition": {
-        "id": 2021,
-        "name": "Premier League",
-        "code": "PL",
-        "emblem": "https://crests.football-data.org/PL.png"
-      },
-      "home": {
-        "id": 57,
-        "name": "Arsenal FC",
-        "shortName": "Arsenal",
-        "tla": "ARS",
-        "crest": "https://crests.football-data.org/57.png"
-      },
-      "away": {
-        "id": 1076,
-        "name": "Coventry City FC",
-        "shortName": "Coventry City",
-        "tla": "COV",
-        "crest": "https://crests.football-data.org/1076.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 2,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 3,
-          "away": 0
-        }
-      }
-    },
     {
       "id": 560543,
       "status": "FINISHED",
@@ -821,50 +777,6 @@
         "fullTime": {
           "home": null,
           "away": null
-        }
-      }
-    },
-    {
-      "id": 564647,
-      "status": "FINISHED",
-      "utcDate": "2026-08-21T19:00:00Z",
-      "matchday": 2,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 57930,
-        "name": "Isidro Díaz de Mera",
-        "type": "REFEREE",
-        "nationality": "Spain"
-      },
-      "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "home": {
-        "id": 90,
-        "name": "Real Betis Balompié",
-        "shortName": "Real Betis",
-        "tla": "BET",
-        "crest": "https://crests.football-data.org/90.png"
-      },
-      "away": {
-        "id": 92,
-        "name": "Real Sociedad de Fútbol",
-        "shortName": "Real Sociedad",
-        "tla": "RSO",
-        "crest": "https://crests.football-data.org/92.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 0
         }
       }
     },
@@ -2889,50 +2801,6 @@
         "fullTime": {
           "home": null,
           "away": null
-        }
-      }
-    },
-    {
-      "id": 559715,
-      "status": "FINISHED",
-      "utcDate": "2026-08-21T18:45:00Z",
-      "matchday": 1,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 43886,
-        "name": "Ruddy Buquet",
-        "type": "REFEREE",
-        "nationality": "France"
-      },
-      "competition": {
-        "id": 2015,
-        "name": "Ligue 1",
-        "code": "FL1",
-        "emblem": "https://crests.football-data.org/FL1.png"
-      },
-      "home": {
-        "id": 516,
-        "name": "Olympique de Marseille",
-        "shortName": "Marseille",
-        "tla": "MAR",
-        "crest": "https://crests.football-data.org/516.png"
-      },
-      "away": {
-        "id": 576,
-        "name": "RC Strasbourg Alsace",
-        "shortName": "Strasbourg",
-        "tla": "RC ",
-        "crest": "https://crests.football-data.org/576.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 4,
-          "away": 0
         }
       }
     },
