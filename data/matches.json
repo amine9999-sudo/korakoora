@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T07:21:22.830522+00:00",
+  "updatedAt": "2026-08-23T08:58:54.275534+00:00",
   "dateFrom": "2026-08-22",
   "dateTo": "2026-09-01",
   "competitions": [
@@ -4294,7 +4294,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 56923,
+        "name": "Sander Van der Eijk",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
