@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T21:04:59.427475+00:00",
+  "updatedAt": "2026-08-24T22:48:42.640024+00:00",
   "dateFrom": "2026-08-23",
   "dateTo": "2026-09-02",
   "competitions": [
@@ -738,7 +738,7 @@
     },
     {
       "id": 564640,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-24T19:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -2938,7 +2938,7 @@
     },
     {
       "id": 567277,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-24T19:15:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
