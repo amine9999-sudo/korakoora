@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T16:07:34.366194+00:00",
+  "updatedAt": "2026-08-24T18:00:35.509215+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -1247,6 +1247,24 @@
         {
           "position": 11,
           "team": {
+            "id": 79,
+            "name": "CA Osasuna",
+            "shortName": "Osasuna",
+            "tla": "OSA",
+            "crest": "https://crests.football-data.org/79.png"
+          },
+          "playedGames": 1,
+          "won": 0,
+          "draw": 1,
+          "lost": 0,
+          "points": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0
+        },
+        {
+          "position": 11,
+          "team": {
             "id": 558,
             "name": "RC Celta de Vigo",
             "shortName": "Celta",
@@ -1281,7 +1299,7 @@
           "goalDifference": 0
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
             "id": 5335,
             "name": "Real Racing Club de Santander",
@@ -1299,7 +1317,7 @@
           "goalDifference": -1
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
             "id": 87,
             "name": "Rayo Vallecano de Madrid",
@@ -1317,7 +1335,25 @@
           "goalDifference": -1
         },
         {
-          "position": 15,
+          "position": 16,
+          "team": {
+            "id": 88,
+            "name": "Levante UD",
+            "shortName": "Levante",
+            "tla": "LEV",
+            "crest": "https://crests.football-data.org/88.png"
+          },
+          "playedGames": 2,
+          "won": 0,
+          "draw": 1,
+          "lost": 1,
+          "points": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 3,
+          "goalDifference": -3
+        },
+        {
+          "position": 17,
           "team": {
             "id": 285,
             "name": "Elche CF",
@@ -1335,25 +1371,7 @@
           "goalDifference": -5
         },
         {
-          "position": 16,
-          "team": {
-            "id": 79,
-            "name": "CA Osasuna",
-            "shortName": "Osasuna",
-            "tla": "OSA",
-            "crest": "https://crests.football-data.org/79.png"
-          },
-          "playedGames": 0,
-          "won": 0,
-          "draw": 0,
-          "lost": 0,
-          "points": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0
-        },
-        {
-          "position": 17,
+          "position": 18,
           "team": {
             "id": 92,
             "name": "Real Sociedad de Fútbol",
@@ -1371,7 +1389,7 @@
           "goalDifference": -1
         },
         {
-          "position": 18,
+          "position": 19,
           "team": {
             "id": 77,
             "name": "Athletic Club",
@@ -1389,7 +1407,7 @@
           "goalDifference": -2
         },
         {
-          "position": 19,
+          "position": 20,
           "team": {
             "id": 84,
             "name": "Málaga CF",
@@ -1405,24 +1423,6 @@
           "goalsFor": 0,
           "goalsAgainst": 2,
           "goalDifference": -2
-        },
-        {
-          "position": 20,
-          "team": {
-            "id": 88,
-            "name": "Levante UD",
-            "shortName": "Levante",
-            "tla": "LEV",
-            "crest": "https://crests.football-data.org/88.png"
-          },
-          "playedGames": 1,
-          "won": 0,
-          "draw": 0,
-          "lost": 1,
-          "points": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 3,
-          "goalDifference": -3
         }
       ]
     }

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T16:07:34.366194+00:00",
+  "updatedAt": "2026-08-24T18:00:35.509215+00:00",
   "dateFrom": "2026-08-23",
   "dateTo": "2026-09-02",
   "competitions": [
@@ -153,7 +153,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11327,
+        "name": "John Brooks",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -694,7 +699,7 @@
     },
     {
       "id": 564639,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-24T17:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -726,8 +731,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -1494,7 +1499,7 @@
     },
     {
       "id": 558630,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-24T16:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -1527,12 +1532,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       }
     },
@@ -1543,7 +1548,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57868,
+        "name": "Matteo Marcenaro",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
