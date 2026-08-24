@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T11:49:41.997729+00:00",
+  "updatedAt": "2026-08-24T14:26:22.553158+00:00",
   "dateFrom": "2026-08-23",
   "dateTo": "2026-09-02",
   "competitions": [
@@ -2406,7 +2406,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57088,
+        "name": "Bastien Dechepy",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
