@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T19:46:08.203517+00:00",
+  "updatedAt": "2026-08-25T21:00:38.958316+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -1085,6 +1085,24 @@
         {
           "position": 2,
           "team": {
+            "id": 90,
+            "name": "Real Betis Balompié",
+            "shortName": "Real Betis",
+            "tla": "BET",
+            "crest": "https://crests.football-data.org/90.png"
+          },
+          "playedGames": 2,
+          "won": 2,
+          "draw": 0,
+          "lost": 0,
+          "points": 6,
+          "goalsFor": 2,
+          "goalsAgainst": 0,
+          "goalDifference": 2
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 263,
             "name": "Deportivo Alavés",
             "shortName": "Alavés",
@@ -1101,7 +1119,7 @@
           "goalDifference": 3
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "id": 78,
             "name": "Club Atlético de Madrid",
@@ -1117,24 +1135,6 @@
           "goalsFor": 4,
           "goalsAgainst": 2,
           "goalDifference": 2
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 90,
-            "name": "Real Betis Balompié",
-            "shortName": "Real Betis",
-            "tla": "BET",
-            "crest": "https://crests.football-data.org/90.png"
-          },
-          "playedGames": 2,
-          "won": 1,
-          "draw": 1,
-          "lost": 0,
-          "points": 4,
-          "goalsFor": 1,
-          "goalsAgainst": 0,
-          "goalDifference": 1
         },
         {
           "position": 5,
@@ -1247,24 +1247,6 @@
         {
           "position": 11,
           "team": {
-            "id": 95,
-            "name": "Valencia CF",
-            "shortName": "Valencia",
-            "tla": "VAL",
-            "crest": "https://crests.football-data.org/95.png"
-          },
-          "playedGames": 2,
-          "won": 0,
-          "draw": 2,
-          "lost": 0,
-          "points": 2,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0
-        },
-        {
-          "position": 12,
-          "team": {
             "id": 79,
             "name": "CA Osasuna",
             "shortName": "Osasuna",
@@ -1281,7 +1263,7 @@
           "goalDifference": 0
         },
         {
-          "position": 12,
+          "position": 11,
           "team": {
             "id": 558,
             "name": "RC Celta de Vigo",
@@ -1299,7 +1281,7 @@
           "goalDifference": 0
         },
         {
-          "position": 14,
+          "position": 13,
           "team": {
             "id": 5335,
             "name": "Real Racing Club de Santander",
@@ -1317,7 +1299,7 @@
           "goalDifference": -1
         },
         {
-          "position": 14,
+          "position": 13,
           "team": {
             "id": 87,
             "name": "Rayo Vallecano de Madrid",
@@ -1332,6 +1314,24 @@
           "points": 1,
           "goalsFor": 2,
           "goalsAgainst": 3,
+          "goalDifference": -1
+        },
+        {
+          "position": 15,
+          "team": {
+            "id": 95,
+            "name": "Valencia CF",
+            "shortName": "Valencia",
+            "tla": "VAL",
+            "crest": "https://crests.football-data.org/95.png"
+          },
+          "playedGames": 2,
+          "won": 0,
+          "draw": 1,
+          "lost": 1,
+          "points": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 1,
           "goalDifference": -1
         },
         {
