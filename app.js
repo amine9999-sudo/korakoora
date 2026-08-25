@@ -21,7 +21,7 @@
 
 const list = document.querySelector("#liveMatches");
 
-const API_FILE = "data/matches.json";
+const API_FILE = "matches.json";
 
 let selectedDay = "today";
 
