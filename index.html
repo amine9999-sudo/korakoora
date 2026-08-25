@@ -229,6 +229,36 @@ function formatTime(utc) {
   } catch { return "--:--"; }
 }
 
+/* ===== التاريخ حسب توقيت الزائر ===== */
+function getLocalDateKey(utc) {
+  if (!utc) return null;
+  try {
+    const parts = new Intl.DateTimeFormat("en-CA", {
+      timeZone: getUserTimeZone(),
+      year: "numeric", month: "2-digit", day: "2-digit"
+    }).formatToParts(new Date(utc));
+    const y = parts.find(p => p.type === "year")?.value;
+    const m = parts.find(p => p.type === "month")?.value;
+    const d = parts.find(p => p.type === "day")?.value;
+    if (!y || !m || !d) return null;
+    return `${y}-${m}-${d}`;
+  } catch { return null; }
+}
+
+function getTodayKey() {
+  return getLocalDateKey(new Date().toISOString());
+}
+
+function addDays(dateKey, amount) {
+  if (!dateKey) return null;
+  const parts = dateKey.split("-").map(Number);
+  if (parts.length !== 3) return null;
+  const date = new Date(parts[0], parts[1] - 1, parts[2], 12, 0, 0, 0);
+  if (Number.isNaN(date.getTime())) return null;
+  date.setDate(date.getDate() + amount);
+  return [date.getFullYear(), String(date.getMonth() + 1).padStart(2, "0"), String(date.getDate()).padStart(2, "0")].join("-");
+}
+
 const LEAGUE_NAMES = {
   "Premier League": "الدوري الإنجليزي", "English Premier League": "الدوري الإنجليزي",
   "Primera Division": "الدوري الإسباني", "La Liga": "الدوري الإسباني",
@@ -382,19 +412,16 @@ async function loadMatches() {
 function renderMatches() {
   const container = document.querySelector("#matchesContainer");
   let filtered = [...allMatches];
-  const now = new Date();
-  const todayStr = now.toISOString().split("T")[0];
+  const todayKey = getTodayKey();
 
   if (currentDay === "today") {
-    filtered = filtered.filter(m => m.utcDate && new Date(m.utcDate).toISOString().split("T")[0] === todayStr);
+    filtered = filtered.filter(m => m.utcDate && getLocalDateKey(m.utcDate) === todayKey);
   } else if (currentDay === "yesterday") {
-    const y = new Date(now); y.setDate(y.getDate() - 1);
-    const yStr = y.toISOString().split("T")[0];
-    filtered = filtered.filter(m => m.utcDate && new Date(m.utcDate).toISOString().split("T")[0] === yStr);
+    const yKey = addDays(todayKey, -1);
+    filtered = filtered.filter(m => m.utcDate && getLocalDateKey(m.utcDate) === yKey);
   } else if (currentDay === "tomorrow") {
-    const t = new Date(now); t.setDate(t.getDate() + 1);
-    const tStr = t.toISOString().split("T")[0];
-    filtered = filtered.filter(m => m.utcDate && new Date(m.utcDate).toISOString().split("T")[0] === tStr);
+    const tKey = addDays(todayKey, 1);
+    filtered = filtered.filter(m => m.utcDate && getLocalDateKey(m.utcDate) === tKey);
   }
 
   if (currentFilter !== "all") {
