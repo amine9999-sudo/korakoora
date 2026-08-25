@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T16:19:55.610140+00:00",
+  "updatedAt": "2026-08-25T17:56:17.858564+00:00",
   "dateFrom": "2026-08-24",
   "dateTo": "2026-09-03",
   "competitions": [
@@ -533,7 +533,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 214122,
+        "name": "Jon González Esteban",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
