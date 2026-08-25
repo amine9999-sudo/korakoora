@@ -241,8 +241,8 @@
 /* =====================================================
    CONFIG
    ===================================================== */
-const STANDINGS_FILE = "data/standings.json";
-const MATCHES_FILE   = "data/matches.json";
+const STANDINGS_FILE = "standings.json";
+const MATCHES_FILE   = "matches.json";
 
 const LEAGUE_NAMES = {
   CL:"دوري أبطال أوروبا", PL:"الدوري الإنجليزي", PD:"الدوري الإسباني",
@@ -352,10 +352,10 @@ async function loadStandings(){
 
     const season = item?.season || {};
     document.querySelector("#leagueMeta").textContent =
-      rows.length ? `الموسم الحالي · ${item.stage || ""}` : "";
+      rows.length ? `الموسم الحالي · الجولة ${season.currentMatchday || ""}` : "";
 
     if(!rows.length){
-      container.innerHTML = `<div class="empty-standings">لا توجد بيانات ترتيب متاحة حاليًا. سيتم تحديثها تلقائيًا من مصدر البيانات.</div>`;
+      container.innerHTML = `<div class="empty-standings">لا توجد بيانات ترتيب متاحة حاليًا لهذه البطولة.</div>`;
       return;
     }
 
@@ -426,8 +426,8 @@ async function loadLeagueMatches(){
     });
 
     container.innerHTML = leagueMatches.map(match => {
-      const home = getTeam(match.home);
-      const away = getTeam(match.away);
+      const home = getTeam(match.homeTeam || match.home);
+      const away = getTeam(match.awayTeam || match.away);
       const score = getScore(match);
       const status = getStatus(match);
       const isFinished = status.className === "finished";
