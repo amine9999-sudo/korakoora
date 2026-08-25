@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#111111">
+  <title>ترتيب البطولة | KoraKoora</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .league-page { padding: 40px 0 70px; }
+
+    .league-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 18px;
+      padding: 10px 16px;
+      border-radius: 12px;
+      background: #1b2230;
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #f5f7fb;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.2s ease;
+    }
+    .league-back:hover { background: #202735; }
+
+    .league-hero {
+      background: #11151e;
+      border: 1px solid rgba(255,255,255,.065);
+      border-radius: 24px;
+      padding: 28px;
+      margin-bottom: 22px;
+      box-shadow: 0 16px 45px rgba(0,0,0,.18);
+    }
+    .league-hero h1 { margin: 10px 0 4px; color:#fff; font-size:clamp(28px,5vw,44px); }
+    .league-meta { color:#8992a3; margin-top:6px; }
+
+    /* ===== ترتيب البطولة ===== */
+    .standings-card {
+      overflow: hidden;
+      background:#11151e;
+      border:1px solid rgba(255,255,255,.065);
+      border-radius:20px;
+      box-shadow:0 16px 45px rgba(0,0,0,.18);
+      margin-bottom: 35px;
+    }
+    .standings-scroll { overflow-x:auto; }
+    .standings-table { width:100%; min-width:720px; border-collapse:collapse; }
+    .standings-table th,
+    .standings-table td { padding:13px 12px; border-bottom:1px solid rgba(255,255,255,.06); text-align:center; white-space:nowrap; }
+    .standings-table th { color:#8992a3; font-size:12px; background:#171c27; }
+    .standings-table td { color:#e9edf5; font-size:14px; }
+    .standings-table tbody tr:hover { background:rgba(255,255,255,.025); }
+    .team-cell { display:flex; align-items:center; gap:10px; min-width:220px; text-align:right; }
+    .team-cell img { width:30px; height:30px; object-fit:contain; }
+    .position { font-weight:900; color:#3d8bff !important; width:55px; }
+    .points { font-weight:900; color:#19c37d !important; }
+    .empty-standings { padding:50px 20px; text-align:center; color:#8992a3; }
+
+    /* ===== مباريات البطولة ===== */
+    .matches-card {
+      overflow: hidden;
+      background:#11151e;
+      border:1px solid rgba(255,255,255,.065);
+      border-radius:20px;
+      box-shadow:0 16px 45px rgba(0,0,0,.18);
+    }
+    .matches-card h2 {
+      padding: 22px 24px 0;
+      margin: 0;
+      color: #ffffff;
+      font-size: 20px;
+    }
+    .matches-list { padding: 16px; }
+
+    .match-row {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      transition: background 0.15s ease;
+      text-decoration: none;
+      color: inherit;
+      border-radius: 12px;
+    }
+    .match-row:hover { background: rgba(255,255,255,0.03); }
+    .match-row:last-child { border-bottom: 0; }
+
+    .match-team {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-align: right;
+    }
+    .match-team.away { flex-direction: row-reverse; text-align: left; }
+    .match-team img {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+      padding: 4px;
+      background: #181d27;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 10px;
+    }
+    .match-team span {
+      font-weight: bold;
+      color: #f5f7fb;
+      font-size: 14px;
+    }
+
+    .match-center {
+      text-align: center;
+      min-width: 90px;
+    }
+    .match-time {
+      font-size: 18px;
+      font-weight: 900;
+      color: #ffffff;
+      font-variant-numeric: tabular-nums;
+    }
+    .match-score {
+      font-size: 22px;
+      font-weight: 900;
+      color: #ffffff;
+    }
+    .match-status {
+      display: inline-block;
+      margin-top: 4px;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: bold;
+    }
+    .match-status.live { color: #ff6b75; background: rgba(255,77,88,0.12); }
+    .match-status.finished { color: #69d49a; background: rgba(66,203,133,0.11); }
+    .match-status.upcoming { color: #3d8bff; background: rgba(61,139,255,0.12); }
+    .match-date { color: #737d8e; font-size: 12px; margin-top: 4px; }
+
+    .empty-matches {
+      padding: 50px 20px;
+      text-align: center;
+      color: #8992a3;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+    .section-title h2 { margin: 0; color: #ffffff; font-size: 20px; }
+    .section-title .count {
+      background: rgba(61,139,255,0.15);
+      color: #3d8bff;
+      padding: 2px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    @media(max-width:700px){
+      .league-hero{padding:22px 16px;border-radius:18px;}
+      .standings-table{min-width:680px;}
+      .team-cell{min-width:190px;}
+      .match-team span { font-size: 13px; }
+      .match-team img { width: 30px; height: 30px; }
+      .match-time { font-size: 15px; }
+      .match-score { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html">Kora<span>Koora</span></a>
+    <nav aria-label="القائمة الرئيسية">
+      <a href="index.html">الرئيسية</a>
+      <a href="index.html#matches">المباريات</a>
+      <a class="active" href="index.html#leagues">البطولات</a>
+    </nav>
+  </div>
+</header>
+
+<main class="league-page">
+  <div class="container">
+    <a class="league-back" href="index.html#leagues">← العودة إلى البطولات</a>
+
+    <section class="league-hero">
+      <p class="eyebrow">ترتيب البطولة</p>
+      <h1 id="leagueName">جاري التحميل...</h1>
+      <div id="leagueMeta" class="league-meta"></div>
+    </section>
+
+    <!-- ترتيب البطولة -->
+    <div class="section-title">
+      <h2>📊 ترتيب الفرق</h2>
+    </div>
+    <section class="standings-card">
+      <div id="standingsContainer" class="standings-scroll">
+        <div class="empty-standings">جاري تحميل الترتيب...</div>
+      </div>
+    </section>
+
+    <!-- مباريات البطولة -->
+    <div class="section-title">
+      <h2>⚽ مباريات البطولة</h2>
+      <span id="matchesCount" class="count">0</span>
+    </div>
+    <section class="matches-card">
+      <div id="matchesContainer" class="matches-list">
+        <div class="empty-matches">جاري تحميل المباريات...</div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container footer">
+    <div>
+      <a class="brand" href="index.html">Kora<span>Koora</span></a>
+      <p>مباريات ونتائج ومعلومات كرة القدم بطريقة واضحة.</p>
+    </div>
+    <div class="footer-links">
+      <a href="pages/about.html">من نحن</a>
+      <a href="pages/contact.html">اتصل بنا</a>
+      <a href="pages/privacy.html">سياسة الخصوصية</a>
+      <a href="pages/terms.html">شروط الاستخدام</a>
+    </div>
+  </div>
+  <div class="copyright">© 2026 KoraKoora — جميع الحقوق محفوظة</div>
+</footer>
+
+<script>
+/* =====================================================
+   CONFIG
+   ===================================================== */
+const STANDINGS_FILE = "data/standings.json";
+const MATCHES_FILE   = "data/matches.json";
+
+const LEAGUE_NAMES = {
+  CL:"دوري أبطال أوروبا", PL:"الدوري الإنجليزي", PD:"الدوري الإسباني",
+  SA:"الدوري الإيطالي", BL1:"الدوري الألماني", FL1:"الدوري الفرنسي",
+  PPL:"الدوري البرتغالي", DED:"الدوري الهولندي"
+};
+
+const LEAGUE_CODES = {
+  "Premier League": "PL", "English Premier League": "PL",
+  "Primera Division": "PD", "La Liga": "PD",
+  "Serie A": "SA",
+  "Bundesliga": "BL1",
+  "Ligue 1": "FL1",
+  "Primeira Liga": "PPL",
+  "Eredivisie": "DED",
+  "UEFA Champions League": "CL", "Champions League": "CL"
+};
+
+/* =====================================================
+   UTILS
+   ===================================================== */
+function getCode(){ return new URLSearchParams(location.search).get("code") || "PL"; }
+
+function esc(value){
+  return String(value ?? "")
+    .replaceAll("&","&amp;").replaceAll("<","&lt;")
+    .replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#39;");
+}
+
+function getUserTimeZone() {
+  try { return Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC"; }
+  catch { return "UTC"; }
+}
+
+function formatTime(utc) {
+  if (!utc) return "--:--";
+  try {
+    return new Intl.DateTimeFormat("ar-MA", {
+      hour: "2-digit", minute: "2-digit", hour12: false,
+      timeZone: getUserTimeZone()
+    }).format(new Date(utc));
+  } catch { return "--:--"; }
+}
+
+function formatDateShort(utc) {
+  if (!utc) return "";
+  try {
+    return new Intl.DateTimeFormat("ar-MA", {
+      month: "short", day: "numeric",
+      timeZone: getUserTimeZone()
+    }).format(new Date(utc));
+  } catch { return ""; }
+}
+
+function getTeam(t) {
+  if (!t) return { name: "فريق", logo: "" };
+  return {
+    name: t.name || t.shortName || t.tla || "فريق",
+    logo: t.crest || t.logo || t.image || ""
+  };
+}
+
+function getStatus(match) {
+  const status = String(match.status || "").toUpperCase();
+  const live = ["LIVE","IN_PLAY","PAUSED","1H","2H","HT","ET","P"];
+  if (live.includes(status)) return { className: "live", text: "🔴 مباشر" };
+  if (status === "FINISHED") return { className: "finished", text: "✓ انتهت" };
+  if (status === "POSTPONED") return { className: "upcoming", text: "⚠️ تأجلت" };
+  if (status === "CANCELLED") return { className: "upcoming", text: "⚠️ ألغيت" };
+  return { className: "upcoming", text: "🕐 لم تبدأ" };
+}
+
+function getScore(match) {
+  const s = match.score || {};
+  const ft = s.fullTime || {};
+  return {
+    home: ft.home ?? match.homeScore ?? null,
+    away: ft.away ?? match.awayScore ?? null
+  };
+}
+
+function getMatchCompetitionCode(match) {
+  const comp = match.competition;
+  if (!comp) return "";
+  let name = "";
+  if (typeof comp === "object") name = comp.name || comp.code || "";
+  else name = comp;
+  return LEAGUE_CODES[name] || "";
+}
+
+/* =====================================================
+   LOAD STANDINGS
+   ===================================================== */
+async function loadStandings(){
+  const code = getCode();
+  const name = LEAGUE_NAMES[code] || code;
+  document.title = `${name} | KoraKoora`;
+  document.querySelector("#leagueName").textContent = name;
+
+  const container = document.querySelector("#standingsContainer");
+  try {
+    const response = await fetch(`${STANDINGS_FILE}?v=${Date.now()}`, {cache:"no-store"});
+    if(!response.ok) throw new Error("HTTP " + response.status);
+    const data = await response.json();
+    const item = data?.competitions?.[code];
+    const rows = item?.table || [];
+
+    const season = item?.season || {};
+    document.querySelector("#leagueMeta").textContent =
+      rows.length ? `الموسم الحالي · ${item.stage || ""}` : "";
+
+    if(!rows.length){
+      container.innerHTML = `<div class="empty-standings">لا توجد بيانات ترتيب متاحة حاليًا. سيتم تحديثها تلقائيًا من مصدر البيانات.</div>`;
+      return;
+    }
+
+    container.innerHTML = `
+      <table class="standings-table">
+        <thead>
+          <tr>
+            <th>#</th><th>الفريق</th><th>لعب</th><th>ف</th><th>ت</th><th>خ</th><th>له</th><th>عليه</th><th>الفارق</th><th>النقاط</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rows.map(row => {
+            const team = row.team || {};
+            const logo = team.crest ? `<img src="${esc(team.crest)}" alt="" loading="lazy" onerror="this.style.display='none'">` : "";
+            return `
+              <tr>
+                <td class="position">${esc(row.position)}</td>
+                <td><div class="team-cell">${logo}<span>${esc(team.shortName || team.name || "فريق")}</span></div></td>
+                <td>${esc(row.playedGames)}</td>
+                <td>${esc(row.won)}</td>
+                <td>${esc(row.draw)}</td>
+                <td>${esc(row.lost)}</td>
+                <td>${esc(row.goalsFor)}</td>
+                <td>${esc(row.goalsAgainst)}</td>
+                <td>${esc(row.goalDifference)}</td>
+                <td class="points">${esc(row.points)}</td>
+              </tr>`;
+          }).join("")}
+        </tbody>
+      </table>`;
+  } catch(error){
+    console.error(error);
+    container.innerHTML = `<div class="empty-standings">تعذر تحميل ترتيب البطولة حاليًا.</div>`;
+  }
+}
+
+/* =====================================================
+   LOAD LEAGUE MATCHES
+   ===================================================== */
+async function loadLeagueMatches(){
+  const code = getCode();
+  const container = document.querySelector("#matchesContainer");
+  const countEl = document.querySelector("#matchesCount");
+
+  try {
+    const response = await fetch(`${MATCHES_FILE}?v=${Date.now()}`, {cache:"no-store"});
+    if(!response.ok) throw new Error("HTTP " + response.status);
+    const data = await response.json();
+    const allMatches = Array.isArray(data.matches) ? data.matches : [];
+
+    /* فلترة المباريات حسب كود البطولة */
+    const leagueMatches = allMatches.filter(m => getMatchCompetitionCode(m) === code);
+
+    countEl.textContent = leagueMatches.length;
+
+    if(!leagueMatches.length){
+      container.innerHTML = `<div class="empty-matches">لا توجد مباريات مجدولة لهذه البطولة حاليًا.</div>`;
+      return;
+    }
+
+    /* ترتيب: المباشرة أولاً، ثم القادمة، ثم المنتهية */
+    const statusOrder = { "LIVE": 0, "IN_PLAY": 0, "PAUSED": 0, "1H": 0, "2H": 0, "HT": 0, "ET": 0, "P": 0, "SCHEDULED": 1, "TIMED": 1, "FINISHED": 2, "POSTPONED": 3, "CANCELLED": 3 };
+    leagueMatches.sort((a, b) => {
+      const sa = statusOrder[String(a.status).toUpperCase()] ?? 1;
+      const sb = statusOrder[String(b.status).toUpperCase()] ?? 1;
+      if (sa !== sb) return sa - sb;
+      return new Date(a.utcDate || 0) - new Date(b.utcDate || 0);
+    });
+
+    container.innerHTML = leagueMatches.map(match => {
+      const home = getTeam(match.home);
+      const away = getTeam(match.away);
+      const score = getScore(match);
+      const status = getStatus(match);
+      const isFinished = status.className === "finished";
+      const isLive = status.className === "live";
+
+      const center = isFinished || isLive
+        ? `<div class="match-score">${score.home ?? "-"} - ${score.away ?? "-"}</div>`
+        : `<div class="match-time">${formatTime(match.utcDate)}</div>`;
+
+      return `
+        <a href="match.html?id=${esc(match.id)}" class="match-row">
+          <div class="match-team">
+            ${home.logo ? `<img src="${esc(home.logo)}" alt="" onerror="this.style.display='none'">` : ""}
+            <span>${esc(home.name)}</span>
+          </div>
+          <div class="match-center">
+            ${center}
+            <div class="match-status ${status.className}">${status.text}</div>
+            ${!isFinished && !isLive ? `<div class="match-date">${formatDateShort(match.utcDate)}</div>` : ""}
+          </div>
+          <div class="match-team away">
+            ${away.logo ? `<img src="${esc(away.logo)}" alt="" onerror="this.style.display='none'">` : ""}
+            <span>${esc(away.name)}</span>
+          </div>
+        </a>
+      `;
+    }).join("");
+
+  } catch(error){
+    console.error(error);
+    container.innerHTML = `<div class="empty-matches">تعذر تحميل مباريات البطولة حاليًا.</div>`;
+  }
+}
+
+/* =====================================================
+   INIT
+   ===================================================== */
+loadStandings();
+loadLeagueMatches();
+</script>
+
+</body>
+</html>
