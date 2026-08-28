@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T22:06:38.229099+00:00",
+  "updatedAt": "2026-08-28T22:36:36.266762+00:00",
   "dateFrom": "2026-08-27",
   "dateTo": "2026-09-06",
   "competitions": [
@@ -16,7 +16,7 @@
   "matches": [
     {
       "id": 560555,
-      "status": "FINISHED",
+      "status": "TIMED",
       "utcDate": "2026-08-28T19:00:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -49,12 +49,12 @@
       },
       "score": {
         "halfTime": {
-          "home": 0,
-          "away": 1
+          "home": null,
+          "away": null
         },
         "fullTime": {
-          "home": 1,
-          "away": 4
+          "home": null,
+          "away": null
         }
       }
     },
@@ -879,7 +879,7 @@
     },
     {
       "id": 564654,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-08-28T17:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -907,12 +907,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 2
         }
       }
     },
@@ -2327,17 +2327,12 @@
     },
     {
       "id": 565776,
-      "status": "FINISHED",
+      "status": "TIMED",
       "utcDate": "2026-08-28T18:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 57515,
-        "name": "Sören Storks",
-        "type": "REFEREE",
-        "nationality": "Germany"
-      },
+      "referee": null,
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -2360,12 +2355,12 @@
       },
       "score": {
         "halfTime": {
-          "home": 1,
-          "away": 0
+          "home": null,
+          "away": null
         },
         "fullTime": {
-          "home": 5,
-          "away": 1
+          "home": null,
+          "away": null
         }
       }
     },
@@ -4174,45 +4169,6 @@
       }
     },
     {
-      "id": 567295,
-      "status": "SCHEDULED",
-      "utcDate": "2026-09-05T00:00:00Z",
-      "matchday": 5,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": null,
-      "competition": {
-        "id": 2017,
-        "name": "Primeira Liga",
-        "code": "PPL",
-        "emblem": "https://crests.football-data.org/PPL.png"
-      },
-      "home": {
-        "id": 582,
-        "name": "GD Estoril Praia",
-        "shortName": "Estoril Praia",
-        "tla": "EST",
-        "crest": "https://crests.football-data.org/582.png"
-      },
-      "away": {
-        "id": 712,
-        "name": "FC Arouca",
-        "shortName": "Arouca",
-        "tla": "FCA",
-        "crest": "https://crests.football-data.org/712.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
       "id": 567297,
       "status": "TIMED",
       "utcDate": "2026-09-05T14:30:00Z",
@@ -4434,6 +4390,45 @@
         "shortName": "Acad. Viseu",
         "tla": "ACV",
         "crest": "https://crests.football-data.org/5527.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 567295,
+      "status": "SCHEDULED",
+      "utcDate": "2026-09-07T00:00:00Z",
+      "matchday": 5,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "home": {
+        "id": 582,
+        "name": "GD Estoril Praia",
+        "shortName": "Estoril Praia",
+        "tla": "EST",
+        "crest": "https://crests.football-data.org/582.png"
+      },
+      "away": {
+        "id": 712,
+        "name": "FC Arouca",
+        "shortName": "Arouca",
+        "tla": "FCA",
+        "crest": "https://crests.football-data.org/712.png"
       },
       "score": {
         "halfTime": {
