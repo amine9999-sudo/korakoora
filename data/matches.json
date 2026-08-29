@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T02:36:37.123336+00:00",
+  "updatedAt": "2026-08-29T03:06:38.793621+00:00",
   "dateFrom": "2026-08-28",
   "dateTo": "2026-09-07",
   "competitions": [
@@ -801,7 +801,7 @@
     },
     {
       "id": 564654,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-08-28T17:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -829,18 +829,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 2
         }
       }
     },
     {
       "id": 564648,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-08-28T19:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -868,12 +868,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       }
     },
@@ -3814,7 +3814,7 @@
     },
     {
       "id": 567291,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-08-28T19:15:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -3847,12 +3847,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 4
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 4
         }
       }
     },
