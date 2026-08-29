@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T05:36:46.968144+00:00",
+  "updatedAt": "2026-08-29T06:07:13.901614+00:00",
   "dateFrom": "2026-08-28",
   "dateTo": "2026-09-07",
   "competitions": [
@@ -16,17 +16,12 @@
   "matches": [
     {
       "id": 560555,
-      "status": "FINISHED",
+      "status": "TIMED",
       "utcDate": "2026-08-28T19:00:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 11423,
-        "name": "Andy Madley",
-        "type": "REFEREE",
-        "nationality": "England"
-      },
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -49,12 +44,12 @@
       },
       "score": {
         "halfTime": {
-          "home": 0,
-          "away": 1
+          "home": null,
+          "away": null
         },
         "fullTime": {
-          "home": 1,
-          "away": 4
+          "home": null,
+          "away": null
         }
       }
     },
@@ -1620,12 +1615,17 @@
     },
     {
       "id": 558625,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-08-28T18:45:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11072,
+        "name": "Gianluca Manganiello",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1648,12 +1648,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       }
     },
