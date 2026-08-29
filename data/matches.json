@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T08:06:46.664101+00:00",
+  "updatedAt": "2026-08-29T08:36:29.027164+00:00",
   "dateFrom": "2026-08-28",
   "dateTo": "2026-09-07",
   "competitions": [
@@ -16,12 +16,17 @@
   "matches": [
     {
       "id": 560555,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-08-28T19:00:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11423,
+        "name": "Andy Madley",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -44,12 +49,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 4
         }
       }
     },
