@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T12:07:57.000976+00:00",
+  "updatedAt": "2026-08-29T12:36:32.833546+00:00",
   "dateFrom": "2026-08-28",
   "dateTo": "2026-09-07",
   "competitions": [
@@ -97,7 +97,7 @@
           "away": null
         },
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 1
         }
       }
@@ -3152,12 +3152,17 @@
     },
     {
       "id": 559702,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-08-28T18:45:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57092,
+        "name": "Eric Wattellier",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -3180,12 +3185,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 2
         }
       }
     },
@@ -4561,12 +4566,17 @@
     },
     {
       "id": 558241,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-28T18:00:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 80087,
+        "name": "Jannick van der Laan",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -4589,12 +4599,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 3
         }
       }
     },
@@ -4605,7 +4615,12 @@
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43858,
+        "name": "Serdar Gözübüyük",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
