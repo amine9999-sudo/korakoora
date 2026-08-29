@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T22:06:35.812594+00:00",
+  "updatedAt": "2026-08-29T22:36:32.588783+00:00",
   "dateFrom": "2026-08-28",
   "dateTo": "2026-09-07",
   "competitions": [
@@ -4279,45 +4279,6 @@
       }
     },
     {
-      "id": 567298,
-      "status": "TIMED",
-      "utcDate": "2026-09-04T19:15:00Z",
-      "matchday": 5,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": null,
-      "competition": {
-        "id": 2017,
-        "name": "Primeira Liga",
-        "code": "PPL",
-        "emblem": "https://crests.football-data.org/PPL.png"
-      },
-      "home": {
-        "id": 498,
-        "name": "Sporting Clube de Portugal",
-        "shortName": "Sporting CP",
-        "tla": "SPO",
-        "crest": "https://crests.football-data.org/498.png"
-      },
-      "away": {
-        "id": 5529,
-        "name": "CD Nacional",
-        "shortName": "CD Nacional",
-        "tla": "CDN",
-        "crest": "https://crests.football-data.org/5529.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
       "id": 567299,
       "status": "TIMED",
       "utcDate": "2026-09-04T19:15:00Z",
@@ -4461,6 +4422,45 @@
         "shortName": "SL Benfica",
         "tla": "BEN",
         "crest": "https://crests.football-data.org/1903.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 567298,
+      "status": "TIMED",
+      "utcDate": "2026-09-05T19:30:00Z",
+      "matchday": 5,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting CP",
+        "tla": "SPO",
+        "crest": "https://crests.football-data.org/498.png"
+      },
+      "away": {
+        "id": 5529,
+        "name": "CD Nacional",
+        "shortName": "CD Nacional",
+        "tla": "CDN",
+        "crest": "https://crests.football-data.org/5529.png"
       },
       "score": {
         "halfTime": {
