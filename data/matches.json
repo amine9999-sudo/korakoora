@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T15:06:39.212189+00:00",
+  "updatedAt": "2026-08-29T15:36:31.712558+00:00",
   "dateFrom": "2026-08-28",
   "dateTo": "2026-09-07",
   "competitions": [
@@ -104,7 +104,7 @@
     },
     {
       "id": 560560,
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-29T14:00:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -148,7 +148,7 @@
     },
     {
       "id": 560561,
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-29T14:00:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -931,7 +931,7 @@
           "away": null
         },
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       }
@@ -2484,7 +2484,7 @@
     },
     {
       "id": 565777,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-29T13:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -2522,13 +2522,13 @@
         },
         "fullTime": {
           "home": 3,
-          "away": 0
+          "away": 1
         }
       }
     },
     {
       "id": 565778,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-29T13:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -2572,7 +2572,7 @@
     },
     {
       "id": 565779,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-29T13:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -2609,14 +2609,14 @@
           "away": 2
         },
         "fullTime": {
-          "home": 1,
-          "away": 2
+          "home": 3,
+          "away": 3
         }
       }
     },
     {
       "id": 565780,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-29T13:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -2654,13 +2654,13 @@
         },
         "fullTime": {
           "home": 3,
-          "away": 0
+          "away": 2
         }
       }
     },
     {
       "id": 565783,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-29T13:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -2697,7 +2697,7 @@
           "away": 1
         },
         "fullTime": {
-          "home": 1,
+          "home": 3,
           "away": 2
         }
       }
@@ -3221,7 +3221,7 @@
     },
     {
       "id": 559704,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-29T15:15:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -3258,8 +3258,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -3933,7 +3933,7 @@
     },
     {
       "id": 567285,
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "utcDate": "2026-08-29T14:30:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -3961,8 +3961,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
           "home": 0,
@@ -3972,7 +3972,7 @@
     },
     {
       "id": 567287,
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "utcDate": "2026-08-29T14:30:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -4000,11 +4000,11 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 1
         }
       }
@@ -4640,7 +4640,7 @@
     },
     {
       "id": 558242,
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "utcDate": "2026-08-29T14:30:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -4673,8 +4673,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
           "home": 1,
