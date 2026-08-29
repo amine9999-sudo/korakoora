@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T11:36:29.037368+00:00",
+  "updatedAt": "2026-08-29T12:07:57.000976+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -850,19 +850,19 @@
         {
           "position": 10,
           "team": {
-            "id": 64,
-            "name": "Liverpool FC",
-            "shortName": "Liverpool",
-            "tla": "LIV",
-            "crest": "https://crests.football-data.org/64.png"
+            "id": 351,
+            "name": "Nottingham Forest FC",
+            "shortName": "Nottingham",
+            "tla": "NOT",
+            "crest": "https://crests.football-data.org/351.png"
           },
           "playedGames": 2,
-          "won": 0,
-          "draw": 2,
-          "lost": 0,
-          "points": 2,
-          "goalsFor": 2,
-          "goalsAgainst": 2,
+          "won": 1,
+          "draw": 0,
+          "lost": 1,
+          "points": 3,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
           "goalDifference": 0
         },
         {
@@ -886,19 +886,19 @@
         {
           "position": 12,
           "team": {
-            "id": 351,
-            "name": "Nottingham Forest FC",
-            "shortName": "Nottingham",
-            "tla": "NOT",
-            "crest": "https://crests.football-data.org/351.png"
+            "id": 64,
+            "name": "Liverpool FC",
+            "shortName": "Liverpool",
+            "tla": "LIV",
+            "crest": "https://crests.football-data.org/64.png"
           },
           "playedGames": 2,
           "won": 0,
           "draw": 1,
           "lost": 1,
           "points": 1,
-          "goalsFor": 0,
-          "goalsAgainst": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 3,
           "goalDifference": -1
         },
         {

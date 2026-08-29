@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T11:36:29.037368+00:00",
+  "updatedAt": "2026-08-29T12:07:57.000976+00:00",
   "dateFrom": "2026-08-28",
   "dateTo": "2026-09-07",
   "competitions": [
@@ -98,7 +98,7 @@
         },
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 1
         }
       }
     },
@@ -109,7 +109,12 @@
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11443,
+        "name": "Chris Kavanagh",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -148,7 +153,12 @@
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 14701,
+        "name": "Joshua Smith",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -3142,17 +3152,12 @@
     },
     {
       "id": 559702,
-      "status": "FINISHED",
+      "status": "TIMED",
       "utcDate": "2026-08-28T18:45:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 57092,
-        "name": "Eric Wattellier",
-        "type": "REFEREE",
-        "nationality": "France"
-      },
+      "referee": null,
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -3175,12 +3180,12 @@
       },
       "score": {
         "halfTime": {
-          "home": 1,
-          "away": 0
+          "home": null,
+          "away": null
         },
         "fullTime": {
-          "home": 2,
-          "away": 2
+          "home": null,
+          "away": null
         }
       }
     },
@@ -4556,17 +4561,12 @@
     },
     {
       "id": 558241,
-      "status": "FINISHED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-28T18:00:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 80087,
-        "name": "Jannick van der Laan",
-        "type": "REFEREE",
-        "nationality": "Netherlands"
-      },
+      "referee": null,
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -4589,12 +4589,12 @@
       },
       "score": {
         "halfTime": {
-          "home": 1,
-          "away": 2
+          "home": null,
+          "away": null
         },
         "fullTime": {
-          "home": 2,
-          "away": 3
+          "home": null,
+          "away": null
         }
       }
     },
