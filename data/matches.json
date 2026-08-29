@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T02:06:27.622215+00:00",
+  "updatedAt": "2026-08-29T02:36:37.123336+00:00",
   "dateFrom": "2026-08-28",
   "dateTo": "2026-09-07",
   "competitions": [
@@ -801,7 +801,7 @@
     },
     {
       "id": 564654,
-      "status": "FINISHED",
+      "status": "TIMED",
       "utcDate": "2026-08-28T17:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -829,18 +829,18 @@
       },
       "score": {
         "halfTime": {
-          "home": 3,
-          "away": 0
+          "home": null,
+          "away": null
         },
         "fullTime": {
-          "home": 3,
-          "away": 2
+          "home": null,
+          "away": null
         }
       }
     },
     {
       "id": 564648,
-      "status": "FINISHED",
+      "status": "TIMED",
       "utcDate": "2026-08-28T19:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -868,12 +868,12 @@
       },
       "score": {
         "halfTime": {
-          "home": 1,
-          "away": 0
+          "home": null,
+          "away": null
         },
         "fullTime": {
-          "home": 1,
-          "away": 0
+          "home": null,
+          "away": null
         }
       }
     },
@@ -1620,17 +1620,12 @@
     },
     {
       "id": 558625,
-      "status": "FINISHED",
+      "status": "TIMED",
       "utcDate": "2026-08-28T18:45:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 11072,
-        "name": "Gianluca Manganiello",
-        "type": "REFEREE",
-        "nationality": "Italy"
-      },
+      "referee": null,
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1653,12 +1648,12 @@
       },
       "score": {
         "halfTime": {
-          "home": 0,
-          "away": 0
+          "home": null,
+          "away": null
         },
         "fullTime": {
-          "home": 2,
-          "away": 0
+          "home": null,
+          "away": null
         }
       }
     },
@@ -3819,7 +3814,7 @@
     },
     {
       "id": 567291,
-      "status": "FINISHED",
+      "status": "TIMED",
       "utcDate": "2026-08-28T19:15:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -3852,12 +3847,12 @@
       },
       "score": {
         "halfTime": {
-          "home": 0,
-          "away": 4
+          "home": null,
+          "away": null
         },
         "fullTime": {
-          "home": 0,
-          "away": 4
+          "home": null,
+          "away": null
         }
       }
     },
@@ -4526,7 +4521,7 @@
     },
     {
       "id": 558241,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-08-28T18:00:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -4559,12 +4554,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 3
         }
       }
     },
