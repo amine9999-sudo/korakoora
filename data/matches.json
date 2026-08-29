@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T17:06:30.780353+00:00",
+  "updatedAt": "2026-08-29T17:36:27.572217+00:00",
   "dateFrom": "2026-08-28",
   "dateTo": "2026-09-07",
   "competitions": [
@@ -192,7 +192,7 @@
     },
     {
       "id": 560558,
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "utcDate": "2026-08-29T16:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -225,8 +225,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
           "home": 0,
@@ -899,7 +899,7 @@
     },
     {
       "id": 564655,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-29T15:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -931,7 +931,7 @@
           "away": 2
         },
         "fullTime": {
-          "home": 4,
+          "home": 5,
           "away": 2
         }
       }
@@ -970,7 +970,7 @@
           "away": null
         },
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       }
@@ -1684,7 +1684,7 @@
     },
     {
       "id": 558620,
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "utcDate": "2026-08-29T16:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -1717,18 +1717,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 1
         }
       }
     },
     {
       "id": 558624,
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "utcDate": "2026-08-29T16:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -1761,18 +1761,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 3
         },
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 3
         }
       }
     },
     {
       "id": 558627,
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "utcDate": "2026-08-29T16:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -1805,12 +1805,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         },
         "fullTime": {
           "home": 0,
-          "away": 1
+          "away": 2
         }
       }
     },
@@ -2709,7 +2709,7 @@
     },
     {
       "id": 565781,
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "utcDate": "2026-08-29T16:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -2742,11 +2742,11 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 0
         }
       }
@@ -3226,7 +3226,7 @@
     },
     {
       "id": 559704,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-29T15:15:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -4041,7 +4041,12 @@
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 40158,
+        "name": "Miguel Nogueira",
+        "type": "REFEREE",
+        "nationality": "Portugal"
+      },
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -4069,7 +4074,7 @@
         },
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 2
         }
       }
     },
@@ -4746,8 +4751,8 @@
           "away": null
         },
         "fullTime": {
-          "home": 1,
-          "away": 0
+          "home": 2,
+          "away": 1
         }
       }
     },
