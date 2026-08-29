@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T13:06:37.229484+00:00",
+  "updatedAt": "2026-08-29T13:36:35.495016+00:00",
   "dateFrom": "2026-08-28",
   "dateTo": "2026-09-07",
   "competitions": [
@@ -60,7 +60,7 @@
     },
     {
       "id": 560552,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-29T11:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -2464,7 +2464,7 @@
     },
     {
       "id": 565777,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-29T13:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -2501,14 +2501,14 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 565778,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-29T13:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -2545,14 +2545,14 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 565779,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-29T13:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -2589,14 +2589,14 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 565780,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-29T13:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -2633,14 +2633,14 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 565783,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-29T13:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -2677,8 +2677,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -3201,7 +3201,12 @@
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57088,
+        "name": "Bastien Dechepy",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
