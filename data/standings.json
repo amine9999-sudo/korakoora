@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T13:06:41.441878+00:00",
+  "updatedAt": "2026-08-30T13:36:40.183646+00:00",
   "competitions": {
     "PL": {
       "name": "الدوري الإنجليزي",
@@ -39,6 +39,24 @@
         {
           "position": 2,
           "team": {
+            "id": 61,
+            "name": "Chelsea FC",
+            "shortName": "Chelsea",
+            "tla": "CHE",
+            "crest": "https://crests.football-data.org/61.png"
+          },
+          "playedGames": 2,
+          "won": 2,
+          "draw": 0,
+          "lost": 0,
+          "points": 6,
+          "goalsFor": 5,
+          "goalsAgainst": 2,
+          "goalDifference": 3
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 322,
             "name": "Hull City AFC",
             "shortName": "Hull City",
@@ -53,24 +71,6 @@
           "goalsFor": 3,
           "goalsAgainst": 0,
           "goalDifference": 3
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 397,
-            "name": "Brighton & Hove Albion FC",
-            "shortName": "Brighton Hove",
-            "tla": "BHA",
-            "crest": "https://crests.football-data.org/397.png"
-          },
-          "playedGames": 2,
-          "won": 1,
-          "draw": 1,
-          "lost": 0,
-          "points": 4,
-          "goalsFor": 4,
-          "goalsAgainst": 0,
-          "goalDifference": 4
         },
         {
           "position": 4,
@@ -129,24 +129,6 @@
         {
           "position": 7,
           "team": {
-            "id": 61,
-            "name": "Chelsea FC",
-            "shortName": "Chelsea",
-            "tla": "CHE",
-            "crest": "https://crests.football-data.org/61.png"
-          },
-          "playedGames": 2,
-          "won": 1,
-          "draw": 1,
-          "lost": 0,
-          "points": 4,
-          "goalsFor": 3,
-          "goalsAgainst": 2,
-          "goalDifference": 1
-        },
-        {
-          "position": 8,
-          "team": {
             "id": 341,
             "name": "Leeds United FC",
             "shortName": "Leeds United",
@@ -163,7 +145,7 @@
           "goalDifference": 1
         },
         {
-          "position": 9,
+          "position": 8,
           "team": {
             "id": 57,
             "name": "Arsenal FC",
@@ -179,6 +161,24 @@
           "goalsFor": 3,
           "goalsAgainst": 0,
           "goalDifference": 3
+        },
+        {
+          "position": 9,
+          "team": {
+            "id": 397,
+            "name": "Brighton & Hove Albion FC",
+            "shortName": "Brighton Hove",
+            "tla": "BHA",
+            "crest": "https://crests.football-data.org/397.png"
+          },
+          "playedGames": 2,
+          "won": 1,
+          "draw": 0,
+          "lost": 1,
+          "points": 3,
+          "goalsFor": 4,
+          "goalsAgainst": 2,
+          "goalDifference": 2
         },
         {
           "position": 10,

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T13:06:41.441878+00:00",
+  "updatedAt": "2026-08-30T13:36:40.183646+00:00",
   "dateFrom": "2026-08-29",
   "dateTo": "2026-09-08",
   "competitions": [
@@ -273,7 +273,7 @@
           "away": null
         },
         "fullTime": {
-          "home": 0,
+          "home": 2,
           "away": 0
         }
       }
@@ -329,7 +329,12 @@
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11585,
+        "name": "Craig Pawson",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -2558,7 +2563,7 @@
     },
     {
       "id": 565784,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-30T13:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -2595,8 +2600,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -2607,7 +2612,12 @@
       "matchday": 1,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 9567,
+        "name": "Sascha Stegemann",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -3249,7 +3259,7 @@
           "away": null
         },
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       }
@@ -3261,7 +3271,12 @@
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57087,
+        "name": "Romain Lissorgue",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -4534,7 +4549,7 @@
     },
     {
       "id": 558246,
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "utcDate": "2026-08-30T12:30:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -4567,8 +4582,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
           "home": 0,
@@ -4578,7 +4593,7 @@
     },
     {
       "id": 558247,
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "utcDate": "2026-08-30T12:30:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -4611,8 +4626,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
           "home": 0,
