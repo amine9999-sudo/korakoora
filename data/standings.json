@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T14:36:33.319915+00:00",
+  "updatedAt": "2026-08-30T15:06:56.201417+00:00",
   "competitions": {
     "PL": {
       "name": "الدوري الإنجليزي",
@@ -39,24 +39,6 @@
         {
           "position": 2,
           "team": {
-            "id": 402,
-            "name": "Brentford FC",
-            "shortName": "Brentford",
-            "tla": "BRE",
-            "crest": "https://crests.football-data.org/402.png"
-          },
-          "playedGames": 2,
-          "won": 2,
-          "draw": 0,
-          "lost": 0,
-          "points": 6,
-          "goalsFor": 4,
-          "goalsAgainst": 0,
-          "goalDifference": 4
-        },
-        {
-          "position": 3,
-          "team": {
             "id": 322,
             "name": "Hull City AFC",
             "shortName": "Hull City",
@@ -73,7 +55,7 @@
           "goalDifference": 3
         },
         {
-          "position": 4,
+          "position": 3,
           "team": {
             "id": 61,
             "name": "Chelsea FC",
@@ -86,9 +68,27 @@
           "draw": 0,
           "lost": 0,
           "points": 6,
-          "goalsFor": 6,
-          "goalsAgainst": 4,
+          "goalsFor": 7,
+          "goalsAgainst": 5,
           "goalDifference": 2
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": 402,
+            "name": "Brentford FC",
+            "shortName": "Brentford",
+            "tla": "BRE",
+            "crest": "https://crests.football-data.org/402.png"
+          },
+          "playedGames": 2,
+          "won": 1,
+          "draw": 1,
+          "lost": 0,
+          "points": 4,
+          "goalsFor": 4,
+          "goalsAgainst": 1,
+          "goalDifference": 3
         },
         {
           "position": 5,
@@ -129,6 +129,24 @@
         {
           "position": 7,
           "team": {
+            "id": 341,
+            "name": "Leeds United FC",
+            "shortName": "Leeds United",
+            "tla": "LEE",
+            "crest": "https://crests.football-data.org/341.png"
+          },
+          "playedGames": 2,
+          "won": 1,
+          "draw": 1,
+          "lost": 0,
+          "points": 4,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "goalDifference": 1
+        },
+        {
+          "position": 8,
+          "team": {
             "id": 397,
             "name": "Brighton & Hove Albion FC",
             "shortName": "Brighton Hove",
@@ -140,12 +158,12 @@
           "draw": 0,
           "lost": 1,
           "points": 3,
-          "goalsFor": 6,
-          "goalsAgainst": 3,
+          "goalsFor": 7,
+          "goalsAgainst": 4,
           "goalDifference": 3
         },
         {
-          "position": 8,
+          "position": 9,
           "team": {
             "id": 57,
             "name": "Arsenal FC",
@@ -163,7 +181,7 @@
           "goalDifference": 3
         },
         {
-          "position": 9,
+          "position": 10,
           "team": {
             "id": 349,
             "name": "Ipswich Town FC",
@@ -181,25 +199,25 @@
           "goalDifference": 1
         },
         {
-          "position": 10,
+          "position": 11,
           "team": {
-            "id": 341,
-            "name": "Leeds United FC",
-            "shortName": "Leeds United",
-            "tla": "LEE",
-            "crest": "https://crests.football-data.org/341.png"
+            "id": 71,
+            "name": "Sunderland AFC",
+            "shortName": "Sunderland",
+            "tla": "SUN",
+            "crest": "https://crests.football-data.org/71.png"
           },
           "playedGames": 2,
           "won": 1,
           "draw": 0,
           "lost": 1,
           "points": 3,
-          "goalsFor": 1,
-          "goalsAgainst": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
           "goalDifference": 0
         },
         {
-          "position": 11,
+          "position": 12,
           "team": {
             "id": 64,
             "name": "Liverpool FC",
@@ -217,7 +235,7 @@
           "goalDifference": 0
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 1044,
             "name": "AFC Bournemouth",
@@ -235,25 +253,7 @@
           "goalDifference": -1
         },
         {
-          "position": 12,
-          "team": {
-            "id": 63,
-            "name": "Fulham FC",
-            "shortName": "Fulham",
-            "tla": "FUL",
-            "crest": "https://crests.football-data.org/63.png"
-          },
-          "playedGames": 2,
-          "won": 0,
-          "draw": 1,
-          "lost": 1,
-          "points": 1,
-          "goalsFor": 2,
-          "goalsAgainst": 3,
-          "goalDifference": -1
-        },
-        {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 351,
             "name": "Nottingham Forest FC",
@@ -273,20 +273,20 @@
         {
           "position": 15,
           "team": {
-            "id": 71,
-            "name": "Sunderland AFC",
-            "shortName": "Sunderland",
-            "tla": "SUN",
-            "crest": "https://crests.football-data.org/71.png"
+            "id": 63,
+            "name": "Fulham FC",
+            "shortName": "Fulham",
+            "tla": "FUL",
+            "crest": "https://crests.football-data.org/63.png"
           },
           "playedGames": 2,
           "won": 0,
-          "draw": 1,
-          "lost": 1,
-          "points": 1,
-          "goalsFor": 1,
-          "goalsAgainst": 2,
-          "goalDifference": -1
+          "draw": 0,
+          "lost": 2,
+          "points": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 4,
+          "goalDifference": -2
         },
         {
           "position": 16,
