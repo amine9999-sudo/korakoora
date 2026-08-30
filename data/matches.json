@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T20:36:34.835794+00:00",
+  "updatedAt": "2026-08-30T21:06:38.531427+00:00",
   "dateFrom": "2026-08-29",
   "dateTo": "2026-09-08",
   "competitions": [
@@ -1226,7 +1226,7 @@
     },
     {
       "id": 564652,
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-30T19:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -1992,7 +1992,7 @@
     },
     {
       "id": 558622,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-30T18:45:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -2036,7 +2036,7 @@
     },
     {
       "id": 558623,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-30T18:45:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -3559,7 +3559,7 @@
     },
     {
       "id": 559703,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-30T18:45:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
