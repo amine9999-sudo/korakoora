@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T08:06:47.424954+00:00",
+  "updatedAt": "2026-08-30T08:36:32.314728+00:00",
   "dateFrom": "2026-08-29",
   "dateTo": "2026-09-08",
   "competitions": [
@@ -4470,7 +4470,12 @@
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 56912,
+        "name": "Jeroen Manschot",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
