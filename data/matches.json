@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-29T23:36:38.255519+00:00",
-  "dateFrom": "2026-08-28",
-  "dateTo": "2026-09-07",
+  "updatedAt": "2026-08-30T00:08:11.129520+00:00",
+  "dateFrom": "2026-08-29",
+  "dateTo": "2026-09-08",
   "competitions": [
     "CL",
     "PL",
@@ -12,52 +12,8 @@
     "PPL",
     "DED"
   ],
-  "count": 133,
+  "count": 126,
   "matches": [
-    {
-      "id": 560555,
-      "status": "FINISHED",
-      "utcDate": "2026-08-28T19:00:00Z",
-      "matchday": 2,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 11423,
-        "name": "Andy Madley",
-        "type": "REFEREE",
-        "nationality": "England"
-      },
-      "competition": {
-        "id": 2021,
-        "name": "Premier League",
-        "code": "PL",
-        "emblem": "https://crests.football-data.org/PL.png"
-      },
-      "home": {
-        "id": 354,
-        "name": "Crystal Palace FC",
-        "shortName": "Crystal Palace",
-        "tla": "CRY",
-        "crest": "https://crests.football-data.org/354.png"
-      },
-      "away": {
-        "id": 65,
-        "name": "Manchester City FC",
-        "shortName": "Man City",
-        "tla": "MCI",
-        "crest": "https://crests.football-data.org/65.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 1
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 4
-        }
-      }
-    },
     {
       "id": 560552,
       "status": "FINISHED",
@@ -820,84 +776,6 @@
       }
     },
     {
-      "id": 564654,
-      "status": "FINISHED",
-      "utcDate": "2026-08-28T17:00:00Z",
-      "matchday": 3,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": null,
-      "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "home": {
-        "id": 5335,
-        "name": "Real Racing Club de Santander",
-        "shortName": "Santander",
-        "tla": "SAN",
-        "crest": "https://crests.football-data.org/5335.png"
-      },
-      "away": {
-        "id": 285,
-        "name": "Elche CF",
-        "shortName": "Elche",
-        "tla": "ELC",
-        "crest": "https://crests.football-data.org/285.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 3,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 3,
-          "away": 2
-        }
-      }
-    },
-    {
-      "id": 564648,
-      "status": "FINISHED",
-      "utcDate": "2026-08-28T19:30:00Z",
-      "matchday": 3,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": null,
-      "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "home": {
-        "id": 263,
-        "name": "Deportivo Alavés",
-        "shortName": "Alavés",
-        "tla": "ALA",
-        "crest": "https://crests.football-data.org/263.png"
-      },
-      "away": {
-        "id": 94,
-        "name": "Villarreal CF",
-        "shortName": "Villarreal",
-        "tla": "VIL",
-        "crest": "https://crests.football-data.org/94.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 1,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 0
-        }
-      }
-    },
-    {
       "id": 564655,
       "status": "FINISHED",
       "utcDate": "2026-08-29T15:00:00Z",
@@ -1635,50 +1513,6 @@
         "fullTime": {
           "home": null,
           "away": null
-        }
-      }
-    },
-    {
-      "id": 558625,
-      "status": "FINISHED",
-      "utcDate": "2026-08-28T18:45:00Z",
-      "matchday": 2,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 11072,
-        "name": "Gianluca Manganiello",
-        "type": "REFEREE",
-        "nationality": "Italy"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "emblem": "https://crests.football-data.org/c111.png"
-      },
-      "home": {
-        "id": 98,
-        "name": "AC Milan",
-        "shortName": "Milan",
-        "tla": "MIL",
-        "crest": "https://crests.football-data.org/98.png"
-      },
-      "away": {
-        "id": 454,
-        "name": "Venezia FC",
-        "shortName": "Venezia FC",
-        "tla": "VEN",
-        "crest": "https://crests.football-data.org/454.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 2,
-          "away": 0
         }
       }
     },
@@ -2444,50 +2278,6 @@
       }
     },
     {
-      "id": 565776,
-      "status": "FINISHED",
-      "utcDate": "2026-08-28T18:30:00Z",
-      "matchday": 1,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 57515,
-        "name": "Sören Storks",
-        "type": "REFEREE",
-        "nationality": "Germany"
-      },
-      "competition": {
-        "id": 2002,
-        "name": "Bundesliga",
-        "code": "BL1",
-        "emblem": "https://crests.football-data.org/BL1.png"
-      },
-      "home": {
-        "id": 5,
-        "name": "FC Bayern München",
-        "shortName": "Bayern",
-        "tla": "FCB",
-        "crest": "https://crests.football-data.org/5.png"
-      },
-      "away": {
-        "id": 10,
-        "name": "VfB Stuttgart",
-        "shortName": "Stuttgart",
-        "tla": "VFB",
-        "crest": "https://crests.football-data.org/10.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 1,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 5,
-          "away": 1
-        }
-      }
-    },
-    {
       "id": 565777,
       "status": "FINISHED",
       "utcDate": "2026-08-29T13:30:00Z",
@@ -3181,50 +2971,6 @@
       }
     },
     {
-      "id": 559702,
-      "status": "FINISHED",
-      "utcDate": "2026-08-28T18:45:00Z",
-      "matchday": 2,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 57092,
-        "name": "Eric Wattellier",
-        "type": "REFEREE",
-        "nationality": "France"
-      },
-      "competition": {
-        "id": 2015,
-        "name": "Ligue 1",
-        "code": "FL1",
-        "emblem": "https://crests.football-data.org/FL1.png"
-      },
-      "home": {
-        "id": 521,
-        "name": "Lille OSC",
-        "shortName": "Lille",
-        "tla": "LIL",
-        "crest": "https://crests.football-data.org/521.png"
-      },
-      "away": {
-        "id": 524,
-        "name": "Paris Saint-Germain FC",
-        "shortName": "PSG",
-        "tla": "PSG",
-        "crest": "https://crests.football-data.org/524.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 1,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 2,
-          "away": 2
-        }
-      }
-    },
-    {
       "id": 559704,
       "status": "FINISHED",
       "utcDate": "2026-08-29T15:15:00Z",
@@ -3913,50 +3659,6 @@
       }
     },
     {
-      "id": 567291,
-      "status": "FINISHED",
-      "utcDate": "2026-08-28T19:15:00Z",
-      "matchday": 4,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 220513,
-        "name": "Bruno Costa",
-        "type": "REFEREE",
-        "nationality": "Portugal"
-      },
-      "competition": {
-        "id": 2017,
-        "name": "Primeira Liga",
-        "code": "PPL",
-        "emblem": "https://crests.football-data.org/PPL.png"
-      },
-      "home": {
-        "id": 496,
-        "name": "Rio Ave FC",
-        "shortName": "Rio Ave",
-        "tla": "RIO",
-        "crest": "https://crests.football-data.org/496.png"
-      },
-      "away": {
-        "id": 498,
-        "name": "Sporting Clube de Portugal",
-        "shortName": "Sporting CP",
-        "tla": "SPO",
-        "crest": "https://crests.football-data.org/498.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 4
-        },
-        "fullTime": {
-          "home": 0,
-          "away": 4
-        }
-      }
-    },
-    {
       "id": 567285,
       "status": "FINISHED",
       "utcDate": "2026-08-29T14:30:00Z",
@@ -4630,50 +4332,6 @@
       }
     },
     {
-      "id": 558241,
-      "status": "FINISHED",
-      "utcDate": "2026-08-28T18:00:00Z",
-      "matchday": 4,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 80087,
-        "name": "Jannick van der Laan",
-        "type": "REFEREE",
-        "nationality": "Netherlands"
-      },
-      "competition": {
-        "id": 2003,
-        "name": "Eredivisie",
-        "code": "DED",
-        "emblem": "https://crests.football-data.org/ED.png"
-      },
-      "home": {
-        "id": 677,
-        "name": "FC Groningen",
-        "shortName": "Groningen",
-        "tla": "GRO",
-        "crest": "https://crests.football-data.org/677.png"
-      },
-      "away": {
-        "id": 1920,
-        "name": "Fortuna Sittard",
-        "shortName": "Sittard",
-        "tla": "SIT",
-        "crest": "https://crests.football-data.org/1920.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 1,
-          "away": 2
-        },
-        "fullTime": {
-          "home": 2,
-          "away": 3
-        }
-      }
-    },
-    {
       "id": 558242,
       "status": "FINISHED",
       "utcDate": "2026-08-29T14:30:00Z",
@@ -5339,6 +4997,45 @@
         "shortName": "Sittard",
         "tla": "SIT",
         "crest": "https://crests.football-data.org/1920.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 558233,
+      "status": "TIMED",
+      "utcDate": "2026-09-08T16:45:00Z",
+      "matchday": 3,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2003,
+        "name": "Eredivisie",
+        "code": "DED",
+        "emblem": "https://crests.football-data.org/ED.png"
+      },
+      "home": {
+        "id": 1915,
+        "name": "NEC",
+        "shortName": "NEC",
+        "tla": "NEC",
+        "crest": "https://crests.football-data.org/1915.png"
+      },
+      "away": {
+        "id": 670,
+        "name": "SBV Excelsior",
+        "shortName": "Excelsior",
+        "tla": "EXC",
+        "crest": "https://crests.football-data.org/670.png"
       },
       "score": {
         "halfTime": {
