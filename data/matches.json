@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T16:06:48.800289+00:00",
+  "updatedAt": "2026-08-30T16:36:32.836082+00:00",
   "dateFrom": "2026-08-29",
   "dateTo": "2026-09-08",
   "competitions": [
@@ -324,7 +324,7 @@
     },
     {
       "id": 560553,
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "utcDate": "2026-08-30T15:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -357,11 +357,11 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 1
         }
       }
@@ -914,7 +914,7 @@
     },
     {
       "id": 564656,
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-30T15:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -1714,7 +1714,7 @@
     },
     {
       "id": 558626,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-30T16:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -1751,8 +1751,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -2612,7 +2612,7 @@
     },
     {
       "id": 565782,
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "utcDate": "2026-08-30T15:30:00Z",
       "matchday": 1,
       "stage": "REGULAR_SEASON",
@@ -2645,8 +2645,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
           "home": 1,
@@ -3304,12 +3304,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         },
         "fullTime": {
           "home": 2,
-          "away": 1
+          "away": 2
         }
       }
     },
@@ -3832,12 +3832,17 @@
     },
     {
       "id": 567286,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-30T14:30:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 40454,
+        "name": "Carlos Macedo",
+        "type": "REFEREE",
+        "nationality": "Portugal"
+      },
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -3865,7 +3870,7 @@
         },
         "fullTime": {
           "home": 2,
-          "away": 2
+          "away": 3
         }
       }
     },
@@ -4680,7 +4685,7 @@
         },
         "fullTime": {
           "home": 0,
-          "away": 2
+          "away": 4
         }
       }
     },
