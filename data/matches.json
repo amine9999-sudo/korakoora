@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T10:36:39.882666+00:00",
+  "updatedAt": "2026-08-30T11:06:55.832675+00:00",
   "dateFrom": "2026-08-29",
   "dateTo": "2026-09-08",
   "competitions": [
@@ -197,7 +197,12 @@
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11405,
+        "name": "Michael Salisbury",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -236,7 +241,12 @@
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11605,
+        "name": "Michael Oliver",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -275,7 +285,12 @@
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11378,
+        "name": "Tony Harrington",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -777,7 +792,7 @@
     },
     {
       "id": 564655,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-29T15:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3197,7 +3212,12 @@
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 1049,
+        "name": "Jeremy Stinat",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
