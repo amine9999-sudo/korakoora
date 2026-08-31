@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T14:06:52.600355+00:00",
+  "updatedAt": "2026-08-31T14:36:34.534742+00:00",
   "dateFrom": "2026-08-30",
   "dateTo": "2026-09-09",
   "competitions": [
@@ -1850,7 +1850,12 @@
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11053,
+        "name": "Daniele Chiffi",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
