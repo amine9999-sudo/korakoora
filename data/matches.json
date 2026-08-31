@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T18:36:34.130964+00:00",
+  "updatedAt": "2026-08-31T19:06:40.928851+00:00",
   "dateFrom": "2026-08-30",
   "dateTo": "2026-09-09",
   "competitions": [
@@ -660,7 +660,7 @@
     },
     {
       "id": 560557,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-31T19:00:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -697,8 +697,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -1211,7 +1211,7 @@
     },
     {
       "id": 564657,
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-31T17:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -1244,7 +1244,7 @@
         },
         "fullTime": {
           "home": 1,
-          "away": 0
+          "away": 1
         }
       }
     },
@@ -1850,7 +1850,7 @@
     },
     {
       "id": 558621,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-31T16:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -1894,7 +1894,7 @@
     },
     {
       "id": 558628,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-31T18:45:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -1931,8 +1931,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -3382,7 +3382,12 @@
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 220533,
+        "name": "Hélder Carvalho",
+        "type": "REFEREE",
+        "nationality": "Portugal"
+      },
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -3421,7 +3426,12 @@
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 37207,
+        "name": "André Narciso",
+        "type": "REFEREE",
+        "nationality": "Portugal"
+      },
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
