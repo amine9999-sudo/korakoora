@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T16:36:42.627646+00:00",
+  "updatedAt": "2026-08-31T17:06:45.859649+00:00",
   "dateFrom": "2026-08-30",
   "dateTo": "2026-09-09",
   "competitions": [
@@ -665,7 +665,12 @@
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 257648,
+        "name": "Adrian Gillett",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -1883,7 +1888,7 @@
         },
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 2
         }
       }
     },
@@ -1894,7 +1899,12 @@
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11065,
+        "name": "Daniele Doveri",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
