@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T19:06:40.928851+00:00",
+  "updatedAt": "2026-08-31T19:36:43.317264+00:00",
   "dateFrom": "2026-08-30",
   "dateTo": "2026-09-09",
   "competitions": [
@@ -1211,7 +1211,7 @@
     },
     {
       "id": 564657,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-08-31T17:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -1250,7 +1250,7 @@
     },
     {
       "id": 564650,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-31T19:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -1282,8 +1282,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -1894,7 +1894,7 @@
     },
     {
       "id": 558628,
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "utcDate": "2026-08-31T18:45:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -1927,8 +1927,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
           "home": 0,
@@ -3377,7 +3377,7 @@
     },
     {
       "id": 567288,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-31T19:15:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -3414,14 +3414,14 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 567292,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-31T19:15:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -3458,8 +3458,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
