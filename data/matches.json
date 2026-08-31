@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T08:07:16.135920+00:00",
+  "updatedAt": "2026-08-31T08:36:43.677159+00:00",
   "dateFrom": "2026-08-30",
   "dateTo": "2026-09-09",
   "competitions": [
@@ -2236,7 +2236,7 @@
     {
       "id": 558610,
       "status": "TIMED",
-      "utcDate": "2026-09-07T16:00:00Z",
+      "utcDate": "2026-09-07T16:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
