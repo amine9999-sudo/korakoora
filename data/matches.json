@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T17:36:37.235664+00:00",
+  "updatedAt": "2026-08-31T18:06:39.111475+00:00",
   "dateFrom": "2026-08-30",
   "dateTo": "2026-09-09",
   "competitions": [
@@ -1850,7 +1850,7 @@
     },
     {
       "id": 558621,
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "utcDate": "2026-08-31T16:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
