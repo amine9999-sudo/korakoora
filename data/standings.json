@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T06:44:51.012097+00:00",
+  "updatedAt": "2026-09-03T07:13:26.944235+00:00",
   "competitions": {
     "PL": {
       "name": "الدوري الإنجليزي",
@@ -14,7 +14,7 @@
         "id": 2502,
         "startDate": "2026-08-21",
         "endDate": "2027-05-30",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "table": [
