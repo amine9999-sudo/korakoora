@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T16:41:30.456034+00:00",
+  "updatedAt": "2026-09-03T17:11:58.468608+00:00",
   "dateFrom": "2026-09-02",
   "dateTo": "2026-09-12",
   "competitions": [
@@ -1386,7 +1386,12 @@
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 56995,
+        "name": "Víctor García Verdura",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -3180,7 +3185,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57054,
+        "name": "Mathieu Vernice",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
