@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T16:13:35.913701+00:00",
+  "updatedAt": "2026-09-04T16:39:36.409607+00:00",
   "dateFrom": "2026-09-03",
   "dateTo": "2026-09-13",
   "competitions": [
@@ -2912,7 +2912,12 @@
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57526,
+        "name": "Christian Dingert",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -3609,7 +3614,7 @@
     },
     {
       "id": 559696,
-      "status": "FINISHED",
+      "status": "2026-09-03 17:45:00Z",
       "utcDate": "2026-09-03T18:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3653,7 +3658,7 @@
     },
     {
       "id": 559699,
-      "status": "TIMED",
+      "status": "2026-09-04 16:00:00Z",
       "utcDate": "2026-09-04T17:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3697,7 +3702,7 @@
     },
     {
       "id": 559697,
-      "status": "TIMED",
+      "status": "2026-09-04 18:05:00Z",
       "utcDate": "2026-09-04T19:05:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3736,7 +3741,7 @@
     },
     {
       "id": 559695,
-      "status": "TIMED",
+      "status": "2026-09-05 14:15:00Z",
       "utcDate": "2026-09-05T15:15:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3775,7 +3780,7 @@
     },
     {
       "id": 559693,
-      "status": "TIMED",
+      "status": "2026-09-05 17:45:00Z",
       "utcDate": "2026-09-05T18:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3814,7 +3819,7 @@
     },
     {
       "id": 559701,
-      "status": "TIMED",
+      "status": "2026-09-05 17:45:00Z",
       "utcDate": "2026-09-05T18:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3853,7 +3858,7 @@
     },
     {
       "id": 559700,
-      "status": "TIMED",
+      "status": "2026-09-06 12:00:00Z",
       "utcDate": "2026-09-06T13:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3892,7 +3897,7 @@
     },
     {
       "id": 559698,
-      "status": "TIMED",
+      "status": "2026-09-06 14:15:00Z",
       "utcDate": "2026-09-06T15:15:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3931,7 +3936,7 @@
     },
     {
       "id": 559694,
-      "status": "TIMED",
+      "status": "2026-09-06 17:45:00Z",
       "utcDate": "2026-09-06T18:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3970,7 +3975,7 @@
     },
     {
       "id": 559689,
-      "status": "TIMED",
+      "status": "2026-09-11 17:45:00Z",
       "utcDate": "2026-09-11T18:45:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -4009,7 +4014,7 @@
     },
     {
       "id": 559687,
-      "status": "TIMED",
+      "status": "2026-09-12 14:15:00Z",
       "utcDate": "2026-09-12T15:15:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -4048,7 +4053,7 @@
     },
     {
       "id": 559684,
-      "status": "TIMED",
+      "status": "2026-09-12 17:45:00Z",
       "utcDate": "2026-09-12T18:45:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -4087,7 +4092,7 @@
     },
     {
       "id": 559688,
-      "status": "TIMED",
+      "status": "2026-09-12 17:45:00Z",
       "utcDate": "2026-09-12T18:45:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -4126,7 +4131,7 @@
     },
     {
       "id": 559690,
-      "status": "TIMED",
+      "status": "2026-09-12 17:45:00Z",
       "utcDate": "2026-09-12T18:45:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -4165,7 +4170,7 @@
     },
     {
       "id": 559692,
-      "status": "TIMED",
+      "status": "2026-09-12 17:45:00Z",
       "utcDate": "2026-09-12T18:45:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -4204,7 +4209,7 @@
     },
     {
       "id": 559685,
-      "status": "TIMED",
+      "status": "2026-09-13 12:00:00Z",
       "utcDate": "2026-09-13T13:00:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -4243,7 +4248,7 @@
     },
     {
       "id": 559686,
-      "status": "TIMED",
+      "status": "2026-09-13 14:15:00Z",
       "utcDate": "2026-09-13T15:15:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -4282,7 +4287,7 @@
     },
     {
       "id": 559691,
-      "status": "TIMED",
+      "status": "2026-09-13 17:45:00Z",
       "utcDate": "2026-09-13T18:45:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
