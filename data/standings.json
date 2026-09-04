@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T19:10:03.087740+00:00",
+  "updatedAt": "2026-09-04T19:38:31.935946+00:00",
   "competitions": {
     "PL": {
       "name": "الدوري الإنجليزي",
@@ -93,6 +93,24 @@
         {
           "position": 5,
           "team": {
+            "id": 64,
+            "name": "Liverpool FC",
+            "shortName": "Liverpool",
+            "tla": "LIV",
+            "crest": "https://crests.football-data.org/64.png"
+          },
+          "playedGames": 3,
+          "won": 1,
+          "draw": 2,
+          "lost": 0,
+          "points": 5,
+          "goalsFor": 6,
+          "goalsAgainst": 4,
+          "goalDifference": 2
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 402,
             "name": "Brentford FC",
             "shortName": "Brentford",
@@ -109,7 +127,7 @@
           "goalDifference": 3
         },
         {
-          "position": 6,
+          "position": 7,
           "team": {
             "id": 67,
             "name": "Newcastle United FC",
@@ -127,7 +145,7 @@
           "goalDifference": 2
         },
         {
-          "position": 7,
+          "position": 8,
           "team": {
             "id": 62,
             "name": "Everton FC",
@@ -145,7 +163,7 @@
           "goalDifference": 2
         },
         {
-          "position": 8,
+          "position": 9,
           "team": {
             "id": 341,
             "name": "Leeds United FC",
@@ -161,24 +179,6 @@
           "goalsFor": 2,
           "goalsAgainst": 1,
           "goalDifference": 1
-        },
-        {
-          "position": 9,
-          "team": {
-            "id": 349,
-            "name": "Ipswich Town FC",
-            "shortName": "Ipswich Town",
-            "tla": "IPS",
-            "crest": "https://crests.football-data.org/349.png"
-          },
-          "playedGames": 3,
-          "won": 1,
-          "draw": 1,
-          "lost": 1,
-          "points": 4,
-          "goalsFor": 4,
-          "goalsAgainst": 6,
-          "goalDifference": -2
         },
         {
           "position": 10,
@@ -219,24 +219,6 @@
         {
           "position": 12,
           "team": {
-            "id": 64,
-            "name": "Liverpool FC",
-            "shortName": "Liverpool",
-            "tla": "LIV",
-            "crest": "https://crests.football-data.org/64.png"
-          },
-          "playedGames": 3,
-          "won": 0,
-          "draw": 3,
-          "lost": 0,
-          "points": 3,
-          "goalsFor": 4,
-          "goalsAgainst": 4,
-          "goalDifference": 0
-        },
-        {
-          "position": 13,
-          "team": {
             "id": 71,
             "name": "Sunderland AFC",
             "shortName": "Sunderland",
@@ -251,6 +233,24 @@
           "goalsFor": 2,
           "goalsAgainst": 2,
           "goalDifference": 0
+        },
+        {
+          "position": 13,
+          "team": {
+            "id": 349,
+            "name": "Ipswich Town FC",
+            "shortName": "Ipswich Town",
+            "tla": "IPS",
+            "crest": "https://crests.football-data.org/349.png"
+          },
+          "playedGames": 3,
+          "won": 1,
+          "draw": 0,
+          "lost": 2,
+          "points": 3,
+          "goalsFor": 4,
+          "goalsAgainst": 8,
+          "goalDifference": -4
         },
         {
           "position": 14,
