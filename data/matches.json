@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T12:45:16.493007+00:00",
+  "updatedAt": "2026-09-04T13:12:33.509544+00:00",
   "dateFrom": "2026-09-03",
   "dateTo": "2026-09-13",
   "competitions": [
@@ -2907,7 +2907,7 @@
     },
     {
       "id": 565791,
-      "status": "TIMED",
+      "status": "2026-09-04 17:30:00Z",
       "utcDate": "2026-09-04T18:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -2946,7 +2946,7 @@
     },
     {
       "id": 565785,
-      "status": "TIMED",
+      "status": "2026-09-05 12:30:00Z",
       "utcDate": "2026-09-05T13:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -2985,7 +2985,7 @@
     },
     {
       "id": 565787,
-      "status": "TIMED",
+      "status": "2026-09-05 12:30:00Z",
       "utcDate": "2026-09-05T13:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -3024,7 +3024,7 @@
     },
     {
       "id": 565790,
-      "status": "TIMED",
+      "status": "2026-09-05 12:30:00Z",
       "utcDate": "2026-09-05T13:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -3063,7 +3063,7 @@
     },
     {
       "id": 565792,
-      "status": "TIMED",
+      "status": "2026-09-05 12:30:00Z",
       "utcDate": "2026-09-05T13:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -3102,7 +3102,7 @@
     },
     {
       "id": 565793,
-      "status": "TIMED",
+      "status": "2026-09-05 12:30:00Z",
       "utcDate": "2026-09-05T13:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -3141,7 +3141,7 @@
     },
     {
       "id": 565789,
-      "status": "TIMED",
+      "status": "2026-09-05 15:30:00Z",
       "utcDate": "2026-09-05T16:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -3180,7 +3180,7 @@
     },
     {
       "id": 565788,
-      "status": "TIMED",
+      "status": "2026-09-06 12:30:00Z",
       "utcDate": "2026-09-06T13:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -3219,7 +3219,7 @@
     },
     {
       "id": 565786,
-      "status": "TIMED",
+      "status": "2026-09-06 14:30:00Z",
       "utcDate": "2026-09-06T15:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -3258,7 +3258,7 @@
     },
     {
       "id": 565797,
-      "status": "TIMED",
+      "status": "2026-09-11 17:30:00Z",
       "utcDate": "2026-09-11T18:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3297,7 +3297,7 @@
     },
     {
       "id": 565794,
-      "status": "TIMED",
+      "status": "2026-09-12 12:30:00Z",
       "utcDate": "2026-09-12T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3336,7 +3336,7 @@
     },
     {
       "id": 565795,
-      "status": "TIMED",
+      "status": "2026-09-12 12:30:00Z",
       "utcDate": "2026-09-12T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3375,7 +3375,7 @@
     },
     {
       "id": 565796,
-      "status": "TIMED",
+      "status": "2026-09-12 12:30:00Z",
       "utcDate": "2026-09-12T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3414,7 +3414,7 @@
     },
     {
       "id": 565801,
-      "status": "TIMED",
+      "status": "2026-09-12 12:30:00Z",
       "utcDate": "2026-09-12T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3453,7 +3453,7 @@
     },
     {
       "id": 565802,
-      "status": "TIMED",
+      "status": "2026-09-12 12:30:00Z",
       "utcDate": "2026-09-12T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3492,7 +3492,7 @@
     },
     {
       "id": 565798,
-      "status": "TIMED",
+      "status": "2026-09-12 15:30:00Z",
       "utcDate": "2026-09-12T16:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3531,7 +3531,7 @@
     },
     {
       "id": 565799,
-      "status": "TIMED",
+      "status": "2026-09-13 12:30:00Z",
       "utcDate": "2026-09-13T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3570,7 +3570,7 @@
     },
     {
       "id": 565800,
-      "status": "TIMED",
+      "status": "2026-09-13 14:30:00Z",
       "utcDate": "2026-09-13T15:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3609,7 +3609,7 @@
     },
     {
       "id": 559696,
-      "status": "2026-09-03 17:45:00Z",
+      "status": "FINISHED",
       "utcDate": "2026-09-03T18:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3653,7 +3653,7 @@
     },
     {
       "id": 559699,
-      "status": "2026-09-04 16:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-04T17:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3692,7 +3692,7 @@
     },
     {
       "id": 559697,
-      "status": "2026-09-04 18:05:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-04T19:05:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3731,7 +3731,7 @@
     },
     {
       "id": 559695,
-      "status": "2026-09-05 14:15:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-05T15:15:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3770,7 +3770,7 @@
     },
     {
       "id": 559693,
-      "status": "2026-09-05 17:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-05T18:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3809,7 +3809,7 @@
     },
     {
       "id": 559701,
-      "status": "2026-09-05 17:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-05T18:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3848,7 +3848,7 @@
     },
     {
       "id": 559700,
-      "status": "2026-09-06 12:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-06T13:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3887,7 +3887,7 @@
     },
     {
       "id": 559698,
-      "status": "2026-09-06 14:15:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-06T15:15:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3926,7 +3926,7 @@
     },
     {
       "id": 559694,
-      "status": "2026-09-06 17:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-06T18:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3965,7 +3965,7 @@
     },
     {
       "id": 559689,
-      "status": "2026-09-11 17:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-11T18:45:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -4004,7 +4004,7 @@
     },
     {
       "id": 559687,
-      "status": "2026-09-12 14:15:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T15:15:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -4043,7 +4043,7 @@
     },
     {
       "id": 559684,
-      "status": "2026-09-12 17:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T18:45:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -4082,7 +4082,7 @@
     },
     {
       "id": 559688,
-      "status": "2026-09-12 17:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T18:45:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -4121,7 +4121,7 @@
     },
     {
       "id": 559690,
-      "status": "2026-09-12 17:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T18:45:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -4160,7 +4160,7 @@
     },
     {
       "id": 559692,
-      "status": "2026-09-12 17:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T18:45:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -4199,7 +4199,7 @@
     },
     {
       "id": 559685,
-      "status": "2026-09-13 12:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-13T13:00:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -4238,7 +4238,7 @@
     },
     {
       "id": 559686,
-      "status": "2026-09-13 14:15:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-13T15:15:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -4277,7 +4277,7 @@
     },
     {
       "id": 559691,
-      "status": "2026-09-13 17:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-13T18:45:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
