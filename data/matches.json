@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T06:44:49.049132+00:00",
+  "updatedAt": "2026-09-04T07:12:25.914880+00:00",
   "dateFrom": "2026-09-03",
   "dateTo": "2026-09-13",
   "competitions": [
@@ -1459,7 +1459,7 @@
     },
     {
       "id": 564682,
-      "status": "FINISHED",
+      "status": "2026-09-03 18:00:00Z",
       "utcDate": "2026-09-03T19:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -1503,7 +1503,7 @@
     },
     {
       "id": 564667,
-      "status": "TIMED",
+      "status": "2026-09-04 18:00:00Z",
       "utcDate": "2026-09-04T19:00:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
