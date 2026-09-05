@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T11:37:49.219549+00:00",
+  "updatedAt": "2026-09-05T12:15:03.972966+00:00",
   "dateFrom": "2026-09-04",
   "dateTo": "2026-09-14",
   "competitions": [
@@ -762,12 +762,17 @@
     },
     {
       "id": 560571,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-05T11:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11446,
+        "name": "Robert Jones",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -794,8 +799,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         }
       }
     },
@@ -806,7 +811,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11585,
+        "name": "Craig Pawson",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -845,7 +855,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11520,
+        "name": "Paul Tierney",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -884,7 +899,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11494,
+        "name": "Stuart Attwell",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -923,7 +943,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11620,
+        "name": "Thomas Bramall",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -962,7 +987,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 213813,
+        "name": "Sam Barrott",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -2337,12 +2367,7 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 11029,
-        "name": "Davide Massa",
-        "type": "REFEREE",
-        "nationality": "Italy"
-      },
+      "referee": null,
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -5268,7 +5293,7 @@
     },
     {
       "id": 558250,
-      "status": "2026-09-04 17:00:00Z",
+      "status": "FINISHED",
       "utcDate": "2026-09-04T18:00:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -5312,7 +5337,7 @@
     },
     {
       "id": 558251,
-      "status": "2026-09-05 13:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-05T14:30:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -5351,7 +5376,7 @@
     },
     {
       "id": 558252,
-      "status": "2026-09-05 15:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-05T16:45:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -5390,7 +5415,7 @@
     },
     {
       "id": 558253,
-      "status": "2026-09-05 17:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-05T18:00:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -5429,7 +5454,7 @@
     },
     {
       "id": 558254,
-      "status": "2026-09-05 18:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-05T19:00:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -5468,7 +5493,7 @@
     },
     {
       "id": 558255,
-      "status": "2026-09-06 09:15:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-06T10:15:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -5507,7 +5532,7 @@
     },
     {
       "id": 558256,
-      "status": "2026-09-06 11:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-06T12:30:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -5546,7 +5571,7 @@
     },
     {
       "id": 558257,
-      "status": "2026-09-06 11:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-06T12:30:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -5585,7 +5610,7 @@
     },
     {
       "id": 558258,
-      "status": "2026-09-06 13:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-06T14:45:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -5624,7 +5649,7 @@
     },
     {
       "id": 558233,
-      "status": "2026-09-08 15:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-08T16:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -5663,7 +5688,7 @@
     },
     {
       "id": 558239,
-      "status": "2026-09-09 15:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-09T16:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -5702,7 +5727,7 @@
     },
     {
       "id": 558899,
-      "status": "2026-09-11 17:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-11T18:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -5741,7 +5766,7 @@
     },
     {
       "id": 558898,
-      "status": "2026-09-12 13:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T14:30:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -5780,7 +5805,7 @@
     },
     {
       "id": 558897,
-      "status": "2026-09-12 15:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T16:45:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -5819,7 +5844,7 @@
     },
     {
       "id": 558896,
-      "status": "2026-09-12 17:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T18:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -5858,7 +5883,7 @@
     },
     {
       "id": 558892,
-      "status": "2026-09-12 18:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T19:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -5897,7 +5922,7 @@
     },
     {
       "id": 558894,
-      "status": "2026-09-13 09:15:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-13T10:15:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -5936,7 +5961,7 @@
     },
     {
       "id": 558895,
-      "status": "2026-09-13 11:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-13T12:30:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -5975,7 +6000,7 @@
     },
     {
       "id": 558891,
-      "status": "2026-09-13 13:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-13T14:45:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -6014,7 +6039,7 @@
     },
     {
       "id": 558893,
-      "status": "2026-09-13 17:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-13T18:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
