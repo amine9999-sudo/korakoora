@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T13:37:53.853934+00:00",
+  "updatedAt": "2026-09-05T14:11:19.218313+00:00",
   "dateFrom": "2026-09-04",
   "dateTo": "2026-09-14",
   "competitions": [
@@ -762,17 +762,12 @@
     },
     {
       "id": 560571,
-      "status": "FINISHED",
+      "status": "TIMED",
       "utcDate": "2026-09-05T11:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 11446,
-        "name": "Robert Jones",
-        "type": "REFEREE",
-        "nationality": "England"
-      },
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -795,12 +790,12 @@
       },
       "score": {
         "halfTime": {
-          "home": 1,
-          "away": 2
+          "home": null,
+          "away": null
         },
         "fullTime": {
-          "home": 2,
-          "away": 2
+          "home": null,
+          "away": null
         }
       }
     },
@@ -811,12 +806,7 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 11585,
-        "name": "Craig Pawson",
-        "type": "REFEREE",
-        "nationality": "England"
-      },
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -855,12 +845,7 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 11520,
-        "name": "Paul Tierney",
-        "type": "REFEREE",
-        "nationality": "England"
-      },
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -899,12 +884,7 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 11494,
-        "name": "Stuart Attwell",
-        "type": "REFEREE",
-        "nationality": "England"
-      },
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -943,12 +923,7 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 11620,
-        "name": "Thomas Bramall",
-        "type": "REFEREE",
-        "nationality": "England"
-      },
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -987,12 +962,7 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 213813,
-        "name": "Sam Barrott",
-        "type": "REFEREE",
-        "nationality": "England"
-      },
+      "referee": null,
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -1582,7 +1552,12 @@
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 206223,
+        "name": "José Munuera Montero",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -2362,12 +2337,17 @@
     },
     {
       "id": 558616,
-      "status": "TIMED",
+      "status": "PAUSED",
       "utcDate": "2026-09-05T13:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11029,
+        "name": "Davide Massa",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -2390,12 +2370,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -2406,7 +2386,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57826,
+        "name": "Simone Sozza",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -3147,12 +3132,17 @@
     },
     {
       "id": 565785,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-05T13:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43922,
+        "name": "Benjamin Brand",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -3179,19 +3169,24 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       }
     },
     {
       "id": 565787,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-05T13:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 56230,
+        "name": "Matthias Jöllenbeck",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -3218,19 +3213,24 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 565790,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-05T13:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43922,
+        "name": "Benjamin Brand",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -3257,19 +3257,24 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       }
     },
     {
       "id": 565792,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-05T13:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15825,
+        "name": "Martin Petersen",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -3296,19 +3301,24 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       }
     },
     {
       "id": 565793,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-05T13:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 58332,
+        "name": "Max Burda",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -3335,8 +3345,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       }
     },
@@ -3903,7 +3913,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57092,
+        "name": "Eric Wattellier",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -5322,12 +5337,7 @@
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 9561,
-        "name": "Allard Lindhout",
-        "type": "REFEREE",
-        "nationality": "Netherlands"
-      },
+      "referee": null,
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
