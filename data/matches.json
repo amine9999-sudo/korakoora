@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T18:41:51.712020+00:00",
+  "updatedAt": "2026-09-05T19:10:25.634478+00:00",
   "dateFrom": "2026-09-04",
   "dateTo": "2026-09-14",
   "competitions": [
@@ -1670,7 +1670,7 @@
     },
     {
       "id": 564662,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-05T19:00:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -1707,8 +1707,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -2470,7 +2470,7 @@
     },
     {
       "id": 558611,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-05T18:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2507,8 +2507,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -4007,7 +4007,7 @@
     },
     {
       "id": 559693,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-05T18:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -4044,14 +4044,14 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       }
     },
     {
       "id": 559701,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-05T18:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -4088,8 +4088,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       }
     },
@@ -4651,7 +4651,7 @@
     },
     {
       "id": 567296,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-09-05T17:00:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -4695,7 +4695,7 @@
     },
     {
       "id": 567293,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-09-05T17:00:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -4733,7 +4733,7 @@
         },
         "fullTime": {
           "home": 0,
-          "away": 2
+          "away": 3
         }
       }
     },
@@ -5462,10 +5462,10 @@
       "stage": "REGULAR_SEASON",
       "venue": null,
       "referee": {
-        "id": 56910,
-        "name": "Martin van den Kerkhof",
+        "id": 76681,
+        "name": "Jan Váňa",
         "type": "REFEREE",
-        "nationality": "Netherlands"
+        "nationality": "Czech Republic"
       },
       "competition": {
         "id": 2003,
@@ -5500,7 +5500,7 @@
     },
     {
       "id": 558253,
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "utcDate": "2026-09-05T18:00:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -5533,18 +5533,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         },
         "fullTime": {
           "home": 1,
-          "away": 1
+          "away": 2
         }
       }
     },
     {
       "id": 558254,
-      "status": "2026-09-05 18:00:00Z",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-05T19:00:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -5581,8 +5581,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
