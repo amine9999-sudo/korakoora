@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-04T23:37:15.812194+00:00",
-  "dateFrom": "2026-09-03",
-  "dateTo": "2026-09-13",
+  "updatedAt": "2026-09-05T00:19:52.871530+00:00",
+  "dateFrom": "2026-09-04",
+  "dateTo": "2026-09-14",
   "competitions": [
     "CL",
     "PL",
@@ -12,7 +12,7 @@
     "PPL",
     "DED"
   ],
-  "count": 147,
+  "count": 153,
   "matches": [
     {
       "id": 575323,
@@ -1463,46 +1463,41 @@
       }
     },
     {
-      "id": 564682,
-      "status": "2026-09-03 18:00:00Z",
-      "utcDate": "2026-09-03T19:00:00Z",
-      "matchday": 6,
+      "id": 560579,
+      "status": "TIMED",
+      "utcDate": "2026-09-14T19:00:00Z",
+      "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 56995,
-        "name": "Víctor García Verdura",
-        "type": "REFEREE",
-        "nationality": "Spain"
-      },
+      "referee": null,
       "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "emblem": "https://crests.football-data.org/laliga.png"
+        "id": 2021,
+        "name": "Premier League",
+        "code": "PL",
+        "emblem": "https://crests.football-data.org/PL.png"
       },
       "home": {
-        "id": 92,
-        "name": "Real Sociedad de Fútbol",
-        "shortName": "Real Sociedad",
-        "tla": "RSO",
-        "crest": "https://crests.football-data.org/92.png"
+        "id": 341,
+        "name": "Leeds United FC",
+        "shortName": "Leeds United",
+        "tla": "LEE",
+        "crest": "https://crests.football-data.org/341.png"
       },
       "away": {
-        "id": 558,
-        "name": "RC Celta de Vigo",
-        "shortName": "Celta",
-        "tla": "CEL",
-        "crest": "https://crests.football-data.org/558.png"
+        "id": 67,
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "tla": "NEW",
+        "crest": "https://crests.football-data.org/67.png"
       },
       "score": {
         "halfTime": {
-          "home": 0,
-          "away": 0
+          "home": null,
+          "away": null
         },
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": null,
+          "away": null
         }
       }
     },
@@ -2253,6 +2248,45 @@
       }
     },
     {
+      "id": 564671,
+      "status": "TIMED",
+      "utcDate": "2026-09-14T19:00:00Z",
+      "matchday": 5,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2014,
+        "name": "Primera Division",
+        "code": "PD",
+        "emblem": "https://crests.football-data.org/laliga.png"
+      },
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF",
+        "shortName": "Villarreal",
+        "tla": "VIL",
+        "crest": "https://crests.football-data.org/94.png"
+      },
+      "away": {
+        "id": 90,
+        "name": "Real Betis Balompié",
+        "shortName": "Real Betis",
+        "tla": "BET",
+        "crest": "https://crests.football-data.org/90.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
       "id": 558609,
       "status": "FINISHED",
       "utcDate": "2026-09-04T18:45:00Z",
@@ -2298,7 +2332,7 @@
     },
     {
       "id": 558616,
-      "status": "2026-09-05 12:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-05T13:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2337,7 +2371,7 @@
     },
     {
       "id": 558614,
-      "status": "2026-09-05 15:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-05T16:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2376,7 +2410,7 @@
     },
     {
       "id": 558611,
-      "status": "2026-09-05 17:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-05T18:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2415,7 +2449,7 @@
     },
     {
       "id": 558612,
-      "status": "2026-09-06 12:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-06T13:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2454,7 +2488,7 @@
     },
     {
       "id": 558615,
-      "status": "2026-09-06 12:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-06T13:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2493,7 +2527,7 @@
     },
     {
       "id": 558613,
-      "status": "2026-09-06 15:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-06T16:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2532,7 +2566,7 @@
     },
     {
       "id": 558618,
-      "status": "2026-09-06 17:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-06T18:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2571,7 +2605,7 @@
     },
     {
       "id": 558610,
-      "status": "2026-09-07 15:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-07T16:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2610,7 +2644,7 @@
     },
     {
       "id": 558617,
-      "status": "2026-09-07 17:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-07T18:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2649,7 +2683,7 @@
     },
     {
       "id": 558606,
-      "status": "2026-09-11 17:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-11T18:45:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -2688,7 +2722,7 @@
     },
     {
       "id": 558604,
-      "status": "2026-09-12 12:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T13:00:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -2727,7 +2761,7 @@
     },
     {
       "id": 558600,
-      "status": "2026-09-12 15:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T16:00:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -2766,7 +2800,7 @@
     },
     {
       "id": 558607,
-      "status": "2026-09-12 17:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T18:45:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -2805,7 +2839,7 @@
     },
     {
       "id": 558605,
-      "status": "2026-09-13 12:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-13T13:00:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -2844,7 +2878,7 @@
     },
     {
       "id": 558599,
-      "status": "2026-09-13 15:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-13T16:00:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -2883,7 +2917,7 @@
     },
     {
       "id": 558608,
-      "status": "2026-09-13 17:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-13T18:45:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -2908,6 +2942,123 @@
         "shortName": "Juventus",
         "tla": "JUV",
         "crest": "https://crests.football-data.org/109.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 558602,
+      "status": "TIMED",
+      "utcDate": "2026-09-14T16:30:00Z",
+      "matchday": 4,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2019,
+        "name": "Serie A",
+        "code": "SA",
+        "emblem": "https://crests.football-data.org/c111.png"
+      },
+      "home": {
+        "id": 7397,
+        "name": "Como 1907",
+        "shortName": "Como 1907",
+        "tla": "COM",
+        "crest": "https://crests.football-data.org/7397.png"
+      },
+      "away": {
+        "id": 112,
+        "name": "Parma Calcio 1913",
+        "shortName": "Parma",
+        "tla": "PAR",
+        "crest": "https://crests.football-data.org/112.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 558603,
+      "status": "TIMED",
+      "utcDate": "2026-09-14T16:30:00Z",
+      "matchday": 4,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2019,
+        "name": "Serie A",
+        "code": "SA",
+        "emblem": "https://crests.football-data.org/c111.png"
+      },
+      "home": {
+        "id": 586,
+        "name": "Torino FC",
+        "shortName": "Torino",
+        "tla": "TOR",
+        "crest": "https://crests.football-data.org/586.png"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma",
+        "shortName": "Roma",
+        "tla": "ROM",
+        "crest": "https://crests.football-data.org/100.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 558601,
+      "status": "TIMED",
+      "utcDate": "2026-09-14T18:45:00Z",
+      "matchday": 4,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2019,
+        "name": "Serie A",
+        "code": "SA",
+        "emblem": "https://crests.football-data.org/c111.png"
+      },
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano",
+        "shortName": "Inter",
+        "tla": "INT",
+        "crest": "https://crests.football-data.org/108.png"
+      },
+      "away": {
+        "id": 115,
+        "name": "Udinese Calcio",
+        "shortName": "Udinese",
+        "tla": "UDI",
+        "crest": "https://crests.football-data.org/115.png"
       },
       "score": {
         "halfTime": {
@@ -2966,7 +3117,7 @@
     },
     {
       "id": 565785,
-      "status": "2026-09-05 12:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-05T13:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -3005,7 +3156,7 @@
     },
     {
       "id": 565787,
-      "status": "2026-09-05 12:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-05T13:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -3044,7 +3195,7 @@
     },
     {
       "id": 565790,
-      "status": "2026-09-05 12:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-05T13:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -3083,7 +3234,7 @@
     },
     {
       "id": 565792,
-      "status": "2026-09-05 12:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-05T13:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -3122,7 +3273,7 @@
     },
     {
       "id": 565793,
-      "status": "2026-09-05 12:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-05T13:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -3161,7 +3312,7 @@
     },
     {
       "id": 565789,
-      "status": "2026-09-05 15:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-05T16:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -3200,7 +3351,7 @@
     },
     {
       "id": 565788,
-      "status": "2026-09-06 12:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-06T13:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -3239,7 +3390,7 @@
     },
     {
       "id": 565786,
-      "status": "2026-09-06 14:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-06T15:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -3278,7 +3429,7 @@
     },
     {
       "id": 565797,
-      "status": "2026-09-11 17:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-11T18:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3317,7 +3468,7 @@
     },
     {
       "id": 565794,
-      "status": "2026-09-12 12:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3356,7 +3507,7 @@
     },
     {
       "id": 565795,
-      "status": "2026-09-12 12:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3395,7 +3546,7 @@
     },
     {
       "id": 565796,
-      "status": "2026-09-12 12:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3434,7 +3585,7 @@
     },
     {
       "id": 565801,
-      "status": "2026-09-12 12:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3473,7 +3624,7 @@
     },
     {
       "id": 565802,
-      "status": "2026-09-12 12:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3512,7 +3663,7 @@
     },
     {
       "id": 565798,
-      "status": "2026-09-12 15:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T16:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3551,7 +3702,7 @@
     },
     {
       "id": 565799,
-      "status": "2026-09-13 12:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-13T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3590,7 +3741,7 @@
     },
     {
       "id": 565800,
-      "status": "2026-09-13 14:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-13T15:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3624,50 +3775,6 @@
         "fullTime": {
           "home": null,
           "away": null
-        }
-      }
-    },
-    {
-      "id": 559696,
-      "status": "FINISHED",
-      "utcDate": "2026-09-03T18:45:00Z",
-      "matchday": 3,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 57054,
-        "name": "Mathieu Vernice",
-        "type": "REFEREE",
-        "nationality": "France"
-      },
-      "competition": {
-        "id": 2015,
-        "name": "Ligue 1",
-        "code": "FL1",
-        "emblem": "https://crests.football-data.org/FL1.png"
-      },
-      "home": {
-        "id": 511,
-        "name": "Toulouse FC",
-        "shortName": "Toulouse",
-        "tla": "TOU",
-        "crest": "https://crests.football-data.org/511.png"
-      },
-      "away": {
-        "id": 521,
-        "name": "Lille OSC",
-        "shortName": "Lille",
-        "tla": "LIL",
-        "crest": "https://crests.football-data.org/521.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 0,
-          "away": 1
         }
       }
     },
@@ -5000,6 +5107,123 @@
         "shortName": "Sporting CP",
         "tla": "SPO",
         "crest": "https://crests.football-data.org/498.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 567303,
+      "status": "TIMED",
+      "utcDate": "2026-09-14T17:45:00Z",
+      "matchday": 6,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "home": {
+        "id": 496,
+        "name": "Rio Ave FC",
+        "shortName": "Rio Ave",
+        "tla": "RIO",
+        "crest": "https://crests.football-data.org/496.png"
+      },
+      "away": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora",
+        "shortName": "Amadora",
+        "tla": "AMA",
+        "crest": "https://crests.football-data.org/9136.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 567302,
+      "status": "TIMED",
+      "utcDate": "2026-09-14T19:15:00Z",
+      "matchday": 6,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "home": {
+        "id": 583,
+        "name": "Moreirense FC",
+        "shortName": "Moreirense",
+        "tla": "MOR",
+        "crest": "https://crests.football-data.org/583.png"
+      },
+      "away": {
+        "id": 5575,
+        "name": "CS Marítimo",
+        "shortName": "Marítimo",
+        "tla": "CSM",
+        "crest": "https://crests.football-data.org/5575.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 567308,
+      "status": "TIMED",
+      "utcDate": "2026-09-14T19:45:00Z",
+      "matchday": 6,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "home": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga",
+        "shortName": "Braga",
+        "tla": "SCB",
+        "crest": "https://crests.football-data.org/5613.png"
+      },
+      "away": {
+        "id": 582,
+        "name": "GD Estoril Praia",
+        "shortName": "Estoril Praia",
+        "tla": "EST",
+        "crest": "https://crests.football-data.org/582.png"
       },
       "score": {
         "halfTime": {
