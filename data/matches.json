@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T16:39:10.284452+00:00",
+  "updatedAt": "2026-09-05T17:10:51.782678+00:00",
   "dateFrom": "2026-09-04",
   "dateTo": "2026-09-14",
   "competitions": [
@@ -1663,8 +1663,8 @@
           "away": null
         },
         "fullTime": {
-          "home": 0,
-          "away": 1
+          "home": 1,
+          "away": 2
         }
       }
     },
@@ -1675,7 +1675,12 @@
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 206211,
+        "name": "Jesús Gil Manzano",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -2454,8 +2459,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
           "home": 0,
@@ -2470,7 +2475,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57878,
+        "name": "Andrea Colombo",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -4002,7 +4012,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 64781,
+        "name": "Marc Bollengier",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -4041,7 +4056,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57073,
+        "name": "Jérémie Pignard",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -4631,7 +4651,7 @@
     },
     {
       "id": 567296,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-05T17:00:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -4668,14 +4688,14 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 567293,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-05T17:00:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -4712,8 +4732,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -5343,7 +5363,7 @@
     },
     {
       "id": 558250,
-      "status": "2026-09-04 17:00:00Z",
+      "status": "FINISHED",
       "utcDate": "2026-09-04T18:00:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -5431,7 +5451,7 @@
     },
     {
       "id": 558252,
-      "status": "2026-09-05 15:45:00Z",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-05T16:45:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -5468,14 +5488,14 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       }
     },
     {
       "id": 558253,
-      "status": "2026-09-05 17:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-05T18:00:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -5519,12 +5539,17 @@
     },
     {
       "id": 558254,
-      "status": "2026-09-05 18:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-05T19:00:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 81036,
+        "name": "Robin Hensgens",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -5558,7 +5583,7 @@
     },
     {
       "id": 558255,
-      "status": "2026-09-06 09:15:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-06T10:15:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -5597,7 +5622,7 @@
     },
     {
       "id": 558256,
-      "status": "2026-09-06 11:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-06T12:30:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -5636,7 +5661,7 @@
     },
     {
       "id": 558257,
-      "status": "2026-09-06 11:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-06T12:30:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -5675,7 +5700,7 @@
     },
     {
       "id": 558258,
-      "status": "2026-09-06 13:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-06T14:45:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -5714,7 +5739,7 @@
     },
     {
       "id": 558233,
-      "status": "2026-09-08 15:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-08T16:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -5753,7 +5778,7 @@
     },
     {
       "id": 558239,
-      "status": "2026-09-09 15:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-09T16:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -5792,7 +5817,7 @@
     },
     {
       "id": 558899,
-      "status": "2026-09-11 17:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-11T18:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -5831,7 +5856,7 @@
     },
     {
       "id": 558898,
-      "status": "2026-09-12 13:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T14:30:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -5870,7 +5895,7 @@
     },
     {
       "id": 558897,
-      "status": "2026-09-12 15:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T16:45:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -5909,7 +5934,7 @@
     },
     {
       "id": 558896,
-      "status": "2026-09-12 17:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T18:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -5948,7 +5973,7 @@
     },
     {
       "id": 558892,
-      "status": "2026-09-12 18:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T19:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -5987,7 +6012,7 @@
     },
     {
       "id": 558894,
-      "status": "2026-09-13 09:15:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-13T10:15:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -6026,7 +6051,7 @@
     },
     {
       "id": 558895,
-      "status": "2026-09-13 11:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-13T12:30:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -6065,7 +6090,7 @@
     },
     {
       "id": 558891,
-      "status": "2026-09-13 13:45:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-13T14:45:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -6104,7 +6129,7 @@
     },
     {
       "id": 558893,
-      "status": "2026-09-13 17:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-13T18:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
