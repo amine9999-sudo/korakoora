@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T11:10:48.962876+00:00",
+  "updatedAt": "2026-09-05T11:37:49.219549+00:00",
   "competitions": {
     "PL": {
       "name": "الدوري الإنجليزي",
@@ -111,6 +111,24 @@
         {
           "position": 6,
           "team": {
+            "id": 67,
+            "name": "Newcastle United FC",
+            "shortName": "Newcastle",
+            "tla": "NEW",
+            "crest": "https://crests.football-data.org/67.png"
+          },
+          "playedGames": 3,
+          "won": 1,
+          "draw": 2,
+          "lost": 0,
+          "points": 5,
+          "goalsFor": 4,
+          "goalsAgainst": 2,
+          "goalDifference": 2
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 402,
             "name": "Brentford FC",
             "shortName": "Brentford",
@@ -125,24 +143,6 @@
           "goalsFor": 4,
           "goalsAgainst": 1,
           "goalDifference": 3
-        },
-        {
-          "position": 7,
-          "team": {
-            "id": 67,
-            "name": "Newcastle United FC",
-            "shortName": "Newcastle",
-            "tla": "NEW",
-            "crest": "https://crests.football-data.org/67.png"
-          },
-          "playedGames": 2,
-          "won": 1,
-          "draw": 1,
-          "lost": 0,
-          "points": 4,
-          "goalsFor": 4,
-          "goalsAgainst": 2,
-          "goalDifference": 2
         },
         {
           "position": 8,
@@ -261,17 +261,17 @@
             "tla": "BOU",
             "crest": "https://crests.football-data.org/bournemouth.png"
           },
-          "playedGames": 2,
+          "playedGames": 3,
           "won": 0,
-          "draw": 1,
+          "draw": 2,
           "lost": 1,
-          "points": 1,
+          "points": 2,
           "goalsFor": 2,
           "goalsAgainst": 3,
           "goalDifference": -1
         },
         {
-          "position": 14,
+          "position": 15,
           "team": {
             "id": 351,
             "name": "Nottingham Forest FC",
