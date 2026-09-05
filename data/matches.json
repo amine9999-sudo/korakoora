@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T10:38:11.328111+00:00",
+  "updatedAt": "2026-09-05T11:10:48.962876+00:00",
   "dateFrom": "2026-09-04",
   "dateTo": "2026-09-14",
   "competitions": [
@@ -2342,7 +2342,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11029,
+        "name": "Davide Massa",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
