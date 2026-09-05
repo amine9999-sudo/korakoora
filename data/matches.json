@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T22:37:49.445521+00:00",
+  "updatedAt": "2026-09-05T23:10:56.062308+00:00",
   "dateFrom": "2026-09-04",
   "dateTo": "2026-09-14",
   "competitions": [
@@ -762,7 +762,7 @@
     },
     {
       "id": 560571,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-09-05T11:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -795,12 +795,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 2
         }
       }
     },
