@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T12:15:03.972966+00:00",
+  "updatedAt": "2026-09-05T12:42:44.238487+00:00",
   "dateFrom": "2026-09-04",
   "dateTo": "2026-09-14",
   "competitions": [
@@ -795,8 +795,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         },
         "fullTime": {
           "home": 1,
@@ -1582,7 +1582,12 @@
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 206223,
+        "name": "José Munuera Montero",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -3152,12 +3157,7 @@
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 43922,
-        "name": "Benjamin Brand",
-        "type": "REFEREE",
-        "nationality": "Germany"
-      },
+      "referee": null,
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -3196,12 +3196,7 @@
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 56230,
-        "name": "Matthias Jöllenbeck",
-        "type": "REFEREE",
-        "nationality": "Germany"
-      },
+      "referee": null,
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -3240,12 +3235,7 @@
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 43922,
-        "name": "Benjamin Brand",
-        "type": "REFEREE",
-        "nationality": "Germany"
-      },
+      "referee": null,
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -3284,12 +3274,7 @@
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 15825,
-        "name": "Martin Petersen",
-        "type": "REFEREE",
-        "nationality": "Germany"
-      },
+      "referee": null,
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -3328,12 +3313,7 @@
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 58332,
-        "name": "Max Burda",
-        "type": "REFEREE",
-        "nationality": "Germany"
-      },
+      "referee": null,
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -4557,7 +4537,12 @@
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 176759,
+        "name": "Vitor Ferreira",
+        "type": "REFEREE",
+        "nationality": "Portugal"
+      },
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
