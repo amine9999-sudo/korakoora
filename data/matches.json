@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T18:13:57.117697+00:00",
+  "updatedAt": "2026-09-06T18:40:35.432497+00:00",
   "dateFrom": "2026-09-05",
   "dateTo": "2026-09-15",
   "competitions": [
@@ -1680,7 +1680,7 @@
     },
     {
       "id": 564664,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-09-06T16:30:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -1717,14 +1717,14 @@
           "away": 0
         },
         "fullTime": {
-          "home": 4,
+          "home": 5,
           "away": 2
         }
       }
     },
     {
       "id": 564666,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-09-06T16:30:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -5310,50 +5310,6 @@
       }
     },
     {
-      "id": 558252,
-      "status": "IN_PLAY",
-      "utcDate": "2026-09-05T16:45:00Z",
-      "matchday": 5,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 76681,
-        "name": "Jan Váňa",
-        "type": "REFEREE",
-        "nationality": "Czech Republic"
-      },
-      "competition": {
-        "id": 2003,
-        "name": "Eredivisie",
-        "code": "DED",
-        "emblem": "https://crests.football-data.org/ED.png"
-      },
-      "home": {
-        "id": 676,
-        "name": "FC Utrecht",
-        "shortName": "Utrecht",
-        "tla": "UTR",
-        "crest": "https://crests.football-data.org/676.png"
-      },
-      "away": {
-        "id": 718,
-        "name": "Go Ahead Eagles",
-        "shortName": "Go Ahead",
-        "tla": "GOA",
-        "crest": "https://crests.football-data.org/718.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 1
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 3
-        }
-      }
-    },
-    {
       "id": 558253,
       "status": "FINISHED",
       "utcDate": "2026-09-05T18:00:00Z",
@@ -5613,6 +5569,50 @@
         },
         "fullTime": {
           "home": 2,
+          "away": 3
+        }
+      }
+    },
+    {
+      "id": 558252,
+      "status": "IN_PLAY",
+      "utcDate": "2026-09-08T12:00:00Z",
+      "matchday": 5,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": {
+        "id": 76681,
+        "name": "Jan Váňa",
+        "type": "REFEREE",
+        "nationality": "Czech Republic"
+      },
+      "competition": {
+        "id": 2003,
+        "name": "Eredivisie",
+        "code": "DED",
+        "emblem": "https://crests.football-data.org/ED.png"
+      },
+      "home": {
+        "id": 676,
+        "name": "FC Utrecht",
+        "shortName": "Utrecht",
+        "tla": "UTR",
+        "crest": "https://crests.football-data.org/676.png"
+      },
+      "away": {
+        "id": 718,
+        "name": "Go Ahead Eagles",
+        "shortName": "Go Ahead",
+        "tla": "GOA",
+        "crest": "https://crests.football-data.org/718.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": 0,
+          "away": 1
+        },
+        "fullTime": {
+          "home": 1,
           "away": 3
         }
       }
