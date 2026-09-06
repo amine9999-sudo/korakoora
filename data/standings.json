@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T14:39:17.909013+00:00",
+  "updatedAt": "2026-09-06T15:11:53.965432+00:00",
   "competitions": {
     "PL": {
       "name": "الدوري الإنجليزي",
@@ -93,24 +93,6 @@
         {
           "position": 5,
           "team": {
-            "id": 66,
-            "name": "Manchester United FC",
-            "shortName": "Man United",
-            "tla": "MUN",
-            "crest": "https://crests.football-data.org/66.png"
-          },
-          "playedGames": 3,
-          "won": 2,
-          "draw": 0,
-          "lost": 1,
-          "points": 6,
-          "goalsFor": 6,
-          "goalsAgainst": 4,
-          "goalDifference": 2
-        },
-        {
-          "position": 6,
-          "team": {
             "id": 402,
             "name": "Brentford FC",
             "shortName": "Brentford",
@@ -127,7 +109,7 @@
           "goalDifference": 3
         },
         {
-          "position": 7,
+          "position": 6,
           "team": {
             "id": 64,
             "name": "Liverpool FC",
@@ -145,7 +127,7 @@
           "goalDifference": 2
         },
         {
-          "position": 7,
+          "position": 6,
           "team": {
             "id": 67,
             "name": "Newcastle United FC",
@@ -160,6 +142,24 @@
           "points": 5,
           "goalsFor": 6,
           "goalsAgainst": 4,
+          "goalDifference": 2
+        },
+        {
+          "position": 8,
+          "team": {
+            "id": 62,
+            "name": "Everton FC",
+            "shortName": "Everton",
+            "tla": "EVE",
+            "crest": "https://crests.football-data.org/62.png"
+          },
+          "playedGames": 3,
+          "won": 1,
+          "draw": 2,
+          "lost": 0,
+          "points": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 3,
           "goalDifference": 2
         },
         {
@@ -201,19 +201,19 @@
         {
           "position": 11,
           "team": {
-            "id": 62,
-            "name": "Everton FC",
-            "shortName": "Everton",
-            "tla": "EVE",
-            "crest": "https://crests.football-data.org/62.png"
+            "id": 66,
+            "name": "Manchester United FC",
+            "shortName": "Man United",
+            "tla": "MUN",
+            "crest": "https://crests.football-data.org/66.png"
           },
           "playedGames": 3,
           "won": 1,
           "draw": 1,
           "lost": 1,
           "points": 4,
-          "goalsFor": 3,
-          "goalsAgainst": 2,
+          "goalsFor": 7,
+          "goalsAgainst": 6,
           "goalDifference": 1
         },
         {
