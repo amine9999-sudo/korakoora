@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T15:11:53.965432+00:00",
+  "updatedAt": "2026-09-06T15:39:36.239291+00:00",
   "competitions": {
     "PL": {
       "name": "الدوري الإنجليزي",
@@ -39,6 +39,24 @@
         {
           "position": 2,
           "team": {
+            "id": 57,
+            "name": "Arsenal FC",
+            "shortName": "Arsenal",
+            "tla": "ARS",
+            "crest": "https://crests.football-data.org/57.png"
+          },
+          "playedGames": 3,
+          "won": 2,
+          "draw": 1,
+          "lost": 0,
+          "points": 7,
+          "goalsFor": 4,
+          "goalsAgainst": 0,
+          "goalDifference": 4
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 322,
             "name": "Hull City AFC",
             "shortName": "Hull City",
@@ -55,24 +73,6 @@
           "goalDifference": 3
         },
         {
-          "position": 3,
-          "team": {
-            "id": 57,
-            "name": "Arsenal FC",
-            "shortName": "Arsenal",
-            "tla": "ARS",
-            "crest": "https://crests.football-data.org/57.png"
-          },
-          "playedGames": 2,
-          "won": 2,
-          "draw": 0,
-          "lost": 0,
-          "points": 6,
-          "goalsFor": 4,
-          "goalsAgainst": 0,
-          "goalDifference": 4
-        },
-        {
           "position": 4,
           "team": {
             "id": 61,
@@ -81,11 +81,11 @@
             "tla": "CHE",
             "crest": "https://crests.football-data.org/61.png"
           },
-          "playedGames": 2,
+          "playedGames": 3,
           "won": 2,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
-          "points": 6,
+          "points": 7,
           "goalsFor": 7,
           "goalsAgainst": 5,
           "goalDifference": 2
