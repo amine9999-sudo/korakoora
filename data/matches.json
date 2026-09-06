@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T17:10:52.972679+00:00",
+  "updatedAt": "2026-09-06T17:38:26.378794+00:00",
   "dateFrom": "2026-09-05",
   "dateTo": "2026-09-15",
   "competitions": [
@@ -1070,7 +1070,7 @@
     },
     {
       "id": 560570,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-09-06T15:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -1713,11 +1713,11 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 0
         }
       }
@@ -1757,8 +1757,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
           "home": 0,
@@ -2654,8 +2654,8 @@
           "away": 1
         },
         "fullTime": {
-          "home": 0,
-          "away": 1
+          "home": 1,
+          "away": 2
         }
       }
     },
@@ -3481,7 +3481,7 @@
     },
     {
       "id": 565786,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-09-06T15:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -3519,7 +3519,7 @@
         },
         "fullTime": {
           "home": 1,
-          "away": 3
+          "away": 4
         }
       }
     },
@@ -4052,7 +4052,7 @@
     },
     {
       "id": 559698,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-09-06T15:15:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -4760,7 +4760,12 @@
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 39896,
+        "name": "Pedro Ramalho",
+        "type": "REFEREE",
+        "nationality": "Portugal"
+      },
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
