@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T16:39:45.956253+00:00",
+  "updatedAt": "2026-09-06T17:10:52.972679+00:00",
   "competitions": {
     "PL": {
       "name": "الدوري الإنجليزي",
@@ -46,13 +46,13 @@
             "crest": "https://crests.football-data.org/57.png"
           },
           "playedGames": 3,
-          "won": 2,
-          "draw": 1,
+          "won": 3,
+          "draw": 0,
           "lost": 0,
-          "points": 7,
-          "goalsFor": 5,
+          "points": 9,
+          "goalsFor": 6,
           "goalsAgainst": 1,
-          "goalDifference": 4
+          "goalDifference": 5
         },
         {
           "position": 3,
@@ -83,12 +83,12 @@
           },
           "playedGames": 3,
           "won": 2,
-          "draw": 1,
-          "lost": 0,
-          "points": 7,
+          "draw": 0,
+          "lost": 1,
+          "points": 6,
           "goalsFor": 8,
-          "goalsAgainst": 6,
-          "goalDifference": 2
+          "goalsAgainst": 7,
+          "goalDifference": 1
         },
         {
           "position": 5,
