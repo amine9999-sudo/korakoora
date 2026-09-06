@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T15:39:36.239291+00:00",
+  "updatedAt": "2026-09-06T16:13:06.997436+00:00",
   "competitions": {
     "PL": {
       "name": "الدوري الإنجليزي",
@@ -50,8 +50,8 @@
           "draw": 1,
           "lost": 0,
           "points": 7,
-          "goalsFor": 4,
-          "goalsAgainst": 0,
+          "goalsFor": 5,
+          "goalsAgainst": 1,
           "goalDifference": 4
         },
         {
@@ -86,8 +86,8 @@
           "draw": 1,
           "lost": 0,
           "points": 7,
-          "goalsFor": 7,
-          "goalsAgainst": 5,
+          "goalsFor": 8,
+          "goalsAgainst": 6,
           "goalDifference": 2
         },
         {
