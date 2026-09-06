@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T11:38:56.089134+00:00",
+  "updatedAt": "2026-09-06T12:15:33.280232+00:00",
   "dateFrom": "2026-09-05",
   "dateTo": "2026-09-15",
   "competitions": [
@@ -1636,7 +1636,12 @@
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57930,
+        "name": "Isidro Díaz de Mera",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -5378,7 +5383,7 @@
     },
     {
       "id": 558255,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-09-06T10:15:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
