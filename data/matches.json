@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T16:13:06.997436+00:00",
+  "updatedAt": "2026-09-06T16:39:45.956253+00:00",
   "dateFrom": "2026-09-05",
   "dateTo": "2026-09-15",
   "competitions": [
@@ -1103,8 +1103,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
           "home": 1,
@@ -1636,7 +1636,7 @@
     },
     {
       "id": 564659,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-09-06T14:15:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -1680,7 +1680,7 @@
     },
     {
       "id": 564664,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-06T16:30:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -1717,14 +1717,14 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 564666,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-06T16:30:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -1761,8 +1761,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -2650,7 +2650,7 @@
         },
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 1
         }
       }
     },
@@ -3504,12 +3504,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
           "home": 1,
-          "away": 0
+          "away": 1
         }
       }
     },
@@ -4652,7 +4652,7 @@
     },
     {
       "id": 567300,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-09-06T14:30:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -4689,7 +4689,7 @@
           "away": 0
         },
         "fullTime": {
-          "home": 3,
+          "home": 4,
           "away": 0
         }
       }
@@ -5592,7 +5592,7 @@
           "away": 2
         },
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 3
         }
       }
