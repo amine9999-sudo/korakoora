@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T10:12:34.500476+00:00",
+  "updatedAt": "2026-09-06T10:39:37.689340+00:00",
   "dateFrom": "2026-09-05",
   "dateTo": "2026-09-15",
   "competitions": [
@@ -5353,7 +5353,7 @@
     },
     {
       "id": 558255,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-06T10:15:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -5390,8 +5390,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       }
     },
@@ -5402,7 +5402,12 @@
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 56912,
+        "name": "Jeroen Manschot",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -5441,7 +5446,12 @@
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 17136,
+        "name": "Joey Kooij",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
