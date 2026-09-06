@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T14:12:13.741006+00:00",
+  "updatedAt": "2026-09-06T14:39:17.909013+00:00",
   "dateFrom": "2026-09-05",
   "dateTo": "2026-09-15",
   "competitions": [
@@ -1636,7 +1636,7 @@
     },
     {
       "id": 564659,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-06T14:15:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -1673,8 +1673,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         }
       }
     },
@@ -1685,7 +1685,12 @@
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 207080,
+        "name": "José Sánchez Martínez",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1724,7 +1729,12 @@
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 129443,
+        "name": "Luis Bestard Servera",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -2551,7 +2561,7 @@
           "away": 1
         },
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 1
         }
       }
@@ -2596,7 +2606,7 @@
         },
         "fullTime": {
           "home": 2,
-          "away": 0
+          "away": 1
         }
       }
     },
@@ -3417,7 +3427,7 @@
     },
     {
       "id": 565788,
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "utcDate": "2026-09-06T13:30:00Z",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
@@ -3450,12 +3460,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         },
         "fullTime": {
           "home": 0,
-          "away": 1
+          "away": 2
         }
       }
     },
@@ -3988,7 +3998,7 @@
     },
     {
       "id": 559700,
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-06T13:00:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -4026,7 +4036,7 @@
         },
         "fullTime": {
           "home": 1,
-          "away": 2
+          "away": 3
         }
       }
     },
@@ -4642,7 +4652,7 @@
     },
     {
       "id": 567300,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-06T14:30:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -4679,8 +4689,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -5452,7 +5462,7 @@
     },
     {
       "id": 558256,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-09-06T12:30:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -5490,13 +5500,13 @@
         },
         "fullTime": {
           "home": 2,
-          "away": 2
+          "away": 3
         }
       }
     },
     {
       "id": 558257,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-09-06T12:30:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -5533,7 +5543,7 @@
           "away": 0
         },
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 2
         }
       }
