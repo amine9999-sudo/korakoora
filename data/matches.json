@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T18:40:35.432497+00:00",
+  "updatedAt": "2026-09-06T19:10:44.085176+00:00",
   "dateFrom": "2026-09-05",
   "dateTo": "2026-09-15",
   "competitions": [
@@ -1768,7 +1768,7 @@
     },
     {
       "id": 564661,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-06T19:00:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -1805,8 +1805,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -2661,7 +2661,7 @@
     },
     {
       "id": 558618,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-06T18:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2698,8 +2698,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -4096,7 +4096,7 @@
     },
     {
       "id": 559694,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-06T18:45:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -4133,8 +4133,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         }
       }
     },
@@ -4711,7 +4711,7 @@
     },
     {
       "id": 567294,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-09-06T17:00:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
