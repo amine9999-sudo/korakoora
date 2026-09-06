@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T11:11:40.608468+00:00",
+  "updatedAt": "2026-09-06T11:38:56.089134+00:00",
   "dateFrom": "2026-09-05",
   "dateTo": "2026-09-15",
   "competitions": [
@@ -3407,7 +3407,12 @@
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57512,
+        "name": "Tobias Reichel",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
