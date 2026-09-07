@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T20:13:10.275022+00:00",
+  "updatedAt": "2026-09-07T20:41:22.037647+00:00",
   "dateFrom": "2026-09-06",
   "dateTo": "2026-09-16",
   "competitions": [
@@ -1449,8 +1449,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         },
         "fullTime": {
           "home": 0,
@@ -2381,7 +2381,7 @@
         },
         "fullTime": {
           "home": 1,
-          "away": 0
+          "away": 2
         }
       }
     },
