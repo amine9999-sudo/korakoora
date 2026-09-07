@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T16:41:25.663297+00:00",
+  "updatedAt": "2026-09-07T17:11:51.168087+00:00",
   "dateFrom": "2026-09-06",
   "dateTo": "2026-09-16",
   "competitions": [
@@ -1372,7 +1372,7 @@
     },
     {
       "id": 564665,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-07T17:00:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -1409,8 +1409,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -2331,7 +2331,7 @@
           "away": null
         },
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       }
@@ -2343,7 +2343,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 97887,
+        "name": "Paride Tremolada",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -3938,7 +3943,7 @@
     },
     {
       "id": 567306,
-      "status": "2026-09-13 14:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T14:30:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -3977,7 +3982,7 @@
     },
     {
       "id": 567307,
-      "status": "2026-09-13 14:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T17:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -4016,7 +4021,7 @@
     },
     {
       "id": 567309,
-      "status": "2026-09-13 14:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-12T19:30:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -4055,7 +4060,7 @@
     },
     {
       "id": 567304,
-      "status": "2026-09-13 14:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-13T17:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -4094,7 +4099,7 @@
     },
     {
       "id": 567310,
-      "status": "2026-09-13 14:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-13T17:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -4133,7 +4138,7 @@
     },
     {
       "id": 567305,
-      "status": "2026-09-13 14:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-13T19:30:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -4172,7 +4177,7 @@
     },
     {
       "id": 567303,
-      "status": "2026-09-13 14:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-14T17:45:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -4211,7 +4216,7 @@
     },
     {
       "id": 567302,
-      "status": "2026-09-13 14:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-14T19:15:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -4250,7 +4255,7 @@
     },
     {
       "id": 567308,
-      "status": "2026-09-13 14:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-14T19:45:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
