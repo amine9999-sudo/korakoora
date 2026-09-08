@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T19:40:08.026234+00:00",
+  "updatedAt": "2026-09-08T20:12:55.614397+00:00",
   "dateFrom": "2026-09-07",
   "dateTo": "2026-09-17",
   "competitions": [
@@ -97,7 +97,7 @@
           "away": 0
         },
         "fullTime": {
-          "home": 2,
+          "home": 1,
           "away": 0
         }
       }
@@ -137,8 +137,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "fullTime": {
           "home": 2,
@@ -181,8 +181,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
           "home": 0,
@@ -225,8 +225,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
           "home": 0,
@@ -269,12 +269,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         },
         "fullTime": {
-          "home": 1,
-          "away": 0
+          "home": 2,
+          "away": 1
         }
       }
     },

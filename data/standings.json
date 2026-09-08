@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T19:40:08.026234+00:00",
+  "updatedAt": "2026-09-08T20:12:55.614397+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -57,6 +57,24 @@
         {
           "position": 3,
           "team": {
+            "id": 65,
+            "name": "Manchester City FC",
+            "shortName": "Man City",
+            "tla": "MCI",
+            "crest": "https://crests.football-data.org/65.png"
+          },
+          "playedGames": 1,
+          "won": 1,
+          "draw": 0,
+          "lost": 0,
+          "points": 3,
+          "goalsFor": 1,
+          "goalsAgainst": 0,
+          "goalDifference": 1
+        },
+        {
+          "position": 4,
+          "team": {
             "id": 1899,
             "name": "PAE AEK",
             "shortName": "PAE AEK",
@@ -73,7 +91,25 @@
           "goalDifference": 1
         },
         {
-          "position": 3,
+          "position": 5,
+          "team": {
+            "id": 90,
+            "name": "Real Betis Balompié",
+            "shortName": "Real Betis",
+            "tla": "BET",
+            "crest": "https://crests.football-data.org/90.png"
+          },
+          "playedGames": 1,
+          "won": 0,
+          "draw": 1,
+          "lost": 0,
+          "points": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "goalDifference": 0
+        },
+        {
+          "position": 6,
           "team": {
             "id": 521,
             "name": "Lille OSC",
@@ -82,16 +118,16 @@
             "crest": "https://crests.football-data.org/521.png"
           },
           "playedGames": 1,
-          "won": 1,
-          "draw": 0,
+          "won": 0,
+          "draw": 1,
           "lost": 0,
-          "points": 3,
-          "goalsFor": 1,
-          "goalsAgainst": 0,
-          "goalDifference": 1
+          "points": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "goalDifference": 0
         },
         {
-          "position": 5,
+          "position": 7,
           "team": {
             "id": 4,
             "name": "Borussia Dortmund",
@@ -109,43 +145,7 @@
           "goalDifference": 0
         },
         {
-          "position": 5,
-          "team": {
-            "id": 503,
-            "name": "FC Porto",
-            "shortName": "Porto",
-            "tla": "FCP",
-            "crest": "https://crests.football-data.org/503.png"
-          },
-          "playedGames": 1,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "points": 1,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0
-        },
-        {
-          "position": 5,
-          "team": {
-            "id": 65,
-            "name": "Manchester City FC",
-            "shortName": "Man City",
-            "tla": "MCI",
-            "crest": "https://crests.football-data.org/65.png"
-          },
-          "playedGames": 1,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "points": 1,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0
-        },
-        {
-          "position": 5,
+          "position": 7,
           "team": {
             "id": 94,
             "name": "Villarreal CF",
@@ -615,11 +615,11 @@
         {
           "position": 34,
           "team": {
-            "id": 2016,
-            "name": "LASK Linz",
-            "shortName": "LASK",
-            "tla": "LIN",
-            "crest": "https://crests.football-data.org/2016.png"
+            "id": 503,
+            "name": "FC Porto",
+            "shortName": "Porto",
+            "tla": "FCP",
+            "crest": "https://crests.football-data.org/503.png"
           },
           "playedGames": 1,
           "won": 0,
@@ -633,11 +633,11 @@
         {
           "position": 34,
           "team": {
-            "id": 90,
-            "name": "Real Betis Balompié",
-            "shortName": "Real Betis",
-            "tla": "BET",
-            "crest": "https://crests.football-data.org/90.png"
+            "id": 2016,
+            "name": "LASK Linz",
+            "shortName": "LASK",
+            "tla": "LIN",
+            "crest": "https://crests.football-data.org/2016.png"
           },
           "playedGames": 1,
           "won": 0,
