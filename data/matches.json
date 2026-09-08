@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T17:40:04.846171+00:00",
+  "updatedAt": "2026-09-08T18:15:33.393052+00:00",
   "dateFrom": "2026-09-07",
   "dateTo": "2026-09-17",
   "competitions": [
@@ -53,7 +53,7 @@
           "away": 3
         },
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 3
         }
       }
@@ -97,14 +97,14 @@
           "away": 0
         },
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 0
         }
       }
     },
     {
       "id": 575325,
-      "status": "TIMED",
+      "status": "SCHEDULED",
       "utcDate": "2026-09-08T19:00:00Z",
       "matchday": 1,
       "stage": "LEAGUE_STAGE",
@@ -148,7 +148,7 @@
     },
     {
       "id": 575326,
-      "status": "TIMED",
+      "status": "SCHEDULED",
       "utcDate": "2026-09-08T19:00:00Z",
       "matchday": 1,
       "stage": "LEAGUE_STAGE",
@@ -192,7 +192,7 @@
     },
     {
       "id": 575327,
-      "status": "TIMED",
+      "status": "SCHEDULED",
       "utcDate": "2026-09-08T19:00:00Z",
       "matchday": 1,
       "stage": "LEAGUE_STAGE",
@@ -236,7 +236,7 @@
     },
     {
       "id": 575328,
-      "status": "TIMED",
+      "status": "SCHEDULED",
       "utcDate": "2026-09-08T19:00:00Z",
       "matchday": 1,
       "stage": "LEAGUE_STAGE",
