@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T18:15:33.393052+00:00",
+  "updatedAt": "2026-09-08T18:44:37.842694+00:00",
   "dateFrom": "2026-09-07",
   "dateTo": "2026-09-17",
   "competitions": [
@@ -60,7 +60,7 @@
     },
     {
       "id": 575324,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-09-08T16:45:00Z",
       "matchday": 1,
       "stage": "LEAGUE_STAGE",
@@ -3701,8 +3701,8 @@
           "away": 1
         },
         "fullTime": {
-          "home": 1,
-          "away": 1
+          "home": 2,
+          "away": 2
         }
       }
     },
