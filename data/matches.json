@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T17:13:06.929924+00:00",
+  "updatedAt": "2026-09-08T17:40:04.846171+00:00",
   "dateFrom": "2026-09-07",
   "dateTo": "2026-09-17",
   "competitions": [
@@ -49,12 +49,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 3
         },
         "fullTime": {
           "home": 1,
-          "away": 1
+          "away": 3
         }
       }
     },
@@ -93,11 +93,11 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       }
@@ -109,7 +109,12 @@
       "matchday": 1,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11605,
+        "name": "Michael Oliver",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -148,7 +153,12 @@
       "matchday": 1,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43888,
+        "name": "Szymon Marciniak",
+        "type": "REFEREE",
+        "nationality": "Poland"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -187,7 +197,12 @@
       "matchday": 1,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57826,
+        "name": "Simone Sozza",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -226,7 +241,12 @@
       "matchday": 1,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15654,
+        "name": "Georgi Kabakov",
+        "type": "REFEREE",
+        "nationality": "Bulgaria"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -3677,12 +3697,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
           "home": 1,
-          "away": 0
+          "away": 1
         }
       }
     },
