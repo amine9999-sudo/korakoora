@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T14:43:54.946241+00:00",
+  "updatedAt": "2026-09-08T15:14:17.959331+00:00",
   "dateFrom": "2026-09-07",
   "dateTo": "2026-09-17",
   "competitions": [
@@ -16,12 +16,17 @@
   "matches": [
     {
       "id": 575323,
-      "status": "TIMED",
+      "status": "SCHEDULED",
       "utcDate": "2026-09-08T16:45:00Z",
       "matchday": 1,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 31823,
+        "name": "Sandro Schärer",
+        "type": "REFEREE",
+        "nationality": "Switzerland"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -55,12 +60,17 @@
     },
     {
       "id": 575324,
-      "status": "TIMED",
+      "status": "SCHEDULED",
       "utcDate": "2026-09-08T16:45:00Z",
       "matchday": 1,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 37629,
+        "name": "Luís Godinho",
+        "type": "REFEREE",
+        "nationality": "Portugal"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -3639,7 +3649,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 56917,
+        "name": "Erwin Blank",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
