@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T03:42:30.118524+00:00",
+  "updatedAt": "2026-09-09T04:13:00.916772+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -681,7 +681,7 @@
         "id": 2502,
         "startDate": "2026-08-21",
         "endDate": "2027-05-30",
-        "currentMatchday": 3,
+        "currentMatchday": 4,
         "winner": null
       },
       "table": [
