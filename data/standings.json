@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T18:43:30.959258+00:00",
+  "updatedAt": "2026-09-10T19:10:42.050973+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -315,11 +315,11 @@
             "tla": "FCB",
             "crest": "https://crests.football-data.org/5.png"
           },
-          "playedGames": 0,
+          "playedGames": 1,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
-          "points": 0,
+          "points": 1,
           "goalsFor": 0,
           "goalsAgainst": 0,
           "goalDifference": 0
@@ -333,11 +333,11 @@
             "tla": "COM",
             "crest": "https://crests.football-data.org/7397.png"
           },
-          "playedGames": 0,
+          "playedGames": 1,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
-          "points": 0,
+          "points": 1,
           "goalsFor": 0,
           "goalsAgainst": 0,
           "goalDifference": 0
@@ -351,11 +351,11 @@
             "tla": "FK",
             "crest": "https://crests.football-data.org/5721.png"
           },
-          "playedGames": 0,
+          "playedGames": 1,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
-          "points": 0,
+          "points": 1,
           "goalsFor": 0,
           "goalsAgainst": 0,
           "goalDifference": 0
@@ -369,11 +369,11 @@
             "tla": "MUN",
             "crest": "https://crests.football-data.org/66.png"
           },
-          "playedGames": 0,
+          "playedGames": 1,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
-          "points": 0,
+          "points": 1,
           "goalsFor": 0,
           "goalsAgainst": 0,
           "goalDifference": 0
@@ -387,11 +387,11 @@
             "tla": "RBL",
             "crest": "https://crests.football-data.org/721.png"
           },
-          "playedGames": 0,
+          "playedGames": 1,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
-          "points": 0,
+          "points": 1,
           "goalsFor": 0,
           "goalsAgainst": 0,
           "goalDifference": 0
@@ -405,11 +405,11 @@
             "tla": "RCL",
             "crest": "https://crests.football-data.org/546.png"
           },
-          "playedGames": 0,
+          "playedGames": 1,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
-          "points": 0,
+          "points": 1,
           "goalsFor": 0,
           "goalsAgainst": 0,
           "goalDifference": 0
@@ -423,11 +423,11 @@
             "tla": "SAB",
             "crest": "https://crests.football-data.org/10233.png"
           },
-          "playedGames": 0,
+          "playedGames": 1,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
-          "points": 0,
+          "points": 1,
           "goalsFor": 0,
           "goalsAgainst": 0,
           "goalDifference": 0
@@ -441,11 +441,11 @@
             "tla": "SLP",
             "crest": "https://crests.football-data.org/930.png"
           },
-          "playedGames": 0,
+          "playedGames": 1,
           "won": 0,
-          "draw": 0,
+          "draw": 1,
           "lost": 0,
-          "points": 0,
+          "points": 1,
           "goalsFor": 0,
           "goalsAgainst": 0,
           "goalDifference": 0
