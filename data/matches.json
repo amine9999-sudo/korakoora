@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T16:41:49.599174+00:00",
+  "updatedAt": "2026-09-11T17:11:35.269053+00:00",
   "dateFrom": "2026-09-10",
   "dateTo": "2026-09-20",
   "competitions": [
@@ -1065,7 +1065,12 @@
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 217698,
+        "name": "Mateo Busquets Ferrer",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -2196,7 +2201,12 @@
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11129,
+        "name": "Francesco Fourneau",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -3683,7 +3693,12 @@
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 1049,
+        "name": "Jeremy Stinat",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
