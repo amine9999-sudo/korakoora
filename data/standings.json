@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T15:11:58.651812+00:00",
+  "updatedAt": "2026-09-12T15:38:58.544888+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -688,24 +688,6 @@
         {
           "position": 1,
           "team": {
-            "id": 322,
-            "name": "Hull City AFC",
-            "shortName": "Hull City",
-            "tla": "HUL",
-            "crest": "https://crests.football-data.org/322.png"
-          },
-          "playedGames": 4,
-          "won": 3,
-          "draw": 1,
-          "lost": 0,
-          "points": 10,
-          "goalsFor": 5,
-          "goalsAgainst": 1,
-          "goalDifference": 4
-        },
-        {
-          "position": 2,
-          "team": {
             "id": 65,
             "name": "Manchester City FC",
             "shortName": "Man City",
@@ -722,7 +704,7 @@
           "goalDifference": 5
         },
         {
-          "position": 3,
+          "position": 2,
           "team": {
             "id": 57,
             "name": "Arsenal FC",
@@ -740,7 +722,43 @@
           "goalDifference": 5
         },
         {
+          "position": 3,
+          "team": {
+            "id": 322,
+            "name": "Hull City AFC",
+            "shortName": "Hull City",
+            "tla": "HUL",
+            "crest": "https://crests.football-data.org/322.png"
+          },
+          "playedGames": 4,
+          "won": 2,
+          "draw": 2,
+          "lost": 0,
+          "points": 8,
+          "goalsFor": 5,
+          "goalsAgainst": 2,
+          "goalDifference": 3
+        },
+        {
           "position": 4,
+          "team": {
+            "id": 61,
+            "name": "Chelsea FC",
+            "shortName": "Chelsea",
+            "tla": "CHE",
+            "crest": "https://crests.football-data.org/61.png"
+          },
+          "playedGames": 4,
+          "won": 2,
+          "draw": 1,
+          "lost": 1,
+          "points": 7,
+          "goalsFor": 10,
+          "goalsAgainst": 9,
+          "goalDifference": 1
+        },
+        {
+          "position": 5,
           "team": {
             "id": 402,
             "name": "Brentford FC",
@@ -753,12 +771,12 @@
           "draw": 3,
           "lost": 0,
           "points": 6,
-          "goalsFor": 6,
-          "goalsAgainst": 3,
+          "goalsFor": 7,
+          "goalsAgainst": 4,
           "goalDifference": 3
         },
         {
-          "position": 5,
+          "position": 6,
           "team": {
             "id": 64,
             "name": "Liverpool FC",
@@ -774,24 +792,6 @@
           "goalsFor": 6,
           "goalsAgainst": 4,
           "goalDifference": 2
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 61,
-            "name": "Chelsea FC",
-            "shortName": "Chelsea",
-            "tla": "CHE",
-            "crest": "https://crests.football-data.org/61.png"
-          },
-          "playedGames": 4,
-          "won": 2,
-          "draw": 0,
-          "lost": 2,
-          "points": 6,
-          "goalsFor": 9,
-          "goalsAgainst": 9,
-          "goalDifference": 0
         },
         {
           "position": 7,
@@ -951,8 +951,8 @@
           "draw": 3,
           "lost": 1,
           "points": 3,
-          "goalsFor": 5,
-          "goalsAgainst": 6,
+          "goalsFor": 6,
+          "goalsAgainst": 7,
           "goalDifference": -1
         },
         {
