@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T19:38:47.207170+00:00",
+  "updatedAt": "2026-09-12T20:12:30.239540+00:00",
   "dateFrom": "2026-09-11",
   "dateTo": "2026-09-21",
   "competitions": [
@@ -313,8 +313,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
           "home": 0,
@@ -1040,11 +1040,11 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 0
         },
         "fullTime": {
-          "home": 2,
+          "home": 3,
           "away": 0
         }
       }
@@ -2157,7 +2157,7 @@
         },
         "fullTime": {
           "home": 1,
-          "away": 1
+          "away": 2
         }
       }
     },
@@ -3612,7 +3612,7 @@
     },
     {
       "id": 559684,
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-12T18:45:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -3650,7 +3650,7 @@
         },
         "fullTime": {
           "home": 2,
-          "away": 0
+          "away": 1
         }
       }
     },
@@ -3689,8 +3689,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
           "home": 0,
@@ -3700,7 +3700,7 @@
     },
     {
       "id": 559690,
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-12T18:45:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -3744,7 +3744,7 @@
     },
     {
       "id": 559692,
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-12T18:45:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -5105,7 +5105,7 @@
     },
     {
       "id": 558896,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-09-12T18:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -5143,7 +5143,7 @@
         },
         "fullTime": {
           "home": 1,
-          "away": 2
+          "away": 5
         }
       }
     },
@@ -5182,8 +5182,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
           "home": 1,
