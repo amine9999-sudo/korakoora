@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T15:38:58.544888+00:00",
+  "updatedAt": "2026-09-12T16:12:37.817954+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -807,8 +807,8 @@
           "draw": 0,
           "lost": 2,
           "points": 6,
-          "goalsFor": 6,
-          "goalsAgainst": 9,
+          "goalsFor": 7,
+          "goalsAgainst": 10,
           "goalDifference": -3
         },
         {
@@ -879,8 +879,8 @@
           "draw": 2,
           "lost": 1,
           "points": 5,
-          "goalsFor": 3,
-          "goalsAgainst": 3,
+          "goalsFor": 4,
+          "goalsAgainst": 4,
           "goalDifference": 0
         },
         {
@@ -969,8 +969,8 @@
           "draw": 0,
           "lost": 3,
           "points": 3,
-          "goalsFor": 5,
-          "goalsAgainst": 10,
+          "goalsFor": 6,
+          "goalsAgainst": 11,
           "goalDifference": -5
         },
         {
@@ -1023,8 +1023,8 @@
           "draw": 1,
           "lost": 3,
           "points": 1,
-          "goalsFor": 0,
-          "goalsAgainst": 6,
+          "goalsFor": 1,
+          "goalsAgainst": 7,
           "goalDifference": -6
         },
         {
