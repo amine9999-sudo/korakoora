@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T14:11:25.974839+00:00",
+  "updatedAt": "2026-09-12T14:40:31.182881+00:00",
   "dateFrom": "2026-09-11",
   "dateTo": "2026-09-21",
   "competitions": [
@@ -53,8 +53,8 @@
           "away": null
         },
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 1
         }
       }
     },
@@ -229,8 +229,8 @@
           "away": null
         },
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 1
         }
       }
     },
@@ -241,7 +241,12 @@
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11469,
+        "name": "Darren England",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -909,7 +914,7 @@
     },
     {
       "id": 564673,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-12T14:15:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -946,8 +951,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         }
       }
     },
@@ -958,7 +963,12 @@
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 215612,
+        "name": "Manuel Orellana Cid",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -2011,7 +2021,7 @@
     },
     {
       "id": 558604,
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-12T13:00:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -2048,7 +2058,7 @@
           "away": 1
         },
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 1
         }
       }
@@ -2806,7 +2816,7 @@
     },
     {
       "id": 565794,
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "utcDate": "2026-09-12T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2839,8 +2849,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
           "home": 1,
@@ -2850,7 +2860,7 @@
     },
     {
       "id": 565795,
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "utcDate": "2026-09-12T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2883,11 +2893,11 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
-          "home": 2,
+          "home": 1,
           "away": 0
         }
       }
@@ -2927,8 +2937,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
           "home": 0,
@@ -2938,7 +2948,7 @@
     },
     {
       "id": 565801,
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "utcDate": "2026-09-12T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2971,12 +2981,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         },
         "fullTime": {
           "home": 0,
-          "away": 1
+          "away": 2
         }
       }
     },
@@ -3015,8 +3025,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "fullTime": {
           "home": 2,
@@ -3031,7 +3041,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 58466,
+        "name": "Florian Exner",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -4206,7 +4221,7 @@
     },
     {
       "id": 567306,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-12T14:30:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -4243,8 +4258,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -4957,7 +4972,7 @@
     },
     {
       "id": 558898,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-12T14:30:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -4994,8 +5009,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
