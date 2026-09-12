@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T13:11:34.311687+00:00",
+  "updatedAt": "2026-09-12T13:39:07.729148+00:00",
   "dateFrom": "2026-09-11",
   "dateTo": "2026-09-21",
   "competitions": [
@@ -902,7 +902,7 @@
           "away": 1
         },
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 1
         }
       }
@@ -2049,7 +2049,7 @@
         },
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 1
         }
       }
     },
@@ -2801,7 +2801,7 @@
     },
     {
       "id": 565794,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-12T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2838,14 +2838,14 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 565795,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-12T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2882,14 +2882,14 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 565796,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-12T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2926,14 +2926,14 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 565801,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-12T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2970,14 +2970,14 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 565802,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-12T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3014,8 +3014,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -3538,7 +3538,12 @@
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57092,
+        "name": "Eric Wattellier",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
