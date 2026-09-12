@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T10:39:15.402535+00:00",
+  "updatedAt": "2026-09-12T11:11:24.692026+00:00",
   "dateFrom": "2026-09-11",
   "dateTo": "2026-09-21",
   "competitions": [
@@ -1986,7 +1986,12 @@
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11018,
+        "name": "Antonio Rapuano",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
