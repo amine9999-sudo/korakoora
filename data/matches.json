@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T11:11:24.692026+00:00",
+  "updatedAt": "2026-09-12T11:38:41.284695+00:00",
   "dateFrom": "2026-09-11",
   "dateTo": "2026-09-21",
   "competitions": [
@@ -2776,7 +2776,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15824,
+        "name": "Sven Jablonski",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -2815,7 +2820,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 253,
+        "name": "Harm Osmers",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -2854,7 +2864,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15408,
+        "name": "Daniel Siebert",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -2893,7 +2908,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43878,
+        "name": "Felix Zwayer",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -2932,7 +2952,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 65990,
+        "name": "Richard Hempel",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
