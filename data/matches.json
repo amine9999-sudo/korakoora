@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T12:15:23.604274+00:00",
+  "updatedAt": "2026-09-12T12:43:10.115996+00:00",
   "dateFrom": "2026-09-11",
   "dateTo": "2026-09-21",
   "competitions": [
@@ -903,7 +903,7 @@
         },
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 1
         }
       }
     },
@@ -4201,7 +4201,12 @@
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 242513,
+        "name": "Miguel Fonseca",
+        "type": "REFEREE",
+        "nationality": "Portugal"
+      },
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -4947,7 +4952,12 @@
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 80087,
+        "name": "Jannick van der Laan",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
