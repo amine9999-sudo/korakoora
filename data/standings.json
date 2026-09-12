@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T13:39:07.729148+00:00",
+  "updatedAt": "2026-09-12T14:11:25.974839+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -724,38 +724,38 @@
         {
           "position": 3,
           "team": {
-            "id": 322,
-            "name": "Hull City AFC",
-            "shortName": "Hull City",
-            "tla": "HUL",
-            "crest": "https://crests.football-data.org/322.png"
-          },
-          "playedGames": 3,
-          "won": 2,
-          "draw": 1,
-          "lost": 0,
-          "points": 7,
-          "goalsFor": 3,
-          "goalsAgainst": 0,
-          "goalDifference": 3
-        },
-        {
-          "position": 4,
-          "team": {
             "id": 61,
             "name": "Chelsea FC",
             "shortName": "Chelsea",
             "tla": "CHE",
             "crest": "https://crests.football-data.org/61.png"
           },
-          "playedGames": 3,
-          "won": 2,
+          "playedGames": 4,
+          "won": 3,
           "draw": 0,
           "lost": 1,
-          "points": 6,
-          "goalsFor": 8,
+          "points": 9,
+          "goalsFor": 9,
           "goalsAgainst": 7,
-          "goalDifference": 1
+          "goalDifference": 2
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": 322,
+            "name": "Hull City AFC",
+            "shortName": "Hull City",
+            "tla": "HUL",
+            "crest": "https://crests.football-data.org/322.png"
+          },
+          "playedGames": 4,
+          "won": 2,
+          "draw": 1,
+          "lost": 1,
+          "points": 7,
+          "goalsFor": 3,
+          "goalsAgainst": 1,
+          "goalDifference": 2
         },
         {
           "position": 5,
@@ -766,11 +766,11 @@
             "tla": "BRE",
             "crest": "https://crests.football-data.org/402.png"
           },
-          "playedGames": 3,
+          "playedGames": 4,
           "won": 1,
-          "draw": 2,
+          "draw": 3,
           "lost": 0,
-          "points": 5,
+          "points": 6,
           "goalsFor": 5,
           "goalsAgainst": 2,
           "goalDifference": 3
@@ -784,17 +784,17 @@
             "tla": "LIV",
             "crest": "https://crests.football-data.org/64.png"
           },
-          "playedGames": 3,
+          "playedGames": 4,
           "won": 1,
-          "draw": 2,
+          "draw": 3,
           "lost": 0,
-          "points": 5,
+          "points": 6,
           "goalsFor": 6,
           "goalsAgainst": 4,
           "goalDifference": 2
         },
         {
-          "position": 6,
+          "position": 7,
           "team": {
             "id": 67,
             "name": "Newcastle United FC",
@@ -910,11 +910,11 @@
             "tla": "CRY",
             "crest": "https://crests.football-data.org/354.png"
           },
-          "playedGames": 3,
+          "playedGames": 4,
           "won": 1,
-          "draw": 0,
+          "draw": 1,
           "lost": 2,
-          "points": 3,
+          "points": 4,
           "goalsFor": 4,
           "goalsAgainst": 8,
           "goalDifference": -4
@@ -928,11 +928,11 @@
             "tla": "IPS",
             "crest": "https://crests.football-data.org/349.png"
           },
-          "playedGames": 3,
+          "playedGames": 4,
           "won": 1,
-          "draw": 0,
+          "draw": 1,
           "lost": 2,
-          "points": 3,
+          "points": 4,
           "goalsFor": 4,
           "goalsAgainst": 8,
           "goalDifference": -4
@@ -946,11 +946,11 @@
             "tla": "BOU",
             "crest": "https://crests.football-data.org/bournemouth.png"
           },
-          "playedGames": 3,
+          "playedGames": 4,
           "won": 0,
-          "draw": 2,
+          "draw": 3,
           "lost": 1,
-          "points": 2,
+          "points": 3,
           "goalsFor": 4,
           "goalsAgainst": 5,
           "goalDifference": -1
@@ -964,11 +964,11 @@
             "tla": "NOT",
             "crest": "https://crests.football-data.org/351.png"
           },
-          "playedGames": 3,
+          "playedGames": 4,
           "won": 0,
-          "draw": 2,
+          "draw": 3,
           "lost": 1,
-          "points": 2,
+          "points": 3,
           "goalsFor": 2,
           "goalsAgainst": 3,
           "goalDifference": -1
@@ -982,17 +982,35 @@
             "tla": "AVL",
             "crest": "https://crests.football-data.org/58.png"
           },
-          "playedGames": 3,
+          "playedGames": 4,
           "won": 0,
-          "draw": 1,
+          "draw": 2,
           "lost": 2,
-          "points": 1,
+          "points": 2,
           "goalsFor": 0,
           "goalsAgainst": 5,
           "goalDifference": -5
         },
         {
-          "position": 17,
+          "position": 18,
+          "team": {
+            "id": 63,
+            "name": "Fulham FC",
+            "shortName": "Fulham",
+            "tla": "FUL",
+            "crest": "https://crests.football-data.org/63.png"
+          },
+          "playedGames": 4,
+          "won": 0,
+          "draw": 1,
+          "lost": 3,
+          "points": 1,
+          "goalsFor": 4,
+          "goalsAgainst": 7,
+          "goalDifference": -3
+        },
+        {
+          "position": 19,
           "team": {
             "id": 73,
             "name": "Tottenham Hotspur FC",
@@ -1008,24 +1026,6 @@
           "goalsFor": 0,
           "goalsAgainst": 5,
           "goalDifference": -5
-        },
-        {
-          "position": 19,
-          "team": {
-            "id": 63,
-            "name": "Fulham FC",
-            "shortName": "Fulham",
-            "tla": "FUL",
-            "crest": "https://crests.football-data.org/63.png"
-          },
-          "playedGames": 3,
-          "won": 0,
-          "draw": 0,
-          "lost": 3,
-          "points": 0,
-          "goalsFor": 4,
-          "goalsAgainst": 7,
-          "goalDifference": -3
         },
         {
           "position": 20,
