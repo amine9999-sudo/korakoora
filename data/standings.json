@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T18:40:20.320493+00:00",
+  "updatedAt": "2026-09-12T19:10:27.627027+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -688,6 +688,24 @@
         {
           "position": 1,
           "team": {
+            "id": 57,
+            "name": "Arsenal FC",
+            "shortName": "Arsenal",
+            "tla": "ARS",
+            "crest": "https://crests.football-data.org/57.png"
+          },
+          "playedGames": 4,
+          "won": 3,
+          "draw": 1,
+          "lost": 0,
+          "points": 10,
+          "goalsFor": 6,
+          "goalsAgainst": 1,
+          "goalDifference": 5
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 65,
             "name": "Manchester City FC",
             "shortName": "Man City",
@@ -701,24 +719,6 @@
           "points": 9,
           "goalsFor": 7,
           "goalsAgainst": 2,
-          "goalDifference": 5
-        },
-        {
-          "position": 2,
-          "team": {
-            "id": 57,
-            "name": "Arsenal FC",
-            "shortName": "Arsenal",
-            "tla": "ARS",
-            "crest": "https://crests.football-data.org/57.png"
-          },
-          "playedGames": 3,
-          "won": 3,
-          "draw": 0,
-          "lost": 0,
-          "points": 9,
-          "goalsFor": 6,
-          "goalsAgainst": 1,
           "goalDifference": 5
         },
         {
@@ -886,6 +886,24 @@
         {
           "position": 12,
           "team": {
+            "id": 71,
+            "name": "Sunderland AFC",
+            "shortName": "Sunderland",
+            "tla": "SUN",
+            "crest": "https://crests.football-data.org/71.png"
+          },
+          "playedGames": 4,
+          "won": 1,
+          "draw": 2,
+          "lost": 1,
+          "points": 5,
+          "goalsFor": 3,
+          "goalsAgainst": 3,
+          "goalDifference": 0
+        },
+        {
+          "position": 13,
+          "team": {
             "id": 397,
             "name": "Brighton & Hove Albion FC",
             "shortName": "Brighton Hove",
@@ -902,7 +920,7 @@
           "goalDifference": 3
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
             "id": 66,
             "name": "Manchester United FC",
@@ -918,24 +936,6 @@
           "goalsFor": 7,
           "goalsAgainst": 6,
           "goalDifference": 1
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 71,
-            "name": "Sunderland AFC",
-            "shortName": "Sunderland",
-            "tla": "SUN",
-            "crest": "https://crests.football-data.org/71.png"
-          },
-          "playedGames": 3,
-          "won": 1,
-          "draw": 1,
-          "lost": 1,
-          "points": 4,
-          "goalsFor": 3,
-          "goalsAgainst": 3,
-          "goalDifference": 0
         },
         {
           "position": 15,
