@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T14:12:29.329769+00:00",
+  "updatedAt": "2026-09-13T14:39:28.839004+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -753,9 +753,9 @@
           "draw": 1,
           "lost": 1,
           "points": 7,
-          "goalsFor": 9,
+          "goalsFor": 11,
           "goalsAgainst": 5,
-          "goalDifference": 4
+          "goalDifference": 6
         },
         {
           "position": 5,
@@ -1042,8 +1042,8 @@
           "lost": 4,
           "points": 0,
           "goalsFor": 0,
-          "goalsAgainst": 6,
-          "goalDifference": -6
+          "goalsAgainst": 8,
+          "goalDifference": -8
         }
       ]
     }
