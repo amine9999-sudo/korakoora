@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-12T23:38:05.344544+00:00",
-  "dateFrom": "2026-09-11",
-  "dateTo": "2026-09-21",
+  "updatedAt": "2026-09-13T00:18:43.753179+00:00",
+  "dateFrom": "2026-09-12",
+  "dateTo": "2026-09-22",
   "competitions": [
     "CL",
     "PL",
@@ -12,7 +12,7 @@
     "PPL",
     "DED"
   ],
-  "count": 142,
+  "count": 137,
   "matches": [
     {
       "id": 560572,
@@ -826,50 +826,6 @@
         "fullTime": {
           "home": null,
           "away": null
-        }
-      }
-    },
-    {
-      "id": 564669,
-      "status": "FINISHED",
-      "utcDate": "2026-09-11T19:00:00Z",
-      "matchday": 5,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 217698,
-        "name": "Mateo Busquets Ferrer",
-        "type": "REFEREE",
-        "nationality": "Spain"
-      },
-      "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "home": {
-        "id": 559,
-        "name": "Sevilla FC",
-        "shortName": "Sevilla FC",
-        "tla": "SEV",
-        "crest": "https://crests.football-data.org/559.png"
-      },
-      "away": {
-        "id": 95,
-        "name": "Valencia CF",
-        "shortName": "Valencia",
-        "tla": "VAL",
-        "crest": "https://crests.football-data.org/95.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 0
         }
       }
     },
@@ -1986,50 +1942,6 @@
       }
     },
     {
-      "id": 558606,
-      "status": "FINISHED",
-      "utcDate": "2026-09-11T18:45:00Z",
-      "matchday": 4,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 11129,
-        "name": "Francesco Fourneau",
-        "type": "REFEREE",
-        "nationality": "Italy"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "emblem": "https://crests.football-data.org/c111.png"
-      },
-      "home": {
-        "id": 454,
-        "name": "Venezia FC",
-        "shortName": "Venezia FC",
-        "tla": "VEN",
-        "crest": "https://crests.football-data.org/454.png"
-      },
-      "away": {
-        "id": 99,
-        "name": "ACF Fiorentina",
-        "shortName": "Fiorentina",
-        "tla": "FIO",
-        "crest": "https://crests.football-data.org/99.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 1,
-          "away": 2
-        },
-        "fullTime": {
-          "home": 2,
-          "away": 4
-        }
-      }
-    },
-    {
       "id": 558604,
       "status": "FINISHED",
       "utcDate": "2026-09-12T13:00:00Z",
@@ -2786,52 +2698,8 @@
       }
     },
     {
-      "id": 565797,
-      "status": "FINISHED",
-      "utcDate": "2026-09-11T18:30:00Z",
-      "matchday": 3,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 57527,
-        "name": "Timo Gerach",
-        "type": "REFEREE",
-        "nationality": "Germany"
-      },
-      "competition": {
-        "id": 2002,
-        "name": "Bundesliga",
-        "code": "BL1",
-        "emblem": "https://crests.football-data.org/BL1.png"
-      },
-      "home": {
-        "id": 28,
-        "name": "1. FC Union Berlin",
-        "shortName": "Union Berlin",
-        "tla": "UNB",
-        "crest": "https://crests.football-data.org/28.png"
-      },
-      "away": {
-        "id": 6,
-        "name": "FC Schalke 04",
-        "shortName": "Schalke",
-        "tla": "S04",
-        "crest": "https://crests.football-data.org/6.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 1
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 3
-        }
-      }
-    },
-    {
       "id": 565794,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-09-12T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2875,7 +2743,7 @@
     },
     {
       "id": 565795,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-09-12T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2919,7 +2787,7 @@
     },
     {
       "id": 565796,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-09-12T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -2963,7 +2831,7 @@
     },
     {
       "id": 565801,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-09-12T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3007,7 +2875,7 @@
     },
     {
       "id": 565802,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-09-12T13:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3051,7 +2919,7 @@
     },
     {
       "id": 565798,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-09-12T16:30:00Z",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
@@ -3519,50 +3387,6 @@
         "fullTime": {
           "home": null,
           "away": null
-        }
-      }
-    },
-    {
-      "id": 559689,
-      "status": "FINISHED",
-      "utcDate": "2026-09-11T18:45:00Z",
-      "matchday": 4,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 1049,
-        "name": "Jeremy Stinat",
-        "type": "REFEREE",
-        "nationality": "France"
-      },
-      "competition": {
-        "id": 2015,
-        "name": "Ligue 1",
-        "code": "FL1",
-        "emblem": "https://crests.football-data.org/FL1.png"
-      },
-      "home": {
-        "id": 529,
-        "name": "Stade Rennais FC 1901",
-        "shortName": "Stade Rennais",
-        "tla": "REN",
-        "crest": "https://crests.football-data.org/529.png"
-      },
-      "away": {
-        "id": 516,
-        "name": "Olympique de Marseille",
-        "shortName": "Marseille",
-        "tla": "MAR",
-        "crest": "https://crests.football-data.org/516.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 0
         }
       }
     },
@@ -4968,50 +4792,6 @@
         "fullTime": {
           "home": null,
           "away": null
-        }
-      }
-    },
-    {
-      "id": 558899,
-      "status": "FINISHED",
-      "utcDate": "2026-09-11T18:00:00Z",
-      "matchday": 6,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 56910,
-        "name": "Martin van den Kerkhof",
-        "type": "REFEREE",
-        "nationality": "Netherlands"
-      },
-      "competition": {
-        "id": 2003,
-        "name": "Eredivisie",
-        "code": "DED",
-        "emblem": "https://crests.football-data.org/ED.png"
-      },
-      "home": {
-        "id": 682,
-        "name": "AZ",
-        "shortName": "AZ",
-        "tla": "AZ",
-        "crest": "https://crests.football-data.org/682.png"
-      },
-      "away": {
-        "id": 672,
-        "name": "Willem II Tilburg",
-        "shortName": "Willem II",
-        "tla": "WII",
-        "crest": "https://crests.football-data.org/672.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 1,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 1
         }
       }
     },
