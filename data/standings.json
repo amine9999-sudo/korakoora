@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T16:40:58.828856+00:00",
+  "updatedAt": "2026-09-13T17:11:07.912673+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -713,13 +713,13 @@
             "crest": "https://crests.football-data.org/65.png"
           },
           "playedGames": 4,
-          "won": 3,
-          "draw": 1,
+          "won": 4,
+          "draw": 0,
           "lost": 0,
-          "points": 10,
-          "goalsFor": 7,
+          "points": 12,
+          "goalsFor": 8,
           "goalsAgainst": 2,
-          "goalDifference": 5
+          "goalDifference": 6
         },
         {
           "position": 3,
@@ -868,24 +868,6 @@
         {
           "position": 11,
           "team": {
-            "id": 66,
-            "name": "Manchester United FC",
-            "shortName": "Man United",
-            "tla": "MUN",
-            "crest": "https://crests.football-data.org/66.png"
-          },
-          "playedGames": 4,
-          "won": 1,
-          "draw": 2,
-          "lost": 1,
-          "points": 5,
-          "goalsFor": 7,
-          "goalsAgainst": 6,
-          "goalDifference": 1
-        },
-        {
-          "position": 12,
-          "team": {
             "id": 341,
             "name": "Leeds United FC",
             "shortName": "Leeds United",
@@ -902,7 +884,7 @@
           "goalDifference": 1
         },
         {
-          "position": 13,
+          "position": 12,
           "team": {
             "id": 351,
             "name": "Nottingham Forest FC",
@@ -917,6 +899,24 @@
           "points": 5,
           "goalsFor": 4,
           "goalsAgainst": 4,
+          "goalDifference": 0
+        },
+        {
+          "position": 13,
+          "team": {
+            "id": 66,
+            "name": "Manchester United FC",
+            "shortName": "Man United",
+            "tla": "MUN",
+            "crest": "https://crests.football-data.org/66.png"
+          },
+          "playedGames": 4,
+          "won": 1,
+          "draw": 1,
+          "lost": 2,
+          "points": 4,
+          "goalsFor": 7,
+          "goalsAgainst": 7,
           "goalDifference": 0
         },
         {

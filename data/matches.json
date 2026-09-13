@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T16:40:58.828856+00:00",
+  "updatedAt": "2026-09-13T17:11:07.912673+00:00",
   "dateFrom": "2026-09-12",
   "dateTo": "2026-09-22",
   "competitions": [
@@ -406,7 +406,7 @@
         },
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 1
         }
       }
     },
@@ -1149,12 +1149,17 @@
     },
     {
       "id": 564674,
-      "status": "2026-09-13 19:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-13T19:00:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 206203,
+        "name": "Juan Martínez Munuera",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1188,7 +1193,7 @@
     },
     {
       "id": 564671,
-      "status": "2026-09-14 19:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-14T19:00:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
@@ -1227,7 +1232,7 @@
     },
     {
       "id": 564678,
-      "status": "2026-09-15 17:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-15T17:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -1266,7 +1271,7 @@
     },
     {
       "id": 564680,
-      "status": "2026-09-15 18:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-15T18:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -1305,7 +1310,7 @@
     },
     {
       "id": 564681,
-      "status": "2026-09-15 19:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-15T19:30:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -1344,7 +1349,7 @@
     },
     {
       "id": 564679,
-      "status": "2026-09-16 17:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-16T17:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -1383,7 +1388,7 @@
     },
     {
       "id": 564684,
-      "status": "2026-09-16 17:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-16T17:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -1422,7 +1427,7 @@
     },
     {
       "id": 564685,
-      "status": "2026-09-16 19:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-16T19:30:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -1461,7 +1466,7 @@
     },
     {
       "id": 564687,
-      "status": "2026-09-16 19:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-16T19:30:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -1500,7 +1505,7 @@
     },
     {
       "id": 564686,
-      "status": "2026-09-17 17:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-17T17:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -1539,7 +1544,7 @@
     },
     {
       "id": 564683,
-      "status": "2026-09-17 19:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-17T19:30:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -1578,7 +1583,7 @@
     },
     {
       "id": 564692,
-      "status": "2026-09-18 19:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-18T19:00:00Z",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
@@ -1617,7 +1622,7 @@
     },
     {
       "id": 564693,
-      "status": "2026-09-19 12:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-19T12:00:00Z",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
@@ -1656,7 +1661,7 @@
     },
     {
       "id": 564691,
-      "status": "2026-09-19 14:15:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-19T14:15:00Z",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
@@ -1695,7 +1700,7 @@
     },
     {
       "id": 564694,
-      "status": "2026-09-19 16:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-19T16:30:00Z",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
@@ -1734,7 +1739,7 @@
     },
     {
       "id": 564690,
-      "status": "2026-09-19 19:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-19T19:00:00Z",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
@@ -1773,7 +1778,7 @@
     },
     {
       "id": 564697,
-      "status": "2026-09-20 12:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-20T12:00:00Z",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
@@ -1812,7 +1817,7 @@
     },
     {
       "id": 564688,
-      "status": "2026-09-20 14:15:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-20T14:15:00Z",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
@@ -1851,7 +1856,7 @@
     },
     {
       "id": 564695,
-      "status": "2026-09-20 16:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-20T16:30:00Z",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
@@ -1890,7 +1895,7 @@
     },
     {
       "id": 564696,
-      "status": "2026-09-20 16:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-20T16:30:00Z",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
@@ -1929,7 +1934,7 @@
     },
     {
       "id": 564689,
-      "status": "2026-09-20 19:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-09-20T19:00:00Z",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
@@ -2177,8 +2182,8 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
           "home": 0,
@@ -2193,7 +2198,12 @@
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 206189,
+        "name": "Juan Luca Sacchi",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -3079,8 +3089,8 @@
           "away": 1
         },
         "fullTime": {
-          "home": 0,
-          "away": 1
+          "home": 1,
+          "away": 2
         }
       }
     },
@@ -3750,7 +3760,12 @@
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57042,
+        "name": "Willy Delajod",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -4267,7 +4282,7 @@
     },
     {
       "id": 567304,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-13T17:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -4304,14 +4319,14 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 567310,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-13T17:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -4348,8 +4363,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -5126,7 +5141,7 @@
     },
     {
       "id": 558891,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-09-13T14:45:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
