@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T17:42:12.262008+00:00",
+  "updatedAt": "2026-09-14T18:14:20.791510+00:00",
   "dateFrom": "2026-09-13",
   "dateTo": "2026-09-23",
   "competitions": [
@@ -1631,7 +1631,7 @@
     },
     {
       "id": 558602,
-      "status": "PAUSED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-14T16:30:00Z",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
@@ -3207,7 +3207,7 @@
     },
     {
       "id": 567303,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-14T17:45:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -3244,8 +3244,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       }
     },
@@ -3295,7 +3295,12 @@
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 98928,
+        "name": "David Silva",
+        "type": "REFEREE",
+        "nationality": "Portugal"
+      },
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
