@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T16:43:31.574497+00:00",
+  "updatedAt": "2026-09-14T17:11:16.273799+00:00",
   "dateFrom": "2026-09-13",
   "dateTo": "2026-09-23",
   "competitions": [
@@ -109,7 +109,12 @@
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11405,
+        "name": "Michael Salisbury",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -714,7 +719,12 @@
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 214213,
+        "name": "Francisco Hernández Maeso",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1658,7 +1668,7 @@
           "away": null
         },
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 0
         }
       }
@@ -1714,7 +1724,12 @@
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11002,
+        "name": "Luca Pairetto",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
