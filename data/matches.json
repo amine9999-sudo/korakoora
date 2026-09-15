@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T16:42:24.590250+00:00",
+  "updatedAt": "2026-09-15T17:11:36.415026+00:00",
   "dateFrom": "2026-09-14",
   "dateTo": "2026-09-24",
   "competitions": [
@@ -494,7 +494,7 @@
     },
     {
       "id": 564678,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-15T17:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -531,8 +531,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       }
     },
