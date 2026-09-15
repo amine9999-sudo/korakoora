@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T15:42:12.062005+00:00",
+  "updatedAt": "2026-09-15T16:13:28.638015+00:00",
   "dateFrom": "2026-09-14",
   "dateTo": "2026-09-24",
   "competitions": [
@@ -543,7 +543,12 @@
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 214573,
+        "name": "Miguel Sesma Espinosa",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -2952,7 +2957,12 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 9561,
+        "name": "Allard Lindhout",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
