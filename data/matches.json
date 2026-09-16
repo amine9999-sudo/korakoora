@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T12:45:05.165688+00:00",
+  "updatedAt": "2026-09-16T17:31:59.224959+00:00",
   "dateFrom": "2026-09-15",
   "dateTo": "2026-09-25",
   "competitions": [
@@ -538,12 +538,17 @@
     },
     {
       "id": 564679,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-16T17:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 206208,
+        "name": "Alejandro Hernández Hernández",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -570,19 +575,24 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 564684,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-09-16T17:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 214213,
+        "name": "Francisco Hernández Maeso",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -609,8 +619,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -621,7 +631,12 @@
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 214410,
+        "name": "Alejandro Quintero González",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -660,7 +675,12 @@
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 206223,
+        "name": "José Munuera Montero",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
