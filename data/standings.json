@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18T17:47:00.502726+00:00",
+  "updatedAt": "2026-09-18T20:35:16.822786+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -724,6 +724,24 @@
         {
           "position": 3,
           "team": {
+            "id": 402,
+            "name": "Brentford FC",
+            "shortName": "Brentford",
+            "tla": "BRE",
+            "crest": "https://crests.football-data.org/402.png"
+          },
+          "playedGames": 5,
+          "won": 2,
+          "draw": 3,
+          "lost": 0,
+          "points": 9,
+          "goalsFor": 8,
+          "goalsAgainst": 4,
+          "goalDifference": 4
+        },
+        {
+          "position": 4,
+          "team": {
             "id": 341,
             "name": "Leeds United FC",
             "shortName": "Leeds United",
@@ -740,7 +758,7 @@
           "goalDifference": 4
         },
         {
-          "position": 4,
+          "position": 5,
           "team": {
             "id": 322,
             "name": "Hull City AFC",
@@ -758,7 +776,7 @@
           "goalDifference": 3
         },
         {
-          "position": 5,
+          "position": 6,
           "team": {
             "id": 397,
             "name": "Brighton & Hove Albion FC",
@@ -776,7 +794,7 @@
           "goalDifference": 8
         },
         {
-          "position": 6,
+          "position": 7,
           "team": {
             "id": 61,
             "name": "Chelsea FC",
@@ -784,32 +802,14 @@
             "tla": "CHE",
             "crest": "https://crests.football-data.org/61.png"
           },
-          "playedGames": 4,
+          "playedGames": 5,
           "won": 2,
           "draw": 1,
-          "lost": 1,
+          "lost": 2,
           "points": 7,
           "goalsFor": 10,
-          "goalsAgainst": 9,
-          "goalDifference": 1
-        },
-        {
-          "position": 7,
-          "team": {
-            "id": 402,
-            "name": "Brentford FC",
-            "shortName": "Brentford",
-            "tla": "BRE",
-            "crest": "https://crests.football-data.org/402.png"
-          },
-          "playedGames": 4,
-          "won": 1,
-          "draw": 3,
-          "lost": 0,
-          "points": 6,
-          "goalsFor": 7,
-          "goalsAgainst": 4,
-          "goalDifference": 3
+          "goalsAgainst": 10,
+          "goalDifference": 0
         },
         {
           "position": 8,
