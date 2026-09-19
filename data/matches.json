@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-18T23:06:20.656277+00:00",
-  "dateFrom": "2026-09-17",
-  "dateTo": "2026-09-27",
+  "updatedAt": "2026-09-19T01:26:29.082711+00:00",
+  "dateFrom": "2026-09-18",
+  "dateTo": "2026-09-28",
   "competitions": [
     "CL",
     "PL",
@@ -12,7 +12,7 @@
     "PPL",
     "DED"
   ],
-  "count": 68,
+  "count": 66,
   "matches": [
     {
       "id": 560591,
@@ -406,94 +406,6 @@
         "fullTime": {
           "home": null,
           "away": null
-        }
-      }
-    },
-    {
-      "id": 564686,
-      "status": "FINISHED",
-      "utcDate": "2026-09-17T17:00:00Z",
-      "matchday": 6,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 207080,
-        "name": "José Sánchez Martínez",
-        "type": "REFEREE",
-        "nationality": "Spain"
-      },
-      "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "home": {
-        "id": 90,
-        "name": "Real Betis Balompié",
-        "shortName": "Real Betis",
-        "tla": "BET",
-        "crest": "https://crests.football-data.org/90.png"
-      },
-      "away": {
-        "id": 82,
-        "name": "Getafe CF",
-        "shortName": "Getafe",
-        "tla": "GET",
-        "crest": "https://crests.football-data.org/82.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 1,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 0
-        }
-      }
-    },
-    {
-      "id": 564683,
-      "status": "FINISHED",
-      "utcDate": "2026-09-17T19:30:00Z",
-      "matchday": 6,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 59014,
-        "name": "Miguel Chua",
-        "type": "REFEREE",
-        "nationality": "Mexico"
-      },
-      "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "home": {
-        "id": 84,
-        "name": "Málaga CF",
-        "shortName": "Málaga",
-        "tla": "MAL",
-        "crest": "https://crests.football-data.org/84.png"
-      },
-      "away": {
-        "id": 94,
-        "name": "Villarreal CF",
-        "shortName": "Villarreal",
-        "tla": "VIL",
-        "crest": "https://crests.football-data.org/94.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 1,
-          "away": 2
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 3
         }
       }
     },
