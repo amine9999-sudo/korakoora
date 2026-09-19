@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-19T06:26:53.147967+00:00",
+  "updatedAt": "2026-09-19T11:23:52.241393+00:00",
   "dateFrom": "2026-09-18",
   "dateTo": "2026-09-28",
   "competitions": [
@@ -65,7 +65,12 @@
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 213813,
+        "name": "Sam Barrott",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -460,7 +465,12 @@
       "matchday": 7,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 215612,
+        "name": "Manuel Orellana Cid",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -855,7 +865,12 @@
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11079,
+        "name": "Marco Guida",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -894,7 +909,12 @@
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11072,
+        "name": "Gianluca Manganiello",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
