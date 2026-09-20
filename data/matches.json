@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20T05:14:11.618279+00:00",
+  "updatedAt": "2026-09-20T09:59:11.719279+00:00",
   "dateFrom": "2026-09-19",
   "dateTo": "2026-09-29",
   "competitions": [
@@ -944,7 +944,12 @@
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11065,
+        "name": "Daniele Doveri",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -2360,7 +2365,12 @@
       "matchday": 7,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 17136,
+        "name": "Joey Kooij",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
