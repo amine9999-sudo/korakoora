@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T06:13:41.761579+00:00",
+  "updatedAt": "2026-10-10T12:53:55.877615+00:00",
   "dateFrom": "2026-10-09",
   "dateTo": "2026-10-19",
   "competitions": [
@@ -718,12 +718,17 @@
     },
     {
       "id": 560593,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-10T11:30:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11520,
+        "name": "Paul Tierney",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -746,12 +751,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       }
     },
@@ -762,7 +767,12 @@
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11620,
+        "name": "Thomas Bramall",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -801,7 +811,12 @@
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 213813,
+        "name": "Sam Barrott",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -840,7 +855,12 @@
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 81840,
+        "name": "Lewis Smith",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -879,7 +899,12 @@
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11585,
+        "name": "Craig Pawson",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -1542,12 +1567,17 @@
     },
     {
       "id": 564698,
-      "status": "TIMED",
+      "status": "CANCELLED",
       "utcDate": "2026-10-10T12:00:00Z",
       "matchday": 8,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 207080,
+        "name": "José Sánchez Martínez",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1574,8 +1604,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -1586,7 +1616,12 @@
       "matchday": 8,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 214410,
+        "name": "Alejandro Quintero González",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -2288,7 +2323,12 @@
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 10977,
+        "name": "Fabio Maresca",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -3112,7 +3152,12 @@
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 58332,
+        "name": "Max Burda",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -3151,7 +3196,12 @@
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43878,
+        "name": "Felix Zwayer",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -3190,7 +3240,12 @@
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57512,
+        "name": "Tobias Reichel",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -3229,7 +3284,12 @@
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 253,
+        "name": "Harm Osmers",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -3268,7 +3328,12 @@
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15824,
+        "name": "Sven Jablonski",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -4564,45 +4629,6 @@
       }
     },
     {
-      "id": 567321,
-      "status": "TIMED",
-      "utcDate": "2026-10-10T14:30:00Z",
-      "matchday": 8,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": null,
-      "competition": {
-        "id": 2017,
-        "name": "Primeira Liga",
-        "code": "PPL",
-        "emblem": "https://crests.football-data.org/PPL.png"
-      },
-      "home": {
-        "id": 6618,
-        "name": "Casa Pia AC",
-        "shortName": "Casa Pia",
-        "tla": "CAS",
-        "crest": "https://crests.football-data.org/6618.png"
-      },
-      "away": {
-        "id": 5530,
-        "name": "CD Santa Clara",
-        "shortName": "Santa Clara",
-        "tla": "CD ",
-        "crest": "https://crests.football-data.org/5530.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
       "id": 567323,
       "status": "TIMED",
       "utcDate": "2026-10-10T17:00:00Z",
@@ -4629,6 +4655,45 @@
         "shortName": "Porto",
         "tla": "FCP",
         "crest": "https://crests.football-data.org/503.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 567321,
+      "status": "TIMED",
+      "utcDate": "2026-10-10T19:30:00Z",
+      "matchday": 8,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "home": {
+        "id": 6618,
+        "name": "Casa Pia AC",
+        "shortName": "Casa Pia",
+        "tla": "CAS",
+        "crest": "https://crests.football-data.org/6618.png"
+      },
+      "away": {
+        "id": 5530,
+        "name": "CD Santa Clara",
+        "shortName": "Santa Clara",
+        "tla": "CD ",
+        "crest": "https://crests.football-data.org/5530.png"
       },
       "score": {
         "halfTime": {
@@ -4926,7 +4991,12 @@
       "matchday": 8,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 56912,
+        "name": "Jeroen Manschot",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
