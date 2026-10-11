@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T13:17:43.082844+00:00",
+  "updatedAt": "2026-10-11T18:19:21.219029+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -694,14 +694,14 @@
             "tla": "MCI",
             "crest": "https://crests.football-data.org/65.png"
           },
-          "playedGames": 5,
-          "won": 5,
+          "playedGames": 6,
+          "won": 6,
           "draw": 0,
           "lost": 0,
-          "points": 15,
-          "goalsFor": 13,
+          "points": 18,
+          "goalsFor": 16,
           "goalsAgainst": 5,
-          "goalDifference": 8
+          "goalDifference": 11
         },
         {
           "position": 2,
@@ -771,8 +771,8 @@
           "draw": 4,
           "lost": 0,
           "points": 10,
-          "goalsFor": 6,
-          "goalsAgainst": 3,
+          "goalsFor": 8,
+          "goalsAgainst": 5,
           "goalDifference": 3
         },
         {
@@ -814,24 +814,6 @@
         {
           "position": 8,
           "team": {
-            "id": 64,
-            "name": "Liverpool FC",
-            "shortName": "Liverpool",
-            "tla": "LIV",
-            "crest": "https://crests.football-data.org/64.png"
-          },
-          "playedGames": 5,
-          "won": 2,
-          "draw": 3,
-          "lost": 0,
-          "points": 9,
-          "goalsFor": 7,
-          "goalsAgainst": 4,
-          "goalDifference": 3
-        },
-        {
-          "position": 9,
-          "team": {
             "id": 322,
             "name": "Hull City AFC",
             "shortName": "Hull City",
@@ -843,9 +825,27 @@
           "draw": 3,
           "lost": 1,
           "points": 9,
-          "goalsFor": 6,
-          "goalsAgainst": 4,
+          "goalsFor": 8,
+          "goalsAgainst": 6,
           "goalDifference": 2
+        },
+        {
+          "position": 9,
+          "team": {
+            "id": 64,
+            "name": "Liverpool FC",
+            "shortName": "Liverpool",
+            "tla": "LIV",
+            "crest": "https://crests.football-data.org/64.png"
+          },
+          "playedGames": 6,
+          "won": 2,
+          "draw": 3,
+          "lost": 1,
+          "points": 9,
+          "goalsFor": 7,
+          "goalsAgainst": 7,
+          "goalDifference": 0
         },
         {
           "position": 10,
@@ -886,20 +886,20 @@
         {
           "position": 12,
           "team": {
-            "id": 351,
-            "name": "Nottingham Forest FC",
-            "shortName": "Nottingham",
-            "tla": "NOT",
-            "crest": "https://crests.football-data.org/351.png"
+            "id": 354,
+            "name": "Crystal Palace FC",
+            "shortName": "Crystal Palace",
+            "tla": "CRY",
+            "crest": "https://crests.football-data.org/354.png"
           },
           "playedGames": 6,
           "won": 2,
-          "draw": 2,
-          "lost": 2,
-          "points": 8,
-          "goalsFor": 5,
-          "goalsAgainst": 5,
-          "goalDifference": 0
+          "draw": 1,
+          "lost": 3,
+          "points": 7,
+          "goalsFor": 9,
+          "goalsAgainst": 12,
+          "goalDifference": -3
         },
         {
           "position": 13,
@@ -922,6 +922,24 @@
         {
           "position": 14,
           "team": {
+            "id": 351,
+            "name": "Nottingham Forest FC",
+            "shortName": "Nottingham",
+            "tla": "NOT",
+            "crest": "https://crests.football-data.org/351.png"
+          },
+          "playedGames": 6,
+          "won": 1,
+          "draw": 2,
+          "lost": 3,
+          "points": 5,
+          "goalsFor": 5,
+          "goalsAgainst": 8,
+          "goalDifference": -3
+        },
+        {
+          "position": 15,
+          "team": {
             "id": 58,
             "name": "Aston Villa FC",
             "shortName": "Aston Villa",
@@ -938,25 +956,7 @@
           "goalDifference": -5
         },
         {
-          "position": 15,
-          "team": {
-            "id": 354,
-            "name": "Crystal Palace FC",
-            "shortName": "Crystal Palace",
-            "tla": "CRY",
-            "crest": "https://crests.football-data.org/354.png"
-          },
-          "playedGames": 6,
-          "won": 1,
-          "draw": 1,
-          "lost": 4,
-          "points": 4,
-          "goalsFor": 6,
-          "goalsAgainst": 12,
-          "goalDifference": -6
-        },
-        {
-          "position": 15,
+          "position": 16,
           "team": {
             "id": 71,
             "name": "Sunderland AFC",
@@ -1103,6 +1103,24 @@
         {
           "position": 3,
           "team": {
+            "id": 90,
+            "name": "Real Betis Balompié",
+            "shortName": "Real Betis",
+            "tla": "BET",
+            "crest": "https://crests.football-data.org/90.png"
+          },
+          "playedGames": 8,
+          "won": 6,
+          "draw": 1,
+          "lost": 1,
+          "points": 19,
+          "goalsFor": 13,
+          "goalsAgainst": 9,
+          "goalDifference": 4
+        },
+        {
+          "position": 4,
+          "team": {
             "id": 86,
             "name": "Real Madrid CF",
             "shortName": "Real Madrid",
@@ -1117,24 +1135,6 @@
           "goalsFor": 19,
           "goalsAgainst": 8,
           "goalDifference": 11
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 90,
-            "name": "Real Betis Balompié",
-            "shortName": "Real Betis",
-            "tla": "BET",
-            "crest": "https://crests.football-data.org/90.png"
-          },
-          "playedGames": 7,
-          "won": 5,
-          "draw": 1,
-          "lost": 1,
-          "points": 16,
-          "goalsFor": 9,
-          "goalsAgainst": 7,
-          "goalDifference": 2
         },
         {
           "position": 5,
@@ -1157,6 +1157,24 @@
         {
           "position": 6,
           "team": {
+            "id": 92,
+            "name": "Real Sociedad de Fútbol",
+            "shortName": "Real Sociedad",
+            "tla": "RSO",
+            "crest": "https://crests.football-data.org/92.png"
+          },
+          "playedGames": 8,
+          "won": 4,
+          "draw": 1,
+          "lost": 3,
+          "points": 13,
+          "goalsFor": 12,
+          "goalsAgainst": 15,
+          "goalDifference": -3
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 263,
             "name": "Deportivo Alavés",
             "shortName": "Alavés",
@@ -1173,7 +1191,7 @@
           "goalDifference": 4
         },
         {
-          "position": 7,
+          "position": 8,
           "team": {
             "id": 560,
             "name": "RC Deportivo La Coruña",
@@ -1181,32 +1199,14 @@
             "tla": "DEP",
             "crest": "https://crests.football-data.org/560.png"
           },
-          "playedGames": 7,
+          "playedGames": 8,
           "won": 2,
           "draw": 4,
-          "lost": 1,
+          "lost": 2,
           "points": 10,
-          "goalsFor": 10,
-          "goalsAgainst": 8,
-          "goalDifference": 2
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 92,
-            "name": "Real Sociedad de Fútbol",
-            "shortName": "Real Sociedad",
-            "tla": "RSO",
-            "crest": "https://crests.football-data.org/92.png"
-          },
-          "playedGames": 7,
-          "won": 3,
-          "draw": 1,
-          "lost": 3,
-          "points": 10,
-          "goalsFor": 9,
-          "goalsAgainst": 13,
-          "goalDifference": -4
+          "goalsFor": 12,
+          "goalsAgainst": 11,
+          "goalDifference": 1
         },
         {
           "position": 9,
@@ -1325,14 +1325,14 @@
             "tla": "OSA",
             "crest": "https://crests.football-data.org/79.png"
           },
-          "playedGames": 7,
+          "playedGames": 8,
           "won": 2,
           "draw": 2,
-          "lost": 3,
+          "lost": 4,
           "points": 8,
-          "goalsFor": 6,
-          "goalsAgainst": 13,
-          "goalDifference": -7
+          "goalsFor": 8,
+          "goalsAgainst": 17,
+          "goalDifference": -9
         },
         {
           "position": 16,
