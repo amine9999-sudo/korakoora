@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T06:12:38.059012+00:00",
+  "updatedAt": "2026-10-11T13:17:43.082844+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -760,6 +760,24 @@
         {
           "position": 5,
           "team": {
+            "id": 62,
+            "name": "Everton FC",
+            "shortName": "Everton",
+            "tla": "EVE",
+            "crest": "https://crests.football-data.org/62.png"
+          },
+          "playedGames": 6,
+          "won": 2,
+          "draw": 4,
+          "lost": 0,
+          "points": 10,
+          "goalsFor": 6,
+          "goalsAgainst": 3,
+          "goalDifference": 3
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 61,
             "name": "Chelsea FC",
             "shortName": "Chelsea",
@@ -776,7 +794,7 @@
           "goalDifference": 2
         },
         {
-          "position": 6,
+          "position": 7,
           "team": {
             "id": 341,
             "name": "Leeds United FC",
@@ -794,7 +812,7 @@
           "goalDifference": 3
         },
         {
-          "position": 7,
+          "position": 8,
           "team": {
             "id": 64,
             "name": "Liverpool FC",
@@ -812,25 +830,25 @@
           "goalDifference": 3
         },
         {
-          "position": 8,
+          "position": 9,
           "team": {
-            "id": 62,
-            "name": "Everton FC",
-            "shortName": "Everton",
-            "tla": "EVE",
-            "crest": "https://crests.football-data.org/62.png"
+            "id": 322,
+            "name": "Hull City AFC",
+            "shortName": "Hull City",
+            "tla": "HUL",
+            "crest": "https://crests.football-data.org/322.png"
           },
-          "playedGames": 5,
+          "playedGames": 6,
           "won": 2,
           "draw": 3,
-          "lost": 0,
+          "lost": 1,
           "points": 9,
           "goalsFor": 6,
-          "goalsAgainst": 3,
-          "goalDifference": 3
+          "goalsAgainst": 4,
+          "goalDifference": 2
         },
         {
-          "position": 9,
+          "position": 10,
           "team": {
             "id": 349,
             "name": "Ipswich Town FC",
@@ -846,24 +864,6 @@
           "goalsFor": 9,
           "goalsAgainst": 12,
           "goalDifference": -3
-        },
-        {
-          "position": 10,
-          "team": {
-            "id": 322,
-            "name": "Hull City AFC",
-            "shortName": "Hull City",
-            "tla": "HUL",
-            "crest": "https://crests.football-data.org/322.png"
-          },
-          "playedGames": 5,
-          "won": 2,
-          "draw": 2,
-          "lost": 1,
-          "points": 8,
-          "goalsFor": 6,
-          "goalsAgainst": 4,
-          "goalDifference": 2
         },
         {
           "position": 11,
@@ -886,6 +886,24 @@
         {
           "position": 12,
           "team": {
+            "id": 351,
+            "name": "Nottingham Forest FC",
+            "shortName": "Nottingham",
+            "tla": "NOT",
+            "crest": "https://crests.football-data.org/351.png"
+          },
+          "playedGames": 6,
+          "won": 2,
+          "draw": 2,
+          "lost": 2,
+          "points": 8,
+          "goalsFor": 5,
+          "goalsAgainst": 5,
+          "goalDifference": 0
+        },
+        {
+          "position": 13,
+          "team": {
             "id": 66,
             "name": "Manchester United FC",
             "shortName": "Man United",
@@ -900,24 +918,6 @@
           "goalsFor": 9,
           "goalsAgainst": 9,
           "goalDifference": 0
-        },
-        {
-          "position": 13,
-          "team": {
-            "id": 351,
-            "name": "Nottingham Forest FC",
-            "shortName": "Nottingham",
-            "tla": "NOT",
-            "crest": "https://crests.football-data.org/351.png"
-          },
-          "playedGames": 5,
-          "won": 1,
-          "draw": 2,
-          "lost": 2,
-          "points": 5,
-          "goalsFor": 4,
-          "goalsAgainst": 5,
-          "goalDifference": -1
         },
         {
           "position": 14,
@@ -946,17 +946,17 @@
             "tla": "CRY",
             "crest": "https://crests.football-data.org/354.png"
           },
-          "playedGames": 5,
+          "playedGames": 6,
           "won": 1,
           "draw": 1,
-          "lost": 3,
+          "lost": 4,
           "points": 4,
           "goalsFor": 6,
-          "goalsAgainst": 11,
-          "goalDifference": -5
+          "goalsAgainst": 12,
+          "goalDifference": -6
         },
         {
-          "position": 16,
+          "position": 15,
           "team": {
             "id": 71,
             "name": "Sunderland AFC",
@@ -1211,6 +1211,24 @@
         {
           "position": 9,
           "team": {
+            "id": 558,
+            "name": "RC Celta de Vigo",
+            "shortName": "Celta",
+            "tla": "CEL",
+            "crest": "https://crests.football-data.org/558.png"
+          },
+          "playedGames": 8,
+          "won": 1,
+          "draw": 5,
+          "lost": 2,
+          "points": 8,
+          "goalsFor": 8,
+          "goalsAgainst": 6,
+          "goalDifference": 2
+        },
+        {
+          "position": 10,
+          "team": {
             "id": 77,
             "name": "Athletic Club",
             "shortName": "Athletic",
@@ -1227,7 +1245,7 @@
           "goalDifference": 1
         },
         {
-          "position": 10,
+          "position": 11,
           "team": {
             "id": 94,
             "name": "Villarreal CF",
@@ -1245,7 +1263,7 @@
           "goalDifference": 0
         },
         {
-          "position": 11,
+          "position": 12,
           "team": {
             "id": 80,
             "name": "RCD Espanyol de Barcelona",
@@ -1263,7 +1281,7 @@
           "goalDifference": 0
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 87,
             "name": "Rayo Vallecano de Madrid",
@@ -1281,7 +1299,7 @@
           "goalDifference": -5
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
             "id": 82,
             "name": "Getafe CF",
@@ -1299,7 +1317,7 @@
           "goalDifference": -6
         },
         {
-          "position": 14,
+          "position": 15,
           "team": {
             "id": 79,
             "name": "CA Osasuna",
@@ -1315,24 +1333,6 @@
           "goalsFor": 6,
           "goalsAgainst": 13,
           "goalDifference": -7
-        },
-        {
-          "position": 15,
-          "team": {
-            "id": 558,
-            "name": "RC Celta de Vigo",
-            "shortName": "Celta",
-            "tla": "CEL",
-            "crest": "https://crests.football-data.org/558.png"
-          },
-          "playedGames": 7,
-          "won": 1,
-          "draw": 4,
-          "lost": 2,
-          "points": 7,
-          "goalsFor": 8,
-          "goalsAgainst": 6,
-          "goalDifference": 2
         },
         {
           "position": 16,
@@ -1355,6 +1355,24 @@
         {
           "position": 17,
           "team": {
+            "id": 285,
+            "name": "Elche CF",
+            "shortName": "Elche",
+            "tla": "ELC",
+            "crest": "https://crests.football-data.org/285.png"
+          },
+          "playedGames": 8,
+          "won": 1,
+          "draw": 3,
+          "lost": 4,
+          "points": 6,
+          "goalsFor": 11,
+          "goalsAgainst": 17,
+          "goalDifference": -6
+        },
+        {
+          "position": 18,
+          "team": {
             "id": 88,
             "name": "Levante UD",
             "shortName": "Levante",
@@ -1369,24 +1387,6 @@
           "goalsFor": 8,
           "goalsAgainst": 12,
           "goalDifference": -4
-        },
-        {
-          "position": 18,
-          "team": {
-            "id": 285,
-            "name": "Elche CF",
-            "shortName": "Elche",
-            "tla": "ELC",
-            "crest": "https://crests.football-data.org/285.png"
-          },
-          "playedGames": 7,
-          "won": 1,
-          "draw": 2,
-          "lost": 4,
-          "points": 5,
-          "goalsFor": 11,
-          "goalsAgainst": 17,
-          "goalDifference": -6
         },
         {
           "position": 19,
