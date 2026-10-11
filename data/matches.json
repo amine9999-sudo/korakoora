@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-10T21:18:26.208616+00:00",
-  "dateFrom": "2026-10-09",
-  "dateTo": "2026-10-19",
+  "updatedAt": "2026-10-11T00:21:00.061413+00:00",
+  "dateFrom": "2026-10-10",
+  "dateTo": "2026-10-20",
   "competitions": [
     "CL",
     "PL",
@@ -12,7 +12,7 @@
     "PPL",
     "DED"
   ],
-  "count": 142,
+  "count": 145,
   "matches": [
     {
       "id": 575341,
@@ -704,6 +704,357 @@
         "shortName": "Stuttgart",
         "tla": "VFB",
         "crest": "https://crests.football-data.org/10.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575359,
+      "status": "TIMED",
+      "utcDate": "2026-10-20T16:45:00Z",
+      "matchday": 3,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 10233,
+        "name": "Sabah FK",
+        "shortName": "Sabah FK",
+        "tla": "SAB",
+        "crest": "https://crests.football-data.org/10233.png"
+      },
+      "away": {
+        "id": 4,
+        "name": "Borussia Dortmund",
+        "shortName": "Dortmund",
+        "tla": "BVB",
+        "crest": "https://crests.football-data.org/4.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575360,
+      "status": "TIMED",
+      "utcDate": "2026-10-20T16:45:00Z",
+      "matchday": 3,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 613,
+        "name": "Fenerbahçe SK",
+        "shortName": "Fenerbahçe",
+        "tla": "FEN",
+        "crest": "https://crests.football-data.org/613.png"
+      },
+      "away": {
+        "id": 930,
+        "name": "SK Slavia Praha",
+        "shortName": "Slavia Praha",
+        "tla": "SLP",
+        "crest": "https://crests.football-data.org/930.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575361,
+      "status": "TIMED",
+      "utcDate": "2026-10-20T19:00:00Z",
+      "matchday": 3,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 65,
+        "name": "Manchester City FC",
+        "shortName": "Man City",
+        "tla": "MCI",
+        "crest": "https://crests.football-data.org/65.png"
+      },
+      "away": {
+        "id": 1899,
+        "name": "PAE AEK",
+        "shortName": "PAE AEK",
+        "tla": "AEK",
+        "crest": "https://crests.football-data.org/1899.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575362,
+      "status": "TIMED",
+      "utcDate": "2026-10-20T19:00:00Z",
+      "matchday": 3,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 10,
+        "name": "VfB Stuttgart",
+        "shortName": "Stuttgart",
+        "tla": "VFB",
+        "crest": "https://crests.football-data.org/10.png"
+      },
+      "away": {
+        "id": 78,
+        "name": "Club Atlético de Madrid",
+        "shortName": "Atleti",
+        "tla": "ATL",
+        "crest": "https://crests.football-data.org/78.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575363,
+      "status": "TIMED",
+      "utcDate": "2026-10-20T19:00:00Z",
+      "matchday": 3,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 64,
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "tla": "LIV",
+        "crest": "https://crests.football-data.org/64.png"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF",
+        "shortName": "Villarreal",
+        "tla": "VIL",
+        "crest": "https://crests.football-data.org/94.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575364,
+      "status": "TIMED",
+      "utcDate": "2026-10-20T19:00:00Z",
+      "matchday": 3,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 100,
+        "name": "AS Roma",
+        "shortName": "Roma",
+        "tla": "ROM",
+        "crest": "https://crests.football-data.org/100.png"
+      },
+      "away": {
+        "id": 7509,
+        "name": "ŠK Slovan Bratislava",
+        "shortName": "Sl. Bratislava",
+        "tla": "SBA",
+        "crest": "https://crests.football-data.org/7509.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575365,
+      "status": "TIMED",
+      "utcDate": "2026-10-20T19:00:00Z",
+      "matchday": 3,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 503,
+        "name": "FC Porto",
+        "shortName": "Porto",
+        "tla": "FCP",
+        "crest": "https://crests.football-data.org/503.png"
+      },
+      "away": {
+        "id": 674,
+        "name": "PSV",
+        "shortName": "PSV",
+        "tla": "PSV",
+        "crest": "https://crests.football-data.org/674.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575366,
+      "status": "TIMED",
+      "utcDate": "2026-10-20T19:00:00Z",
+      "matchday": 3,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 113,
+        "name": "SSC Napoli",
+        "shortName": "Napoli",
+        "tla": "NAP",
+        "crest": "https://crests.football-data.org/113.png"
+      },
+      "away": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt",
+        "shortName": "Bodø/Glimt",
+        "tla": "FK",
+        "crest": "https://crests.football-data.org/5721.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575367,
+      "status": "TIMED",
+      "utcDate": "2026-10-20T19:00:00Z",
+      "matchday": 3,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "tla": "PSG",
+        "crest": "https://crests.football-data.org/524.png"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona",
+        "shortName": "Barça",
+        "tla": "FCB",
+        "crest": "https://crests.football-data.org/81.png"
       },
       "score": {
         "halfTime": {
@@ -1523,50 +1874,6 @@
         "fullTime": {
           "home": null,
           "away": null
-        }
-      }
-    },
-    {
-      "id": 564706,
-      "status": "FINISHED",
-      "utcDate": "2026-10-09T19:00:00Z",
-      "matchday": 8,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 214213,
-        "name": "Francisco Hernández Maeso",
-        "type": "REFEREE",
-        "nationality": "Spain"
-      },
-      "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "home": {
-        "id": 84,
-        "name": "Málaga CF",
-        "shortName": "Málaga",
-        "tla": "MAL",
-        "crest": "https://crests.football-data.org/84.png"
-      },
-      "away": {
-        "id": 80,
-        "name": "RCD Espanyol de Barcelona",
-        "shortName": "Espanyol",
-        "tla": "ESP",
-        "crest": "https://crests.football-data.org/80.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 1
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 1
         }
       }
     },
@@ -3127,50 +3434,6 @@
       }
     },
     {
-      "id": 565820,
-      "status": "FINISHED",
-      "utcDate": "2026-10-09T18:30:00Z",
-      "matchday": 5,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 57526,
-        "name": "Christian Dingert",
-        "type": "REFEREE",
-        "nationality": "Germany"
-      },
-      "competition": {
-        "id": 2002,
-        "name": "Bundesliga",
-        "code": "BL1",
-        "emblem": "https://crests.football-data.org/BL1.png"
-      },
-      "home": {
-        "id": 4,
-        "name": "Borussia Dortmund",
-        "shortName": "Dortmund",
-        "tla": "BVB",
-        "crest": "https://crests.football-data.org/4.png"
-      },
-      "away": {
-        "id": 12,
-        "name": "SV Werder Bremen",
-        "shortName": "Bremen",
-        "tla": "SVW",
-        "crest": "https://crests.football-data.org/12.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 2,
-          "away": 2
-        }
-      }
-    },
-    {
       "id": 565812,
       "status": "FINISHED",
       "utcDate": "2026-10-10T13:30:00Z",
@@ -3864,50 +4127,6 @@
       }
     },
     {
-      "id": 559669,
-      "status": "FINISHED",
-      "utcDate": "2026-10-09T18:45:00Z",
-      "matchday": 6,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 1049,
-        "name": "Jeremy Stinat",
-        "type": "REFEREE",
-        "nationality": "France"
-      },
-      "competition": {
-        "id": 2015,
-        "name": "Ligue 1",
-        "code": "FL1",
-        "emblem": "https://crests.football-data.org/FL1.png"
-      },
-      "home": {
-        "id": 546,
-        "name": "Racing Club de Lens",
-        "shortName": "RC Lens",
-        "tla": "RCL",
-        "crest": "https://crests.football-data.org/546.png"
-      },
-      "away": {
-        "id": 523,
-        "name": "Olympique Lyonnais",
-        "shortName": "Olympique Lyon",
-        "tla": "LYO",
-        "crest": "https://crests.football-data.org/523.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 1,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 2,
-          "away": 1
-        }
-      }
-    },
-    {
       "id": 559674,
       "status": "FINISHED",
       "utcDate": "2026-10-10T15:15:00Z",
@@ -4596,94 +4815,6 @@
       }
     },
     {
-      "id": 567327,
-      "status": "FINISHED",
-      "utcDate": "2026-10-09T17:45:00Z",
-      "matchday": 8,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 40158,
-        "name": "Miguel Nogueira",
-        "type": "REFEREE",
-        "nationality": "Portugal"
-      },
-      "competition": {
-        "id": 2017,
-        "name": "Primeira Liga",
-        "code": "PPL",
-        "emblem": "https://crests.football-data.org/PPL.png"
-      },
-      "home": {
-        "id": 583,
-        "name": "Moreirense FC",
-        "shortName": "Moreirense",
-        "tla": "MOR",
-        "crest": "https://crests.football-data.org/583.png"
-      },
-      "away": {
-        "id": 5533,
-        "name": "Gil Vicente FC",
-        "shortName": "Gil Vicente",
-        "tla": "GIL",
-        "crest": "https://crests.football-data.org/5533.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 0,
-          "away": 1
-        }
-      }
-    },
-    {
-      "id": 567326,
-      "status": "FINISHED",
-      "utcDate": "2026-10-09T19:15:00Z",
-      "matchday": 8,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 38806,
-        "name": "João Pinheiro",
-        "type": "REFEREE",
-        "nationality": "Portugal"
-      },
-      "competition": {
-        "id": 2017,
-        "name": "Primeira Liga",
-        "code": "PPL",
-        "emblem": "https://crests.football-data.org/PPL.png"
-      },
-      "home": {
-        "id": 5613,
-        "name": "Sporting Clube de Braga",
-        "shortName": "Braga",
-        "tla": "SCB",
-        "crest": "https://crests.football-data.org/5613.png"
-      },
-      "away": {
-        "id": 498,
-        "name": "Sporting Clube de Portugal",
-        "shortName": "Sporting CP",
-        "tla": "SPO",
-        "crest": "https://crests.football-data.org/498.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 1,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 3
-        }
-      }
-    },
-    {
       "id": 567323,
       "status": "FINISHED",
       "utcDate": "2026-10-10T17:00:00Z",
@@ -4729,7 +4860,7 @@
     },
     {
       "id": 567321,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-10-10T19:30:00Z",
       "matchday": 8,
       "stage": "REGULAR_SEASON",
@@ -4767,13 +4898,13 @@
         },
         "fullTime": {
           "home": 0,
-          "away": 0
+          "away": 1
         }
       }
     },
     {
       "id": 567322,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-10-10T19:30:00Z",
       "matchday": 8,
       "stage": "REGULAR_SEASON",
@@ -4810,7 +4941,7 @@
           "away": 0
         },
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 1
         }
       }
@@ -5007,50 +5138,6 @@
         "fullTime": {
           "home": null,
           "away": null
-        }
-      }
-    },
-    {
-      "id": 558881,
-      "status": "FINISHED",
-      "utcDate": "2026-10-09T18:00:00Z",
-      "matchday": 8,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 17136,
-        "name": "Joey Kooij",
-        "type": "REFEREE",
-        "nationality": "Netherlands"
-      },
-      "competition": {
-        "id": 2003,
-        "name": "Eredivisie",
-        "code": "DED",
-        "emblem": "https://crests.football-data.org/ED.png"
-      },
-      "home": {
-        "id": 674,
-        "name": "PSV",
-        "shortName": "PSV",
-        "tla": "PSV",
-        "crest": "https://crests.football-data.org/674.png"
-      },
-      "away": {
-        "id": 673,
-        "name": "SC Heerenveen",
-        "shortName": "Heerenveen",
-        "tla": "HEE",
-        "crest": "https://crests.football-data.org/673.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 1,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 2,
-          "away": 0
         }
       }
     },
