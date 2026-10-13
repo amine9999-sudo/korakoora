@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13T16:16:32.149783+00:00",
+  "updatedAt": "2026-10-13T21:25:31.248434+00:00",
   "dateFrom": "2026-10-12",
   "dateTo": "2026-10-22",
   "competitions": [
@@ -16,7 +16,7 @@
   "matches": [
     {
       "id": 575341,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-13T16:45:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
@@ -49,18 +49,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         }
       }
     },
     {
       "id": 575342,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-13T16:45:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
@@ -93,23 +93,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       }
     },
     {
       "id": 575343,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-13T19:00:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 44921,
+        "name": "Rohit Saggi",
+        "type": "REFEREE",
+        "nationality": "Norway"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -132,23 +137,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 4
         }
       }
     },
     {
       "id": 575344,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-13T19:00:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11079,
+        "name": "Marco Guida",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -171,23 +181,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 4
         }
       }
     },
     {
       "id": 575345,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-13T19:00:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 30960,
+        "name": "Glenn Nyberg",
+        "type": "REFEREE",
+        "nationality": "Sweden"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -210,23 +225,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       }
     },
     {
       "id": 575346,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-13T19:00:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43878,
+        "name": "Felix Zwayer",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -249,23 +269,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 0
         }
       }
     },
     {
       "id": 575347,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-13T19:00:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15654,
+        "name": "Georgi Kabakov",
+        "type": "REFEREE",
+        "nationality": "Bulgaria"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -288,23 +313,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 3
         }
       }
     },
     {
       "id": 575348,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-13T19:00:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15510,
+        "name": "Nick Walsh",
+        "type": "REFEREE",
+        "nationality": "Scotland"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -327,23 +357,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       }
     },
     {
       "id": 575349,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-13T19:00:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15408,
+        "name": "Daniel Siebert",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -366,12 +401,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 1
         }
       }
     },
