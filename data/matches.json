@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T11:24:58.590805+00:00",
+  "updatedAt": "2026-10-14T15:55:00.787144+00:00",
   "dateFrom": "2026-10-13",
   "dateTo": "2026-10-23",
   "competitions": [
@@ -16,7 +16,7 @@
   "matches": [
     {
       "id": 575341,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-13T16:45:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
@@ -49,18 +49,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         }
       }
     },
     {
       "id": 575342,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-13T16:45:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
@@ -93,18 +93,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       }
     },
     {
       "id": 575343,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-13T19:00:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
@@ -137,18 +137,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 4
         }
       }
     },
     {
       "id": 575344,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-13T19:00:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
@@ -181,18 +181,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 4
         }
       }
     },
     {
       "id": 575345,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-13T19:00:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
@@ -225,18 +225,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       }
     },
     {
       "id": 575346,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-13T19:00:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
@@ -269,18 +269,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 0
         }
       }
     },
     {
       "id": 575347,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-13T19:00:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
@@ -313,18 +313,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 3
         }
       }
     },
     {
       "id": 575348,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-13T19:00:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
@@ -357,18 +357,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       }
     },
     {
       "id": 575349,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-13T19:00:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
@@ -401,12 +401,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 1
         }
       }
     },
@@ -417,7 +417,12 @@
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43943,
+        "name": "Tobias Stieler",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -456,7 +461,12 @@
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43952,
+        "name": "Donatas Rumšas",
+        "type": "REFEREE",
+        "nationality": "Lithuania"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
