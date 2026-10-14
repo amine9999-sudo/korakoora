@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T15:55:00.787144+00:00",
+  "updatedAt": "2026-10-14T20:01:52.153005+00:00",
   "dateFrom": "2026-10-13",
   "dateTo": "2026-10-23",
   "competitions": [
@@ -412,7 +412,7 @@
     },
     {
       "id": 575350,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-14T16:45:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
@@ -445,18 +445,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 3
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 6
         }
       }
     },
     {
       "id": 575351,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-14T16:45:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
@@ -489,23 +489,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 2
         }
       }
     },
     {
       "id": 575352,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-14T19:00:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43918,
+        "name": "François Letexier",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -528,23 +533,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       }
     },
     {
       "id": 575353,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-14T19:00:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15824,
+        "name": "Sven Jablonski",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -567,23 +577,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 3
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 3
         }
       }
     },
     {
       "id": 575354,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-14T19:00:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15721,
+        "name": "Urs Schnyder",
+        "type": "REFEREE",
+        "nationality": "Switzerland"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -606,23 +621,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 575355,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-14T19:00:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43954,
+        "name": "Ivan Kružliak",
+        "type": "REFEREE",
+        "nationality": "Slovakia"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -645,23 +665,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 0
         }
       }
     },
     {
       "id": 575356,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-14T19:00:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 9374,
+        "name": "Clément Turpin",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -684,23 +709,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 575357,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-14T19:00:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11443,
+        "name": "Chris Kavanagh",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -723,23 +753,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       }
     },
     {
       "id": 575358,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-14T19:00:00Z",
       "matchday": 2,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15680,
+        "name": "Irfan Peljto",
+        "type": "REFEREE",
+        "nationality": "Bosnia and Herzegovina"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -762,12 +797,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       }
     },
