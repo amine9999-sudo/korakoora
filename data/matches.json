@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T13:47:54.054628+00:00",
+  "updatedAt": "2026-10-16T17:50:43.894972+00:00",
   "dateFrom": "2026-10-15",
   "dateTo": "2026-10-25",
   "competitions": [
@@ -1503,7 +1503,12 @@
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 215612,
+        "name": "Manuel Orellana Cid",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -2288,7 +2293,12 @@
       "matchday": 7,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57762,
+        "name": "Matteo Marchetti",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -3068,7 +3078,12 @@
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43922,
+        "name": "Benjamin Brand",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -3770,7 +3785,12 @@
       "matchday": 7,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57062,
+        "name": "Aurélien Petit",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -4823,7 +4843,12 @@
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 81036,
+        "name": "Robin Hensgens",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
