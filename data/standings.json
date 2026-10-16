@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-16T20:38:45.344862+00:00",
+  "updatedAt": "2026-10-16T23:17:58.965281+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -1157,24 +1157,6 @@
         {
           "position": 6,
           "team": {
-            "id": 560,
-            "name": "RC Deportivo La Coruña",
-            "shortName": "Deportivo",
-            "tla": "DEP",
-            "crest": "https://crests.football-data.org/560.png"
-          },
-          "playedGames": 9,
-          "won": 3,
-          "draw": 4,
-          "lost": 2,
-          "points": 13,
-          "goalsFor": 13,
-          "goalsAgainst": 11,
-          "goalDifference": 2
-        },
-        {
-          "position": 7,
-          "team": {
             "id": 92,
             "name": "Real Sociedad de Fútbol",
             "shortName": "Real Sociedad",
@@ -1191,7 +1173,7 @@
           "goalDifference": -3
         },
         {
-          "position": 8,
+          "position": 7,
           "team": {
             "id": 263,
             "name": "Deportivo Alavés",
@@ -1207,6 +1189,24 @@
           "goalsFor": 12,
           "goalsAgainst": 8,
           "goalDifference": 4
+        },
+        {
+          "position": 8,
+          "team": {
+            "id": 560,
+            "name": "RC Deportivo La Coruña",
+            "shortName": "Deportivo",
+            "tla": "DEP",
+            "crest": "https://crests.football-data.org/560.png"
+          },
+          "playedGames": 9,
+          "won": 2,
+          "draw": 5,
+          "lost": 2,
+          "points": 11,
+          "goalsFor": 13,
+          "goalsAgainst": 12,
+          "goalDifference": 1
         },
         {
           "position": 9,
@@ -1363,12 +1363,12 @@
           },
           "playedGames": 8,
           "won": 1,
-          "draw": 3,
-          "lost": 4,
-          "points": 6,
-          "goalsFor": 11,
+          "draw": 4,
+          "lost": 3,
+          "points": 7,
+          "goalsFor": 12,
           "goalsAgainst": 16,
-          "goalDifference": -5
+          "goalDifference": -4
         },
         {
           "position": 18,
