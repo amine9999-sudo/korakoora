@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-16T23:17:58.965281+00:00",
-  "dateFrom": "2026-10-15",
-  "dateTo": "2026-10-25",
+  "updatedAt": "2026-10-17T01:25:54.754438+00:00",
+  "dateFrom": "2026-10-16",
+  "dateTo": "2026-10-26",
   "competitions": [
     "CL",
     "PL",
@@ -12,7 +12,7 @@
     "PPL",
     "DED"
   ],
-  "count": 141,
+  "count": 143,
   "matches": [
     {
       "id": 575359,
@@ -2274,6 +2274,45 @@
         "shortName": "Real Madrid",
         "tla": "RMA",
         "crest": "https://crests.football-data.org/86.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 564721,
+      "status": "TIMED",
+      "utcDate": "2026-10-26T20:00:00Z",
+      "matchday": 10,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2014,
+        "name": "Primera Division",
+        "code": "PD",
+        "emblem": "https://crests.football-data.org/laliga.png"
+      },
+      "home": {
+        "id": 559,
+        "name": "Sevilla FC",
+        "shortName": "Sevilla FC",
+        "tla": "SEV",
+        "crest": "https://crests.football-data.org/559.png"
+      },
+      "away": {
+        "id": 79,
+        "name": "CA Osasuna",
+        "shortName": "Osasuna",
+        "tla": "OSA",
+        "crest": "https://crests.football-data.org/79.png"
       },
       "score": {
         "halfTime": {
@@ -4824,6 +4863,45 @@
         "shortName": "Acad. Viseu",
         "tla": "ACV",
         "crest": "https://crests.football-data.org/5527.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 567331,
+      "status": "TIMED",
+      "utcDate": "2026-10-26T18:45:00Z",
+      "matchday": 9,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "home": {
+        "id": 5530,
+        "name": "CD Santa Clara",
+        "shortName": "Santa Clara",
+        "tla": "CD ",
+        "crest": "https://crests.football-data.org/5530.png"
+      },
+      "away": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica",
+        "shortName": "SL Benfica",
+        "tla": "BEN",
+        "crest": "https://crests.football-data.org/1903.png"
       },
       "score": {
         "halfTime": {
