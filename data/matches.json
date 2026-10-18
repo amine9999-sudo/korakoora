@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T13:10:08.336232+00:00",
+  "updatedAt": "2026-10-18T16:43:55.760187+00:00",
   "dateFrom": "2026-10-17",
   "dateTo": "2026-10-27",
   "competitions": [
@@ -938,7 +938,7 @@
     },
     {
       "id": 560604,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-10-18T13:00:00Z",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
@@ -971,18 +971,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
-          "home": 0,
+          "home": 2,
           "away": 0
         }
       }
     },
     {
       "id": 560605,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-10-18T13:00:00Z",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
@@ -1015,18 +1015,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 1
         }
       }
     },
     {
       "id": 560609,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-10-18T13:00:00Z",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
@@ -1059,23 +1059,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 0
         },
         "fullTime": {
-          "home": 1,
+          "home": 5,
           "away": 0
         }
       }
     },
     {
       "id": 560608,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-18T15:30:00Z",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11605,
+        "name": "Michael Oliver",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -1102,8 +1107,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -1714,7 +1719,7 @@
     },
     {
       "id": 564715,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-10-18T12:00:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
@@ -1751,14 +1756,14 @@
           "away": 0
         },
         "fullTime": {
-          "home": 1,
+          "home": 2,
           "away": 0
         }
       }
     },
     {
       "id": 564712,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-18T14:15:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
@@ -1791,23 +1796,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         }
       }
     },
     {
       "id": 564714,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-18T16:30:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 129443,
+        "name": "Luis Bestard Servera",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1834,8 +1844,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       }
     },
@@ -2529,7 +2539,7 @@
     },
     {
       "id": 558577,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-10-18T13:00:00Z",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
@@ -2562,23 +2572,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         },
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 1,
+          "away": 3
         }
       }
     },
     {
       "id": 558569,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-18T16:00:00Z",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11053,
+        "name": "Daniele Chiffi",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -2605,8 +2620,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       }
     },
@@ -3500,7 +3515,7 @@
     },
     {
       "id": 565827,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-18T13:30:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -3533,23 +3548,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         }
       }
     },
     {
       "id": 565826,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-18T15:30:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57515,
+        "name": "Sören Storks",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -3572,12 +3592,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       }
     },
@@ -4066,7 +4086,7 @@
     },
     {
       "id": 559664,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-10-18T13:00:00Z",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
@@ -4099,23 +4119,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         },
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": 2,
+          "away": 5
         }
       }
     },
     {
       "id": 559657,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-18T15:15:00Z",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 64781,
+        "name": "Marc Bollengier",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -4138,23 +4163,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       }
     },
     {
       "id": 559658,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-18T15:15:00Z",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57088,
+        "name": "Bastien Dechepy",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -4177,23 +4207,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 2
         }
       }
     },
     {
       "id": 559663,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-18T15:15:00Z",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57092,
+        "name": "Eric Wattellier",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -4216,12 +4251,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         }
       }
     },
@@ -5183,7 +5218,7 @@
     },
     {
       "id": 558865,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-10-18T12:30:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
@@ -5216,18 +5251,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         },
         "fullTime": {
-          "home": 1,
-          "away": 1
+          "home": 2,
+          "away": 2
         }
       }
     },
     {
       "id": 558864,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-18T14:45:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
@@ -5260,12 +5295,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 5
         }
       }
     },
@@ -5276,7 +5311,12 @@
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 9561,
+        "name": "Allard Lindhout",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -5315,7 +5355,12 @@
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 81350,
+        "name": "Alex Bos",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
