@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T15:45:58.634182+00:00",
+  "updatedAt": "2026-10-20T19:53:18.026949+00:00",
   "dateFrom": "2026-10-19",
   "dateTo": "2026-10-29",
   "competitions": [
@@ -109,7 +109,12 @@
       "matchday": 3,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57042,
+        "name": "Willy Delajod",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -148,7 +153,12 @@
       "matchday": 3,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43858,
+        "name": "Serdar Gözübüyük",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -187,7 +197,12 @@
       "matchday": 3,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43888,
+        "name": "Szymon Marciniak",
+        "type": "REFEREE",
+        "nationality": "Poland"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -226,7 +241,12 @@
       "matchday": 3,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 31823,
+        "name": "Sandro Schärer",
+        "type": "REFEREE",
+        "nationality": "Switzerland"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -265,7 +285,12 @@
       "matchday": 3,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15408,
+        "name": "Daniel Siebert",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -304,7 +329,12 @@
       "matchday": 3,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 207080,
+        "name": "José Sánchez Martínez",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -343,7 +373,12 @@
       "matchday": 3,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11605,
+        "name": "Michael Oliver",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
