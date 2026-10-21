@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-20T22:59:37.796364+00:00",
-  "dateFrom": "2026-10-19",
-  "dateTo": "2026-10-29",
+  "updatedAt": "2026-10-21T01:28:08.895613+00:00",
+  "dateFrom": "2026-10-20",
+  "dateTo": "2026-10-30",
   "competitions": [
     "CL",
     "PL",
@@ -762,50 +762,6 @@
       }
     },
     {
-      "id": 560606,
-      "status": "FINISHED",
-      "utcDate": "2026-10-19T19:00:00Z",
-      "matchday": 7,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 11423,
-        "name": "Andy Madley",
-        "type": "REFEREE",
-        "nationality": "England"
-      },
-      "competition": {
-        "id": 2021,
-        "name": "Premier League",
-        "code": "PL",
-        "emblem": "https://crests.football-data.org/PL.png"
-      },
-      "home": {
-        "id": 73,
-        "name": "Tottenham Hotspur FC",
-        "shortName": "Tottenham",
-        "tla": "TOT",
-        "crest": "https://crests.football-data.org/73.png"
-      },
-      "away": {
-        "id": 1076,
-        "name": "Coventry City FC",
-        "shortName": "Coventry City",
-        "tla": "COV",
-        "crest": "https://crests.football-data.org/1076.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 1,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 3,
-          "away": 1
-        }
-      }
-    },
-    {
       "id": 560620,
       "status": "TIMED",
       "utcDate": "2026-10-23T19:00:00Z",
@@ -1192,50 +1148,6 @@
         "fullTime": {
           "home": null,
           "away": null
-        }
-      }
-    },
-    {
-      "id": 564717,
-      "status": "FINISHED",
-      "utcDate": "2026-10-19T19:00:00Z",
-      "matchday": 9,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 214122,
-        "name": "Jon González Esteban",
-        "type": "REFEREE",
-        "nationality": "Spain"
-      },
-      "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "home": {
-        "id": 82,
-        "name": "Getafe CF",
-        "shortName": "Getafe",
-        "tla": "GET",
-        "crest": "https://crests.football-data.org/82.png"
-      },
-      "away": {
-        "id": 87,
-        "name": "Rayo Vallecano de Madrid",
-        "shortName": "Rayo Vallecano",
-        "tla": "RAY",
-        "crest": "https://crests.football-data.org/87.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 1
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 1
         }
       }
     },
@@ -1674,90 +1586,41 @@
       }
     },
     {
-      "id": 558576,
-      "status": "FINISHED",
-      "utcDate": "2026-10-19T16:30:00Z",
-      "matchday": 7,
+      "id": 564737,
+      "status": "TIMED",
+      "utcDate": "2026-10-30T20:00:00Z",
+      "matchday": 11,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 160813,
-        "name": "Andrea Calzavara",
-        "type": "REFEREE",
-        "nationality": "Italy"
-      },
+      "referee": null,
       "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "emblem": "https://crests.football-data.org/c111.png"
+        "id": 2014,
+        "name": "Primera Division",
+        "code": "PD",
+        "emblem": "https://crests.football-data.org/laliga.png"
       },
       "home": {
-        "id": 5911,
-        "name": "AC Monza",
-        "shortName": "Monza",
-        "tla": "MON",
-        "crest": "https://crests.football-data.org/5911.png"
+        "id": 94,
+        "name": "Villarreal CF",
+        "shortName": "Villarreal",
+        "tla": "VIL",
+        "crest": "https://crests.football-data.org/94.png"
       },
       "away": {
-        "id": 104,
-        "name": "Cagliari Calcio",
-        "shortName": "Cagliari",
-        "tla": "CAG",
-        "crest": "https://crests.football-data.org/104.png"
+        "id": 80,
+        "name": "RCD Espanyol de Barcelona",
+        "shortName": "Espanyol",
+        "tla": "ESP",
+        "crest": "https://crests.football-data.org/80.png"
       },
       "score": {
         "halfTime": {
-          "home": 1,
-          "away": 0
+          "home": null,
+          "away": null
         },
         "fullTime": {
-          "home": 4,
-          "away": 0
-        }
-      }
-    },
-    {
-      "id": 558578,
-      "status": "FINISHED",
-      "utcDate": "2026-10-19T18:45:00Z",
-      "matchday": 7,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 57842,
-        "name": "Giovanni Ayroldi",
-        "type": "REFEREE",
-        "nationality": "Italy"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "emblem": "https://crests.football-data.org/c111.png"
-      },
-      "home": {
-        "id": 112,
-        "name": "Parma Calcio 1913",
-        "shortName": "Parma",
-        "tla": "PAR",
-        "crest": "https://crests.football-data.org/112.png"
-      },
-      "away": {
-        "id": 586,
-        "name": "Torino FC",
-        "shortName": "Torino",
-        "tla": "TOR",
-        "crest": "https://crests.football-data.org/586.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 2
-        },
-        "fullTime": {
-          "home": 0,
-          "away": 3
+          "home": null,
+          "away": null
         }
       }
     },
@@ -2893,6 +2756,45 @@
       }
     },
     {
+      "id": 565846,
+      "status": "TIMED",
+      "utcDate": "2026-10-30T19:30:00Z",
+      "matchday": 8,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2002,
+        "name": "Bundesliga",
+        "code": "BL1",
+        "emblem": "https://crests.football-data.org/BL1.png"
+      },
+      "home": {
+        "id": 719,
+        "name": "SV 07 Elversberg",
+        "shortName": "Elversberg",
+        "tla": "ELV",
+        "crest": "https://crests.football-data.org/719.png"
+      },
+      "away": {
+        "id": 15,
+        "name": "1. FSV Mainz 05",
+        "shortName": "Mainz",
+        "tla": "M05",
+        "crest": "https://crests.football-data.org/15.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
       "id": 559654,
       "status": "TIMED",
       "utcDate": "2026-10-23T18:45:00Z",
@@ -3244,46 +3146,80 @@
       }
     },
     {
-      "id": 567271,
-      "status": "FINISHED",
-      "utcDate": "2026-10-19T19:15:00Z",
-      "matchday": 2,
+      "id": 559644,
+      "status": "TIMED",
+      "utcDate": "2026-10-30T18:00:00Z",
+      "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 37823,
-        "name": "Gustavo Correia",
-        "type": "REFEREE",
-        "nationality": "Portugal"
-      },
+      "referee": null,
       "competition": {
-        "id": 2017,
-        "name": "Primeira Liga",
-        "code": "PPL",
-        "emblem": "https://crests.football-data.org/PPL.png"
+        "id": 2015,
+        "name": "Ligue 1",
+        "code": "FL1",
+        "emblem": "https://crests.football-data.org/FL1.png"
       },
       "home": {
-        "id": 5613,
-        "name": "Sporting Clube de Braga",
-        "shortName": "Braga",
-        "tla": "SCB",
-        "crest": "https://crests.football-data.org/5613.png"
+        "id": 533,
+        "name": "Le Havre AC",
+        "shortName": "Le Havre",
+        "tla": "HAC",
+        "crest": "https://crests.football-data.org/533.png"
       },
       "away": {
-        "id": 5533,
-        "name": "Gil Vicente FC",
-        "shortName": "Gil Vicente",
-        "tla": "GIL",
-        "crest": "https://crests.football-data.org/5533.png"
+        "id": 524,
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "tla": "PSG",
+        "crest": "https://crests.football-data.org/524.png"
       },
       "score": {
         "halfTime": {
-          "home": 1,
-          "away": 0
+          "home": null,
+          "away": null
         },
         "fullTime": {
-          "home": 1,
-          "away": 2
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 559639,
+      "status": "TIMED",
+      "utcDate": "2026-10-30T20:05:00Z",
+      "matchday": 9,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2015,
+        "name": "Ligue 1",
+        "code": "FL1",
+        "emblem": "https://crests.football-data.org/FL1.png"
+      },
+      "home": {
+        "id": 521,
+        "name": "Lille OSC",
+        "shortName": "Lille",
+        "tla": "LIL",
+        "crest": "https://crests.football-data.org/521.png"
+      },
+      "away": {
+        "id": 546,
+        "name": "Racing Club de Lens",
+        "shortName": "RC Lens",
+        "tla": "RCL",
+        "crest": "https://crests.football-data.org/546.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
         }
       }
     },
@@ -3626,6 +3562,45 @@
         "shortName": "SL Benfica",
         "tla": "BEN",
         "crest": "https://crests.football-data.org/1903.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 567344,
+      "status": "TIMED",
+      "utcDate": "2026-10-30T20:15:00Z",
+      "matchday": 10,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "home": {
+        "id": 6618,
+        "name": "Casa Pia AC",
+        "shortName": "Casa Pia",
+        "tla": "CAS",
+        "crest": "https://crests.football-data.org/6618.png"
+      },
+      "away": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting CP",
+        "tla": "SPO",
+        "crest": "https://crests.football-data.org/498.png"
       },
       "score": {
         "halfTime": {
