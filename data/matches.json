@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T12:16:22.715480+00:00",
+  "updatedAt": "2026-10-21T17:33:46.698722+00:00",
   "dateFrom": "2026-10-20",
   "dateTo": "2026-10-30",
   "competitions": [
@@ -412,12 +412,17 @@
     },
     {
       "id": 575368,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-21T16:45:00Z",
       "matchday": 3,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15824,
+        "name": "Sven Jablonski",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -444,19 +449,24 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       }
     },
     {
       "id": 575369,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-21T16:45:00Z",
       "matchday": 3,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43936,
+        "name": "Rade Obrenović",
+        "type": "REFEREE",
+        "nationality": "Slovenia"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -483,8 +493,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         }
       }
     },
@@ -495,7 +505,12 @@
       "matchday": 3,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 37278,
+        "name": "István Kovács",
+        "type": "REFEREE",
+        "nationality": "Romania"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -534,7 +549,12 @@
       "matchday": 3,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 253,
+        "name": "Harm Osmers",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -573,7 +593,12 @@
       "matchday": 3,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11029,
+        "name": "Davide Massa",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -612,7 +637,12 @@
       "matchday": 3,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 37629,
+        "name": "Luís Godinho",
+        "type": "REFEREE",
+        "nationality": "Portugal"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -651,7 +681,12 @@
       "matchday": 3,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15473,
+        "name": "Sebastian Gishamer",
+        "type": "REFEREE",
+        "nationality": "Austria"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -690,7 +725,12 @@
       "matchday": 3,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15510,
+        "name": "Nick Walsh",
+        "type": "REFEREE",
+        "nationality": "Scotland"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -729,7 +769,12 @@
       "matchday": 3,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57826,
+        "name": "Simone Sozza",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -1153,7 +1198,7 @@
     },
     {
       "id": 564685,
-      "status": "2026-10-21 18:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-10-21T18:00:00Z",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
@@ -1197,7 +1242,7 @@
     },
     {
       "id": 564719,
-      "status": "2026-10-23 19:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-10-23T19:00:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
@@ -1236,7 +1281,7 @@
     },
     {
       "id": 564718,
-      "status": "2026-10-24 12:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-10-24T12:00:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
@@ -1275,7 +1320,7 @@
     },
     {
       "id": 564727,
-      "status": "2026-10-24 14:15:00Z",
+      "status": "TIMED",
       "utcDate": "2026-10-24T14:15:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
@@ -1314,7 +1359,7 @@
     },
     {
       "id": 564722,
-      "status": "2026-10-24 16:30:00Z",
+      "status": "TIMED",
       "utcDate": "2026-10-24T16:30:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
@@ -1353,7 +1398,7 @@
     },
     {
       "id": 564724,
-      "status": "2026-10-24 19:00:00Z",
+      "status": "TIMED",
       "utcDate": "2026-10-24T19:00:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
@@ -2834,45 +2879,6 @@
       }
     },
     {
-      "id": 559655,
-      "status": "TIMED",
-      "utcDate": "2026-10-24T15:15:00Z",
-      "matchday": 8,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": null,
-      "competition": {
-        "id": 2015,
-        "name": "Ligue 1",
-        "code": "FL1",
-        "emblem": "https://crests.football-data.org/FL1.png"
-      },
-      "home": {
-        "id": 511,
-        "name": "Toulouse FC",
-        "shortName": "Toulouse",
-        "tla": "TOU",
-        "crest": "https://crests.football-data.org/511.png"
-      },
-      "away": {
-        "id": 531,
-        "name": "ES Troyes AC",
-        "shortName": "Troyes",
-        "tla": "ETR",
-        "crest": "https://crests.football-data.org/531.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
       "id": 559652,
       "status": "TIMED",
       "utcDate": "2026-10-24T18:45:00Z",
@@ -3055,6 +3061,45 @@
         "shortName": "Lorient",
         "tla": "FCL",
         "crest": "https://crests.football-data.org/525.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 559655,
+      "status": "TIMED",
+      "utcDate": "2026-10-25T16:15:00Z",
+      "matchday": 8,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2015,
+        "name": "Ligue 1",
+        "code": "FL1",
+        "emblem": "https://crests.football-data.org/FL1.png"
+      },
+      "home": {
+        "id": 511,
+        "name": "Toulouse FC",
+        "shortName": "Toulouse",
+        "tla": "TOU",
+        "crest": "https://crests.football-data.org/511.png"
+      },
+      "away": {
+        "id": 531,
+        "name": "ES Troyes AC",
+        "shortName": "Troyes",
+        "tla": "ETR",
+        "crest": "https://crests.football-data.org/531.png"
       },
       "score": {
         "halfTime": {
