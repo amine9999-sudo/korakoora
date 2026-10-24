@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T13:10:07.812565+00:00",
+  "updatedAt": "2026-10-24T16:49:43.609256+00:00",
   "dateFrom": "2026-10-23",
   "dateTo": "2026-11-02",
   "competitions": [
@@ -845,7 +845,7 @@
     },
     {
       "id": 564718,
-      "status": "PAUSED",
+      "status": "TIMED",
       "utcDate": "2026-10-24T12:00:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
@@ -878,18 +878,18 @@
       },
       "score": {
         "halfTime": {
-          "home": 0,
-          "away": 2
+          "home": null,
+          "away": null
         },
         "fullTime": {
-          "home": 0,
-          "away": 2
+          "home": null,
+          "away": null
         }
       }
     },
     {
       "id": 564727,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-24T14:15:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
@@ -922,23 +922,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         }
       }
     },
     {
       "id": 564722,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-24T16:30:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 214410,
+        "name": "Alejandro Quintero González",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -965,8 +970,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -1640,17 +1645,12 @@
     },
     {
       "id": 558560,
-      "status": "IN_PLAY",
+      "status": "TIMED",
       "utcDate": "2026-10-24T13:00:00Z",
       "matchday": 8,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 188502,
-        "name": "Kevin Bonacina",
-        "type": "REFEREE",
-        "nationality": "Italy"
-      },
+      "referee": null,
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1677,24 +1677,19 @@
           "away": null
         },
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": null,
+          "away": null
         }
       }
     },
     {
       "id": 558561,
-      "status": "IN_PLAY",
+      "status": "TIMED",
       "utcDate": "2026-10-24T13:00:00Z",
       "matchday": 8,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 145272,
-        "name": "Davide Di Marco",
-        "type": "REFEREE",
-        "nationality": "Italy"
-      },
+      "referee": null,
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1721,8 +1716,8 @@
           "away": null
         },
         "fullTime": {
-          "home": 0,
-          "away": 0
+          "home": null,
+          "away": null
         }
       }
     },
