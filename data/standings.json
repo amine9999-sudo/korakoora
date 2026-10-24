@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T08:44:08.839781+00:00",
+  "updatedAt": "2026-10-24T13:10:07.812565+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -694,14 +694,14 @@
             "tla": "MCI",
             "crest": "https://crests.football-data.org/65.png"
           },
-          "playedGames": 7,
+          "playedGames": 8,
           "won": 7,
           "draw": 0,
-          "lost": 0,
+          "lost": 1,
           "points": 21,
-          "goalsFor": 19,
-          "goalsAgainst": 7,
-          "goalDifference": 12
+          "goalsFor": 20,
+          "goalsAgainst": 9,
+          "goalDifference": 11
         },
         {
           "position": 2,
@@ -778,6 +778,24 @@
         {
           "position": 6,
           "team": {
+            "id": 58,
+            "name": "Aston Villa FC",
+            "shortName": "Aston Villa",
+            "tla": "AVL",
+            "crest": "https://crests.football-data.org/58.png"
+          },
+          "playedGames": 8,
+          "won": 3,
+          "draw": 2,
+          "lost": 3,
+          "points": 11,
+          "goalsFor": 9,
+          "goalsAgainst": 12,
+          "goalDifference": -3
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 402,
             "name": "Brentford FC",
             "shortName": "Brentford",
@@ -794,7 +812,7 @@
           "goalDifference": 5
         },
         {
-          "position": 7,
+          "position": 8,
           "team": {
             "id": 341,
             "name": "Leeds United FC",
@@ -812,7 +830,7 @@
           "goalDifference": 3
         },
         {
-          "position": 8,
+          "position": 9,
           "team": {
             "id": 62,
             "name": "Everton FC",
@@ -830,7 +848,7 @@
           "goalDifference": 1
         },
         {
-          "position": 9,
+          "position": 10,
           "team": {
             "id": 349,
             "name": "Ipswich Town FC",
@@ -848,7 +866,7 @@
           "goalDifference": -4
         },
         {
-          "position": 10,
+          "position": 11,
           "team": {
             "id": 322,
             "name": "Hull City AFC",
@@ -866,7 +884,7 @@
           "goalDifference": 1
         },
         {
-          "position": 11,
+          "position": 12,
           "team": {
             "id": 67,
             "name": "Newcastle United FC",
@@ -881,24 +899,6 @@
           "points": 8,
           "goalsFor": 10,
           "goalsAgainst": 14,
-          "goalDifference": -4
-        },
-        {
-          "position": 12,
-          "team": {
-            "id": 58,
-            "name": "Aston Villa FC",
-            "shortName": "Aston Villa",
-            "tla": "AVL",
-            "crest": "https://crests.football-data.org/58.png"
-          },
-          "playedGames": 7,
-          "won": 2,
-          "draw": 2,
-          "lost": 3,
-          "points": 8,
-          "goalsFor": 7,
-          "goalsAgainst": 11,
           "goalDifference": -4
         },
         {
