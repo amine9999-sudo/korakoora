@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-23T23:55:15.229561+00:00",
-  "dateFrom": "2026-10-22",
-  "dateTo": "2026-11-01",
+  "updatedAt": "2026-10-24T03:49:34.360097+00:00",
+  "dateFrom": "2026-10-23",
+  "dateTo": "2026-11-02",
   "competitions": [
     "CL",
     "PL",
@@ -12,7 +12,7 @@
     "PPL",
     "DED"
   ],
-  "count": 136,
+  "count": 142,
   "matches": [
     {
       "id": 560620,
@@ -761,6 +761,45 @@
       }
     },
     {
+      "id": 560622,
+      "status": "TIMED",
+      "utcDate": "2026-11-02T20:00:00Z",
+      "matchday": 9,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2021,
+        "name": "Premier League",
+        "code": "PL",
+        "emblem": "https://crests.football-data.org/PL.png"
+      },
+      "home": {
+        "id": 67,
+        "name": "Newcastle United FC",
+        "shortName": "Newcastle",
+        "tla": "NEW",
+        "crest": "https://crests.football-data.org/67.png"
+      },
+      "away": {
+        "id": 62,
+        "name": "Everton FC",
+        "shortName": "Everton",
+        "tla": "EVE",
+        "crest": "https://crests.football-data.org/62.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
       "id": 564719,
       "status": "FINISHED",
       "utcDate": "2026-10-23T19:00:00Z",
@@ -1494,6 +1533,45 @@
         "shortName": "Real Sociedad",
         "tla": "RSO",
         "crest": "https://crests.football-data.org/92.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 564731,
+      "status": "TIMED",
+      "utcDate": "2026-11-02T20:00:00Z",
+      "matchday": 11,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2014,
+        "name": "Primera Division",
+        "code": "PD",
+        "emblem": "https://crests.football-data.org/laliga.png"
+      },
+      "home": {
+        "id": 560,
+        "name": "RC Deportivo La Coruña",
+        "shortName": "Deportivo",
+        "tla": "DEP",
+        "crest": "https://crests.football-data.org/560.png"
+      },
+      "away": {
+        "id": 79,
+        "name": "CA Osasuna",
+        "shortName": "Osasuna",
+        "tla": "OSA",
+        "crest": "https://crests.football-data.org/79.png"
       },
       "score": {
         "halfTime": {
@@ -2591,6 +2669,84 @@
         "shortName": "Napoli",
         "tla": "NAP",
         "crest": "https://crests.football-data.org/113.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 558541,
+      "status": "TIMED",
+      "utcDate": "2026-11-02T17:30:00Z",
+      "matchday": 10,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2019,
+        "name": "Serie A",
+        "code": "SA",
+        "emblem": "https://crests.football-data.org/c111.png"
+      },
+      "home": {
+        "id": 471,
+        "name": "US Sassuolo Calcio",
+        "shortName": "Sassuolo",
+        "tla": "SAS",
+        "crest": "https://crests.football-data.org/471.png"
+      },
+      "away": {
+        "id": 99,
+        "name": "ACF Fiorentina",
+        "shortName": "Fiorentina",
+        "tla": "FIO",
+        "crest": "https://crests.football-data.org/99.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 558545,
+      "status": "TIMED",
+      "utcDate": "2026-11-02T19:45:00Z",
+      "matchday": 10,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2019,
+        "name": "Serie A",
+        "code": "SA",
+        "emblem": "https://crests.football-data.org/c111.png"
+      },
+      "home": {
+        "id": 102,
+        "name": "Atalanta BC",
+        "shortName": "Atalanta",
+        "tla": "ATA",
+        "crest": "https://crests.football-data.org/102.png"
+      },
+      "away": {
+        "id": 112,
+        "name": "Parma Calcio 1913",
+        "shortName": "Parma",
+        "tla": "PAR",
+        "crest": "https://crests.football-data.org/112.png"
       },
       "score": {
         "halfTime": {
@@ -4634,6 +4790,84 @@
         "shortName": "Famalicão",
         "tla": "FAM",
         "crest": "https://crests.football-data.org/5531.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 567342,
+      "status": "TIMED",
+      "utcDate": "2026-11-02T20:15:00Z",
+      "matchday": 10,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "home": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica",
+        "shortName": "SL Benfica",
+        "tla": "BEN",
+        "crest": "https://crests.football-data.org/1903.png"
+      },
+      "away": {
+        "id": 7822,
+        "name": "FC Alverca",
+        "shortName": "Alverca",
+        "tla": "ALV",
+        "crest": "https://crests.football-data.org/7822.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 567346,
+      "status": "TIMED",
+      "utcDate": "2026-11-02T20:15:00Z",
+      "matchday": 10,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "home": {
+        "id": 5533,
+        "name": "Gil Vicente FC",
+        "shortName": "Gil Vicente",
+        "tla": "GIL",
+        "crest": "https://crests.football-data.org/5533.png"
+      },
+      "away": {
+        "id": 5543,
+        "name": "Vitória SC",
+        "shortName": "Vitória SC",
+        "tla": "GUI",
+        "crest": "https://crests.football-data.org/5543.png"
       },
       "score": {
         "halfTime": {
