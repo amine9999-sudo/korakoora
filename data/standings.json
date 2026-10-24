@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T16:49:43.609256+00:00",
+  "updatedAt": "2026-10-24T19:17:51.919820+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -750,12 +750,12 @@
           },
           "playedGames": 8,
           "won": 4,
-          "draw": 2,
-          "lost": 2,
-          "points": 14,
+          "draw": 1,
+          "lost": 3,
+          "points": 13,
           "goalsFor": 17,
-          "goalsAgainst": 13,
-          "goalDifference": 4
+          "goalsAgainst": 15,
+          "goalDifference": 2
         },
         {
           "position": 5,
@@ -886,6 +886,24 @@
         {
           "position": 12,
           "team": {
+            "id": 73,
+            "name": "Tottenham Hotspur FC",
+            "shortName": "Tottenham",
+            "tla": "TOT",
+            "crest": "https://crests.football-data.org/73.png"
+          },
+          "playedGames": 8,
+          "won": 2,
+          "draw": 3,
+          "lost": 3,
+          "points": 9,
+          "goalsFor": 8,
+          "goalsAgainst": 10,
+          "goalDifference": -2
+        },
+        {
+          "position": 13,
+          "team": {
             "id": 63,
             "name": "Fulham FC",
             "shortName": "Fulham",
@@ -902,7 +920,7 @@
           "goalDifference": -2
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
             "id": 67,
             "name": "Newcastle United FC",
@@ -920,7 +938,7 @@
           "goalDifference": -4
         },
         {
-          "position": 14,
+          "position": 15,
           "team": {
             "id": 66,
             "name": "Manchester United FC",
@@ -936,24 +954,6 @@
           "goalsFor": 10,
           "goalsAgainst": 10,
           "goalDifference": 0
-        },
-        {
-          "position": 15,
-          "team": {
-            "id": 73,
-            "name": "Tottenham Hotspur FC",
-            "shortName": "Tottenham",
-            "tla": "TOT",
-            "crest": "https://crests.football-data.org/73.png"
-          },
-          "playedGames": 8,
-          "won": 1,
-          "draw": 4,
-          "lost": 3,
-          "points": 7,
-          "goalsFor": 6,
-          "goalsAgainst": 10,
-          "goalDifference": -4
         },
         {
           "position": 16,
