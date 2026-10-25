@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-24T21:45:52.909029+00:00",
-  "dateFrom": "2026-10-23",
-  "dateTo": "2026-11-02",
+  "updatedAt": "2026-10-25T00:04:16.222838+00:00",
+  "dateFrom": "2026-10-24",
+  "dateTo": "2026-11-03",
   "competitions": [
     "CL",
     "PL",
@@ -12,55 +12,362 @@
     "PPL",
     "DED"
   ],
-  "count": 142,
+  "count": 144,
   "matches": [
     {
-      "id": 560620,
-      "status": "FINISHED",
-      "utcDate": "2026-10-23T19:00:00Z",
-      "matchday": 8,
-      "stage": "REGULAR_SEASON",
+      "id": 575377,
+      "status": "TIMED",
+      "utcDate": "2026-11-03T17:45:00Z",
+      "matchday": 4,
+      "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": {
-        "id": 11620,
-        "name": "Thomas Bramall",
-        "type": "REFEREE",
-        "nationality": "England"
-      },
+      "referee": null,
       "competition": {
-        "id": 2021,
-        "name": "Premier League",
-        "code": "PL",
-        "emblem": "https://crests.football-data.org/PL.png"
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
       },
       "home": {
-        "id": 349,
-        "name": "Ipswich Town FC",
-        "shortName": "Ipswich Town",
-        "tla": "IPS",
-        "crest": "https://crests.football-data.org/349.png"
+        "id": 1887,
+        "name": "FK Shakhtar Donetsk",
+        "shortName": "Shaktar",
+        "tla": "SHD",
+        "crest": "https://crests.football-data.org/1887.png"
       },
       "away": {
-        "id": 351,
-        "name": "Nottingham Forest FC",
-        "shortName": "Nottingham",
-        "tla": "NOT",
-        "crest": "https://crests.football-data.org/351.png"
+        "id": 498,
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting CP",
+        "tla": "SPO",
+        "crest": "https://crests.football-data.org/498.png"
       },
       "score": {
         "halfTime": {
-          "home": 1,
-          "away": 1
+          "home": null,
+          "away": null
         },
         "fullTime": {
-          "home": 1,
-          "away": 1
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575378,
+      "status": "TIMED",
+      "utcDate": "2026-11-03T17:45:00Z",
+      "matchday": 4,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 610,
+        "name": "Galatasaray SK",
+        "shortName": "Galatasaray",
+        "tla": "GAL",
+        "crest": "https://crests.football-data.org/610.png"
+      },
+      "away": {
+        "id": 10,
+        "name": "VfB Stuttgart",
+        "shortName": "Stuttgart",
+        "tla": "VFB",
+        "crest": "https://crests.football-data.org/10.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575379,
+      "status": "TIMED",
+      "utcDate": "2026-11-03T20:00:00Z",
+      "matchday": 4,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 675,
+        "name": "Feyenoord Rotterdam",
+        "shortName": "Feyenoord",
+        "tla": "FEY",
+        "crest": "https://crests.football-data.org/675.png"
+      },
+      "away": {
+        "id": 108,
+        "name": "FC Internazionale Milano",
+        "shortName": "Inter",
+        "tla": "INT",
+        "crest": "https://crests.football-data.org/108.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575380,
+      "status": "TIMED",
+      "utcDate": "2026-11-03T20:00:00Z",
+      "matchday": 4,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 81,
+        "name": "FC Barcelona",
+        "shortName": "Barça",
+        "tla": "FCB",
+        "crest": "https://crests.football-data.org/81.png"
+      },
+      "away": {
+        "id": 58,
+        "name": "Aston Villa FC",
+        "shortName": "Aston Villa",
+        "tla": "AVL",
+        "crest": "https://crests.football-data.org/58.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575381,
+      "status": "TIMED",
+      "utcDate": "2026-11-03T20:00:00Z",
+      "matchday": 4,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid",
+        "shortName": "Atleti",
+        "tla": "ATL",
+        "crest": "https://crests.football-data.org/78.png"
+      },
+      "away": {
+        "id": 5,
+        "name": "FC Bayern München",
+        "shortName": "Bayern",
+        "tla": "FCB",
+        "crest": "https://crests.football-data.org/5.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575382,
+      "status": "TIMED",
+      "utcDate": "2026-11-03T20:00:00Z",
+      "matchday": 4,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 94,
+        "name": "Villarreal CF",
+        "shortName": "Villarreal",
+        "tla": "VIL",
+        "crest": "https://crests.football-data.org/94.png"
+      },
+      "away": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "tla": "PSG",
+        "crest": "https://crests.football-data.org/524.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575383,
+      "status": "TIMED",
+      "utcDate": "2026-11-03T20:00:00Z",
+      "matchday": 4,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 66,
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma",
+        "shortName": "Roma",
+        "tla": "ROM",
+        "crest": "https://crests.football-data.org/100.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575384,
+      "status": "TIMED",
+      "utcDate": "2026-11-03T20:00:00Z",
+      "matchday": 4,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 5721,
+        "name": "FK Bodø/Glimt",
+        "shortName": "Bodø/Glimt",
+        "tla": "FK",
+        "crest": "https://crests.football-data.org/5721.png"
+      },
+      "away": {
+        "id": 521,
+        "name": "Lille OSC",
+        "shortName": "Lille",
+        "tla": "LIL",
+        "crest": "https://crests.football-data.org/521.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575385,
+      "status": "TIMED",
+      "utcDate": "2026-11-03T20:00:00Z",
+      "matchday": 4,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 2016,
+        "name": "LASK Linz",
+        "shortName": "LASK",
+        "tla": "LIN",
+        "crest": "https://crests.football-data.org/2016.png"
+      },
+      "away": {
+        "id": 7509,
+        "name": "ŠK Slovan Bratislava",
+        "shortName": "Sl. Bratislava",
+        "tla": "SBA",
+        "crest": "https://crests.football-data.org/7509.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
         }
       }
     },
     {
       "id": 560614,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-24T11:30:00Z",
       "matchday": 8,
       "stage": "REGULAR_SEASON",
@@ -800,57 +1107,18 @@
       }
     },
     {
-      "id": 564719,
-      "status": "FINISHED",
-      "utcDate": "2026-10-23T19:00:00Z",
-      "matchday": 10,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 265471,
-        "name": "Carlos Muñiz Muñoz",
-        "type": "REFEREE",
-        "nationality": "Spain"
-      },
-      "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "home": {
-        "id": 263,
-        "name": "Deportivo Alavés",
-        "shortName": "Alavés",
-        "tla": "ALA",
-        "crest": "https://crests.football-data.org/263.png"
-      },
-      "away": {
-        "id": 84,
-        "name": "Málaga CF",
-        "shortName": "Málaga",
-        "tla": "MAL",
-        "crest": "https://crests.football-data.org/84.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 1
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 1
-        }
-      }
-    },
-    {
       "id": 564718,
       "status": "TIMED",
       "utcDate": "2026-10-24T12:00:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 214573,
+        "name": "Miguel Sesma Espinosa",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -889,7 +1157,12 @@
       "matchday": 10,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 206211,
+        "name": "Jesús Gil Manzano",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -928,7 +1201,12 @@
       "matchday": 10,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 214410,
+        "name": "Alejandro Quintero González",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -967,7 +1245,12 @@
       "matchday": 10,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 207080,
+        "name": "José Sánchez Martínez",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1581,50 +1864,6 @@
         "fullTime": {
           "home": null,
           "away": null
-        }
-      }
-    },
-    {
-      "id": 558567,
-      "status": "FINISHED",
-      "utcDate": "2026-10-23T18:45:00Z",
-      "matchday": 8,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 191548,
-        "name": "Andrea Zanotti",
-        "type": "REFEREE",
-        "nationality": "Italy"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "emblem": "https://crests.football-data.org/c111.png"
-      },
-      "home": {
-        "id": 586,
-        "name": "Torino FC",
-        "shortName": "Torino",
-        "tla": "TOR",
-        "crest": "https://crests.football-data.org/586.png"
-      },
-      "away": {
-        "id": 5911,
-        "name": "AC Monza",
-        "shortName": "Monza",
-        "tla": "MON",
-        "crest": "https://crests.football-data.org/5911.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 1,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 3,
-          "away": 2
         }
       }
     },
@@ -2760,50 +2999,6 @@
       }
     },
     {
-      "id": 565833,
-      "status": "FINISHED",
-      "utcDate": "2026-10-23T18:30:00Z",
-      "matchday": 7,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 56230,
-        "name": "Matthias Jöllenbeck",
-        "type": "REFEREE",
-        "nationality": "Germany"
-      },
-      "competition": {
-        "id": 2002,
-        "name": "Bundesliga",
-        "code": "BL1",
-        "emblem": "https://crests.football-data.org/BL1.png"
-      },
-      "home": {
-        "id": 10,
-        "name": "VfB Stuttgart",
-        "shortName": "Stuttgart",
-        "tla": "VFB",
-        "crest": "https://crests.football-data.org/10.png"
-      },
-      "away": {
-        "id": 18,
-        "name": "Borussia Mönchengladbach",
-        "shortName": "M'gladbach",
-        "tla": "BMG",
-        "crest": "https://crests.football-data.org/18.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 1,
-          "away": 1
-        },
-        "fullTime": {
-          "home": 2,
-          "away": 3
-        }
-      }
-    },
-    {
       "id": 565830,
       "status": "TIMED",
       "utcDate": "2026-10-24T13:30:00Z",
@@ -2883,7 +3078,7 @@
     },
     {
       "id": 565832,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-24T13:30:00Z",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
@@ -3000,7 +3195,7 @@
     },
     {
       "id": 565837,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-24T16:30:00Z",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
@@ -3467,62 +3662,13 @@
       }
     },
     {
-      "id": 559654,
-      "status": "FINISHED",
-      "utcDate": "2026-10-23T18:45:00Z",
-      "matchday": 8,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 57084,
-        "name": "Guillaume Paradis",
-        "type": "REFEREE",
-        "nationality": "France"
-      },
-      "competition": {
-        "id": 2015,
-        "name": "Ligue 1",
-        "code": "FL1",
-        "emblem": "https://crests.football-data.org/FL1.png"
-      },
-      "home": {
-        "id": 512,
-        "name": "Stade Brestois 29",
-        "shortName": "Brest",
-        "tla": "BRE",
-        "crest": "https://crests.football-data.org/512.png"
-      },
-      "away": {
-        "id": 522,
-        "name": "OGC Nice",
-        "shortName": "Nice",
-        "tla": "NIC",
-        "crest": "https://crests.football-data.org/522.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 1,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 2
-        }
-      }
-    },
-    {
       "id": 559652,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-24T18:45:00Z",
       "matchday": 8,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 57054,
-        "name": "Mathieu Vernice",
-        "type": "REFEREE",
-        "nationality": "France"
-      },
+      "referee": null,
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -4179,62 +4325,13 @@
       }
     },
     {
-      "id": 567329,
-      "status": "FINISHED",
-      "utcDate": "2026-10-23T19:45:00Z",
-      "matchday": 9,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 231221,
-        "name": "Diogo Rosa",
-        "type": "REFEREE",
-        "nationality": "Portugal"
-      },
-      "competition": {
-        "id": 2017,
-        "name": "Primeira Liga",
-        "code": "PPL",
-        "emblem": "https://crests.football-data.org/PPL.png"
-      },
-      "home": {
-        "id": 5543,
-        "name": "Vitória SC",
-        "shortName": "Vitória SC",
-        "tla": "GUI",
-        "crest": "https://crests.football-data.org/5543.png"
-      },
-      "away": {
-        "id": 5575,
-        "name": "CS Marítimo",
-        "shortName": "Marítimo",
-        "tla": "CSM",
-        "crest": "https://crests.football-data.org/5575.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 1,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 5,
-          "away": 0
-        }
-      }
-    },
-    {
       "id": 567337,
       "status": "TIMED",
       "utcDate": "2026-10-24T14:30:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 220513,
-        "name": "Bruno Costa",
-        "type": "REFEREE",
-        "nationality": "Portugal"
-      },
+      "referee": null,
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -4268,17 +4365,12 @@
     },
     {
       "id": 567333,
-      "status": "FINISHED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-24T17:00:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 39896,
-        "name": "Pedro Ramalho",
-        "type": "REFEREE",
-        "nationality": "Portugal"
-      },
+      "referee": null,
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -4301,28 +4393,23 @@
       },
       "score": {
         "halfTime": {
-          "home": 0,
-          "away": 1
+          "home": null,
+          "away": null
         },
         "fullTime": {
-          "home": 0,
-          "away": 1
+          "home": null,
+          "away": null
         }
       }
     },
     {
       "id": 567335,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-24T19:30:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 37629,
-        "name": "Luís Godinho",
-        "type": "REFEREE",
-        "nationality": "Portugal"
-      },
+      "referee": null,
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -4901,50 +4988,6 @@
       }
     },
     {
-      "id": 558863,
-      "status": "FINISHED",
-      "utcDate": "2026-10-23T18:00:00Z",
-      "matchday": 10,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 81036,
-        "name": "Robin Hensgens",
-        "type": "REFEREE",
-        "nationality": "Netherlands"
-      },
-      "competition": {
-        "id": 2003,
-        "name": "Eredivisie",
-        "code": "DED",
-        "emblem": "https://crests.football-data.org/ED.png"
-      },
-      "home": {
-        "id": 718,
-        "name": "Go Ahead Eagles",
-        "shortName": "Go Ahead",
-        "tla": "GOA",
-        "crest": "https://crests.football-data.org/718.png"
-      },
-      "away": {
-        "id": 1912,
-        "name": "Telstar 1963",
-        "shortName": "Telstar",
-        "tla": "TEL",
-        "crest": "https://crests.football-data.org/1912.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 2,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 3,
-          "away": 2
-        }
-      }
-    },
-    {
       "id": 558862,
       "status": "TIMED",
       "utcDate": "2026-10-24T14:30:00Z",
@@ -5024,7 +5067,7 @@
     },
     {
       "id": 558860,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-24T19:00:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
