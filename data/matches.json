@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T00:04:16.222838+00:00",
+  "updatedAt": "2026-10-25T05:06:37.578953+00:00",
   "dateFrom": "2026-10-24",
   "dateTo": "2026-11-03",
   "competitions": [
@@ -1108,7 +1108,7 @@
     },
     {
       "id": 564718,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-24T12:00:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
@@ -1141,18 +1141,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 3
         }
       }
     },
     {
       "id": 564727,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-24T14:15:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
@@ -1185,18 +1185,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         }
       }
     },
     {
       "id": 564722,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-24T16:30:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
@@ -1229,18 +1229,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         }
       }
     },
     {
       "id": 564724,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-24T19:00:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
@@ -1273,12 +1273,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       }
     },
@@ -4326,12 +4326,17 @@
     },
     {
       "id": 567337,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-24T14:30:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 220513,
+        "name": "Bruno Costa",
+        "type": "REFEREE",
+        "nationality": "Portugal"
+      },
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -4354,23 +4359,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         }
       }
     },
     {
       "id": 567333,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-10-24T17:00:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 39896,
+        "name": "Pedro Ramalho",
+        "type": "REFEREE",
+        "nationality": "Portugal"
+      },
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -4393,23 +4403,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       }
     },
     {
       "id": 567335,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-10-24T19:30:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 37629,
+        "name": "Luís Godinho",
+        "type": "REFEREE",
+        "nationality": "Portugal"
+      },
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -4432,12 +4447,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       }
     },
