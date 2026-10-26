@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T14:56:06.129709+00:00",
+  "updatedAt": "2026-10-26T20:22:13.273957+00:00",
   "dateFrom": "2026-10-25",
   "dateTo": "2026-11-04",
   "competitions": [
@@ -1504,12 +1504,17 @@
     },
     {
       "id": 564721,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-26T20:00:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 207048,
+        "name": "Miguel Ortiz Arias",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1536,8 +1541,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -3636,12 +3641,17 @@
     },
     {
       "id": 559648,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-26T19:30:00Z",
       "matchday": 8,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15548,
+        "name": "Jérôme Brisard",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -3664,12 +3674,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -4202,12 +4212,17 @@
     },
     {
       "id": 567331,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-26T18:45:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 176741,
+        "name": "Claudio Pereira",
+        "type": "REFEREE",
+        "nationality": null
+      },
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -4230,12 +4245,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         }
       }
     },
