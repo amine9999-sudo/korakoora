@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T15:57:46.732189+00:00",
+  "updatedAt": "2026-10-27T20:34:40.415528+00:00",
   "dateFrom": "2026-10-26",
   "dateTo": "2026-11-05",
   "competitions": [
@@ -1542,7 +1542,7 @@
     },
     {
       "id": 558556,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-27T17:30:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
@@ -1575,23 +1575,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 4
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 6
         }
       }
     },
     {
       "id": 558555,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-27T19:45:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57882,
+        "name": "Ermanno Feliciani",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1618,19 +1623,24 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         }
       }
     },
     {
       "id": 558557,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-27T19:45:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 97848,
+        "name": "Giuseppe Collu",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1657,8 +1667,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       }
     },
