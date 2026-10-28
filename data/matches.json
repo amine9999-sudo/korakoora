@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-27T20:34:40.415528+00:00",
-  "dateFrom": "2026-10-26",
-  "dateTo": "2026-11-05",
+  "updatedAt": "2026-10-28T00:18:08.454457+00:00",
+  "dateFrom": "2026-10-27",
+  "dateTo": "2026-11-06",
   "competitions": [
     "CL",
     "PL",
@@ -12,7 +12,7 @@
     "PPL",
     "DED"
   ],
-  "count": 97,
+  "count": 101,
   "matches": [
     {
       "id": 575377,
@@ -1107,46 +1107,41 @@
       }
     },
     {
-      "id": 564721,
-      "status": "FINISHED",
-      "utcDate": "2026-10-26T20:00:00Z",
+      "id": 560634,
+      "status": "TIMED",
+      "utcDate": "2026-11-06T20:00:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 207048,
-        "name": "Miguel Ortiz Arias",
-        "type": "REFEREE",
-        "nationality": "Spain"
-      },
+      "referee": null,
       "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "emblem": "https://crests.football-data.org/laliga.png"
+        "id": 2021,
+        "name": "Premier League",
+        "code": "PL",
+        "emblem": "https://crests.football-data.org/PL.png"
       },
       "home": {
-        "id": 559,
-        "name": "Sevilla FC",
-        "shortName": "Sevilla FC",
-        "tla": "SEV",
-        "crest": "https://crests.football-data.org/559.png"
+        "id": 62,
+        "name": "Everton FC",
+        "shortName": "Everton",
+        "tla": "EVE",
+        "crest": "https://crests.football-data.org/62.png"
       },
       "away": {
-        "id": 79,
-        "name": "CA Osasuna",
-        "shortName": "Osasuna",
-        "tla": "OSA",
-        "crest": "https://crests.football-data.org/79.png"
+        "id": 1076,
+        "name": "Coventry City FC",
+        "shortName": "Coventry City",
+        "tla": "COV",
+        "crest": "https://crests.football-data.org/1076.png"
       },
       "score": {
         "halfTime": {
-          "home": 1,
-          "away": 0
+          "home": null,
+          "away": null
         },
         "fullTime": {
-          "home": 2,
-          "away": 0
+          "home": null,
+          "away": null
         }
       }
     },
@@ -1541,6 +1536,45 @@
       }
     },
     {
+      "id": 564740,
+      "status": "TIMED",
+      "utcDate": "2026-11-06T20:00:00Z",
+      "matchday": 12,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2014,
+        "name": "Primera Division",
+        "code": "PD",
+        "emblem": "https://crests.football-data.org/laliga.png"
+      },
+      "home": {
+        "id": 559,
+        "name": "Sevilla FC",
+        "shortName": "Sevilla FC",
+        "tla": "SEV",
+        "crest": "https://crests.football-data.org/559.png"
+      },
+      "away": {
+        "id": 263,
+        "name": "Deportivo Alavés",
+        "shortName": "Alavés",
+        "tla": "ALA",
+        "crest": "https://crests.football-data.org/263.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
       "id": 558556,
       "status": "FINISHED",
       "utcDate": "2026-10-27T17:30:00Z",
@@ -1586,7 +1620,7 @@
     },
     {
       "id": 558555,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-10-27T19:45:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
@@ -1619,18 +1653,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
           "home": 2,
           "away": 1
+        },
+        "fullTime": {
+          "home": 4,
+          "away": 2
         }
       }
     },
     {
       "id": 558557,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-10-27T19:45:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
@@ -1663,12 +1697,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
           "home": 1,
-          "away": 0
+          "away": 3
         }
       }
     },
@@ -2336,6 +2370,45 @@
       }
     },
     {
+      "id": 558537,
+      "status": "TIMED",
+      "utcDate": "2026-11-06T19:45:00Z",
+      "matchday": 11,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2019,
+        "name": "Serie A",
+        "code": "SA",
+        "emblem": "https://crests.football-data.org/c111.png"
+      },
+      "home": {
+        "id": 454,
+        "name": "Venezia FC",
+        "shortName": "Venezia FC",
+        "tla": "VEN",
+        "crest": "https://crests.football-data.org/454.png"
+      },
+      "away": {
+        "id": 115,
+        "name": "Udinese Calcio",
+        "shortName": "Udinese",
+        "tla": "UDI",
+        "crest": "https://crests.football-data.org/115.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
       "id": 565846,
       "status": "TIMED",
       "utcDate": "2026-10-30T19:30:00Z",
@@ -2687,46 +2760,41 @@
       }
     },
     {
-      "id": 559648,
-      "status": "FINISHED",
-      "utcDate": "2026-10-26T19:30:00Z",
-      "matchday": 8,
+      "id": 565852,
+      "status": "TIMED",
+      "utcDate": "2026-11-06T19:30:00Z",
+      "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 15548,
-        "name": "Jérôme Brisard",
-        "type": "REFEREE",
-        "nationality": "France"
-      },
+      "referee": null,
       "competition": {
-        "id": 2015,
-        "name": "Ligue 1",
-        "code": "FL1",
-        "emblem": "https://crests.football-data.org/FL1.png"
+        "id": 2002,
+        "name": "Bundesliga",
+        "code": "BL1",
+        "emblem": "https://crests.football-data.org/BL1.png"
       },
       "home": {
-        "id": 524,
-        "name": "Paris Saint-Germain FC",
-        "shortName": "PSG",
-        "tla": "PSG",
-        "crest": "https://crests.football-data.org/524.png"
+        "id": 7,
+        "name": "Hamburger SV",
+        "shortName": "HSV",
+        "tla": "HSV",
+        "crest": "https://crests.football-data.org/7.png"
       },
       "away": {
-        "id": 523,
-        "name": "Olympique Lyonnais",
-        "shortName": "Olympique Lyon",
-        "tla": "LYO",
-        "crest": "https://crests.football-data.org/523.png"
+        "id": 18,
+        "name": "Borussia Mönchengladbach",
+        "shortName": "M'gladbach",
+        "tla": "BMG",
+        "crest": "https://crests.football-data.org/18.png"
       },
       "score": {
         "halfTime": {
-          "home": 0,
-          "away": 0
+          "home": null,
+          "away": null
         },
         "fullTime": {
-          "home": 2,
-          "away": 0
+          "home": null,
+          "away": null
         }
       }
     },
@@ -3082,46 +3150,41 @@
       }
     },
     {
-      "id": 567331,
-      "status": "FINISHED",
-      "utcDate": "2026-10-26T18:45:00Z",
-      "matchday": 9,
+      "id": 559638,
+      "status": "TIMED",
+      "utcDate": "2026-11-06T19:45:00Z",
+      "matchday": 10,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": {
-        "id": 176741,
-        "name": "Claudio Pereira",
-        "type": "REFEREE",
-        "nationality": null
-      },
+      "referee": null,
       "competition": {
-        "id": 2017,
-        "name": "Primeira Liga",
-        "code": "PPL",
-        "emblem": "https://crests.football-data.org/PPL.png"
+        "id": 2015,
+        "name": "Ligue 1",
+        "code": "FL1",
+        "emblem": "https://crests.football-data.org/FL1.png"
       },
       "home": {
-        "id": 5530,
-        "name": "CD Santa Clara",
-        "shortName": "Santa Clara",
-        "tla": "CD ",
-        "crest": "https://crests.football-data.org/5530.png"
+        "id": 511,
+        "name": "Toulouse FC",
+        "shortName": "Toulouse",
+        "tla": "TOU",
+        "crest": "https://crests.football-data.org/511.png"
       },
       "away": {
-        "id": 1903,
-        "name": "Sport Lisboa e Benfica",
-        "shortName": "SL Benfica",
-        "tla": "BEN",
-        "crest": "https://crests.football-data.org/1903.png"
+        "id": 576,
+        "name": "RC Strasbourg Alsace",
+        "shortName": "Strasbourg",
+        "tla": "RC ",
+        "crest": "https://crests.football-data.org/576.png"
       },
       "score": {
         "halfTime": {
-          "home": 1,
-          "away": 0
+          "home": null,
+          "away": null
         },
         "fullTime": {
-          "home": 1,
-          "away": 2
+          "home": null,
+          "away": null
         }
       }
     },
@@ -3477,6 +3540,45 @@
       }
     },
     {
+      "id": 567353,
+      "status": "TIMED",
+      "utcDate": "2026-11-06T20:45:00Z",
+      "matchday": 11,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "home": {
+        "id": 5531,
+        "name": "FC Famalicão",
+        "shortName": "Famalicão",
+        "tla": "FAM",
+        "crest": "https://crests.football-data.org/5531.png"
+      },
+      "away": {
+        "id": 712,
+        "name": "FC Arouca",
+        "shortName": "Arouca",
+        "tla": "FCA",
+        "crest": "https://crests.football-data.org/712.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
       "id": 558854,
       "status": "TIMED",
       "utcDate": "2026-10-31T15:30:00Z",
@@ -3815,6 +3917,45 @@
         "shortName": "Sparta",
         "tla": "SPA",
         "crest": "https://crests.football-data.org/6806.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 558845,
+      "status": "TIMED",
+      "utcDate": "2026-11-06T19:00:00Z",
+      "matchday": 12,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2003,
+        "name": "Eredivisie",
+        "code": "DED",
+        "emblem": "https://crests.football-data.org/ED.png"
+      },
+      "home": {
+        "id": 672,
+        "name": "Willem II Tilburg",
+        "shortName": "Willem II",
+        "tla": "WII",
+        "crest": "https://crests.football-data.org/672.png"
+      },
+      "away": {
+        "id": 684,
+        "name": "PEC Zwolle",
+        "shortName": "Zwolle",
+        "tla": "ZWO",
+        "crest": "https://crests.football-data.org/684.png"
       },
       "score": {
         "halfTime": {
