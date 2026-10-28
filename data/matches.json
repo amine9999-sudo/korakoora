@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T13:22:42.750316+00:00",
+  "updatedAt": "2026-10-28T18:59:26.266083+00:00",
   "dateFrom": "2026-10-27",
   "dateTo": "2026-11-06",
   "competitions": [
@@ -1708,12 +1708,17 @@
     },
     {
       "id": 558549,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-28T17:30:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 206189,
+        "name": "Juan Luca Sacchi",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1736,23 +1741,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 3
         }
       }
     },
     {
       "id": 558550,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-28T17:30:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11002,
+        "name": "Luca Pairetto",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1775,23 +1785,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 558553,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-28T17:30:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11029,
+        "name": "Davide Massa",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1814,12 +1829,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -1830,7 +1845,12 @@
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11065,
+        "name": "Daniele Doveri",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -1869,7 +1889,12 @@
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57842,
+        "name": "Giovanni Ayroldi",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
