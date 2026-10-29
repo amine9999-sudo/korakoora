@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T16:43:02.271396+00:00",
+  "updatedAt": "2026-10-29T21:37:28.940861+00:00",
   "dateFrom": "2026-10-28",
   "dateTo": "2026-11-07",
   "competitions": [
@@ -2108,7 +2108,7 @@
     },
     {
       "id": 558558,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-29T17:30:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
@@ -2141,23 +2141,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 5,
+          "away": 1
         }
       }
     },
     {
       "id": 558551,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-29T19:45:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 10980,
+        "name": "Federico La Penna",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -2180,12 +2185,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 2
         }
       }
     },
