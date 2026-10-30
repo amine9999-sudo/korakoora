@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T15:11:41.196644+00:00",
+  "updatedAt": "2026-10-30T19:59:45.691405+00:00",
   "dateFrom": "2026-10-29",
   "dateTo": "2026-11-08",
   "competitions": [
@@ -1503,7 +1503,12 @@
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 207080,
+        "name": "José Sánchez Martínez",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -3146,12 +3151,17 @@
     },
     {
       "id": 565846,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-30T19:30:00Z",
       "matchday": 8,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 9567,
+        "name": "Sascha Stegemann",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -3178,8 +3188,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       }
     },
@@ -3848,12 +3858,17 @@
     },
     {
       "id": 559644,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-10-30T18:00:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43918,
+        "name": "François Letexier",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -3876,23 +3891,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 5
         }
       }
     },
     {
       "id": 559646,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-10-30T18:00:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57092,
+        "name": "Eric Wattellier",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -3915,12 +3935,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 5,
+          "away": 2
         }
       }
     },
@@ -3931,7 +3951,12 @@
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15548,
+        "name": "Jérôme Brisard",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -4555,7 +4580,12 @@
       "matchday": 10,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 242513,
+        "name": "Miguel Fonseca",
+        "type": "REFEREE",
+        "nationality": "Portugal"
+      },
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
