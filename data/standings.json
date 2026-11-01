@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T09:37:07.121435+00:00",
+  "updatedAt": "2026-11-01T16:37:30.897508+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -688,6 +688,24 @@
         {
           "position": 1,
           "team": {
+            "id": 57,
+            "name": "Arsenal FC",
+            "shortName": "Arsenal",
+            "tla": "ARS",
+            "crest": "https://crests.football-data.org/57.png"
+          },
+          "playedGames": 9,
+          "won": 7,
+          "draw": 1,
+          "lost": 1,
+          "points": 22,
+          "goalsFor": 13,
+          "goalsAgainst": 5,
+          "goalDifference": 8
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 65,
             "name": "Manchester City FC",
             "shortName": "Man City",
@@ -702,24 +720,6 @@
           "goalsFor": 20,
           "goalsAgainst": 10,
           "goalDifference": 10
-        },
-        {
-          "position": 2,
-          "team": {
-            "id": 57,
-            "name": "Arsenal FC",
-            "shortName": "Arsenal",
-            "tla": "ARS",
-            "crest": "https://crests.football-data.org/57.png"
-          },
-          "playedGames": 8,
-          "won": 7,
-          "draw": 0,
-          "lost": 1,
-          "points": 21,
-          "goalsFor": 13,
-          "goalsAgainst": 5,
-          "goalDifference": 8
         },
         {
           "position": 3,
@@ -766,11 +766,11 @@
             "tla": "LIV",
             "crest": "https://crests.football-data.org/64.png"
           },
-          "playedGames": 8,
+          "playedGames": 9,
           "won": 4,
-          "draw": 3,
+          "draw": 4,
           "lost": 1,
-          "points": 15,
+          "points": 16,
           "goalsFor": 11,
           "goalsAgainst": 8,
           "goalDifference": 3
