@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T02:27:58.546385+00:00",
+  "updatedAt": "2026-11-01T09:37:07.121435+00:00",
   "dateFrom": "2026-10-31",
   "dateTo": "2026-11-10",
   "competitions": [
@@ -2436,7 +2436,12 @@
       "matchday": 10,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 212567,
+        "name": "Maria Caputi",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -5275,7 +5280,12 @@
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 56912,
+        "name": "Jeroen Manschot",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
