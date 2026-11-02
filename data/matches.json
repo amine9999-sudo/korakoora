@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T17:21:11.118486+00:00",
+  "updatedAt": "2026-11-02T23:59:18.309825+00:00",
   "dateFrom": "2026-11-01",
   "dateTo": "2026-11-11",
   "competitions": [
@@ -767,7 +767,12 @@
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11327,
+        "name": "John Brooks",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -1367,12 +1372,17 @@
     },
     {
       "id": 564731,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-02T20:00:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 214122,
+        "name": "Jon González Esteban",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1395,12 +1405,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         }
       }
     },
@@ -2016,7 +2026,7 @@
     },
     {
       "id": 558541,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-02T17:30:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
@@ -2049,23 +2059,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 4
         }
       }
     },
     {
       "id": 558545,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-02T19:45:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 159361,
+        "name": "Valerio Crezzini",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -2088,12 +2103,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 3
         }
       }
     },
@@ -3104,12 +3119,17 @@
     },
     {
       "id": 559641,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-02T19:45:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57073,
+        "name": "Jérémie Pignard",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -3132,12 +3152,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         }
       }
     },
@@ -3670,12 +3690,17 @@
     },
     {
       "id": 567342,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-02T20:15:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 220513,
+        "name": "Bruno Costa",
+        "type": "REFEREE",
+        "nationality": "Portugal"
+      },
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -3698,23 +3723,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       }
     },
     {
       "id": 567346,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-02T20:15:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 220533,
+        "name": "Hélder Carvalho",
+        "type": "REFEREE",
+        "nationality": "Portugal"
+      },
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -3737,12 +3767,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
