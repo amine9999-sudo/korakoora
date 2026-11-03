@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T14:53:45.903101+00:00",
+  "updatedAt": "2026-11-03T20:48:34.228369+00:00",
   "dateFrom": "2026-11-02",
   "dateTo": "2026-11-12",
   "competitions": [
@@ -16,12 +16,17 @@
   "matches": [
     {
       "id": 575377,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-03T17:45:00Z",
       "matchday": 4,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43954,
+        "name": "Ivan Kružliak",
+        "type": "REFEREE",
+        "nationality": "Slovakia"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -44,23 +49,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       }
     },
     {
       "id": 575378,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-03T17:45:00Z",
       "matchday": 4,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11443,
+        "name": "Chris Kavanagh",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -83,23 +93,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       }
     },
     {
       "id": 575379,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-11-03T20:00:00Z",
       "matchday": 4,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 30960,
+        "name": "Glenn Nyberg",
+        "type": "REFEREE",
+        "nationality": "Sweden"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -126,19 +141,24 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         }
       }
     },
     {
       "id": 575380,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-11-03T20:00:00Z",
       "matchday": 4,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11029,
+        "name": "Davide Massa",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -165,19 +185,24 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       }
     },
     {
       "id": 575381,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-11-03T20:00:00Z",
       "matchday": 4,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43918,
+        "name": "François Letexier",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -204,19 +229,24 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 575382,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-11-03T20:00:00Z",
       "matchday": 4,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43878,
+        "name": "Felix Zwayer",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -243,19 +273,24 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 4
         }
       }
     },
     {
       "id": 575383,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-11-03T20:00:00Z",
       "matchday": 4,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 206211,
+        "name": "Jesús Gil Manzano",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -282,19 +317,24 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         }
       }
     },
     {
       "id": 575384,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-11-03T20:00:00Z",
       "matchday": 4,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 38806,
+        "name": "João Pinheiro",
+        "type": "REFEREE",
+        "nationality": "Portugal"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -321,19 +361,24 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 575385,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-11-03T20:00:00Z",
       "matchday": 4,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43952,
+        "name": "Donatas Rumšas",
+        "type": "REFEREE",
+        "nationality": "Lithuania"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -360,8 +405,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       }
     },
