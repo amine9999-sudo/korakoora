@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T16:00:58.463285+00:00",
+  "updatedAt": "2026-11-04T22:03:35.716378+00:00",
   "dateFrom": "2026-11-03",
   "dateTo": "2026-11-13",
   "competitions": [
@@ -412,7 +412,7 @@
     },
     {
       "id": 575386,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-04T17:45:00Z",
       "matchday": 4,
       "stage": "LEAGUE_STAGE",
@@ -445,18 +445,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 3
         }
       }
     },
     {
       "id": 575387,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-04T17:45:00Z",
       "matchday": 4,
       "stage": "LEAGUE_STAGE",
@@ -489,23 +489,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 2
         }
       }
     },
     {
       "id": 575388,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-04T20:00:00Z",
       "matchday": 4,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11079,
+        "name": "Marco Guida",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -528,23 +533,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 3
         }
       }
     },
     {
       "id": 575389,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-04T20:00:00Z",
       "matchday": 4,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43943,
+        "name": "Tobias Stieler",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -567,23 +577,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         }
       }
     },
     {
       "id": 575390,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-04T20:00:00Z",
       "matchday": 4,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15680,
+        "name": "Irfan Peljto",
+        "type": "REFEREE",
+        "nationality": "Bosnia and Herzegovina"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -606,23 +621,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         }
       }
     },
     {
       "id": 575391,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-04T20:00:00Z",
       "matchday": 4,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43858,
+        "name": "Serdar Gözübüyük",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -645,23 +665,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         }
       }
     },
     {
       "id": 575392,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-04T20:00:00Z",
       "matchday": 4,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11605,
+        "name": "Michael Oliver",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -684,23 +709,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 4,
+          "away": 1
         }
       }
     },
     {
       "id": 575393,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-04T20:00:00Z",
       "matchday": 4,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 44921,
+        "name": "Rohit Saggi",
+        "type": "REFEREE",
+        "nationality": "Norway"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -723,23 +753,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 3
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 9
         }
       }
     },
     {
       "id": 575394,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-04T20:00:00Z",
       "matchday": 4,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 56923,
+        "name": "Sander Van der Eijk",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -762,12 +797,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 4,
+          "away": 1
         }
       }
     },
@@ -2334,7 +2369,7 @@
     {
       "id": 559637,
       "status": "TIMED",
-      "utcDate": "2026-11-07T16:15:00Z",
+      "utcDate": "2026-11-07T18:00:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
       "venue": null,
@@ -2373,7 +2408,7 @@
     {
       "id": 559635,
       "status": "TIMED",
-      "utcDate": "2026-11-07T19:45:00Z",
+      "utcDate": "2026-11-07T20:05:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
       "venue": null,
