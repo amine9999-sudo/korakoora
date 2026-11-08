@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T20:15:41.403647+00:00",
+  "updatedAt": "2026-11-08T23:54:34.710635+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -1074,13 +1074,13 @@
             "crest": "https://crests.football-data.org/81.png"
           },
           "playedGames": 12,
-          "won": 10,
-          "draw": 1,
+          "won": 11,
+          "draw": 0,
           "lost": 1,
-          "points": 31,
-          "goalsFor": 46,
-          "goalsAgainst": 12,
-          "goalDifference": 34
+          "points": 33,
+          "goalsFor": 48,
+          "goalsAgainst": 13,
+          "goalDifference": 35
         },
         {
           "position": 2,
@@ -1111,12 +1111,12 @@
           },
           "playedGames": 12,
           "won": 9,
-          "draw": 2,
-          "lost": 1,
-          "points": 29,
-          "goalsFor": 22,
-          "goalsAgainst": 8,
-          "goalDifference": 14
+          "draw": 1,
+          "lost": 2,
+          "points": 28,
+          "goalsFor": 23,
+          "goalsAgainst": 10,
+          "goalDifference": 13
         },
         {
           "position": 4,
