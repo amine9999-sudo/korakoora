@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-08T23:54:34.710635+00:00",
-  "dateFrom": "2026-11-07",
-  "dateTo": "2026-11-17",
+  "updatedAt": "2026-11-09T05:13:51.825614+00:00",
+  "dateFrom": "2026-11-08",
+  "dateTo": "2026-11-18",
   "competitions": [
     "CL",
     "PL",
@@ -12,184 +12,8 @@
     "PPL",
     "DED"
   ],
-  "count": 59,
+  "count": 35,
   "matches": [
-    {
-      "id": 560632,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T12:30:00Z",
-      "matchday": 10,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 11327,
-        "name": "John Brooks",
-        "type": "REFEREE",
-        "nationality": "England"
-      },
-      "competition": {
-        "id": 2021,
-        "name": "Premier League",
-        "code": "PL",
-        "emblem": "https://crests.football-data.org/PL.png"
-      },
-      "home": {
-        "id": 341,
-        "name": "Leeds United FC",
-        "shortName": "Leeds United",
-        "tla": "LEE",
-        "crest": "https://crests.football-data.org/341.png"
-      },
-      "away": {
-        "id": 73,
-        "name": "Tottenham Hotspur FC",
-        "shortName": "Tottenham",
-        "tla": "TOT",
-        "crest": "https://crests.football-data.org/73.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 0
-        }
-      }
-    },
-    {
-      "id": 560640,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T15:00:00Z",
-      "matchday": 10,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 210717,
-        "name": "Farai Hallam",
-        "type": "REFEREE",
-        "nationality": "England"
-      },
-      "competition": {
-        "id": 2021,
-        "name": "Premier League",
-        "code": "PL",
-        "emblem": "https://crests.football-data.org/PL.png"
-      },
-      "home": {
-        "id": 57,
-        "name": "Arsenal FC",
-        "shortName": "Arsenal",
-        "tla": "ARS",
-        "crest": "https://crests.football-data.org/57.png"
-      },
-      "away": {
-        "id": 322,
-        "name": "Hull City AFC",
-        "shortName": "Hull City",
-        "tla": "HUL",
-        "crest": "https://crests.football-data.org/322.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 0
-        }
-      }
-    },
-    {
-      "id": 560633,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T15:00:00Z",
-      "matchday": 10,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 11446,
-        "name": "Robert Jones",
-        "type": "REFEREE",
-        "nationality": "England"
-      },
-      "competition": {
-        "id": 2021,
-        "name": "Premier League",
-        "code": "PL",
-        "emblem": "https://crests.football-data.org/PL.png"
-      },
-      "home": {
-        "id": 63,
-        "name": "Fulham FC",
-        "shortName": "Fulham",
-        "tla": "FUL",
-        "crest": "https://crests.football-data.org/63.png"
-      },
-      "away": {
-        "id": 67,
-        "name": "Newcastle United FC",
-        "shortName": "Newcastle",
-        "tla": "NEW",
-        "crest": "https://crests.football-data.org/67.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 1
-        }
-      }
-    },
-    {
-      "id": 560641,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T17:30:00Z",
-      "matchday": 10,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 213813,
-        "name": "Sam Barrott",
-        "type": "REFEREE",
-        "nationality": "England"
-      },
-      "competition": {
-        "id": 2021,
-        "name": "Premier League",
-        "code": "PL",
-        "emblem": "https://crests.football-data.org/PL.png"
-      },
-      "home": {
-        "id": 351,
-        "name": "Nottingham Forest FC",
-        "shortName": "Nottingham",
-        "tla": "NOT",
-        "crest": "https://crests.football-data.org/351.png"
-      },
-      "away": {
-        "id": 65,
-        "name": "Manchester City FC",
-        "shortName": "Man City",
-        "tla": "MCI",
-        "crest": "https://crests.football-data.org/65.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 2,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 3,
-          "away": 1
-        }
-      }
-    },
     {
       "id": 560635,
       "status": "FINISHED",
@@ -407,182 +231,6 @@
         "fullTime": {
           "home": 4,
           "away": 4
-        }
-      }
-    },
-    {
-      "id": 564744,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T13:00:00Z",
-      "matchday": 12,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 57930,
-        "name": "Isidro Díaz de Mera",
-        "type": "REFEREE",
-        "nationality": "Spain"
-      },
-      "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "home": {
-        "id": 84,
-        "name": "Málaga CF",
-        "shortName": "Málaga",
-        "tla": "MAL",
-        "crest": "https://crests.football-data.org/84.png"
-      },
-      "away": {
-        "id": 5335,
-        "name": "Real Racing Club de Santander",
-        "shortName": "Santander",
-        "tla": "SAN",
-        "crest": "https://crests.football-data.org/5335.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 1,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 2
-        }
-      }
-    },
-    {
-      "id": 564745,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T15:15:00Z",
-      "matchday": 12,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 214410,
-        "name": "Alejandro Quintero González",
-        "type": "REFEREE",
-        "nationality": "Spain"
-      },
-      "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "home": {
-        "id": 80,
-        "name": "RCD Espanyol de Barcelona",
-        "shortName": "Espanyol",
-        "tla": "ESP",
-        "crest": "https://crests.football-data.org/80.png"
-      },
-      "away": {
-        "id": 560,
-        "name": "RC Deportivo La Coruña",
-        "shortName": "Deportivo",
-        "tla": "DEP",
-        "crest": "https://crests.football-data.org/560.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 0,
-          "away": 0
-        }
-      }
-    },
-    {
-      "id": 564739,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T17:30:00Z",
-      "matchday": 12,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 214573,
-        "name": "Miguel Sesma Espinosa",
-        "type": "REFEREE",
-        "nationality": "Spain"
-      },
-      "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "home": {
-        "id": 79,
-        "name": "CA Osasuna",
-        "shortName": "Osasuna",
-        "tla": "OSA",
-        "crest": "https://crests.football-data.org/79.png"
-      },
-      "away": {
-        "id": 77,
-        "name": "Athletic Club",
-        "shortName": "Athletic",
-        "tla": "ATH",
-        "crest": "https://crests.football-data.org/77.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 1
-        }
-      }
-    },
-    {
-      "id": 564741,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T20:00:00Z",
-      "matchday": 12,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 214213,
-        "name": "Francisco Hernández Maeso",
-        "type": "REFEREE",
-        "nationality": "Spain"
-      },
-      "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "home": {
-        "id": 95,
-        "name": "Valencia CF",
-        "shortName": "Valencia",
-        "tla": "VAL",
-        "crest": "https://crests.football-data.org/95.png"
-      },
-      "away": {
-        "id": 86,
-        "name": "Real Madrid CF",
-        "shortName": "Real Madrid",
-        "tla": "RMA",
-        "crest": "https://crests.football-data.org/86.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 2
-        },
-        "fullTime": {
-          "home": 0,
-          "away": 3
         }
       }
     },
@@ -807,184 +455,8 @@
       }
     },
     {
-      "id": 558532,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T14:00:00Z",
-      "matchday": 11,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 57882,
-        "name": "Ermanno Feliciani",
-        "type": "REFEREE",
-        "nationality": "Italy"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "emblem": "https://crests.football-data.org/c111.png"
-      },
-      "home": {
-        "id": 586,
-        "name": "Torino FC",
-        "shortName": "Torino",
-        "tla": "TOR",
-        "crest": "https://crests.football-data.org/586.png"
-      },
-      "away": {
-        "id": 5890,
-        "name": "US Lecce",
-        "shortName": "Lecce",
-        "tla": "USL",
-        "crest": "https://crests.football-data.org/5890.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 1
-        }
-      }
-    },
-    {
-      "id": 558534,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T14:00:00Z",
-      "matchday": 11,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 57842,
-        "name": "Giovanni Ayroldi",
-        "type": "REFEREE",
-        "nationality": "Italy"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "emblem": "https://crests.football-data.org/c111.png"
-      },
-      "home": {
-        "id": 104,
-        "name": "Cagliari Calcio",
-        "shortName": "Cagliari",
-        "tla": "CAG",
-        "crest": "https://crests.football-data.org/104.png"
-      },
-      "away": {
-        "id": 470,
-        "name": "Frosinone Calcio",
-        "shortName": "Frosinone",
-        "tla": "FRO",
-        "crest": "https://crests.football-data.org/470.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 1,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 0
-        }
-      }
-    },
-    {
-      "id": 558535,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T17:00:00Z",
-      "matchday": 11,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 57764,
-        "name": "Luca Zufferli",
-        "type": "REFEREE",
-        "nationality": "Italy"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "emblem": "https://crests.football-data.org/c111.png"
-      },
-      "home": {
-        "id": 112,
-        "name": "Parma Calcio 1913",
-        "shortName": "Parma",
-        "tla": "PAR",
-        "crest": "https://crests.football-data.org/112.png"
-      },
-      "away": {
-        "id": 103,
-        "name": "Bologna FC 1909",
-        "shortName": "Bologna",
-        "tla": "BOL",
-        "crest": "https://crests.football-data.org/103.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 2
-        }
-      }
-    },
-    {
-      "id": 558531,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T19:45:00Z",
-      "matchday": 11,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 11060,
-        "name": "Marco Di Bello",
-        "type": "REFEREE",
-        "nationality": "Italy"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "emblem": "https://crests.football-data.org/c111.png"
-      },
-      "home": {
-        "id": 100,
-        "name": "AS Roma",
-        "shortName": "Roma",
-        "tla": "ROM",
-        "crest": "https://crests.football-data.org/100.png"
-      },
-      "away": {
-        "id": 471,
-        "name": "US Sassuolo Calcio",
-        "shortName": "Sassuolo",
-        "tla": "SAS",
-        "crest": "https://crests.football-data.org/471.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 2,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 3,
-          "away": 0
-        }
-      }
-    },
-    {
       "id": 558533,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-08T11:30:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
@@ -1017,18 +489,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       }
     },
     {
       "id": 558536,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-08T14:00:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
@@ -1061,18 +533,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         }
       }
     },
     {
       "id": 558538,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-08T14:00:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
@@ -1105,18 +577,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       }
     },
     {
       "id": 558530,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-08T17:00:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
@@ -1149,18 +621,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       }
     },
     {
       "id": 558529,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-08T19:45:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
@@ -1193,232 +665,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
-        },
-        "fullTime": {
-          "home": null,
-          "away": null
-        }
-      }
-    },
-    {
-      "id": 565848,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T14:30:00Z",
-      "matchday": 9,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 57517,
-        "name": "Daniel Schlager",
-        "type": "REFEREE",
-        "nationality": "Germany"
-      },
-      "competition": {
-        "id": 2002,
-        "name": "Bundesliga",
-        "code": "BL1",
-        "emblem": "https://crests.football-data.org/BL1.png"
-      },
-      "home": {
-        "id": 721,
-        "name": "RB Leipzig",
-        "shortName": "RB Leipzig",
-        "tla": "RBL",
-        "crest": "https://crests.football-data.org/721.png"
-      },
-      "away": {
-        "id": 16,
-        "name": "FC Augsburg",
-        "shortName": "Augsburg",
-        "tla": "FCA",
-        "crest": "https://crests.football-data.org/16.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 3,
-          "away": 1
-        },
-        "fullTime": {
-          "home": 5,
-          "away": 2
-        }
-      }
-    },
-    {
-      "id": 565850,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T14:30:00Z",
-      "matchday": 9,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 253,
-        "name": "Harm Osmers",
-        "type": "REFEREE",
-        "nationality": "Germany"
-      },
-      "competition": {
-        "id": 2002,
-        "name": "Bundesliga",
-        "code": "BL1",
-        "emblem": "https://crests.football-data.org/BL1.png"
-      },
-      "home": {
-        "id": 4,
-        "name": "Borussia Dortmund",
-        "shortName": "Dortmund",
-        "tla": "BVB",
-        "crest": "https://crests.football-data.org/4.png"
-      },
-      "away": {
-        "id": 719,
-        "name": "SV 07 Elversberg",
-        "shortName": "Elversberg",
-        "tla": "ELV",
-        "crest": "https://crests.football-data.org/719.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 2,
-          "away": 1
-        }
-      }
-    },
-    {
-      "id": 565851,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T14:30:00Z",
-      "matchday": 9,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 57519,
-        "name": "Robert Schröder",
-        "type": "REFEREE",
-        "nationality": "Germany"
-      },
-      "competition": {
-        "id": 2002,
-        "name": "Bundesliga",
-        "code": "BL1",
-        "emblem": "https://crests.football-data.org/BL1.png"
-      },
-      "home": {
-        "id": 15,
-        "name": "1. FSV Mainz 05",
-        "shortName": "Mainz",
-        "tla": "M05",
-        "crest": "https://crests.football-data.org/15.png"
-      },
-      "away": {
-        "id": 5,
-        "name": "FC Bayern München",
-        "shortName": "Bayern",
-        "tla": "FCB",
-        "crest": "https://crests.football-data.org/5.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 1
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 2
-        }
-      }
-    },
-    {
-      "id": 565853,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T14:30:00Z",
-      "matchday": 9,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 15746,
-        "name": "Bastian Dankert",
-        "type": "REFEREE",
-        "nationality": "Germany"
-      },
-      "competition": {
-        "id": 2002,
-        "name": "Bundesliga",
-        "code": "BL1",
-        "emblem": "https://crests.football-data.org/BL1.png"
-      },
-      "home": {
-        "id": 29,
-        "name": "SC Paderborn 07",
-        "shortName": "SC Paderborn",
-        "tla": "SCP",
-        "crest": "https://crests.football-data.org/29.png"
-      },
-      "away": {
-        "id": 19,
-        "name": "Eintracht Frankfurt",
-        "shortName": "Frankfurt",
-        "tla": "SGE",
-        "crest": "https://crests.football-data.org/19.png"
-      },
-      "score": {
-        "halfTime": {
           "home": 1,
           "away": 1
         },
         "fullTime": {
           "home": 2,
           "away": 2
-        }
-      }
-    },
-    {
-      "id": 565849,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T17:30:00Z",
-      "matchday": 9,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 57515,
-        "name": "Sören Storks",
-        "type": "REFEREE",
-        "nationality": "Germany"
-      },
-      "competition": {
-        "id": 2002,
-        "name": "Bundesliga",
-        "code": "BL1",
-        "emblem": "https://crests.football-data.org/BL1.png"
-      },
-      "home": {
-        "id": 10,
-        "name": "VfB Stuttgart",
-        "shortName": "Stuttgart",
-        "tla": "VFB",
-        "crest": "https://crests.football-data.org/10.png"
-      },
-      "away": {
-        "id": 12,
-        "name": "SV Werder Bremen",
-        "shortName": "Bremen",
-        "tla": "SVW",
-        "crest": "https://crests.football-data.org/12.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 1,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 0
         }
       }
     },
@@ -1551,94 +803,6 @@
         "fullTime": {
           "home": 2,
           "away": 1
-        }
-      }
-    },
-    {
-      "id": 559637,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T18:00:00Z",
-      "matchday": 10,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 64781,
-        "name": "Marc Bollengier",
-        "type": "REFEREE",
-        "nationality": "France"
-      },
-      "competition": {
-        "id": 2015,
-        "name": "Ligue 1",
-        "code": "FL1",
-        "emblem": "https://crests.football-data.org/FL1.png"
-      },
-      "home": {
-        "id": 519,
-        "name": "AJ Auxerre",
-        "shortName": "Auxerre",
-        "tla": "AJA",
-        "crest": "https://crests.football-data.org/519.png"
-      },
-      "away": {
-        "id": 1045,
-        "name": "Paris FC",
-        "shortName": "Paris FC",
-        "tla": "PFC",
-        "crest": "https://crests.football-data.org/1045.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 0,
-          "away": 1
-        }
-      }
-    },
-    {
-      "id": 559635,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T20:05:00Z",
-      "matchday": 10,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 43886,
-        "name": "Ruddy Buquet",
-        "type": "REFEREE",
-        "nationality": "France"
-      },
-      "competition": {
-        "id": 2015,
-        "name": "Ligue 1",
-        "code": "FL1",
-        "emblem": "https://crests.football-data.org/FL1.png"
-      },
-      "home": {
-        "id": 524,
-        "name": "Paris Saint-Germain FC",
-        "shortName": "PSG",
-        "tla": "PSG",
-        "crest": "https://crests.football-data.org/524.png"
-      },
-      "away": {
-        "id": 531,
-        "name": "ES Troyes AC",
-        "shortName": "Troyes",
-        "tla": "ETR",
-        "crest": "https://crests.football-data.org/531.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 1,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 0
         }
       }
     },
@@ -1907,94 +1071,6 @@
       }
     },
     {
-      "id": 567347,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T18:00:00Z",
-      "matchday": 11,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 57283,
-        "name": "Sérgio Guelho",
-        "type": "REFEREE",
-        "nationality": "Portugal"
-      },
-      "competition": {
-        "id": 2017,
-        "name": "Primeira Liga",
-        "code": "PPL",
-        "emblem": "https://crests.football-data.org/PPL.png"
-      },
-      "home": {
-        "id": 7822,
-        "name": "FC Alverca",
-        "shortName": "Alverca",
-        "tla": "ALV",
-        "crest": "https://crests.football-data.org/7822.png"
-      },
-      "away": {
-        "id": 6618,
-        "name": "Casa Pia AC",
-        "shortName": "Casa Pia",
-        "tla": "CAS",
-        "crest": "https://crests.football-data.org/6618.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 1
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 1
-        }
-      }
-    },
-    {
-      "id": 567350,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T20:30:00Z",
-      "matchday": 11,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 220577,
-        "name": "João Gonçalves",
-        "type": "REFEREE",
-        "nationality": "Portugal"
-      },
-      "competition": {
-        "id": 2017,
-        "name": "Primeira Liga",
-        "code": "PPL",
-        "emblem": "https://crests.football-data.org/PPL.png"
-      },
-      "home": {
-        "id": 498,
-        "name": "Sporting Clube de Portugal",
-        "shortName": "Sporting CP",
-        "tla": "SPO",
-        "crest": "https://crests.football-data.org/498.png"
-      },
-      "away": {
-        "id": 583,
-        "name": "Moreirense FC",
-        "shortName": "Moreirense",
-        "tla": "MOR",
-        "crest": "https://crests.football-data.org/583.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 1,
-          "away": 0
-        }
-      }
-    },
-    {
       "id": 567348,
       "status": "POSTPONED",
       "utcDate": "2026-11-08T00:00:00Z",
@@ -2255,138 +1331,6 @@
         "fullTime": {
           "home": 2,
           "away": 3
-        }
-      }
-    },
-    {
-      "id": 558844,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T15:30:00Z",
-      "matchday": 12,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 43861,
-        "name": "Dennis Higler",
-        "type": "REFEREE",
-        "nationality": "Netherlands"
-      },
-      "competition": {
-        "id": 2003,
-        "name": "Eredivisie",
-        "code": "DED",
-        "emblem": "https://crests.football-data.org/ED.png"
-      },
-      "home": {
-        "id": 1920,
-        "name": "Fortuna Sittard",
-        "shortName": "Sittard",
-        "tla": "SIT",
-        "crest": "https://crests.football-data.org/1920.png"
-      },
-      "away": {
-        "id": 1912,
-        "name": "Telstar 1963",
-        "shortName": "Telstar",
-        "tla": "TEL",
-        "crest": "https://crests.football-data.org/1912.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 2,
-          "away": 2
-        },
-        "fullTime": {
-          "home": 2,
-          "away": 2
-        }
-      }
-    },
-    {
-      "id": 558841,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T17:45:00Z",
-      "matchday": 12,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 81350,
-        "name": "Alex Bos",
-        "type": "REFEREE",
-        "nationality": "Netherlands"
-      },
-      "competition": {
-        "id": 2003,
-        "name": "Eredivisie",
-        "code": "DED",
-        "emblem": "https://crests.football-data.org/ED.png"
-      },
-      "home": {
-        "id": 680,
-        "name": "ADO Den Haag",
-        "shortName": "Den Haag",
-        "tla": "ADO",
-        "crest": "https://crests.football-data.org/680.png"
-      },
-      "away": {
-        "id": 6806,
-        "name": "Sparta Rotterdam",
-        "shortName": "Sparta",
-        "tla": "SPA",
-        "crest": "https://crests.football-data.org/6806.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 1,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 3,
-          "away": 1
-        }
-      }
-    },
-    {
-      "id": 558843,
-      "status": "FINISHED",
-      "utcDate": "2026-11-07T20:00:00Z",
-      "matchday": 12,
-      "stage": "REGULAR_SEASON",
-      "venue": null,
-      "referee": {
-        "id": 56912,
-        "name": "Jeroen Manschot",
-        "type": "REFEREE",
-        "nationality": "Netherlands"
-      },
-      "competition": {
-        "id": 2003,
-        "name": "Eredivisie",
-        "code": "DED",
-        "emblem": "https://crests.football-data.org/ED.png"
-      },
-      "home": {
-        "id": 670,
-        "name": "SBV Excelsior",
-        "shortName": "Excelsior",
-        "tla": "EXC",
-        "crest": "https://crests.football-data.org/670.png"
-      },
-      "away": {
-        "id": 718,
-        "name": "Go Ahead Eagles",
-        "shortName": "Go Ahead",
-        "tla": "GOA",
-        "crest": "https://crests.football-data.org/718.png"
-      },
-      "score": {
-        "halfTime": {
-          "home": 0,
-          "away": 0
-        },
-        "fullTime": {
-          "home": 0,
-          "away": 1
         }
       }
     },
