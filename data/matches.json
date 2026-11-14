@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-13T22:29:59.264523+00:00",
-  "dateFrom": "2026-11-12",
-  "dateTo": "2026-11-22",
+  "updatedAt": "2026-11-14T02:39:08.926514+00:00",
+  "dateFrom": "2026-11-13",
+  "dateTo": "2026-11-23",
   "competitions": [
     "CL",
     "PL",
@@ -12,7 +12,7 @@
     "PPL",
     "DED"
   ],
-  "count": 54,
+  "count": 57,
   "matches": [
     {
       "id": 560643,
@@ -353,6 +353,45 @@
         "shortName": "Man United",
         "tla": "MUN",
         "crest": "https://crests.football-data.org/66.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 560649,
+      "status": "TIMED",
+      "utcDate": "2026-11-23T20:00:00Z",
+      "matchday": 11,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2021,
+        "name": "Premier League",
+        "code": "PL",
+        "emblem": "https://crests.football-data.org/PL.png"
+      },
+      "home": {
+        "id": 402,
+        "name": "Brentford FC",
+        "shortName": "Brentford",
+        "tla": "BRE",
+        "crest": "https://crests.football-data.org/402.png"
+      },
+      "away": {
+        "id": 62,
+        "name": "Everton FC",
+        "shortName": "Everton",
+        "tla": "EVE",
+        "crest": "https://crests.football-data.org/62.png"
       },
       "score": {
         "halfTime": {
@@ -717,6 +756,45 @@
       }
     },
     {
+      "id": 564757,
+      "status": "TIMED",
+      "utcDate": "2026-11-23T20:00:00Z",
+      "matchday": 13,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2014,
+        "name": "Primera Division",
+        "code": "PD",
+        "emblem": "https://crests.football-data.org/laliga.png"
+      },
+      "home": {
+        "id": 88,
+        "name": "Levante UD",
+        "shortName": "Levante",
+        "tla": "LEV",
+        "crest": "https://crests.football-data.org/88.png"
+      },
+      "away": {
+        "id": 285,
+        "name": "Elche CF",
+        "shortName": "Elche",
+        "tla": "ELC",
+        "crest": "https://crests.football-data.org/285.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
       "id": 558525,
       "status": "TIMED",
       "utcDate": "2026-11-21T14:00:00Z",
@@ -1055,6 +1133,45 @@
         "shortName": "Inter",
         "tla": "INT",
         "crest": "https://crests.football-data.org/108.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 558519,
+      "status": "TIMED",
+      "utcDate": "2026-11-23T19:45:00Z",
+      "matchday": 12,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2019,
+        "name": "Serie A",
+        "code": "SA",
+        "emblem": "https://crests.football-data.org/c111.png"
+      },
+      "home": {
+        "id": 5911,
+        "name": "AC Monza",
+        "shortName": "Monza",
+        "tla": "MON",
+        "crest": "https://crests.football-data.org/5911.png"
+      },
+      "away": {
+        "id": 99,
+        "name": "ACF Fiorentina",
+        "shortName": "Fiorentina",
+        "tla": "FIO",
+        "crest": "https://crests.football-data.org/99.png"
       },
       "score": {
         "halfTime": {
