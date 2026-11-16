@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-15T20:30:57.410582+00:00",
-  "dateFrom": "2026-11-14",
-  "dateTo": "2026-11-24",
+  "updatedAt": "2026-11-16T00:49:53.572467+00:00",
+  "dateFrom": "2026-11-15",
+  "dateTo": "2026-11-25",
   "competitions": [
     "CL",
     "PL",
@@ -12,7 +12,7 @@
     "PPL",
     "DED"
   ],
-  "count": 66,
+  "count": 75,
   "matches": [
     {
       "id": 575395,
@@ -353,6 +353,357 @@
         "shortName": "PAE AEK",
         "tla": "AEK",
         "crest": "https://crests.football-data.org/1899.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575404,
+      "status": "TIMED",
+      "utcDate": "2026-11-25T17:45:00Z",
+      "matchday": 5,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 10233,
+        "name": "Sabah FK",
+        "shortName": "Sabah FK",
+        "tla": "SAB",
+        "crest": "https://crests.football-data.org/10233.png"
+      },
+      "away": {
+        "id": 81,
+        "name": "FC Barcelona",
+        "shortName": "Barça",
+        "tla": "FCB",
+        "crest": "https://crests.football-data.org/81.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575405,
+      "status": "TIMED",
+      "utcDate": "2026-11-25T17:45:00Z",
+      "matchday": 5,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 930,
+        "name": "SK Slavia Praha",
+        "shortName": "Slavia Praha",
+        "tla": "SLP",
+        "crest": "https://crests.football-data.org/930.png"
+      },
+      "away": {
+        "id": 94,
+        "name": "Villarreal CF",
+        "shortName": "Villarreal",
+        "tla": "VIL",
+        "crest": "https://crests.football-data.org/94.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575406,
+      "status": "TIMED",
+      "utcDate": "2026-11-25T20:00:00Z",
+      "matchday": 5,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 108,
+        "name": "FC Internazionale Milano",
+        "shortName": "Inter",
+        "tla": "INT",
+        "crest": "https://crests.football-data.org/108.png"
+      },
+      "away": {
+        "id": 10,
+        "name": "VfB Stuttgart",
+        "shortName": "Stuttgart",
+        "tla": "VFB",
+        "crest": "https://crests.football-data.org/10.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575407,
+      "status": "TIMED",
+      "utcDate": "2026-11-25T20:00:00Z",
+      "matchday": 5,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 78,
+        "name": "Club Atlético de Madrid",
+        "shortName": "Atleti",
+        "tla": "ATL",
+        "crest": "https://crests.football-data.org/78.png"
+      },
+      "away": {
+        "id": 5720,
+        "name": "Viking FK",
+        "shortName": "Viking",
+        "tla": "VIK",
+        "crest": "https://crests.football-data.org/5720.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575408,
+      "status": "TIMED",
+      "utcDate": "2026-11-25T20:00:00Z",
+      "matchday": 5,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 524,
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "tla": "PSG",
+        "crest": "https://crests.football-data.org/524.png"
+      },
+      "away": {
+        "id": 100,
+        "name": "AS Roma",
+        "shortName": "Roma",
+        "tla": "ROM",
+        "crest": "https://crests.football-data.org/100.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575409,
+      "status": "TIMED",
+      "utcDate": "2026-11-25T20:00:00Z",
+      "matchday": 5,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 851,
+        "name": "Club Brugge KV",
+        "shortName": "Club Brugge",
+        "tla": "BRU",
+        "crest": "https://crests.football-data.org/851.png"
+      },
+      "away": {
+        "id": 64,
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "tla": "LIV",
+        "crest": "https://crests.football-data.org/64.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575410,
+      "status": "TIMED",
+      "utcDate": "2026-11-25T20:00:00Z",
+      "matchday": 5,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 521,
+        "name": "Lille OSC",
+        "shortName": "Lille",
+        "tla": "LIL",
+        "crest": "https://crests.football-data.org/521.png"
+      },
+      "away": {
+        "id": 5,
+        "name": "FC Bayern München",
+        "shortName": "Bayern",
+        "tla": "FCB",
+        "crest": "https://crests.football-data.org/5.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575411,
+      "status": "TIMED",
+      "utcDate": "2026-11-25T20:00:00Z",
+      "matchday": 5,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting CP",
+        "tla": "SPO",
+        "crest": "https://crests.football-data.org/498.png"
+      },
+      "away": {
+        "id": 66,
+        "name": "Manchester United FC",
+        "shortName": "Man United",
+        "tla": "MUN",
+        "crest": "https://crests.football-data.org/66.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 575412,
+      "status": "TIMED",
+      "utcDate": "2026-11-25T20:00:00Z",
+      "matchday": 5,
+      "stage": "LEAGUE_STAGE",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2001,
+        "name": "UEFA Champions League",
+        "code": "CL",
+        "emblem": "https://crests.football-data.org/CL.png"
+      },
+      "home": {
+        "id": 1887,
+        "name": "FK Shakhtar Donetsk",
+        "shortName": "Shaktar",
+        "tla": "SHD",
+        "crest": "https://crests.football-data.org/1887.png"
+      },
+      "away": {
+        "id": 613,
+        "name": "Fenerbahçe SK",
+        "shortName": "Fenerbahçe",
+        "tla": "FEN",
+        "crest": "https://crests.football-data.org/613.png"
       },
       "score": {
         "halfTime": {
