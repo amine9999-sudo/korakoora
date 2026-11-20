@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T17:08:04.145942+00:00",
+  "updatedAt": "2026-11-20T23:16:16.551925+00:00",
   "dateFrom": "2026-11-19",
   "dateTo": "2026-11-29",
   "competitions": [
@@ -1498,12 +1498,17 @@
     },
     {
       "id": 564748,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-20T20:00:00Z",
       "matchday": 13,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 217698,
+        "name": "Mateo Busquets Ferrer",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1526,12 +1531,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       }
     },
@@ -2941,12 +2946,17 @@
     },
     {
       "id": 565859,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-20T19:30:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 65424,
+        "name": "Robin Braun",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -2969,12 +2979,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       }
     },
@@ -3643,12 +3653,17 @@
     },
     {
       "id": 559622,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-20T19:45:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57073,
+        "name": "Jérémie Pignard",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -3671,12 +3686,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 1
         }
       }
     },

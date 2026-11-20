@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T17:08:04.145942+00:00",
+  "updatedAt": "2026-11-20T23:16:16.551925+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -1181,14 +1181,14 @@
             "tla": "ATH",
             "crest": "https://crests.football-data.org/77.png"
           },
-          "playedGames": 11,
+          "playedGames": 12,
           "won": 4,
           "draw": 4,
-          "lost": 3,
+          "lost": 4,
           "points": 16,
           "goalsFor": 15,
-          "goalsAgainst": 11,
-          "goalDifference": 4
+          "goalsAgainst": 12,
+          "goalDifference": 3
         },
         {
           "position": 8,
@@ -1229,6 +1229,24 @@
         {
           "position": 10,
           "team": {
+            "id": 80,
+            "name": "RCD Espanyol de Barcelona",
+            "shortName": "Espanyol",
+            "tla": "ESP",
+            "crest": "https://crests.football-data.org/80.png"
+          },
+          "playedGames": 13,
+          "won": 4,
+          "draw": 3,
+          "lost": 6,
+          "points": 15,
+          "goalsFor": 14,
+          "goalsAgainst": 14,
+          "goalDifference": 0
+        },
+        {
+          "position": 11,
+          "team": {
             "id": 5335,
             "name": "Real Racing Club de Santander",
             "shortName": "Santander",
@@ -1245,7 +1263,7 @@
           "goalDifference": -13
         },
         {
-          "position": 11,
+          "position": 12,
           "team": {
             "id": 558,
             "name": "RC Celta de Vigo",
@@ -1263,7 +1281,7 @@
           "goalDifference": 0
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 263,
             "name": "Deportivo Alavés",
@@ -1279,24 +1297,6 @@
           "goalsFor": 15,
           "goalsAgainst": 17,
           "goalDifference": -2
-        },
-        {
-          "position": 13,
-          "team": {
-            "id": 80,
-            "name": "RCD Espanyol de Barcelona",
-            "shortName": "Espanyol",
-            "tla": "ESP",
-            "crest": "https://crests.football-data.org/80.png"
-          },
-          "playedGames": 12,
-          "won": 3,
-          "draw": 3,
-          "lost": 6,
-          "points": 12,
-          "goalsFor": 13,
-          "goalsAgainst": 14,
-          "goalDifference": -1
         },
         {
           "position": 14,
