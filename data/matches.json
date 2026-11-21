@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T12:55:09.993294+00:00",
+  "updatedAt": "2026-11-21T19:58:25.780946+00:00",
   "dateFrom": "2026-11-20",
   "dateTo": "2026-11-30",
   "competitions": [
@@ -718,7 +718,7 @@
     },
     {
       "id": 560643,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-11-21T12:30:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
@@ -751,23 +751,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": 0,
+          "home": 1,
           "away": 1
         }
       }
     },
     {
       "id": 560642,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-21T15:00:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11605,
+        "name": "Michael Oliver",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -790,23 +795,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 4
         }
       }
     },
     {
       "id": 560644,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-21T15:00:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11423,
+        "name": "Andy Madley",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -829,23 +839,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 560647,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-21T15:00:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 58025,
+        "name": "Adam Herczeg",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -868,23 +883,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       }
     },
     {
       "id": 560648,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-21T15:00:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11446,
+        "name": "Robert Jones",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -907,23 +927,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       }
     },
     {
       "id": 560650,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-21T15:00:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11469,
+        "name": "Darren England",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -946,23 +971,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 2
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 2
         }
       }
     },
     {
       "id": 560651,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-21T17:30:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11443,
+        "name": "Chris Kavanagh",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -985,12 +1015,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 2
         }
       }
     },
@@ -1547,7 +1577,7 @@
     },
     {
       "id": 564755,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-21T13:00:00Z",
       "matchday": 13,
       "stage": "REGULAR_SEASON",
@@ -1580,23 +1610,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 1
         }
       }
     },
     {
       "id": 564751,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-21T15:15:00Z",
       "matchday": 13,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 206223,
+        "name": "José Munuera Montero",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1619,23 +1654,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       }
     },
     {
       "id": 564756,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-21T17:30:00Z",
       "matchday": 13,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 207080,
+        "name": "José Sánchez Martínez",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1658,12 +1698,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       }
     },
@@ -1674,7 +1714,12 @@
       "matchday": 13,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 206205,
+        "name": "Adrián Cordero Vega",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -2293,7 +2338,7 @@
     },
     {
       "id": 558525,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-21T14:00:00Z",
       "matchday": 12,
       "stage": "REGULAR_SEASON",
@@ -2326,18 +2371,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       }
     },
     {
       "id": 558528,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-21T14:00:00Z",
       "matchday": 12,
       "stage": "REGULAR_SEASON",
@@ -2370,23 +2415,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 0
         }
       }
     },
     {
       "id": 558526,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-21T17:00:00Z",
       "matchday": 12,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57826,
+        "name": "Simone Sozza",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -2409,23 +2459,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 5
         }
       }
     },
     {
       "id": 558527,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-11-21T19:45:00Z",
       "matchday": 12,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11018,
+        "name": "Antonio Rapuano",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -2452,8 +2507,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -3127,7 +3182,7 @@
     },
     {
       "id": 565857,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-21T14:30:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
@@ -3160,18 +3215,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 4,
+          "away": 0
         }
       }
     },
     {
       "id": 565858,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-21T14:30:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
@@ -3204,18 +3259,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 5
         }
       }
     },
     {
       "id": 565860,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-21T14:30:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
@@ -3248,18 +3303,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       }
     },
     {
       "id": 565862,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-21T14:30:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
@@ -3292,18 +3347,18 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       }
     },
     {
       "id": 565865,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-21T14:30:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
@@ -3336,23 +3391,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       }
     },
     {
       "id": 565861,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-21T17:30:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15408,
+        "name": "Daniel Siebert",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -3375,12 +3435,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -3859,12 +3919,17 @@
     },
     {
       "id": 559628,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-21T16:15:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15548,
+        "name": "Jérôme Brisard",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -3887,23 +3952,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 3
         }
       }
     },
     {
       "id": 559621,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-11-21T19:45:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 1049,
+        "name": "Jeremy Stinat",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -3930,19 +4000,24 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 559623,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-11-21T19:45:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57088,
+        "name": "Bastien Dechepy",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -3969,19 +4044,24 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 559624,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-11-21T19:45:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43918,
+        "name": "François Letexier",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -4008,19 +4088,24 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 559627,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-11-21T19:45:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 76760,
+        "name": "Azzedine Souifi",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -4047,8 +4132,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -4873,12 +4958,17 @@
     },
     {
       "id": 558833,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-21T15:30:00Z",
       "matchday": 13,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 56912,
+        "name": "Jeroen Manschot",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -4901,23 +4991,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 3
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 4
         }
       }
     },
     {
       "id": 558831,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-21T17:45:00Z",
       "matchday": 13,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 81036,
+        "name": "Robin Hensgens",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -4940,23 +5035,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 3
         }
       }
     },
     {
       "id": 558835,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-11-21T17:45:00Z",
       "matchday": 13,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 9561,
+        "name": "Allard Lindhout",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -4979,12 +5079,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         }
       }
     },
@@ -4995,7 +5095,12 @@
       "matchday": 13,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 17136,
+        "name": "Joey Kooij",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -5034,7 +5139,12 @@
       "matchday": 13,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 81350,
+        "name": "Alex Bos",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
