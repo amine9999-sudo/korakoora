@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T04:11:16.896744+00:00",
+  "updatedAt": "2026-11-21T12:55:09.993294+00:00",
   "competitions": {
     "CL": {
       "name": "دوري أبطال أوروبا",
@@ -730,14 +730,14 @@
             "tla": "MCI",
             "crest": "https://crests.football-data.org/65.png"
           },
-          "playedGames": 10,
+          "playedGames": 11,
           "won": 7,
           "draw": 0,
-          "lost": 3,
+          "lost": 4,
           "points": 21,
           "goalsFor": 21,
-          "goalsAgainst": 13,
-          "goalDifference": 8
+          "goalsAgainst": 14,
+          "goalDifference": 7
         },
         {
           "position": 4,
@@ -850,6 +850,24 @@
         {
           "position": 10,
           "team": {
+            "id": 63,
+            "name": "Fulham FC",
+            "shortName": "Fulham",
+            "tla": "FUL",
+            "crest": "https://crests.football-data.org/63.png"
+          },
+          "playedGames": 11,
+          "won": 3,
+          "draw": 4,
+          "lost": 4,
+          "points": 13,
+          "goalsFor": 11,
+          "goalsAgainst": 12,
+          "goalDifference": -1
+        },
+        {
+          "position": 11,
+          "team": {
             "id": 58,
             "name": "Aston Villa FC",
             "shortName": "Aston Villa",
@@ -866,7 +884,7 @@
           "goalDifference": -3
         },
         {
-          "position": 11,
+          "position": 12,
           "team": {
             "id": 73,
             "name": "Tottenham Hotspur FC",
@@ -884,7 +902,7 @@
           "goalDifference": -1
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 67,
             "name": "Newcastle United FC",
@@ -902,7 +920,7 @@
           "goalDifference": -3
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
             "id": 322,
             "name": "Hull City AFC",
@@ -920,7 +938,7 @@
           "goalDifference": 0
         },
         {
-          "position": 14,
+          "position": 15,
           "team": {
             "id": 349,
             "name": "Ipswich Town FC",
@@ -936,24 +954,6 @@
           "goalsFor": 15,
           "goalsAgainst": 20,
           "goalDifference": -5
-        },
-        {
-          "position": 15,
-          "team": {
-            "id": 63,
-            "name": "Fulham FC",
-            "shortName": "Fulham",
-            "tla": "FUL",
-            "crest": "https://crests.football-data.org/63.png"
-          },
-          "playedGames": 10,
-          "won": 2,
-          "draw": 4,
-          "lost": 4,
-          "points": 10,
-          "goalsFor": 10,
-          "goalsAgainst": 12,
-          "goalDifference": -2
         },
         {
           "position": 16,
