@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T07:17:14.362856+00:00",
+  "updatedAt": "2026-11-22T15:33:34.755093+00:00",
   "dateFrom": "2026-11-21",
   "dateTo": "2026-12-01",
   "competitions": [
@@ -1026,12 +1026,17 @@
     },
     {
       "id": 560646,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-11-22T14:00:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11309,
+        "name": "Peter Bankes",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -1054,12 +1059,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -1070,7 +1075,12 @@
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 213813,
+        "name": "Sam Barrott",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -1753,7 +1763,12 @@
       "matchday": 13,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 206208,
+        "name": "Alejandro Hernández Hernández",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1792,7 +1807,12 @@
       "matchday": 13,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 215612,
+        "name": "Manuel Orellana Cid",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1831,7 +1851,12 @@
       "matchday": 13,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15628,
+        "name": "Ricardo de Burgos",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -2509,12 +2534,17 @@
     },
     {
       "id": 558521,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-22T11:30:00Z",
       "matchday": 12,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 135544,
+        "name": "Alberto Arena",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -2537,23 +2567,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 4,
+          "away": 0
         }
       }
     },
     {
       "id": 558522,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-11-22T14:00:00Z",
       "matchday": 12,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11119,
+        "name": "Livio Marinelli",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -2576,23 +2611,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       }
     },
     {
       "id": 558524,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-11-22T14:00:00Z",
       "matchday": 12,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 212567,
+        "name": "Maria Caputi",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -2615,12 +2655,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         }
       }
     },
@@ -2631,7 +2671,12 @@
       "matchday": 12,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11002,
+        "name": "Luca Pairetto",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -3397,12 +3442,17 @@
     },
     {
       "id": 565864,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-11-22T14:30:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15825,
+        "name": "Martin Petersen",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -3425,12 +3475,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         }
       }
     },
@@ -3441,7 +3491,12 @@
       "matchday": 10,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57518,
+        "name": "Florian Badstübner",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -4046,12 +4101,17 @@
     },
     {
       "id": 559625,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-11-22T14:00:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57062,
+        "name": "Aurélien Petit",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -4074,12 +4134,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 0
         }
       }
     },
@@ -4090,7 +4150,12 @@
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 64781,
+        "name": "Marc Bollengier",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -5085,12 +5150,17 @@
     },
     {
       "id": 558828,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-22T11:15:00Z",
       "matchday": 13,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43858,
+        "name": "Serdar Gözübüyük",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -5113,23 +5183,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         }
       }
     },
     {
       "id": 558830,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-22T13:30:00Z",
       "matchday": 13,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 17127,
+        "name": "Ingmar Oostrom",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -5152,23 +5227,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 5
         }
       }
     },
     {
       "id": 558836,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-22T13:30:00Z",
       "matchday": 13,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 56917,
+        "name": "Erwin Blank",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -5191,12 +5271,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 0
         }
       }
     },
@@ -5207,7 +5287,12 @@
       "matchday": 13,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 81044,
+        "name": "Martijn Vos",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
