@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T15:33:34.755093+00:00",
+  "updatedAt": "2026-11-22T21:36:32.337523+00:00",
   "dateFrom": "2026-11-21",
   "dateTo": "2026-12-01",
   "competitions": [
@@ -1026,7 +1026,7 @@
     },
     {
       "id": 560646,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-11-22T14:00:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
@@ -1063,14 +1063,14 @@
           "away": 0
         },
         "fullTime": {
-          "home": 0,
+          "home": 2,
           "away": 0
         }
       }
     },
     {
       "id": 560645,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-22T16:30:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
@@ -1103,12 +1103,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 4,
+          "away": 0
         }
       }
     },
@@ -1895,7 +1895,12 @@
       "matchday": 13,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 206211,
+        "name": "Jesús Gil Manzano",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -2578,7 +2583,7 @@
     },
     {
       "id": 558522,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-11-22T14:00:00Z",
       "matchday": 12,
       "stage": "REGULAR_SEASON",
@@ -2622,7 +2627,7 @@
     },
     {
       "id": 558524,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-11-22T14:00:00Z",
       "matchday": 12,
       "stage": "REGULAR_SEASON",
@@ -2666,7 +2671,7 @@
     },
     {
       "id": 558523,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-22T17:00:00Z",
       "matchday": 12,
       "stage": "REGULAR_SEASON",
@@ -2699,23 +2704,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 5,
+          "away": 1
         }
       }
     },
     {
       "id": 558520,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-11-22T19:45:00Z",
       "matchday": 12,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 10977,
+        "name": "Fabio Maresca",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -2738,12 +2748,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 4
         }
       }
     },
@@ -3442,7 +3452,7 @@
     },
     {
       "id": 565864,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-11-22T14:30:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
@@ -3479,14 +3489,14 @@
           "away": 0
         },
         "fullTime": {
-          "home": 2,
-          "away": 0
+          "home": 3,
+          "away": 1
         }
       }
     },
     {
       "id": 565863,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-22T16:30:00Z",
       "matchday": 10,
       "stage": "REGULAR_SEASON",
@@ -3519,12 +3529,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 4,
+          "away": 0
         }
       }
     },
@@ -4101,7 +4111,7 @@
     },
     {
       "id": 559625,
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "utcDate": "2026-11-22T14:00:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
@@ -4138,14 +4148,14 @@
           "away": 0
         },
         "fullTime": {
-          "home": 3,
+          "home": 4,
           "away": 0
         }
       }
     },
     {
       "id": 559626,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-22T16:15:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
@@ -4178,23 +4188,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       }
     },
     {
       "id": 559629,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-11-22T19:45:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57092,
+        "name": "Eric Wattellier",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -4217,12 +4232,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 2
         }
       }
     },
@@ -5282,7 +5297,7 @@
     },
     {
       "id": 558829,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-22T15:45:00Z",
       "matchday": 13,
       "stage": "REGULAR_SEASON",
@@ -5315,12 +5330,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       }
     },
