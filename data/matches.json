@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T11:03:56.422726+00:00",
+  "updatedAt": "2026-11-23T22:51:12.275980+00:00",
   "dateFrom": "2026-11-22",
   "dateTo": "2026-12-02",
   "competitions": [
@@ -811,7 +811,12 @@
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11585,
+        "name": "Craig Pawson",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -1762,12 +1767,17 @@
     },
     {
       "id": 564757,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-23T20:00:00Z",
       "matchday": 13,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 214213,
+        "name": "Francisco Hernández Maeso",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1790,12 +1800,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       }
     },
@@ -2494,7 +2504,12 @@
       "matchday": 12,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11065,
+        "name": "Daniele Doveri",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
