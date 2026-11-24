@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T06:49:38.450344+00:00",
+  "updatedAt": "2026-11-24T18:42:17.266382+00:00",
   "dateFrom": "2026-11-23",
   "dateTo": "2026-12-03",
   "competitions": [
@@ -16,12 +16,17 @@
   "matches": [
     {
       "id": 575395,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-11-24T17:45:00Z",
       "matchday": 5,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15408,
+        "name": "Daniel Siebert",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -44,23 +49,28 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
     {
       "id": 575396,
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "utcDate": "2026-11-24T17:45:00Z",
       "matchday": 5,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 214424,
+        "name": "Halil Meler",
+        "type": "REFEREE",
+        "nationality": "Turkey"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -87,8 +97,8 @@
           "away": null
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -99,7 +109,12 @@
       "matchday": 5,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 215543,
+        "name": "Espen Eskås",
+        "type": "REFEREE",
+        "nationality": "Norway"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -138,7 +153,12 @@
       "matchday": 5,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 37278,
+        "name": "István Kovács",
+        "type": "REFEREE",
+        "nationality": "Romania"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -177,7 +197,12 @@
       "matchday": 5,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11043,
+        "name": "Maurizio Mariani",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -216,7 +241,12 @@
       "matchday": 5,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15680,
+        "name": "Irfan Peljto",
+        "type": "REFEREE",
+        "nationality": "Bosnia and Herzegovina"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -255,7 +285,12 @@
       "matchday": 5,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 15548,
+        "name": "Jérôme Brisard",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -294,7 +329,12 @@
       "matchday": 5,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43954,
+        "name": "Ivan Kružliak",
+        "type": "REFEREE",
+        "nationality": "Slovakia"
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
@@ -333,7 +373,12 @@
       "matchday": 5,
       "stage": "LEAGUE_STAGE",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 80747,
+        "name": "Javier Alberola Rojas",
+        "type": "REFEREE",
+        "nationality": null
+      },
       "competition": {
         "id": 2001,
         "name": "UEFA Champions League",
