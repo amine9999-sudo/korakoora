@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T15:27:54.339136+00:00",
+  "updatedAt": "2026-11-27T23:40:12.610020+00:00",
   "dateFrom": "2026-11-26",
   "dateTo": "2026-12-06",
   "competitions": [
@@ -16,12 +16,17 @@
   "matches": [
     {
       "id": 560658,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-27T20:00:00Z",
       "matchday": 12,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 11423,
+        "name": "Andy Madley",
+        "type": "REFEREE",
+        "nationality": "England"
+      },
       "competition": {
         "id": 2021,
         "name": "Premier League",
@@ -44,12 +49,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 2
         }
       }
     },
@@ -1186,12 +1191,17 @@
     },
     {
       "id": 564765,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-27T20:00:00Z",
       "matchday": 14,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 214573,
+        "name": "Miguel Sesma Espinosa",
+        "type": "REFEREE",
+        "nationality": "Spain"
+      },
       "competition": {
         "id": 2014,
         "name": "Primera Division",
@@ -1214,12 +1224,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 3
         }
       }
     },
@@ -2005,12 +2015,17 @@
     },
     {
       "id": 558515,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-27T19:45:00Z",
       "matchday": 13,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 57878,
+        "name": "Andrea Colombo",
+        "type": "REFEREE",
+        "nationality": "Italy"
+      },
       "competition": {
         "id": 2019,
         "name": "Serie A",
@@ -2033,12 +2048,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       }
     },
@@ -2707,12 +2722,17 @@
     },
     {
       "id": 565869,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-27T19:30:00Z",
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43878,
+        "name": "Felix Zwayer",
+        "type": "REFEREE",
+        "nationality": "Germany"
+      },
       "competition": {
         "id": 2002,
         "name": "Bundesliga",
@@ -2735,12 +2755,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 3
         }
       }
     },
@@ -3409,12 +3429,17 @@
     },
     {
       "id": 559616,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-27T19:45:00Z",
       "matchday": 12,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 43886,
+        "name": "Ruddy Buquet",
+        "type": "REFEREE",
+        "nationality": "France"
+      },
       "competition": {
         "id": 2015,
         "name": "Ligue 1",
@@ -3437,12 +3462,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       }
     },
@@ -4111,12 +4136,17 @@
     },
     {
       "id": 567361,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-27T20:15:00Z",
       "matchday": 12,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 242513,
+        "name": "Miguel Fonseca",
+        "type": "REFEREE",
+        "nationality": "Portugal"
+      },
       "competition": {
         "id": 2017,
         "name": "Primeira Liga",
@@ -4139,12 +4169,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         }
       }
     },
@@ -4774,12 +4804,17 @@
     },
     {
       "id": 558820,
-      "status": "TIMED",
+      "status": "FINISHED",
       "utcDate": "2026-11-27T19:00:00Z",
       "matchday": 14,
       "stage": "REGULAR_SEASON",
       "venue": null,
-      "referee": null,
+      "referee": {
+        "id": 56908,
+        "name": "Richard Martens",
+        "type": "REFEREE",
+        "nationality": "Netherlands"
+      },
       "competition": {
         "id": 2003,
         "name": "Eredivisie",
@@ -4802,12 +4837,12 @@
       },
       "score": {
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       }
     },
