@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-27T23:40:12.610020+00:00",
-  "dateFrom": "2026-11-26",
-  "dateTo": "2026-12-06",
+  "updatedAt": "2026-11-28T06:52:10.548464+00:00",
+  "dateFrom": "2026-11-27",
+  "dateTo": "2026-12-07",
   "competitions": [
     "CL",
     "PL",
@@ -12,7 +12,7 @@
     "PPL",
     "DED"
   ],
-  "count": 140,
+  "count": 144,
   "matches": [
     {
       "id": 560658,
@@ -2014,6 +2014,45 @@
       }
     },
     {
+      "id": 564769,
+      "status": "TIMED",
+      "utcDate": "2026-12-07T20:00:00Z",
+      "matchday": 15,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2014,
+        "name": "Primera Division",
+        "code": "PD",
+        "emblem": "https://crests.football-data.org/laliga.png"
+      },
+      "home": {
+        "id": 559,
+        "name": "Sevilla FC",
+        "shortName": "Sevilla FC",
+        "tla": "SEV",
+        "crest": "https://crests.football-data.org/559.png"
+      },
+      "away": {
+        "id": 84,
+        "name": "Málaga CF",
+        "shortName": "Málaga",
+        "tla": "MAL",
+        "crest": "https://crests.football-data.org/84.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
       "id": 558515,
       "status": "FINISHED",
       "utcDate": "2026-11-27T19:45:00Z",
@@ -2708,6 +2747,84 @@
         "shortName": "Parma",
         "tla": "PAR",
         "crest": "https://crests.football-data.org/112.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 558506,
+      "status": "TIMED",
+      "utcDate": "2026-12-07T17:30:00Z",
+      "matchday": 14,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2019,
+        "name": "Serie A",
+        "code": "SA",
+        "emblem": "https://crests.football-data.org/c111.png"
+      },
+      "home": {
+        "id": 454,
+        "name": "Venezia FC",
+        "shortName": "Venezia FC",
+        "tla": "VEN",
+        "crest": "https://crests.football-data.org/454.png"
+      },
+      "away": {
+        "id": 471,
+        "name": "US Sassuolo Calcio",
+        "shortName": "Sassuolo",
+        "tla": "SAS",
+        "crest": "https://crests.football-data.org/471.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 558503,
+      "status": "TIMED",
+      "utcDate": "2026-12-07T19:45:00Z",
+      "matchday": 14,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2019,
+        "name": "Serie A",
+        "code": "SA",
+        "emblem": "https://crests.football-data.org/c111.png"
+      },
+      "home": {
+        "id": 99,
+        "name": "ACF Fiorentina",
+        "shortName": "Fiorentina",
+        "tla": "FIO",
+        "crest": "https://crests.football-data.org/99.png"
+      },
+      "away": {
+        "id": 104,
+        "name": "Cagliari Calcio",
+        "shortName": "Cagliari",
+        "tla": "CAG",
+        "crest": "https://crests.football-data.org/104.png"
       },
       "score": {
         "halfTime": {
@@ -4790,6 +4907,45 @@
         "shortName": "Acad. Viseu",
         "tla": "ACV",
         "crest": "https://crests.football-data.org/5527.png"
+      },
+      "score": {
+        "halfTime": {
+          "home": null,
+          "away": null
+        },
+        "fullTime": {
+          "home": null,
+          "away": null
+        }
+      }
+    },
+    {
+      "id": 567367,
+      "status": "TIMED",
+      "utcDate": "2026-12-07T20:15:00Z",
+      "matchday": 13,
+      "stage": "REGULAR_SEASON",
+      "venue": null,
+      "referee": null,
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "home": {
+        "id": 7822,
+        "name": "FC Alverca",
+        "shortName": "Alverca",
+        "tla": "ALV",
+        "crest": "https://crests.football-data.org/7822.png"
+      },
+      "away": {
+        "id": 583,
+        "name": "Moreirense FC",
+        "shortName": "Moreirense",
+        "tla": "MOR",
+        "crest": "https://crests.football-data.org/583.png"
       },
       "score": {
         "halfTime": {
